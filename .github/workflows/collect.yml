@@ -32,7 +32,7 @@ jobs:
       - name: 変わっていれば commit する
         # push で走った時は commit しない。コードを直すたびに data の差分が
         # 別 commit で入り、手元の作業と毎回衝突するため。日次実行だけが書く。
-        if: github.event_name != push
+        if: github.event_name != 'push'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
