@@ -554,6 +554,43 @@
         "count": "目撃頭数",
         "note": "目撃時のクマ"
       }
+    },
+    {
+      "id": "kamisunagawa-higuma",
+      "pref_code": "01",
+      "pref": "北海道",
+      "adapter": "bodik",
+      "params": {
+        "query": "ヒグマ",
+        "org": "上砂川町",
+        "title_pattern": "ヒグマ出没マップ"
+      },
+      "page": "https://data.bodik.jp/organization/014257",
+      "license": {
+        "id": "CC-BY-4.0",
+        "attribution": "上砂川町",
+        "redistribute": true,
+        "basis": "BODIK のデータセット metadata が Creative Commons Attribution 4.0 International",
+        "verified": "2026-08-28"
+      },
+      "species_default": "higuma",
+      "category_default": "sighting",
+      "map": {
+        "occurred_at": "出没年月日",
+        "time": "時刻",
+        "municipality": "出没場所_市区町村",
+        "place": [
+          "出没場所",
+          "出没場所_連結表記",
+          "出没場所_町字"
+        ],
+        "note": [
+          "状況",
+          "特記事項"
+        ],
+        "lat": "緯度",
+        "lon": "経度"
+      }
     }
   ]
 }

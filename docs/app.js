@@ -229,7 +229,7 @@ map.on("load", async () => {
   }
 
   document.getElementById("credit").innerHTML =
-    'データ出典: 秋田県・京都府・北海道・石狩市（CC BY 4.0）。背景は地理院タイルと NASA EOSDIS GIBS。' +
+    'データ出典: 秋田県・京都府・北海道・石狩市・上砂川町（CC BY 4.0）。背景は地理院タイルと NASA EOSDIS GIBS。' +
     '<a href="https://github.com/yasumorishima/japan-wildlife-sightings">リポジトリ</a>・' +
     '<a href="THIRD-PARTY-NOTICES.txt">ライセンス表示</a>';
 });

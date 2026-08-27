@@ -20,8 +20,8 @@ CKAN の CSV、ArcGIS の Survey123、Google マイマップ、Excel、そして
 
 ## いま取れているもの
 
-20 の公開元から **72,878 件**を取得できています（うち座標つき 70,143 件）。
-このうち **33,843 件**を `data/` に収録しています。差は、**公開元の規約で再配布が
+21 の公開元から **72,976 件**を取得できています（うち座標つき 70,241 件）。
+このうち **33,941 件**を `data/` に収録しています。差は、**公開元の規約で再配布が
 許されていない出典を収録していない**ためです（アダプタは同梱しているので手元では取得できます）。
 
 | 出典 | 形式 | 件数 | 収録 |
@@ -41,6 +41,7 @@ CKAN の CSV、ArcGIS の Survey123、Google マイマップ、Excel、そして
 | 三重県 | ArcGIS | 113 | — |
 | 北海道（2 系統） | ArcGIS | 82 | ✅ |
 | 北海道 石狩市 | ArcGIS | 214 | ✅ |
+| 北海道 上砂川町 | BODIK（CKAN） | 98 | ✅ |
 | 長野県（月別 PDF・座標なし） | PDF | 1,979 | — |
 | 山梨県（年度別 PDF・座標なし） | PDF（座標つき抽出） | 751 | — |
 | 長野県 岡谷市 | ArcGIS | 46 | — |
@@ -144,7 +145,8 @@ python3 validate.py                   # 生成物の検算
 
 ## 出典を追加するには
 
-1. `sources.json` にエントリを足す（`adapter` は `csv` / `xlsx` / `arcgis` / `kml`）
+1. `sources.json` にエントリを足す（`adapter` は `csv` / `xlsx` / `arcgis` / `kml` /
+   `pdf` / `pdf_bbox` / `bodik`）
 2. `python3 collect.py --only <あなたの id> --no-write` で列の当たりを確認
 3. 規約ページを実際に読み、`docs/licenses.md` に引用つきで判定を書く
 4. `python3 validate.py` が通ることを確認して PR
