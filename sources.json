@@ -1,0 +1,335 @@
+{
+  "schema_version": 1,
+  "note": "license.redistribute が true の出典だけを data/ に収録する。false のものはアダプタのみ同梱し、各自の手元で取得する。",
+  "sources": [
+    {
+      "id": "akita-kumadas",
+      "pref_code": "05",
+      "pref": "秋田県",
+      "adapter": "csv",
+      "params": {
+        "url": "https://ckan.pref.akita.lg.jp/dataset/f801a10f-f076-47e4-b5a6-0bb5569639e0/resource/0678f9b3-4bf7-4212-9c0e-c0cb9b09b3cf/download/050008_kumadas.csv"
+      },
+      "page": "https://opendata.pref.akita.lg.jp/",
+      "license": {
+        "id": "CC-BY-4.0",
+        "attribution": "秋田県",
+        "redistribute": true,
+        "verified": "2026-08-27"
+      },
+      "map": {
+        "native_id": "出没情報ID",
+        "category": "情報種別",
+        "municipality": "市町村",
+        "place": "地番情報",
+        "occurred_at": "目撃日時",
+        "species": "獣種",
+        "count": "頭数",
+        "note": "目撃時の状況",
+        "lat": "x(緯度)",
+        "lon": "y(経度)"
+      }
+    },
+    {
+      "id": "kyoto-bear",
+      "pref_code": "26",
+      "pref": "京都府",
+      "adapter": "csv",
+      "params": {
+        "url": "https://data.bodik.jp/dataset/e40b887d-0212-4ad5-8cf8-4ae3a2b5f4dd/resource/5eb145e6-5b3f-489d-a991-3d2da42c109b/download/260002bearfy.csv"
+      },
+      "page": "https://www.datastore.pref.kyoto.lg.jp/watch-out-for-bear/",
+      "license": {
+        "id": "CC-BY-4.0",
+        "attribution": "京都府",
+        "redistribute": true,
+        "verified": "2026-08-27"
+      },
+      "species_default": "tsukinowaguma",
+      "map": {
+        "occurred_at": "目撃年月日",
+        "place": [
+          "観察場所",
+          "環境区分"
+        ],
+        "municipality": "市町村名",
+        "note": "目撃時の状況",
+        "lat": "緯度",
+        "lon": "経度"
+      },
+      "count_sum": [
+        "成獣(匹)",
+        "幼獣(匹)",
+        "その他(匹)"
+      ],
+      "category_default": "sighting"
+    },
+    {
+      "id": "niigata-bear",
+      "pref_code": "15",
+      "pref": "新潟県",
+      "adapter": "arcgis",
+      "params": {
+        "layer_url": "https://services6.arcgis.com/SKz58fvdFlaEB35q/arcgis/rest/services/survey123_08d14b98657b47309b868f49602375c8_results/FeatureServer/0"
+      },
+      "page": "https://www.pref.niigata.lg.jp/site/tyoujyutaisakusienn/1319666477308.html",
+      "license": {
+        "id": "unknown",
+        "attribution": "新潟県",
+        "redistribute": false
+      },
+      "species_default": "tsukinowaguma",
+      "map": {
+        "native_id": "ObjectID",
+        "category": "出没区分",
+        "municipality": "出没市町村",
+        "place": "出没地区",
+        "occurred_at": "出没日",
+        "time": "出没時間",
+        "count": "頭数",
+        "note": "出没時の状況"
+      }
+    },
+    {
+      "id": "gunma-bear",
+      "pref_code": "10",
+      "pref": "群馬県",
+      "adapter": "arcgis",
+      "params": {
+        "layer_url": "https://services7.arcgis.com/DkC6f6v0YUQX0rke/arcgis/rest/services/survey123_a77f33a9b9f649cfada5c7983c67874b_results/FeatureServer/0"
+      },
+      "page": "https://www.pref.gunma.jp/page/7141.html",
+      "license": {
+        "id": "unknown",
+        "attribution": "群馬県",
+        "redistribute": false
+      },
+      "species_default": "tsukinowaguma",
+      "map": {
+        "native_id": "ObjectID",
+        "occurred_at": "目撃された日",
+        "time": "目撃された時間",
+        "category": "クマの出没状況",
+        "place": "住所",
+        "count": "頭数",
+        "note": "出没状況・被害状況"
+      }
+    },
+    {
+      "id": "saitama-bear",
+      "pref_code": "11",
+      "pref": "埼玉県",
+      "adapter": "arcgis",
+      "params": {
+        "layer_url": "https://services9.arcgis.com/n65w8AXGaYPTqFYI/arcgis/rest/services/survey123_3123e5ed452d4e89845e4ba6129c1e2d_results/FeatureServer/0"
+      },
+      "page": "https://www.pref.saitama.lg.jp/a0508/tyouzyu/kumatyui.html",
+      "license": {
+        "id": "unknown",
+        "attribution": "埼玉県",
+        "redistribute": false
+      },
+      "species_default": "tsukinowaguma",
+      "map": {
+        "native_id": "ObjectID",
+        "occurred_at": "出没日",
+        "time": "出没時間",
+        "municipality": "市町村名",
+        "place": "地名",
+        "count": "出没頭数",
+        "category": "出没レベル",
+        "note": "出没状況の概要"
+      }
+    },
+    {
+      "id": "yamagata-kemonote",
+      "pref_code": "06",
+      "pref": "山形県",
+      "adapter": "csv",
+      "params": {
+        "url": "https://www.pref.yamagata.jp/documents/2414/20260823_kemonote-cleaned.csv"
+      },
+      "page": "https://www.pref.yamagata.jp/050011/kurashi/shizen/seibutsu/about_kuma/kuma_yamagata_top.html",
+      "license": {
+        "id": "unknown",
+        "attribution": "山形県",
+        "redistribute": false
+      },
+      "species_default": "tsukinowaguma",
+      "map": {
+        "occurred_at": "目撃した日付",
+        "time": "目撃した時間帯（0:00～24:00）",
+        "municipality": "ユーザ名",
+        "place": "地名等",
+        "count": "目撃頭数",
+        "category": "周辺環境",
+        "note": "備考",
+        "lat": "緯度",
+        "lon": "経度"
+      }
+    },
+    {
+      "id": "ishikawa-bear",
+      "pref_code": "17",
+      "pref": "石川県",
+      "adapter": "kml",
+      "params": {
+        "mid": "1H12Snd5fBPH9Ltz4AU-F8Qw8H3J6BX4"
+      },
+      "page": "https://www.pref.ishikawa.lg.jp/sizen/kuma/navi01.html",
+      "license": {
+        "id": "unknown",
+        "attribution": "石川県",
+        "redistribute": false
+      },
+      "species_default": "tsukinowaguma",
+      "map": {
+        "occurred_at": "_name",
+        "time": "時刻",
+        "category": "目撃痕跡種別",
+        "municipality": "市町名",
+        "place": "場所",
+        "count": "頭数",
+        "note": "出没情報備考",
+        "lat": "緯度",
+        "lon": "経度"
+      }
+    },
+    {
+      "id": "miyagi-bear",
+      "pref_code": "04",
+      "pref": "宮城県",
+      "adapter": "kml",
+      "params": {
+        "mid": "1aZCXqs7vrAPEBhE4HkT3CwmlMdunP2Y"
+      },
+      "page": "https://www.pref.miyagi.jp/soshiki/sizenhogo/r7kuma.html",
+      "license": {
+        "id": "unknown",
+        "attribution": "宮城県",
+        "redistribute": false
+      },
+      "species_default": "tsukinowaguma",
+      "map": {
+        "occurred_at": [
+          "_name",
+          "年月日"
+        ],
+        "time": [
+          "時間",
+          "時刻"
+        ],
+        "category": [
+          "種別",
+          "_name"
+        ],
+        "native_id": "通し番号",
+        "lat": "latitude",
+        "lon": "longitude"
+      },
+      "fiscal_year": 2025
+    },
+    {
+      "id": "shizuoka-bear-r7",
+      "pref_code": "22",
+      "pref": "静岡県",
+      "adapter": "kml",
+      "params": {
+        "mid": "1hwFI-xmiB1uYeEpfNetfP15CS9uxo08"
+      },
+      "page": "https://www.pref.shizuoka.jp/kurashikankyo/shizenkankyo/wild/1017680.html",
+      "license": {
+        "id": "unknown",
+        "attribution": "静岡県",
+        "redistribute": false
+      },
+      "species_default": "tsukinowaguma",
+      "map": {
+        "occurred_at": "日付",
+        "time": "目撃時間",
+        "municipality": "市町",
+        "place": "地名",
+        "count": "目撃頭数",
+        "note": "備考",
+        "lat": "緯度",
+        "lon": "経度"
+      }
+    },
+    {
+      "id": "shizuoka-bear-r8",
+      "pref_code": "22",
+      "pref": "静岡県",
+      "adapter": "kml",
+      "params": {
+        "mid": "1o_iXJ5z-tA9bTd8k2DMFPLO9BS4LRDI"
+      },
+      "page": "https://www.pref.shizuoka.jp/kurashikankyo/shizenkankyo/wild/1017680.html",
+      "license": {
+        "id": "unknown",
+        "attribution": "静岡県",
+        "redistribute": false
+      },
+      "species_default": "tsukinowaguma",
+      "map": {
+        "occurred_at": "日付",
+        "time": "目撃時間",
+        "municipality": "市町",
+        "place": "地名",
+        "count": "目撃頭数",
+        "note": "備考",
+        "lat": "緯度",
+        "lon": "経度"
+      }
+    },
+    {
+      "id": "hokkaido-bear-map",
+      "pref_code": "01",
+      "pref": "北海道",
+      "adapter": "arcgis",
+      "params": {
+        "layer_url": "https://services8.arcgis.com/T127hAxx2zxSKa9o/arcgis/rest/services/bear/FeatureServer/0"
+      },
+      "page": "https://www.pref.hokkaido.lg.jp/ks/skn/higuma/joho.html",
+      "license": {
+        "id": "CC-BY-4.0",
+        "attribution": "北海道",
+        "redistribute": true,
+        "verified": "2026-08-27",
+        "basis": "サイトポリシー（docs/licenses.md 参照）"
+      },
+      "species_default": "higuma",
+      "map": {
+        "native_id": "ObjectId",
+        "occurred_at": "報告日時",
+        "category": "認知区分",
+        "note": "報告内容",
+        "lat": "緯度",
+        "lon": "経度"
+      }
+    },
+    {
+      "id": "hokkaido-bear-survey",
+      "pref_code": "01",
+      "pref": "北海道",
+      "adapter": "arcgis",
+      "params": {
+        "layer_url": "https://services.arcgis.com/Jv1EECU3IM4ZRUev/arcgis/rest/services/survey123_84d34cf9cdf94dac9ba8de582423d871_results/FeatureServer/0"
+      },
+      "page": "https://www.pref.hokkaido.lg.jp/ks/skn/higuma/joho.html",
+      "license": {
+        "id": "CC-BY-4.0",
+        "attribution": "北海道",
+        "redistribute": true,
+        "verified": "2026-08-27",
+        "basis": "サイトポリシー（docs/licenses.md 参照）"
+      },
+      "species_default": "higuma",
+      "map": {
+        "native_id": "ObjectID",
+        "occurred_at": "報告日時",
+        "category": "報告内容",
+        "note": "経緯"
+      }
+    }
+  ]
+}
