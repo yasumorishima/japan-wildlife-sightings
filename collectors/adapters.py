@@ -111,7 +111,9 @@ def fetch_kml(mid: str = None, url: str = None, **_) -> list[dict]:
     return out
 
 
+from .pdf_bbox import fetch_pdf_bbox  # noqa: E402
 from .pdf_table import fetch_pdf_table  # noqa: E402  (循環しないので末尾で読む)
 
 ADAPTERS = {"csv": fetch_csv, "xlsx": fetch_xlsx, "arcgis": fetch_arcgis,
-            "kml": fetch_kml, "pdf": fetch_pdf_table}
+            "kml": fetch_kml, "pdf": fetch_pdf_table,
+            "pdf_bbox": fetch_pdf_bbox}
