@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-27T21:59:02.129927+09:00",
+  "generated_at": "2026-08-27T22:40:51.610015+09:00",
   "records_published": 33843,
   "sources": [
     {
@@ -272,6 +272,21 @@
       "date_max": "2026-08-19",
       "species": [
         "higuma"
+      ]
+    },
+    {
+      "id": "nagano-bear-pdf",
+      "pref": "長野県",
+      "adapter": "pdf",
+      "license": "unknown",
+      "redistribute": false,
+      "records": 1979,
+      "with_coords": 0,
+      "with_date": 1979,
+      "date_min": "2025-09-01",
+      "date_max": "2026-08-20",
+      "species": [
+        "tsukinowaguma"
       ]
     }
   ]
