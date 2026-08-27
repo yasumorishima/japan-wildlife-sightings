@@ -415,6 +415,87 @@
       "constants": {
         "municipality": "岡谷市"
       }
+    },
+    {
+      "id": "fukushima-bear",
+      "pref_code": "07",
+      "pref": "福島県",
+      "adapter": "arcgis",
+      "params": {
+        "layer_url": "https://services6.arcgis.com/M9nrgnB1gu8YnLFM/arcgis/rest/services/福島県クマ目撃ポイントレイヤー_202606_view/FeatureServer/0"
+      },
+      "page": "https://www.pref.fukushima.lg.jp/sec/16035b/tukinowaguma-mokugeki.html",
+      "license": {
+        "id": "unknown",
+        "attribution": "福島県",
+        "redistribute": false,
+        "basis": "県の公式ページ「福島県クマ目撃マップ」のダッシュボードが同じレイヤを参照（素性は確認済／利用条件の記載は未確認）",
+        "verified": "2026-08-27"
+      },
+      "species_default": "tsukinowaguma",
+      "map": {
+        "native_id": "ObjectID",
+        "occurred_at": "目撃日時",
+        "category": "目撃内容",
+        "municipality": "目撃場所の市町村名",
+        "place": "目撃場所の住所(公開用)",
+        "count": "頭数",
+        "note": "目撃内容の詳細(公開用)"
+      }
+    },
+    {
+      "id": "niigata-bear-2017-2024",
+      "pref_code": "15",
+      "pref": "新潟県",
+      "adapter": "arcgis",
+      "params": {
+        "layer_url": "https://services6.arcgis.com/SKz58fvdFlaEB35q/arcgis/rest/services/2017_2024クマ出没報告/FeatureServer/0"
+      },
+      "page": "https://www.pref.niigata.lg.jp/site/tyoujyutaisakusienn/1319666477308.html",
+      "license": {
+        "id": "unknown",
+        "attribution": "新潟県",
+        "redistribute": false,
+        "basis": "現行の新潟県 Survey123 レイヤと同じ ArcGIS 組織（SKz58fvdFlaEB35q）にある過去分。県ページからの直接リンクは未確認",
+        "verified": "2026-08-27"
+      },
+      "species_default": "tsukinowaguma",
+      "map": {
+        "native_id": "No",
+        "occurred_at": "目撃_出没__月日",
+        "time": "目撃_出没___時間",
+        "category": "区分",
+        "municipality": "市町村名",
+        "place": "目撃_出没_地区"
+      }
+    },
+    {
+      "id": "ishikari-higuma",
+      "pref_code": "01",
+      "pref": "北海道",
+      "adapter": "arcgis",
+      "params": {
+        "layer_url": "https://services7.arcgis.com/9WKv3OOuUkGgAibZ/arcgis/rest/services/石狩市ヒグマ出没情報/FeatureServer/0"
+      },
+      "page": "https://www.city.ishikari.hokkaido.jp/",
+      "license": {
+        "id": "CC-BY-4.0",
+        "attribution": "石狩市",
+        "redistribute": true,
+        "basis": "ArcGIS の項目に「CreativeCommons の表示4.0 国際 CC BY4.0 …に基づき利用できるものとします」と明記",
+        "verified": "2026-08-27"
+      },
+      "species_default": "higuma",
+      "map": {
+        "native_id": "OBJECTID",
+        "occurred_at": "日時",
+        "place": "場所",
+        "category": "種類",
+        "note": "経緯"
+      },
+      "constants": {
+        "municipality": "石狩市"
+      }
     }
   ]
 }
