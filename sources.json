@@ -524,6 +524,36 @@
         "note": "状況",
         "place": "環境"
       }
+    },
+    {
+      "id": "yamanashi-bear-pdf",
+      "pref_code": "19",
+      "pref": "山梨県",
+      "adapter": "pdf_bbox",
+      "params": {
+        "page_url": "https://www.pref.yamanashi.jp/shizen/kuma2.html",
+        "link_pattern": "mokugeki|kumamokugeki"
+      },
+      "page": "https://www.pref.yamanashi.jp/shizen/kuma2.html",
+      "license": {
+        "id": "unknown",
+        "attribution": "山梨県",
+        "redistribute": false,
+        "basis": "サイト内で利用規約ページを検出できず（未確認）",
+        "verified": "2026-08-27"
+      },
+      "species_default": "tsukinowaguma",
+      "note_about_coords": "PDF に座標が無いため lat/lon は空。市町村と地名までしか分からない。",
+      "category_default": "sighting",
+      "map": {
+        "native_id": "№",
+        "occurred_at": "目撃年月日",
+        "time": "時間",
+        "municipality": "目撃市町村",
+        "place": "場所",
+        "count": "目撃頭数",
+        "note": "目撃時のクマ"
+      }
     }
   ]
 }
