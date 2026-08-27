@@ -150,8 +150,11 @@ def main() -> int:
          "properties": {k: v for k, v in r.items() if k not in ("lat", "lon")}}
         for r in shareable if r["lat"] is not None and r["lon"] is not None]}
     # GeoJSON は非圧縮で 20MB を超え、日次で履歴に積むと取り回せなくなるので gzip で置く。
-    with gzip.open(data / "sightings.geojson.gz", "wt", encoding="utf-8") as fh:
-        json.dump(geo, fh, ensure_ascii=False)
+    # mtime=0 で書く。既定だと実行時刻が gzip ヘッダに入り、中身が同じでも
+    # 毎回バイト列が変わって 2MB の差分が履歴に積まれる。
+    with (data / "sightings.geojson.gz").open("wb") as raw:
+        with gzip.GzipFile(fileobj=raw, mode="wb", mtime=0) as gz:
+            gz.write(json.dumps(geo, ensure_ascii=False).encode("utf-8"))
     (data / "summary.json").write_text(json.dumps(
         {"generated_at": dt.datetime.now(dt.timezone(dt.timedelta(hours=9))).isoformat(),
          "records_published": len(shareable), "sources": summary},
