@@ -34,8 +34,14 @@ def _decode(raw: bytes, encoding: str | None) -> str:
 
 def fetch_csv(url: str, encoding: str | None = None, **_) -> list[dict]:
     text = _decode(_get(url).content, encoding)
-    rows = list(csv.DictReader(io.StringIO(text)))
-    return [{(k or "").strip(): v for k, v in row.items()} for row in rows]
+    out = []
+    for row in csv.DictReader(io.StringIO(text)):
+        clean = {(k or "").strip(): v for k, v in row.items()}
+        # 末尾に空行が続く CSV がある（上砂川町の令和8年度は 82 行中 80 行が空）
+        if not any((v or "").strip() for v in clean.values() if isinstance(v, str)):
+            continue
+        out.append(clean)
+    return out
 
 
 def fetch_xlsx(url: str, sheet: int = 0, header_row: int = 1, **_) -> list[dict]:
@@ -117,3 +123,35 @@ from .pdf_table import fetch_pdf_table  # noqa: E402  (循環しないので末�
 ADAPTERS = {"csv": fetch_csv, "xlsx": fetch_xlsx, "arcgis": fetch_arcgis,
             "kml": fetch_kml, "pdf": fetch_pdf_table,
             "pdf_bbox": fetch_pdf_bbox}
+
+
+def fetch_bodik(query: str, org: str | None = None, title_pattern: str | None = None,
+                rows: int = 50, **_) -> list[dict]:
+    """BODIK（自治体共同のオープンデータカタログ）を検索して CSV を集める。
+
+    年度ごとにデータセットが増える出典があるので、URL を書き並べずカタログを引く。
+    次年度ぶんが公開されれば自動で入る。
+    """
+    r = _get("https://data.bodik.jp/api/3/action/package_search",
+             params={"q": query, "rows": rows}).json()["result"]
+    out = []
+    for pkg in r.get("results", []):
+        title = pkg.get("title", "")
+        owner = (pkg.get("organization") or {}).get("title", "")
+        if org and owner != org:
+            continue
+        if title_pattern and not re.search(title_pattern, title):
+            continue
+        for res in pkg.get("resources", []):
+            if (res.get("format") or "").upper() != "CSV":
+                continue
+            try:
+                for row in fetch_csv(res["url"]):
+                    row["_dataset"] = title
+                    out.append(row)
+            except Exception:
+                continue
+    return out
+
+
+ADAPTERS["bodik"] = fetch_bodik
