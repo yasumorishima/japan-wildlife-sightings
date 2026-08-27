@@ -496,6 +496,34 @@
       "constants": {
         "municipality": "石狩市"
       }
+    },
+    {
+      "id": "nagano-bear-pdf",
+      "pref_code": "20",
+      "pref": "長野県",
+      "adapter": "pdf",
+      "params": {
+        "page_url": "https://www.pref.nagano.lg.jp/shinrin/sangyo/ringyo/choju/joho/kuma-map.html",
+        "link_pattern": "mokugeki|kuma"
+      },
+      "page": "https://www.pref.nagano.lg.jp/shinrin/sangyo/ringyo/choju/joho/kuma-map.html",
+      "license": {
+        "id": "unknown",
+        "attribution": "長野県",
+        "redistribute": false,
+        "basis": "「無断で複製・転用することはできません」",
+        "verified": "2026-08-27"
+      },
+      "species_default": "tsukinowaguma",
+      "note_about_coords": "PDF に座標が無いため lat/lon は空。市町村名までしか分からない。",
+      "map": {
+        "occurred_at": "日付",
+        "municipality": "市町村",
+        "category": "区分",
+        "count": "頭数",
+        "note": "状況",
+        "place": "環境"
+      }
     }
   ]
 }
