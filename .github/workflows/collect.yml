@@ -31,6 +31,8 @@ jobs:
         run: python3 collect.py
       - name: 生成物を検算する
         run: python3 validate.py
+      - name: 地図ページ用のデータを作る
+        run: python3 build_map.py
       - name: 変わっていれば commit する
         # push で走った時は commit しない。コードを直すたびに data の差分が
         # 別 commit で入り、手元の作業と毎回衝突するため。日次実行だけが書く。
@@ -38,7 +40,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add data
+          git add data docs/data
           if git diff --cached --quiet; then
             echo "変化なし"
           else

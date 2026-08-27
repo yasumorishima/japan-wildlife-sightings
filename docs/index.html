@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>全国 鳥獣出没マップ | japan-wildlife-sightings</title>
+<meta name="description" content="自治体が公開しているクマ・イノシシ・シカの出没情報を、共通の形式にそろえて地図にしたものです。">
+<link rel="stylesheet" href="vendor/maplibre-gl.css">
+<style>
+  :root{
+    --ink:#111827; --sub:#4b5563; --line:#d1d5db; --bg:#ffffff; --panel:rgba(255,255,255,.96);
+    --tsukinowaguma:#ef4444; --higuma:#7c2d12; --inoshishi:#f59e0b; --shika:#10b981; --other:#64748b;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;height:100%;font-family:system-ui,"Hiragino Kaku Gothic ProN","Noto Sans JP",sans-serif;color:var(--ink)}
+  #map{position:absolute;inset:0}
+  .panel{
+    position:absolute;top:12px;left:12px;z-index:2;background:var(--panel);border:1px solid var(--line);
+    border-radius:10px;padding:12px 14px;max-width:310px;max-height:calc(100% - 24px);overflow:auto;
+    box-shadow:0 2px 12px rgba(0,0,0,.12);font-size:13px;line-height:1.6;
+  }
+  .panel h1{font-size:15px;margin:0 0 2px}
+  .panel .lead{color:var(--sub);font-size:12px;margin:0 0 10px}
+  .count{font-size:20px;font-weight:700;font-variant-numeric:tabular-nums}
+  .count small{font-size:12px;font-weight:400;color:var(--sub)}
+  fieldset{border:0;border-top:1px solid var(--line);margin:10px 0 0;padding:8px 0 0}
+  legend{font-size:12px;color:var(--sub);padding:0}
+  label{display:flex;align-items:center;gap:6px;cursor:pointer;padding:1px 0}
+  label input{margin:0}
+  .swatch{width:11px;height:11px;border-radius:50%;flex:none;border:1px solid rgba(0,0,0,.25)}
+  select,button{font:inherit;padding:4px 6px;border:1px solid var(--line);border-radius:6px;background:#fff}
+  .bases{display:flex;flex-wrap:wrap;gap:4px}
+  .bases button{cursor:pointer}
+  .bases button[aria-pressed="true"]{background:var(--ink);color:#fff;border-color:var(--ink)}
+  .scope{font-size:11.5px;color:var(--sub);background:#f8fafc;border:1px solid var(--line);
+    border-radius:6px;padding:6px 8px;margin:8px 0 6px;line-height:1.5}
+  .scope b{color:var(--ink)}
+  .jumps{display:flex;flex-wrap:wrap;gap:4px;margin-bottom:2px}
+  .jumps button{cursor:pointer;font-size:12px}
+  .note{color:var(--sub);font-size:11px;margin-top:8px}
+  .note a{color:inherit}
+  .toggle{position:absolute;top:12px;left:12px;z-index:3;display:none}
+  .maplibregl-popup-content{font-size:13px;line-height:1.6;max-width:280px}
+  .maplibregl-popup-content b{display:block;font-size:14px;margin-bottom:2px}
+  @media (max-width:640px){
+    .panel{max-width:none;left:8px;right:8px;top:46px}
+    .toggle{display:block}
+  }
+</style>
+</head>
+<body>
+<div id="map"></div>
+<button class="toggle" id="toggle" aria-expanded="true">絞り込みを隠す</button>
+<div class="panel" id="panel">
+  <h1>全国 鳥獣出没マップ</h1>
+  <p class="lead">自治体が公開している出没情報を 1 つの形式にそろえたものです。</p>
+  <p class="count"><span id="count">0</span> <small>件（表示中）</small></p>
+  <p class="scope">この地図に出るのは <b>秋田県・京都府・北海道・石狩市</b>の 4 出典だけです。
+  ほかの県は公開元の規約で再配布が許されていないため、地図には載せず取得コードだけを配っています。</p>
+  <div class="jumps" id="jumps"></div>
+
+  <fieldset>
+    <legend>背景</legend>
+    <div class="bases" id="bases"></div>
+  </fieldset>
+
+  <fieldset>
+    <legend>獣種</legend>
+    <div id="species"></div>
+  </fieldset>
+
+  <fieldset>
+    <legend>区分</legend>
+    <div id="category"></div>
+  </fieldset>
+
+  <fieldset>
+    <legend>年</legend>
+    <select id="year"><option value="">すべて</option></select>
+  </fieldset>
+
+  <p class="note" id="credit"></p>
+</div>
+<script src="vendor/maplibre-gl.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
