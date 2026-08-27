@@ -3,6 +3,8 @@
 日本の自治体が公開している**クマ・イノシシ・シカ等の出没情報**を、
 出典ごとにバラバラな形式のまま埋もれさせず、**共通スキーマの機械可読データセット**にそろえます。
 
+- **地図で見る: https://yasumorishima.github.io/japan-wildlife-sightings/**
+  （地理院タイルの淡色地図・空中写真と、NASA GIBS の前日の衛星画像を背景に切り替えられます）
 - 収録データ: [`data/sightings.csv`](data/sightings.csv) / [`data/sightings.geojson`](data/sightings.geojson)
 - 取得状況と品質: [`data/summary.json`](data/summary.json)
 - 再配布可否の根拠: [`docs/licenses.md`](docs/licenses.md)
@@ -72,6 +74,23 @@ AND で絞られ、実際に存在するレイヤが返ってきません（こ�
 新潟県は現行フォーム（2025 年度〜）と過去分（2017 年〜）の 2 レイヤがあり、**期間が重なる
 ぶんは同じ出没が二重に入っています**。どちらも収録対象外なので `data/` には影響しませんが、
 手元で両方を使うときは突き合わせが要ります。
+
+## 地図
+
+`docs/` に MapLibre GL JS の地図ページを置いています（GitHub Pages で公開）。
+背景は**地理院タイル**（淡色地図・地図・シームレス空中写真）と
+**NASA EOSDIS GIBS の VIIRS 前日画像**で、どちらも鍵が要りません。
+獣種・区分・年で絞り込め、点をクリックすると状況と出典が出ます。
+
+**地図に出るのは収録対象の 4 出典だけです**（秋田・京都・北海道・石狩市）。
+他県はデータを載せていないので、その範囲を拡大しても点は出ません。
+ライブラリと字形は同梱してあり（`docs/vendor/`）、外部 CDN には依存しません。
+表示すべき出典は [`docs/THIRD-PARTY-NOTICES.txt`](docs/THIRD-PARTY-NOTICES.txt) にまとめています。
+
+```bash
+python3 build_map.py            # docs/data/sightings.min.geojson を作り直す
+python3 -m http.server -d docs  # 手元で見る
+```
 
 ## 使い方
 
