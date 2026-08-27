@@ -1,0 +1,97 @@
+# japan-wildlife-sightings
+
+日本の自治体が公開している**クマ・イノシシ・シカ等の出没情報**を、
+出典ごとにバラバラな形式のまま埋もれさせず、**共通スキーマの機械可読データセット**にそろえます。
+
+- 収録データ: [`data/sightings.csv`](data/sightings.csv) / [`data/sightings.geojson`](data/sightings.geojson)
+- 取得状況と品質: [`data/summary.json`](data/summary.json)
+- 再配布可否の根拠: [`docs/licenses.md`](docs/licenses.md)
+
+## なぜ作るのか
+
+出没情報は各都道府県が公開していますが、**形式が県ごとに完全に別物**です。
+CKAN の CSV、ArcGIS の Survey123、Google マイマップ、Excel、そして PDF。
+環境省がまとめている全国値も PDF のみで、**全国の点データはどこにも存在しません**。
+
+集約した商用サービスは複数ありますが、いずれもクローズドです。
+研究・自治体・住民・農業関係者が自由に使える**開いた土台**が無いので、それを作ります。
+
+## いま取れているもの
+
+12 の公開元から **48,418 件**（すべて座標つき）を取得できています。
+このうち **33,629 件**を `data/` に収録しています。差は、**公開元の規約で再配布が
+許されていない出典を収録していない**ためです（アダプタは同梱しているので手元では取得できます）。
+
+| 出典 | 形式 | 件数 | 収録 |
+|---|---|---:|---|
+| 秋田県 クマダス | CKAN CSV | 23,322 | ✅ |
+| 京都府 クマ目撃情報 | BODIK CSV | 10,225 | ✅ |
+| 新潟県 | ArcGIS Survey123 | 4,154 | — |
+| 石川県 | Google マイマップ | 3,659 | — |
+| 宮城県 | Google マイマップ | 3,535 | — |
+| 群馬県 | ArcGIS Survey123 | 1,735 | — |
+| 山形県 | CSV | 869 | — |
+| 静岡県（2 地図） | Google マイマップ | 475 | — |
+| 埼玉県 | ArcGIS Survey123 | 362 | — |
+| 北海道（2 系統） | ArcGIS | 82 | ✅ |
+
+## まだ取れていないもの
+
+**クマが生息する 40 都道府県のうち、点データを機械可読で出しているのは 10 です。**
+残る約 28 府県は PDF か HTML の表だけで公開しています。ここは未着手で、
+表抽出か、公開元への働きかけが要ります。issue で相談させてください。
+
+## 使い方
+
+```bash
+python3 collect.py                    # 全出典を取得して data/ を作り直す
+python3 collect.py --only akita-kumadas
+python3 collect.py --no-write         # 取得と品質確認だけ
+python3 validate.py                   # 生成物の検算
+```
+
+依存は `requests` と `openpyxl` だけです。
+
+## スキーマ
+
+| 列 | 意味 |
+|---|---|
+| `id` | `<出典 id>:<公開元の ID または行番号>` |
+| `pref_code` / `pref` | 都道府県コード（JIS）/ 名称 |
+| `occurred_at` | ISO8601。時刻が公開されていない出典は `YYYY-MM-DD` |
+| `species` / `species_label` | `tsukinowaguma` `higuma` `inoshishi` `shika` `saru` `kamoshika` `bear` `unknown` |
+| `category` / `category_raw` | `sighting` `trace` `damage` `injury` `capture` `unknown` と、公開元の原文 |
+| `count` | 頭数（公開されていれば） |
+| `municipality` / `place` | 市町村 / 地名・場所 |
+| `lat` / `lon` | WGS84 |
+| `note` | 公開元が書いている状況の説明 |
+| `source_id` / `source_page` / `license` / `attribution` | 出典の追跡用 |
+
+### 正規化で置いた仮定
+
+黙って推測せず、ここに書き出します。
+
+- **年の無い日付**: 宮城県の地図には「10月18日」のように年が無い点が 2,600 件あります。
+  `sources.json` の `fiscal_year` を使い、**4 月以降はその年度、3 月以前は翌暦年**として補完します。
+- **米国式の日付**: Google マイマップの書き出しは `10/23/2025` の形になります。
+  日本の自治体データに 日/月/年 表記は観測されていないため、**月始まり**で解釈します。
+- **獣種が列に無い出典**: 出典が単一の獣種しか扱っていない場合のみ、`species_default` で補います
+  （北海道はヒグマ、本州の各県はツキノワグマ）。列がある出典は列を優先します。
+- **判定できなかった値は捨てません**。`category_raw` に原文が残ります。
+
+## ライセンス
+
+- **コード**: MIT
+- **データ**: 出典ごとに異なります。収録しているのはいずれも CC BY 4.0 相当で、
+  `attribution` 列に表示すべき出典元が入っています。詳細と根拠は [`docs/licenses.md`](docs/licenses.md)。
+
+公開元から「収録しないでほしい」という指摘があれば、**その出典を直ちに外します**。issue でお知らせください。
+
+## 出典を追加するには
+
+1. `sources.json` にエントリを足す（`adapter` は `csv` / `xlsx` / `arcgis` / `kml`）
+2. `python3 collect.py --only <あなたの id> --no-write` で列の当たりを確認
+3. 規約ページを実際に読み、`docs/licenses.md` に引用つきで判定を書く
+4. `python3 validate.py` が通ることを確認して PR
+
+新しい公開形式に当たったら `collectors/adapters.py` にアダプタを足してください。

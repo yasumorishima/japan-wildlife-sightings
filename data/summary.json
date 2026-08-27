@@ -1,0 +1,188 @@
+{
+  "generated_at": "2026-08-27T20:51:18.984448+09:00",
+  "records_published": 33629,
+  "sources": [
+    {
+      "id": "akita-kumadas",
+      "pref": "秋田県",
+      "adapter": "csv",
+      "license": "CC-BY-4.0",
+      "redistribute": true,
+      "records": 23322,
+      "with_coords": 23322,
+      "with_date": 23322,
+      "date_min": "2022-04-10",
+      "date_max": "2026-06-30",
+      "species": [
+        "inoshishi",
+        "shika",
+        "tsukinowaguma"
+      ]
+    },
+    {
+      "id": "kyoto-bear",
+      "pref": "京都府",
+      "adapter": "csv",
+      "license": "CC-BY-4.0",
+      "redistribute": true,
+      "records": 10225,
+      "with_coords": 10225,
+      "with_date": 10225,
+      "date_min": "2009-04-08",
+      "date_max": "2018-12-10",
+      "species": [
+        "tsukinowaguma"
+      ]
+    },
+    {
+      "id": "niigata-bear",
+      "pref": "新潟県",
+      "adapter": "arcgis",
+      "license": "unknown",
+      "redistribute": false,
+      "records": 4154,
+      "with_coords": 4154,
+      "with_date": 4154,
+      "date_min": "2025-04-07",
+      "date_max": "2026-08-26",
+      "species": [
+        "tsukinowaguma"
+      ]
+    },
+    {
+      "id": "gunma-bear",
+      "pref": "群馬県",
+      "adapter": "arcgis",
+      "license": "unknown",
+      "redistribute": false,
+      "records": 1735,
+      "with_coords": 1735,
+      "with_date": 1735,
+      "date_min": "2024-04-02",
+      "date_max": "2026-08-27",
+      "species": [
+        "tsukinowaguma"
+      ]
+    },
+    {
+      "id": "saitama-bear",
+      "pref": "埼玉県",
+      "adapter": "arcgis",
+      "license": "unknown",
+      "redistribute": false,
+      "records": 362,
+      "with_coords": 362,
+      "with_date": 362,
+      "date_min": "2024-04-11",
+      "date_max": "2026-08-24",
+      "species": [
+        "tsukinowaguma"
+      ]
+    },
+    {
+      "id": "yamagata-kemonote",
+      "pref": "山形県",
+      "adapter": "csv",
+      "license": "unknown",
+      "redistribute": false,
+      "records": 869,
+      "with_coords": 869,
+      "with_date": 869,
+      "date_min": "2026-01-01",
+      "date_max": "2026-08-23",
+      "species": [
+        "tsukinowaguma"
+      ]
+    },
+    {
+      "id": "ishikawa-bear",
+      "pref": "石川県",
+      "adapter": "kml",
+      "license": "unknown",
+      "redistribute": false,
+      "records": 3659,
+      "with_coords": 3659,
+      "with_date": 3658,
+      "date_min": "2020-01-05",
+      "date_max": "2025-12-22",
+      "species": [
+        "tsukinowaguma"
+      ]
+    },
+    {
+      "id": "miyagi-bear",
+      "pref": "宮城県",
+      "adapter": "kml",
+      "license": "unknown",
+      "redistribute": false,
+      "records": 3535,
+      "with_coords": 3535,
+      "with_date": 3532,
+      "date_min": "2025-04-05",
+      "date_max": "2026-03-23",
+      "species": [
+        "tsukinowaguma"
+      ]
+    },
+    {
+      "id": "shizuoka-bear-r7",
+      "pref": "静岡県",
+      "adapter": "kml",
+      "license": "unknown",
+      "redistribute": false,
+      "records": 200,
+      "with_coords": 200,
+      "with_date": 200,
+      "date_min": "2025-01-16",
+      "date_max": "2026-03-23",
+      "species": [
+        "tsukinowaguma"
+      ]
+    },
+    {
+      "id": "shizuoka-bear-r8",
+      "pref": "静岡県",
+      "adapter": "kml",
+      "license": "unknown",
+      "redistribute": false,
+      "records": 275,
+      "with_coords": 275,
+      "with_date": 275,
+      "date_min": "2025-01-16",
+      "date_max": "2026-08-22",
+      "species": [
+        "tsukinowaguma"
+      ]
+    },
+    {
+      "id": "hokkaido-bear-map",
+      "pref": "北海道",
+      "adapter": "arcgis",
+      "license": "CC-BY-4.0",
+      "redistribute": true,
+      "records": 68,
+      "with_coords": 68,
+      "with_date": 68,
+      "date_min": "2021-04-20",
+      "date_max": "2026-07-22",
+      "species": [
+        "higuma"
+      ]
+    },
+    {
+      "id": "hokkaido-bear-survey",
+      "pref": "北海道",
+      "adapter": "arcgis",
+      "license": "CC-BY-4.0",
+      "redistribute": true,
+      "records": 14,
+      "with_coords": 14,
+      "with_date": 14,
+      "date_min": "2023-05-12",
+      "date_max": "2025-11-16",
+      "species": [
+        "higuma"
+      ]
+    }
+  ]
+}
