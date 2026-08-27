@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-27T20:59:54.335952+09:00",
+  "generated_at": "2026-08-27T21:21:48.518794+09:00",
   "records_published": 33629,
   "sources": [
     {
@@ -182,6 +182,51 @@
       "date_max": "2025-11-16",
       "species": [
         "higuma"
+      ]
+    },
+    {
+      "id": "toyama-kumappu",
+      "pref": "富山県",
+      "adapter": "arcgis",
+      "license": "unknown",
+      "redistribute": false,
+      "records": 4614,
+      "with_coords": 4614,
+      "with_date": 4614,
+      "date_min": "2017-01-03",
+      "date_max": "2026-08-25",
+      "species": [
+        "tsukinowaguma"
+      ]
+    },
+    {
+      "id": "mie-bear",
+      "pref": "三重県",
+      "adapter": "arcgis",
+      "license": "unknown",
+      "redistribute": false,
+      "records": 113,
+      "with_coords": 113,
+      "with_date": 113,
+      "date_min": "2025-08-05",
+      "date_max": "2026-08-25",
+      "species": [
+        "bear"
+      ]
+    },
+    {
+      "id": "okaya-bear",
+      "pref": "長野県",
+      "adapter": "arcgis",
+      "license": "unknown",
+      "redistribute": false,
+      "records": 46,
+      "with_coords": 46,
+      "with_date": 46,
+      "date_min": "2024-04-10",
+      "date_max": "2026-07-11",
+      "species": [
+        "tsukinowaguma"
       ]
     }
   ]
