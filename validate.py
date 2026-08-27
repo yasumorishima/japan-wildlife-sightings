@@ -55,11 +55,25 @@ def main() -> int:
     dates = sorted(r["occurred_at"][:10] for r in rows if r["occurred_at"])
     print("期間:", dates[0], "..", dates[-1])
 
+    # 収録している出典の取得失敗は data/ の中身が古くなるので失敗にする。
+    # 収録していない出典（アダプタだけ配っている県）の失敗は警告に留める。
+    # 公開元のサイトは実行元によって届かないことがあり（2026-08-27: 山梨県は
+    # GitHub の runner から接続タイムアウト、RPi5 からは応答あり）、1 県のために
+    # 日次の更新ごと止めるのは割に合わない。
+    warned = 0
     for s in summary["sources"]:
         if s.get("error"):
-            fails.append(f"取得に失敗した出典: {s['id']} {s['error']}")
+            if s.get("redistribute"):
+                fails.append(f"収録対象の取得に失敗: {s['id']} {s['error']}")
+            else:
+                warned += 1
+                print(f"警告: 取得できなかった出典（収録対象外）: {s['id']} {s['error'][:120]}")
         if s.get("redistribute") and s.get("license") in (None, "unknown"):
             fails.append(f"ライセンス未確認なのに収録対象: {s['id']}")
+    if warned:
+        print(f"警告 {warned} 件（収録対象外の出典が取れませんでした）")
+    if warned > len(summary["sources"]) // 2:
+        fails.append(f"取れなかった出典が多すぎます: {warned}/{len(summary['sources'])}")
 
     if fails:
         print("\nNG:")
