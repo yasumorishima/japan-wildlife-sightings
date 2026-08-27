@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-27T21:24:53.589979+09:00",
-  "records_published": 33629,
+  "generated_at": "2026-08-27T21:59:02.129927+09:00",
+  "records_published": 33843,
   "sources": [
     {
       "id": "akita-kumadas",
@@ -227,6 +227,51 @@
       "date_max": "2026-07-11",
       "species": [
         "tsukinowaguma"
+      ]
+    },
+    {
+      "id": "fukushima-bear",
+      "pref": "福島県",
+      "adapter": "arcgis",
+      "license": "unknown",
+      "redistribute": false,
+      "records": 4491,
+      "with_coords": 4491,
+      "with_date": 4491,
+      "date_min": "2022-04-04",
+      "date_max": "2026-08-26",
+      "species": [
+        "tsukinowaguma"
+      ]
+    },
+    {
+      "id": "niigata-bear-2017-2024",
+      "pref": "新潟県",
+      "adapter": "arcgis",
+      "license": "unknown",
+      "redistribute": false,
+      "records": 12252,
+      "with_coords": 12247,
+      "with_date": 12252,
+      "date_min": "2017-04-01",
+      "date_max": "2026-05-31",
+      "species": [
+        "tsukinowaguma"
+      ]
+    },
+    {
+      "id": "ishikari-higuma",
+      "pref": "北海道",
+      "adapter": "arcgis",
+      "license": "CC-BY-4.0",
+      "redistribute": true,
+      "records": 214,
+      "with_coords": 214,
+      "with_date": 212,
+      "date_min": "2020-06-19",
+      "date_max": "2026-08-19",
+      "species": [
+        "higuma"
       ]
     }
   ]
