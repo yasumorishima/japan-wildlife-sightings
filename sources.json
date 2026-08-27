@@ -330,6 +330,91 @@
         "category": "報告内容",
         "note": "経緯"
       }
+    },
+    {
+      "id": "toyama-kumappu",
+      "pref_code": "16",
+      "pref": "富山県",
+      "adapter": "arcgis",
+      "params": {
+        "layer_url": "https://services7.arcgis.com/pUdPpUsq83Kw8pWi/arcgis/rest/services/survey123_3f07f1f9864d43368d48b5f373d6cd68_results/FeatureServer/0"
+      },
+      "page": "https://www.pref.toyama.jp/1709/kurashi/kankyoushizen/shizen/kj00009927/kj00009927-001-01.html",
+      "license": {
+        "id": "unknown",
+        "attribution": "富山県",
+        "redistribute": false,
+        "basis": "リンク・著作権ページに「無断で複製・転用することはできません」",
+        "verified": "2026-08-27"
+      },
+      "species_default": "tsukinowaguma",
+      "map": {
+        "native_id": "ObjectID",
+        "occurred_at": "発生日時",
+        "category": "目撃・痕跡・人身被害の別",
+        "municipality": "市町村",
+        "place": "地区名",
+        "note": "概要"
+      },
+      "count_sum": [
+        "成獣",
+        "幼獣",
+        "不明"
+      ]
+    },
+    {
+      "id": "mie-bear",
+      "pref_code": "24",
+      "pref": "三重県",
+      "adapter": "arcgis",
+      "params": {
+        "layer_url": "https://services5.arcgis.com/tkvkIlp1M2KOKx34/arcgis/rest/services/（R6確定版）クマ目撃位置情報（提供用）/FeatureServer/0"
+      },
+      "page": "https://www.pref.mie.lg.jp/JTAISAKU/HP/m0114900048.htm",
+      "license": {
+        "id": "unknown",
+        "attribution": "三重県",
+        "redistribute": false,
+        "basis": "「各ページの記載記事、写真の無断転載を禁じます。」",
+        "verified": "2026-08-27"
+      },
+      "species_default": "tsukinowaguma",
+      "map": {
+        "native_id": "OID",
+        "occurred_at": "目撃日",
+        "place": "場所",
+        "species": "種別",
+        "category": "発見形態"
+      }
+    },
+    {
+      "id": "okaya-bear",
+      "pref_code": "20",
+      "pref": "長野県",
+      "adapter": "arcgis",
+      "params": {
+        "layer_url": "https://services1.arcgis.com/4GMefrLcjv8z16wh/arcgis/rest/services/クマ出没マップ/FeatureServer/0"
+      },
+      "page": "https://www.city.okaya.lg.jp/",
+      "license": {
+        "id": "unknown",
+        "attribution": "岡谷市",
+        "redistribute": false,
+        "basis": "「無断で複製、転載、販売、貸与することはできません」",
+        "verified": "2026-08-27"
+      },
+      "map": {
+        "native_id": "OBJECTID",
+        "occurred_at": "日付",
+        "time": "時刻",
+        "species": "鳥獣",
+        "category": "分類",
+        "place": "場所",
+        "note": "状況"
+      },
+      "constants": {
+        "municipality": "岡谷市"
+      }
     }
   ]
 }

@@ -89,6 +89,10 @@ def build(rows: list[dict], src: dict) -> list[dict]:
             "source_id": src["id"], "source_page": src.get("page"),
             "license": lic.get("id"), "attribution": lic.get("attribution"),
         })
+        # 出典が単一の市町村ぶんしか持たない等、列に無い事実を設定側で補える
+        for key, value in (src.get("constants") or {}).items():
+            if not out[-1].get(key):
+                out[-1][key] = value
     return out
 
 
