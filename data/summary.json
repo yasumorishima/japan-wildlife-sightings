@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-28T14:04:43.610268+09:00",
-  "records_published": 33941,
+  "generated_at": "2026-08-28T19:18:06.668014+09:00",
+  "records_published": 35171,
   "sources": [
     {
       "id": "akita-kumadas",
@@ -235,9 +235,9 @@
       "adapter": "arcgis",
       "license": "unknown",
       "redistribute": false,
-      "records": 4492,
-      "with_coords": 4492,
-      "with_date": 4492,
+      "records": 4493,
+      "with_coords": 4493,
+      "with_date": 4493,
       "date_min": "2022-04-04",
       "date_max": "2026-08-28",
       "species": [
@@ -280,11 +280,11 @@
       "adapter": "pdf",
       "license": "unknown",
       "redistribute": false,
-      "records": 1979,
+      "records": 2026,
       "with_coords": 0,
-      "with_date": 1979,
+      "with_date": 2026,
       "date_min": "2025-09-01",
-      "date_max": "2026-08-20",
+      "date_max": "2026-08-26",
       "species": [
         "tsukinowaguma"
       ]
@@ -295,7 +295,14 @@
       "adapter": "pdf_bbox",
       "license": "unknown",
       "redistribute": false,
-      "error": "ConnectTimeout: HTTPSConnectionPool(host='www.pref.yamanashi.jp', port=443): Max retries exceeded with url: /shizen/kuma2.html (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.pref.yamanashi.jp', port=443) at 0x7f9f7f4b84d0>, 'Connection to www.pref.yamanashi.jp timed out. (connect timeout=60)'))"
+      "records": 751,
+      "with_coords": 0,
+      "with_date": 748,
+      "date_min": "2016-04-20",
+      "date_max": "2026-08-27",
+      "species": [
+        "tsukinowaguma"
+      ]
     },
     {
       "id": "kamisunagawa-higuma",
@@ -310,6 +317,21 @@
       "date_max": "2026-05-11",
       "species": [
         "higuma"
+      ]
+    },
+    {
+      "id": "yamaguchi-bear",
+      "pref": "山口県",
+      "adapter": "ckan",
+      "license": "CC-BY-4.0",
+      "redistribute": true,
+      "records": 1230,
+      "with_coords": 1230,
+      "with_date": 1229,
+      "date_min": "2023-04-01",
+      "date_max": "2026-08-21",
+      "species": [
+        "bear"
       ]
     }
   ]

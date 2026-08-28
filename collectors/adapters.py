@@ -125,14 +125,19 @@ ADAPTERS = {"csv": fetch_csv, "xlsx": fetch_xlsx, "arcgis": fetch_arcgis,
             "pdf_bbox": fetch_pdf_bbox}
 
 
-def fetch_bodik(query: str, org: str | None = None, title_pattern: str | None = None,
-                rows: int = 50, **_) -> list[dict]:
-    """BODIK（自治体共同のオープンデータカタログ）を検索して CSV を集める。
+def fetch_ckan(query: str, base: str = "https://data.bodik.jp", org: str | None = None,
+               title_pattern: str | None = None, rows: int = 50,
+               encoding: str | None = None, **_) -> list[dict]:
+    """CKAN のカタログを検索して CSV を集める。
 
     年度ごとにデータセットが増える出典があるので、URL を書き並べずカタログを引く。
-    次年度ぶんが公開されれば自動で入る。
+    次年度ぶんが公開されれば自動で入る。base は CKAN のルートで、BODIK
+    （自治体共同）は https://data.bodik.jp、山口県は https://yamaguchi-opendata.jp/ckan。
+
+    検索に `A OR B` は効かない（0 件になる）ので単語 1 つずつ引く。検索語はゆるく
+    当たるので org と title_pattern で必ず絞る。
     """
-    r = _get("https://data.bodik.jp/api/3/action/package_search",
+    r = _get(base.rstrip("/") + "/api/3/action/package_search",
              params={"q": query, "rows": rows}).json()["result"]
     out = []
     for pkg in r.get("results", []):
@@ -146,12 +151,18 @@ def fetch_bodik(query: str, org: str | None = None, title_pattern: str | None = 
             if (res.get("format") or "").upper() != "CSV":
                 continue
             try:
-                for row in fetch_csv(res["url"]):
+                for row in fetch_csv(res["url"], encoding=encoding):
                     row["_dataset"] = title
+                    # id にはタイトルでなく CKAN のスラッグを使う。タイトルは
+                    # 公開元が整えると変わる（山口県は年の表記が 2024 と ２０２６ で
+                    # 不統一）＝混ぜると当該年度の id が丸ごと入れ替わる。
+                    row["_dataset_id"] = pkg.get("name") or title
                     out.append(row)
             except Exception:
                 continue
     return out
 
 
-ADAPTERS["bodik"] = fetch_bodik
+ADAPTERS["ckan"] = fetch_ckan
+# BODIK は CKAN の既定の引き先。既存の出典設定をそのまま動かすため名前を残す。
+ADAPTERS["bodik"] = fetch_ckan

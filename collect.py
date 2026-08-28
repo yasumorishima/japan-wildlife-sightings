@@ -57,6 +57,7 @@ def build(rows: list[dict], src: dict) -> list[dict]:
         lon = row.get("_lon", None)
         if lat is None:
             lat, lon = _num(col("lat")), _num(col("lon"))
+        lat, lon = normalize.in_japan(lat, lon)
         # 日付は候補列を順に試し、最初に解釈できたものを採る（同じ地図の中で
         # 層ごとに書式が違う出典があるため）。
         occurred = None
@@ -78,8 +79,14 @@ def build(rows: list[dict], src: dict) -> list[dict]:
         else:
             count = _num(col("count"))
         native = col("native_id")
+        # 同じ出典が年度ごとに別データセットで公開されると通し番号が毎年 1 に戻る。
+        # カタログ由来の行は _dataset を持つので、それで id を分ける。
+        native_key = native if native not in (None, "") else i
+        scope = row.get("_dataset_id") or row.get("_dataset")
+        if scope and native not in (None, ""):
+            native_key = f"{scope}:{native}"
         out.append({
-            "id": f"{src['id']}:{native if native not in (None, '') else i}",
+            "id": f"{src['id']}:{native_key}",
             "pref_code": src["pref_code"], "pref": src["pref"],
             "occurred_at": occurred, "species": skey, "species_label": slabel,
             "category": ckey, "category_raw": craw,
@@ -93,6 +100,10 @@ def build(rows: list[dict], src: dict) -> list[dict]:
         for key, value in (src.get("constants") or {}).items():
             if not out[-1].get(key):
                 out[-1][key] = value
+        # 様式によっては行番号だけが入った空行が末尾に続く。設定側で「これが無い行は
+        # 記録ではない」と宣言できるようにする（山口県は日付の無い行が空行）。
+        if any(out[-1].get(k) in (None, "") for k in (src.get("require") or [])):
+            out.pop()
     return out
 
 
