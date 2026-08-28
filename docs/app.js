@@ -139,6 +139,7 @@ function buildControls(years) {
   for (const [label, center, zoom] of [
     ["秋田県", [140.35, 39.72], 8.2],
     ["京都府", [135.55, 35.30], 8.6],
+    ["石川県", [136.75, 36.75], 8.2],
     ["山口県", [131.55, 34.20], 8.4],
     ["北海道", [142.20, 43.30], 6.8],
     ["全国", [138.5, 37.6], 4.6],
@@ -230,7 +231,7 @@ map.on("load", async () => {
   }
 
   document.getElementById("credit").innerHTML =
-    'データ出典: 秋田県・京都府・山口県・札幌市・室蘭市・石狩市・上砂川町（CC BY 4.0）。背景は地理院タイルと NASA EOSDIS GIBS。' +
+    'データ出典: 秋田県・京都府・石川県・金沢市・山口県・札幌市・室蘭市・石狩市・上砂川町（CC BY）。背景は地理院タイルと NASA EOSDIS GIBS。' +
     '<a href="https://github.com/yasumorishima/japan-wildlife-sightings">リポジトリ</a>・' +
     '<a href="THIRD-PARTY-NOTICES.txt">ライセンス表示</a>';
 });

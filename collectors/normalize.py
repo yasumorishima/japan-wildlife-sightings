@@ -128,6 +128,21 @@ def month_day_with_fiscal_year(text: str, fiscal_year: int) -> _dt.date | None:
         return None
 
 
+def excel_serial(text: str) -> _dt.date | None:
+    """Excel の日付シリアル値（"43575" のような 5 桁）を日付にする。
+
+    表計算から書き出した CSV に生の数値が残っていることがある（石川県に 2 件）。
+    基準は 1899-12-30（Excel の 1900 年うるう年バグを織り込んだ値）。
+    範囲を 20000〜60000（1954〜2064）に限って、ただの番号を日付と読まないようにする。
+    """
+    if not re.fullmatch(r"\d{5}", text or ""):
+        return None
+    n = int(text)
+    if not 20000 <= n <= 60000:
+        return None
+    return _dt.date(1899, 12, 30) + _dt.timedelta(days=n)
+
+
 def occurred_at(raw, time_hint: str | None = None, fiscal_year: int | None = None) -> str | None:
     """ISO8601（日付のみなら YYYY-MM-DD）を返す。判定できなければ None。
 
@@ -141,7 +156,7 @@ def occurred_at(raw, time_hint: str | None = None, fiscal_year: int | None = Non
         dt = _dt.datetime.fromtimestamp(raw / 1000, tz=_dt.timezone.utc)
         return dt.astimezone(_dt.timezone(_dt.timedelta(hours=9))).isoformat()
     text = _z2h(str(raw).strip())
-    d = wareki_to_date(text)
+    d = wareki_to_date(text) or excel_serial(text)
     if d:
         base = d.isoformat()
     else:

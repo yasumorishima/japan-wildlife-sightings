@@ -104,6 +104,31 @@ def build(rows: list[dict], src: dict) -> list[dict]:
         # 記録ではない」と宣言できるようにする（山口県は日付の無い行が空行）。
         if any(out[-1].get(k) in (None, "") for k in (src.get("require") or [])):
             out.pop()
+    # 同じ記録が複数の資源に載る出典がある。石川県は 1 件の出没を要因ごとの表に
+    # 重ねて載せるので 3,901 行が 2,701 件になり（1,200 行が重複）、金沢市は年度ごとに
+    # 累積スナップショットを並べる（古い 696 行は新しい 754 行の部分集合）。
+    # 何を同じ記録と見なすかは出典ごとに違うので設定で宣言する。
+    if src.get("dedupe_by"):
+        unknown = [c for c in src["dedupe_by"] if c not in FIELDS]
+        if unknown:
+            raise KeyError(f"{src['id']}: dedupe_by に無い列 {unknown}")
+        # 先に来た行を残すと区分の重い記録が消える。石川県は同じ出没が「目撃」の表と
+        # 「人身被害」の表の両方に載っており、先勝ちだと人身被害が 24 件から 15 件に減った。
+        rank = {"injury": 0, "damage": 1, "capture": 2, "trace": 3, "sighting": 4, "unknown": 5}
+        pos, uniq = {}, []
+        for rec in out:
+            key = tuple(rec.get(c) for c in src["dedupe_by"])
+            if any(k is None or k == "" for k in key):
+                # 鍵が欠けている行まで畳むと、無関係な記録が 1 件にまとまる
+                uniq.append(rec)
+                continue
+            i = pos.get(key)
+            if i is None:
+                pos[key] = len(uniq)
+                uniq.append(rec)
+            elif rank.get(rec["category"], 9) < rank.get(uniq[i]["category"], 9):
+                uniq[i] = rec
+        out = uniq
     return out
 
 

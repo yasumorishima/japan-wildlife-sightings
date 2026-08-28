@@ -667,6 +667,150 @@
         "lat": "緯度",
         "lon": "経度"
       }
+    },
+    {
+      "id": "ishikawa-bear-ckan",
+      "pref_code": "17",
+      "pref": "石川県",
+      "adapter": "ckan",
+      "params": {
+        "base": "https://ckan.opendata.pref.ishikawa.lg.jp",
+        "name": "bear_incidents_data"
+      },
+      "page": "https://ckan.opendata.pref.ishikawa.lg.jp/dataset/bear_incidents_data",
+      "license": {
+        "id": "CC-BY",
+        "attribution": "石川県",
+        "redistribute": true,
+        "basis": "石川県オープンデータカタログ（ckan.opendata.pref.ishikawa.lg.jp）のデータセット metadata が Creative Commons Attribution（license_id=cc-by、版数の記載は無く opendefinition.org/licenses/cc-by を指す）。ポータルの About に別途の利用規約は無い",
+        "verified": "2026-08-28"
+      },
+      "species_default": "tsukinowaguma",
+      "dedupe_by": [
+        "occurred_at",
+        "lat",
+        "lon"
+      ],
+      "note": "出没要因ごとに 5 つの表へ重ねて載る（1 件が複数の要因に該当する）ので 出没日と座標で畳む。R7 の目撃情報だけは別資源で重複しない",
+      "map": {
+        "occurred_at": "出没日",
+        "time": [
+          "時刻",
+          "時間"
+        ],
+        "municipality": "市町名",
+        "place": "場所",
+        "category": "目撃痕跡種別",
+        "note": "備考",
+        "count": "頭数",
+        "lat": "緯度",
+        "lon": "経度"
+      }
+    },
+    {
+      "id": "kanazawa-bear",
+      "pref_code": "17",
+      "pref": "石川県",
+      "adapter": "ckan",
+      "params": {
+        "base": "https://ckan.opendata.pref.ishikawa.lg.jp",
+        "name": "172014_bear_sightings_and_signs"
+      },
+      "page": "https://ckan.opendata.pref.ishikawa.lg.jp/dataset/172014_bear_sightings_and_signs",
+      "license": {
+        "id": "CC-BY",
+        "attribution": "金沢市",
+        "redistribute": true,
+        "basis": "石川県オープンデータカタログ（ckan.opendata.pref.ishikawa.lg.jp）のデータセット metadata が Creative Commons Attribution（license_id=cc-by、版数の記載は無く opendefinition.org/licenses/cc-by を指す）。ポータルの About に別途の利用規約は無い",
+        "verified": "2026-08-28"
+      },
+      "species_default": "bear",
+      "constants": {
+        "municipality": "金沢市"
+      },
+      "dedupe_by": [
+        "occurred_at",
+        "place",
+        "category_raw"
+      ],
+      "note": "資源は年度ごとの累積スナップショットで、古い 696 行は新しい 754 行の部分集合。座標は無く町名まで",
+      "map": {
+        "occurred_at": "確認年月日",
+        "time": "確認時刻",
+        "place": "確認地",
+        "category": "報告内容",
+        "species": "備考"
+      }
+    },
+    {
+      "id": "kanazawa-monkey",
+      "pref_code": "17",
+      "pref": "石川県",
+      "adapter": "ckan",
+      "params": {
+        "base": "https://ckan.opendata.pref.ishikawa.lg.jp",
+        "name": "monkey-sightings"
+      },
+      "page": "https://ckan.opendata.pref.ishikawa.lg.jp/dataset/monkey-sightings",
+      "license": {
+        "id": "CC-BY",
+        "attribution": "金沢市",
+        "redistribute": true,
+        "basis": "石川県オープンデータカタログ（ckan.opendata.pref.ishikawa.lg.jp）のデータセット metadata が Creative Commons Attribution（license_id=cc-by、版数の記載は無く opendefinition.org/licenses/cc-by を指す）。ポータルの About に別途の利用規約は無い",
+        "verified": "2026-08-28"
+      },
+      "species_default": "saru",
+      "constants": {
+        "municipality": "金沢市"
+      },
+      "note": "2 つの資源は別の窓口のもので重なっていない（ハナレザル=環境政策課 / 農業被害・群れ=農業水産振興課）。座標は無く町名まで",
+      "map": {
+        "occurred_at": "年月日",
+        "place": "場所",
+        "category": "種類",
+        "note": [
+          "場所（詳細）",
+          "個体種別"
+        ],
+        "count": "頭数（頭）"
+      }
+    },
+    {
+      "id": "kanazawa-boar",
+      "pref_code": "17",
+      "pref": "石川県",
+      "adapter": "ckan",
+      "params": {
+        "base": "https://ckan.opendata.pref.ishikawa.lg.jp",
+        "name": "wild_boar_sightings"
+      },
+      "page": "https://ckan.opendata.pref.ishikawa.lg.jp/dataset/wild_boar_sightings",
+      "license": {
+        "id": "CC-BY",
+        "attribution": "金沢市",
+        "redistribute": true,
+        "basis": "石川県オープンデータカタログ（ckan.opendata.pref.ishikawa.lg.jp）のデータセット metadata が Creative Commons Attribution（license_id=cc-by、版数の記載は無く opendefinition.org/licenses/cc-by を指す）。ポータルの About に別途の利用規約は無い",
+        "verified": "2026-08-28"
+      },
+      "species_default": "inoshishi",
+      "constants": {
+        "municipality": "金沢市"
+      },
+      "count_sum": [
+        "頭数（成獣）",
+        "頭数（幼獣）",
+        "頭数（不明）"
+      ],
+      "note": "座標は無く町名まで",
+      "map": {
+        "occurred_at": "年月日",
+        "place": "場所",
+        "category": "種類",
+        "note": [
+          "場所（詳細）",
+          "体長（おおよそm）"
+        ]
+      }
     }
   ]
 }
