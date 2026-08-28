@@ -132,6 +132,29 @@ def build(rows: list[dict], src: dict) -> list[dict]:
     return out
 
 
+def previous_rows(source_id: str) -> list[dict]:
+    """前回 data/ に書いた行のうち、その出典ぶんを読み直す。
+
+    公開元が実行元によっては届かないことがある（石川県のカタログは GitHub の
+    runner の IP から 403、RPi5 からは 200）。届かない回に収録済みの行を消すと、
+    公開しているデータセットから数千件が黙って落ちるので、前回ぶんを残す。
+    """
+    path = ROOT / "data" / "sightings.csv"
+    if not path.exists():
+        return []
+    out = []
+    with path.open(encoding="utf-8") as fh:
+        for row in csv.DictReader(fh):
+            if row.get("source_id") != source_id:
+                continue
+            rec = {k: (v if v != "" else None) for k, v in row.items()}
+            for key in ("lat", "lon"):
+                rec[key] = float(rec[key]) if rec[key] is not None else None
+            rec["count"] = int(float(rec["count"])) if rec["count"] is not None else None
+            out.append(rec)
+    return out
+
+
 def quality(recs: list[dict]) -> dict:
     dates = sorted(r["occurred_at"][:10] for r in recs if r["occurred_at"])
     return {
@@ -163,6 +186,14 @@ def main() -> int:
             recs = build(rows, src)
         except Exception as exc:  # 1 出典の失敗で全体を落とさない
             entry["error"] = f"{type(exc).__name__}: {exc}"
+            if entry["redistribute"]:
+                prev = previous_rows(src["id"])
+                if prev:
+                    entry["reused_previous"] = len(prev)
+                    entry.update(quality(prev))
+                    shareable.extend(prev)
+                    print(f"[!!] {src['id']}: 取得できないので前回の {len(prev)} 件を"
+                          f"そのまま残します（データは更新されていません）", file=sys.stderr)
             summary.append(entry)
             print(f"[NG] {src['id']}: {entry['error']}", file=sys.stderr)
             continue
