@@ -282,20 +282,20 @@
       }
     },
     {
-      "id": "hokkaido-bear-map",
+      "id": "noboribetsu-bear",
       "pref_code": "01",
       "pref": "北海道",
       "adapter": "arcgis",
       "params": {
         "layer_url": "https://services8.arcgis.com/T127hAxx2zxSKa9o/arcgis/rest/services/bear/FeatureServer/0"
       },
-      "page": "https://www.pref.hokkaido.lg.jp/ks/skn/higuma/joho.html",
+      "page": "https://www.city.noboribetsu.lg.jp/docs/2018120400035/",
       "license": {
-        "id": "CC-BY-4.0",
-        "attribution": "北海道",
-        "redistribute": true,
-        "verified": "2026-08-27",
-        "basis": "サイトポリシー（docs/licenses.md 参照）"
+        "id": "unknown",
+        "attribution": "登別市",
+        "redistribute": false,
+        "basis": "所有者は登別市（noboribetsu_kanri01）でアイテムに license の記載なし。市サイトの著作権は「無断で複製・転用することはできません」。オープンデータの頁は「原則 CC-BY」だが「オープンデータポータルサイト内の対象コンテンツにのみ適用」とあり、この層は市のオープン GIS ポータルには公開で載る一方、北海道オープンデータプラットフォームには無いため対象か断定できない",
+        "verified": "2026-08-28"
       },
       "species_default": "higuma",
       "map": {
@@ -305,23 +305,26 @@
         "note": "報告内容",
         "lat": "緯度",
         "lon": "経度"
+      },
+      "constants": {
+        "municipality": "登別市"
       }
     },
     {
-      "id": "hokkaido-bear-survey",
+      "id": "muroran-bear",
       "pref_code": "01",
       "pref": "北海道",
       "adapter": "arcgis",
       "params": {
         "layer_url": "https://services.arcgis.com/Jv1EECU3IM4ZRUev/arcgis/rest/services/survey123_84d34cf9cdf94dac9ba8de582423d871_results/FeatureServer/0"
       },
-      "page": "https://www.pref.hokkaido.lg.jp/ks/skn/higuma/joho.html",
+      "page": "https://www.arcgis.com/home/item.html?id=f1f3f32185a0417991d8409ac7e3cf80",
       "license": {
         "id": "CC-BY-4.0",
-        "attribution": "北海道",
+        "attribution": "室蘭市",
         "redistribute": true,
-        "verified": "2026-08-27",
-        "basis": "サイトポリシー（docs/licenses.md 参照）"
+        "basis": "ArcGIS のアイテム（所有者 muroran）の licenseInfo に「PDL1.0、室蘭市」と明記。PDL＝公共データ利用規約（第1.0版）で、出典の記載を条件に複製・公衆送信・商用利用を許諾。PDL1.0 本文に「クリエイティブ・コモンズ・ライセンスの表示4.0 国際ライセンスに規定される著作権利用許諾条件（CC BY）と互換性があります」「利用者が CC BY に従って利用することを許諾します」とあるため license.id は CC-BY-4.0 とした",
+        "verified": "2026-08-28"
       },
       "species_default": "higuma",
       "map": {
@@ -329,6 +332,9 @@
         "occurred_at": "報告日時",
         "category": "報告内容",
         "note": "経緯"
+      },
+      "constants": {
+        "municipality": "室蘭市"
       }
     },
     {
@@ -608,7 +614,7 @@
         "id": "CC-BY-4.0",
         "attribution": "山口県オープンデータカタログサイト（山口県警察本部地域企画課）",
         "redistribute": true,
-        "basis": "サイトの利用規約が公共データ利用規約（第1.0版）＝出典表示のみを条件に複製・公衆送信・商用利用を許諾。CKAN のデータセット metadata も license_id=cc-by",
+        "basis": "サイトの利用規約が公共データ利用規約（第1.0版）＝出典表示のみを条件に複製・公衆送信・商用利用を許諾。CKAN のデータセット metadata も license_id=cc-by。PDL1.0 本文に「クリエイティブ・コモンズ・ライセンスの表示4.0 国際ライセンスに規定される著作権利用許諾条件（CC BY）と互換性があります」「利用者が CC BY に従って利用することを許諾します」とあるため license.id は CC-BY-4.0 とした",
         "verified": "2026-08-28"
       },
       "species_default": "bear",
@@ -628,6 +634,39 @@
         "lon": "経度"
       },
       "note": "様式は先に通し番号だけ振ってあり、中身が入るまで緯度経度が 0.00000。座標の有無で空行を落とす（日付を必須にすると「令和６年７月中旬」のような日を持たない実記録まで捨てる）"
+    },
+    {
+      "id": "sapporo-higuma",
+      "pref_code": "01",
+      "pref": "北海道",
+      "adapter": "ckan",
+      "params": {
+        "base": "https://ckan.pf-sapporo.jp",
+        "query": "ヒグマ",
+        "org": "札幌市",
+        "title_pattern": "ヒグマ出没情報"
+      },
+      "page": "https://ckan.pf-sapporo.jp/dataset/sapporo_bear_appearance",
+      "license": {
+        "id": "CC-BY-4.0",
+        "attribution": "札幌市",
+        "redistribute": true,
+        "basis": "データポータル さっぽろ（ckan.pf-sapporo.jp）のデータセット metadata が「クリエイティブ・コモンズ 表示 4.0 国際」",
+        "verified": "2026-08-28"
+      },
+      "species_default": "higuma",
+      "constants": {
+        "municipality": "札幌市"
+      },
+      "map": {
+        "occurred_at": "日付",
+        "time": "時刻",
+        "place": "出没場所",
+        "category": "状況",
+        "note": "状況",
+        "lat": "緯度",
+        "lon": "経度"
+      }
     }
   ]
 }
