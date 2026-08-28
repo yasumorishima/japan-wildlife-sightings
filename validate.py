@@ -74,8 +74,14 @@ def main() -> int:
     warned = 0
     for s in summary["sources"]:
         if s.get("error"):
-            if s.get("redistribute"):
+            if s.get("redistribute") and not s.get("reused_previous"):
                 fails.append(f"収録対象の取得に失敗: {s['id']} {s['error']}")
+            elif s.get("reused_previous"):
+                # 取得できなかったが前回の行を残した。データが古いままなのは事実なので
+                # 必ず表に出す。ただし数千件を消すよりは残すほうが害が小さい。
+                warned += 1
+                print(f"警告: 取得できず前回の {s['reused_previous']} 件を据え置き: "
+                      f"{s['id']} {s['error'][:100]}")
             else:
                 warned += 1
                 print(f"警告: 取得できなかった出典（収録対象外）: {s['id']} {s['error'][:120]}")
