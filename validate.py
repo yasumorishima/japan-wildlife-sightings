@@ -33,8 +33,13 @@ def main() -> int:
     if dup:
         fails.append(f"id が重複: {len(dup)} 件 例 {dup[:3]}")
 
-    out_of_range = 0
+    # 座標を持たない出典がある（金沢市は町名まで）。空は欠測として数え、
+    # 「値はあるのに数値でない」「日本の範囲外」だけを失敗にする。
+    out_of_range = no_coords = 0
     for r in rows:
+        if not (r["lat"] or "").strip() and not (r["lon"] or "").strip():
+            no_coords += 1
+            continue
         try:
             lat, lon = float(r["lat"]), float(r["lon"])
         except (TypeError, ValueError):
@@ -42,8 +47,13 @@ def main() -> int:
             break
         if not (LAT_RANGE[0] <= lat <= LAT_RANGE[1] and LON_RANGE[0] <= lon <= LON_RANGE[1]):
             out_of_range += 1
+    print(f"座標なし: {no_coords}")
     if out_of_range:
         fails.append(f"日本の範囲外の座標: {out_of_range} 件")
+    # 地物は座標を持つ行だけなので、その差は座標なしの件数と一致するはず
+    if len(rows) - len(geo["features"]) != no_coords:
+        fails.append(f"地物 {len(geo['features'])} と CSV {len(rows)} の差が "
+                     f"座標なし {no_coords} と合わない")
 
     no_date = sum(1 for r in rows if not r["occurred_at"])
     print("日付なし:", no_date)

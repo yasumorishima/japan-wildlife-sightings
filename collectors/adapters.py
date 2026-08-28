@@ -159,7 +159,8 @@ ADAPTERS = {"csv": fetch_csv, "xlsx": fetch_xlsx, "arcgis": fetch_arcgis,
             "pdf_bbox": fetch_pdf_bbox}
 
 
-def fetch_ckan(query: str, base: str = "https://data.bodik.jp", org: str | None = None,
+def fetch_ckan(query: str | None = None, base: str = "https://data.bodik.jp",
+               name: str | None = None, org: str | None = None,
                title_pattern: str | None = None, rows: int = 50,
                encoding: str | None = None, **_) -> list[dict]:
     """CKAN のカタログを検索して CSV を集める。
@@ -171,10 +172,16 @@ def fetch_ckan(query: str, base: str = "https://data.bodik.jp", org: str | None 
     検索に `A OR B` は効かない（0 件になる）ので単語 1 つずつ引く。検索語はゆるく
     当たるので org と title_pattern で必ず絞る。
     """
-    r = _get(base.rstrip("/") + "/api/3/action/package_search",
-             params={"q": query, "rows": rows}).json()["result"]
+    api = base.rstrip("/") + "/api/3/action/"
+    if name:
+        # データセット名が分かっているときは検索を介さない。日本語の全文検索が
+        # 効かないカタログがある（北海道の共同ポータルは「ヒグマ」で 0 件を返す）。
+        results = [_get(api + "package_show", params={"id": name}).json()["result"]]
+    else:
+        results = _get(api + "package_search",
+                       params={"q": query, "rows": rows}).json()["result"].get("results", [])
     out = []
-    for pkg in r.get("results", []):
+    for pkg in results:
         title = pkg.get("title", "")
         owner = (pkg.get("organization") or {}).get("title", "")
         if org and owner != org:
