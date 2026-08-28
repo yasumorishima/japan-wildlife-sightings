@@ -7,16 +7,50 @@ from __future__ import annotations
 import csv
 import io
 import re
+import ssl
+import sys
 import xml.etree.ElementTree as ET
 
 import requests
+from requests.adapters import HTTPAdapter
 
 UA = "japan-wildlife-sightings/0.1 (+https://github.com/yasumorishima/japan-wildlife-sightings)"
 TIMEOUT = 60
 
 
+class _LegacyTLSAdapter(HTTPAdapter):
+    """暗号の要求だけを緩めて繋ぐ。証明書の検証は既定のまま緩めない。"""
+
+    def init_poolmanager(self, *args, **kwargs):
+        ctx = ssl.create_default_context()
+        ctx.set_ciphers("DEFAULT:@SECLEVEL=1")
+        kwargs["ssl_context"] = ctx
+        return super().init_poolmanager(*args, **kwargs)
+
+
+_legacy_session = None
+
+
+def _legacy() -> requests.Session:
+    global _legacy_session
+    if _legacy_session is None:
+        _legacy_session = requests.Session()
+        _legacy_session.mount("https://", _LegacyTLSAdapter())
+    return _legacy_session
+
+
 def _get(url: str, **kw) -> requests.Response:
-    r = requests.get(url, headers={"User-Agent": UA}, timeout=TIMEOUT, **kw)
+    try:
+        r = requests.get(url, headers={"User-Agent": UA}, timeout=TIMEOUT, **kw)
+    except requests.exceptions.SSLError:
+        # 前方秘匿のある暗号を持たない公開元がある（山口県のカタログは
+        # AES256-SHA256＝RSA 鍵交換しか受けない）。GitHub の runner の既定方針だと
+        # サーバが insufficient security を返して繋がらないので、暗号の要求だけを
+        # 緩めて 1 回やり直す。証明書の検証は緩めないので、なりすましは弾かれる。
+        # 公開データを取得するだけで、こちらから送る秘密は無い。
+        print(f"注意: 暗号方針を緩めて再取得します（公開元が旧式の TLS のみ）: {url[:60]}",
+              file=sys.stderr)
+        r = _legacy().get(url, headers={"User-Agent": UA}, timeout=TIMEOUT, **kw)
     r.raise_for_status()
     return r
 
