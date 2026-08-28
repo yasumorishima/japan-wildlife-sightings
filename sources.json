@@ -591,6 +591,43 @@
         "lat": "緯度",
         "lon": "経度"
       }
+    },
+    {
+      "id": "yamaguchi-bear",
+      "pref_code": "35",
+      "pref": "山口県",
+      "adapter": "ckan",
+      "params": {
+        "base": "https://yamaguchi-opendata.jp/ckan",
+        "query": "熊",
+        "org": "山口県",
+        "title_pattern": "^熊の目撃情報"
+      },
+      "page": "https://yamaguchi-opendata.jp/ckan/dataset/yp-2026",
+      "license": {
+        "id": "CC-BY-4.0",
+        "attribution": "山口県オープンデータカタログサイト（山口県警察本部地域企画課）",
+        "redistribute": true,
+        "basis": "サイトの利用規約が公共データ利用規約（第1.0版）＝出典表示のみを条件に複製・公衆送信・商用利用を許諾。CKAN のデータセット metadata も license_id=cc-by",
+        "verified": "2026-08-28"
+      },
+      "species_default": "bear",
+      "category_default": "sighting",
+      "require": [
+        "lat"
+      ],
+      "map": {
+        "native_id": "追番",
+        "occurred_at": "目撃(発見)年月日",
+        "time": "目撃(発見)時間",
+        "place": "目撃(発見)場所",
+        "category": "状況",
+        "note": "状況",
+        "count": "頭数",
+        "lat": "緯度",
+        "lon": "経度"
+      },
+      "note": "様式は先に通し番号だけ振ってあり、中身が入るまで緯度経度が 0.00000。座標の有無で空行を落とす（日付を必須にすると「令和６年７月中旬」のような日を持たない実記録まで捨てる）"
     }
   ]
 }

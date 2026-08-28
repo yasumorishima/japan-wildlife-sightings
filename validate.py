@@ -12,8 +12,9 @@ import sys
 
 ROOT = pathlib.Path(__file__).resolve().parent
 DATA = ROOT / "data"
-# 日本の陸域を含む緩い外接矩形（与那国島〜択捉島）
-LAT_RANGE, LON_RANGE = (20.0, 46.5), (122.0, 154.0)
+# 日本の陸域を含む緩い外接矩形。収録側と同じ定数を読む（別々に持つと、
+# collect.py は通すのに validate.py が落とす値ができる）。
+from collectors.normalize import JP_LAT as LAT_RANGE, JP_LON as LON_RANGE  # noqa: E402
 
 
 def main() -> int:
