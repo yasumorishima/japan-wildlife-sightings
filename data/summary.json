@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-28T19:35:33.970363+09:00",
-  "records_published": 35171,
+  "generated_at": "2026-08-28T21:03:21.205658+09:00",
+  "records_published": 36671,
   "sources": [
     {
       "id": "akita-kumadas",
@@ -155,11 +155,11 @@
       ]
     },
     {
-      "id": "hokkaido-bear-map",
+      "id": "noboribetsu-bear",
       "pref": "北海道",
       "adapter": "arcgis",
-      "license": "CC-BY-4.0",
-      "redistribute": true,
+      "license": "unknown",
+      "redistribute": false,
       "records": 68,
       "with_coords": 68,
       "with_date": 68,
@@ -170,7 +170,7 @@
       ]
     },
     {
-      "id": "hokkaido-bear-survey",
+      "id": "muroran-bear",
       "pref": "北海道",
       "adapter": "arcgis",
       "license": "CC-BY-4.0",
@@ -332,6 +332,21 @@
       "date_max": "2026-08-21",
       "species": [
         "bear"
+      ]
+    },
+    {
+      "id": "sapporo-higuma",
+      "pref": "北海道",
+      "adapter": "ckan",
+      "license": "CC-BY-4.0",
+      "redistribute": true,
+      "records": 1568,
+      "with_coords": 1568,
+      "with_date": 1568,
+      "date_min": "2017-04-15",
+      "date_max": "2025-11-29",
+      "species": [
+        "higuma"
       ]
     }
   ]
