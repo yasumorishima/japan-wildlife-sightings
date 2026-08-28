@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-28T06:08:49.496659+09:00",
+  "generated_at": "2026-08-28T14:04:43.610268+09:00",
   "records_published": 33941,
   "sources": [
     {
@@ -55,9 +55,9 @@
       "adapter": "arcgis",
       "license": "unknown",
       "redistribute": false,
-      "records": 1735,
-      "with_coords": 1735,
-      "with_date": 1735,
+      "records": 1736,
+      "with_coords": 1736,
+      "with_date": 1736,
       "date_min": "2024-04-02",
       "date_max": "2026-08-27",
       "species": [
@@ -235,11 +235,11 @@
       "adapter": "arcgis",
       "license": "unknown",
       "redistribute": false,
-      "records": 4491,
-      "with_coords": 4491,
-      "with_date": 4491,
+      "records": 4492,
+      "with_coords": 4492,
+      "with_date": 4492,
       "date_min": "2022-04-04",
-      "date_max": "2026-08-26",
+      "date_max": "2026-08-28",
       "species": [
         "tsukinowaguma"
       ]
@@ -295,14 +295,7 @@
       "adapter": "pdf_bbox",
       "license": "unknown",
       "redistribute": false,
-      "records": 751,
-      "with_coords": 0,
-      "with_date": 748,
-      "date_min": "2016-04-20",
-      "date_max": "2026-08-27",
-      "species": [
-        "tsukinowaguma"
-      ]
+      "error": "ConnectTimeout: HTTPSConnectionPool(host='www.pref.yamanashi.jp', port=443): Max retries exceeded with url: /shizen/kuma2.html (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.pref.yamanashi.jp', port=443) at 0x7f9f7f4b84d0>, 'Connection to www.pref.yamanashi.jp timed out. (connect timeout=60)'))"
     },
     {
       "id": "kamisunagawa-higuma",
