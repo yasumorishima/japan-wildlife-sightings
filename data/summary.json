@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-29T05:43:23.451329+09:00",
+  "generated_at": "2026-08-29T12:02:32.941654+09:00",
   "records_published": 40241,
   "sources": [
     {
@@ -40,11 +40,11 @@
       "adapter": "arcgis",
       "license": "unknown",
       "redistribute": false,
-      "records": 4154,
-      "with_coords": 4154,
-      "with_date": 4154,
+      "records": 4155,
+      "with_coords": 4155,
+      "with_date": 4155,
       "date_min": "2025-04-07",
-      "date_max": "2026-08-26",
+      "date_max": "2026-08-28",
       "species": [
         "tsukinowaguma"
       ]
@@ -295,14 +295,7 @@
       "adapter": "pdf_bbox",
       "license": "unknown",
       "redistribute": false,
-      "records": 751,
-      "with_coords": 0,
-      "with_date": 748,
-      "date_min": "2016-04-20",
-      "date_max": "2026-08-27",
-      "species": [
-        "tsukinowaguma"
-      ]
+      "error": "ConnectTimeout: HTTPSConnectionPool(host='www.pref.yamanashi.jp', port=443): Max retries exceeded with url: /shizen/kuma2.html (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.pref.yamanashi.jp', port=443) at 0x7fc18481a090>, 'Connection to www.pref.yamanashi.jp timed out. (connect timeout=60)'))"
     },
     {
       "id": "kamisunagawa-higuma",
@@ -355,6 +348,8 @@
       "adapter": "ckan",
       "license": "CC-BY",
       "redistribute": true,
+      "error": "HTTPError: 403 Client Error: Forbidden for url: https://ckan.opendata.pref.ishikawa.lg.jp/api/3/action/package_show?id=bear_incidents_data",
+      "reused_previous": 2701,
       "records": 2701,
       "with_coords": 2701,
       "with_date": 2699,
@@ -370,6 +365,8 @@
       "adapter": "ckan",
       "license": "CC-BY",
       "redistribute": true,
+      "error": "HTTPError: 403 Client Error: Forbidden for url: https://ckan.opendata.pref.ishikawa.lg.jp/api/3/action/package_show?id=172014_bear_sightings_and_signs",
+      "reused_previous": 754,
       "records": 754,
       "with_coords": 0,
       "with_date": 754,
@@ -385,6 +382,8 @@
       "adapter": "ckan",
       "license": "CC-BY",
       "redistribute": true,
+      "error": "HTTPError: 403 Client Error: Forbidden for url: https://ckan.opendata.pref.ishikawa.lg.jp/api/3/action/package_show?id=monkey-sightings",
+      "reused_previous": 46,
       "records": 46,
       "with_coords": 0,
       "with_date": 46,
@@ -400,6 +399,8 @@
       "adapter": "ckan",
       "license": "CC-BY",
       "redistribute": true,
+      "error": "HTTPError: 403 Client Error: Forbidden for url: https://ckan.opendata.pref.ishikawa.lg.jp/api/3/action/package_show?id=wild_boar_sightings",
+      "reused_previous": 69,
       "records": 69,
       "with_coords": 0,
       "with_date": 69,
