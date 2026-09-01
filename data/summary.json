@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-08-31T08:05:32.582033+09:00",
-  "records_published": 40241,
+  "generated_at": "2026-09-01T09:20:47.224920+09:00",
+  "records_published": 40243,
   "sources": [
     {
       "id": "akita-kumadas",
@@ -40,9 +40,9 @@
       "adapter": "arcgis",
       "license": "unknown",
       "redistribute": false,
-      "records": 4155,
-      "with_coords": 4155,
-      "with_date": 4155,
+      "records": 4160,
+      "with_coords": 4160,
+      "with_date": 4160,
       "date_min": "2025-04-07",
       "date_max": "2026-08-28",
       "species": [
@@ -55,11 +55,11 @@
       "adapter": "arcgis",
       "license": "unknown",
       "redistribute": false,
-      "records": 1737,
-      "with_coords": 1737,
-      "with_date": 1737,
+      "records": 1740,
+      "with_coords": 1740,
+      "with_date": 1740,
       "date_min": "2024-04-02",
-      "date_max": "2026-08-30",
+      "date_max": "2026-08-31",
       "species": [
         "tsukinowaguma"
       ]
@@ -235,11 +235,11 @@
       "adapter": "arcgis",
       "license": "unknown",
       "redistribute": false,
-      "records": 4493,
-      "with_coords": 4493,
-      "with_date": 4493,
+      "records": 4502,
+      "with_coords": 4502,
+      "with_date": 4502,
       "date_min": "2022-04-04",
-      "date_max": "2026-08-28",
+      "date_max": "2026-08-31",
       "species": [
         "tsukinowaguma"
       ]
@@ -295,7 +295,7 @@
       "adapter": "pdf_bbox",
       "license": "unknown",
       "redistribute": false,
-      "error": "ConnectTimeout: HTTPSConnectionPool(host='www.pref.yamanashi.jp', port=443): Max retries exceeded with url: /shizen/kuma2.html (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.pref.yamanashi.jp', port=443) at 0x7ff61818c190>, 'Connection to www.pref.yamanashi.jp timed out. (connect timeout=60)'))"
+      "error": "ConnectTimeout: HTTPSConnectionPool(host='www.pref.yamanashi.jp', port=443): Max retries exceeded with url: /shizen/kuma2.html (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.pref.yamanashi.jp', port=443) at 0x7f507e5456d0>, 'Connection to www.pref.yamanashi.jp timed out. (connect timeout=60)'))"
     },
     {
       "id": "kamisunagawa-higuma",
@@ -318,11 +318,11 @@
       "adapter": "ckan",
       "license": "CC-BY-4.0",
       "redistribute": true,
-      "records": 1230,
-      "with_coords": 1230,
-      "with_date": 1229,
+      "records": 1232,
+      "with_coords": 1232,
+      "with_date": 1231,
       "date_min": "2023-04-01",
-      "date_max": "2026-08-21",
+      "date_max": "2026-08-31",
       "species": [
         "bear"
       ]
