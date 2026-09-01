@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-01T09:20:47.224920+09:00",
-  "records_published": 40243,
+  "generated_at": "2026-09-02T07:57:58.667098+09:00",
+  "records_published": 40244,
   "sources": [
     {
       "id": "akita-kumadas",
@@ -55,11 +55,11 @@
       "adapter": "arcgis",
       "license": "unknown",
       "redistribute": false,
-      "records": 1740,
-      "with_coords": 1740,
-      "with_date": 1740,
+      "records": 1742,
+      "with_coords": 1742,
+      "with_date": 1742,
       "date_min": "2024-04-02",
-      "date_max": "2026-08-31",
+      "date_max": "2026-09-01",
       "species": [
         "tsukinowaguma"
       ]
@@ -160,11 +160,11 @@
       "adapter": "arcgis",
       "license": "unknown",
       "redistribute": false,
-      "records": 68,
-      "with_coords": 68,
-      "with_date": 68,
+      "records": 69,
+      "with_coords": 69,
+      "with_date": 69,
       "date_min": "2021-04-20",
-      "date_max": "2026-07-22",
+      "date_max": "2026-08-29",
       "species": [
         "higuma"
       ]
@@ -295,7 +295,7 @@
       "adapter": "pdf_bbox",
       "license": "unknown",
       "redistribute": false,
-      "error": "ConnectTimeout: HTTPSConnectionPool(host='www.pref.yamanashi.jp', port=443): Max retries exceeded with url: /shizen/kuma2.html (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.pref.yamanashi.jp', port=443) at 0x7f507e5456d0>, 'Connection to www.pref.yamanashi.jp timed out. (connect timeout=60)'))"
+      "error": "ConnectTimeout: HTTPSConnectionPool(host='www.pref.yamanashi.jp', port=443): Max retries exceeded with url: /shizen/kuma2.html (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.pref.yamanashi.jp', port=443) at 0x7fa6ab9c0210>, 'Connection to www.pref.yamanashi.jp timed out. (connect timeout=60)'))"
     },
     {
       "id": "kamisunagawa-higuma",
@@ -318,9 +318,9 @@
       "adapter": "ckan",
       "license": "CC-BY-4.0",
       "redistribute": true,
-      "records": 1232,
-      "with_coords": 1232,
-      "with_date": 1231,
+      "records": 1233,
+      "with_coords": 1233,
+      "with_date": 1232,
       "date_min": "2023-04-01",
       "date_max": "2026-08-31",
       "species": [
