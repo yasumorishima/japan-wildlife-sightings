@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-02T07:57:58.667098+09:00",
-  "records_published": 40244,
+  "generated_at": "2026-09-03T07:58:12.702126+09:00",
+  "records_published": 40246,
   "sources": [
     {
       "id": "akita-kumadas",
@@ -40,9 +40,9 @@
       "adapter": "arcgis",
       "license": "unknown",
       "redistribute": false,
-      "records": 4160,
-      "with_coords": 4160,
-      "with_date": 4160,
+      "records": 4158,
+      "with_coords": 4158,
+      "with_date": 4158,
       "date_min": "2025-04-07",
       "date_max": "2026-08-28",
       "species": [
@@ -55,11 +55,11 @@
       "adapter": "arcgis",
       "license": "unknown",
       "redistribute": false,
-      "records": 1742,
-      "with_coords": 1742,
-      "with_date": 1742,
+      "records": 1744,
+      "with_coords": 1744,
+      "with_date": 1744,
       "date_min": "2024-04-02",
-      "date_max": "2026-09-01",
+      "date_max": "2026-09-02",
       "species": [
         "tsukinowaguma"
       ]
@@ -70,11 +70,11 @@
       "adapter": "arcgis",
       "license": "unknown",
       "redistribute": false,
-      "records": 362,
-      "with_coords": 362,
-      "with_date": 362,
+      "records": 363,
+      "with_coords": 363,
+      "with_date": 363,
       "date_min": "2024-04-11",
-      "date_max": "2026-08-24",
+      "date_max": "2026-09-02",
       "species": [
         "tsukinowaguma"
       ]
@@ -85,14 +85,7 @@
       "adapter": "csv",
       "license": "unknown",
       "redistribute": false,
-      "records": 869,
-      "with_coords": 869,
-      "with_date": 869,
-      "date_min": "2026-01-01",
-      "date_max": "2026-08-23",
-      "species": [
-        "tsukinowaguma"
-      ]
+      "error": "HTTPError: 404 Client Error: Not Found for url: https://www.pref.yamagata.jp/documents/2414/20260823_kemonote-cleaned.csv"
     },
     {
       "id": "ishikawa-bear",
@@ -190,11 +183,11 @@
       "adapter": "arcgis",
       "license": "unknown",
       "redistribute": false,
-      "records": 4615,
-      "with_coords": 4615,
-      "with_date": 4615,
+      "records": 4616,
+      "with_coords": 4616,
+      "with_date": 4616,
       "date_min": "2017-01-03",
-      "date_max": "2026-08-30",
+      "date_max": "2026-09-01",
       "species": [
         "tsukinowaguma"
       ]
@@ -205,11 +198,11 @@
       "adapter": "arcgis",
       "license": "unknown",
       "redistribute": false,
-      "records": 113,
-      "with_coords": 113,
-      "with_date": 113,
+      "records": 114,
+      "with_coords": 114,
+      "with_date": 114,
       "date_min": "2025-08-05",
-      "date_max": "2026-08-25",
+      "date_max": "2026-09-01",
       "species": [
         "bear"
       ]
@@ -235,11 +228,11 @@
       "adapter": "arcgis",
       "license": "unknown",
       "redistribute": false,
-      "records": 4502,
-      "with_coords": 4502,
-      "with_date": 4502,
+      "records": 4505,
+      "with_coords": 4505,
+      "with_date": 4505,
       "date_min": "2022-04-04",
-      "date_max": "2026-08-31",
+      "date_max": "2026-09-02",
       "species": [
         "tsukinowaguma"
       ]
@@ -250,11 +243,11 @@
       "adapter": "arcgis",
       "license": "unknown",
       "redistribute": false,
-      "records": 12252,
-      "with_coords": 12247,
-      "with_date": 12252,
+      "records": 12656,
+      "with_coords": 12651,
+      "with_date": 12656,
       "date_min": "2017-04-01",
-      "date_max": "2026-05-31",
+      "date_max": "2026-08-28",
       "species": [
         "tsukinowaguma"
       ]
@@ -295,7 +288,14 @@
       "adapter": "pdf_bbox",
       "license": "unknown",
       "redistribute": false,
-      "error": "ConnectTimeout: HTTPSConnectionPool(host='www.pref.yamanashi.jp', port=443): Max retries exceeded with url: /shizen/kuma2.html (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.pref.yamanashi.jp', port=443) at 0x7fa6ab9c0210>, 'Connection to www.pref.yamanashi.jp timed out. (connect timeout=60)'))"
+      "records": 756,
+      "with_coords": 0,
+      "with_date": 753,
+      "date_min": "2016-04-20",
+      "date_max": "2026-08-31",
+      "species": [
+        "tsukinowaguma"
+      ]
     },
     {
       "id": "kamisunagawa-higuma",
@@ -318,11 +318,11 @@
       "adapter": "ckan",
       "license": "CC-BY-4.0",
       "redistribute": true,
-      "records": 1233,
-      "with_coords": 1233,
-      "with_date": 1232,
+      "records": 1235,
+      "with_coords": 1235,
+      "with_date": 1234,
       "date_min": "2023-04-01",
-      "date_max": "2026-08-31",
+      "date_max": "2026-09-02",
       "species": [
         "bear"
       ]
