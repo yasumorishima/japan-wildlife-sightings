@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-08T08:16:32.805858+09:00",
-  "records_published": 41532,
+  "generated_at": "2026-09-09T08:07:47.731305+09:00",
+  "records_published": 41533,
   "sources": [
     {
       "id": "akita-kumadas",
@@ -55,9 +55,9 @@
       "adapter": "arcgis",
       "license": "unknown",
       "redistribute": false,
-      "records": 1753,
-      "with_coords": 1753,
-      "with_date": 1753,
+      "records": 1756,
+      "with_coords": 1756,
+      "with_date": 1756,
       "date_min": "2024-04-02",
       "date_max": "2026-09-07",
       "species": [
@@ -183,11 +183,11 @@
       "adapter": "arcgis",
       "license": "unknown",
       "redistribute": false,
-      "records": 4619,
-      "with_coords": 4619,
-      "with_date": 4619,
+      "records": 4620,
+      "with_coords": 4620,
+      "with_date": 4620,
       "date_min": "2017-01-03",
-      "date_max": "2026-09-04",
+      "date_max": "2026-09-08",
       "species": [
         "tsukinowaguma"
       ]
@@ -228,11 +228,11 @@
       "adapter": "arcgis",
       "license": "unknown",
       "redistribute": false,
-      "records": 4509,
-      "with_coords": 4509,
-      "with_date": 4509,
+      "records": 4513,
+      "with_coords": 4513,
+      "with_date": 4513,
       "date_min": "2022-04-04",
-      "date_max": "2026-09-06",
+      "date_max": "2026-09-08",
       "species": [
         "tsukinowaguma"
       ]
@@ -288,7 +288,14 @@
       "adapter": "pdf_bbox",
       "license": "unknown",
       "redistribute": false,
-      "error": "ConnectTimeout: HTTPSConnectionPool(host='www.pref.yamanashi.jp', port=443): Max retries exceeded with url: /shizen/kuma2.html (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.pref.yamanashi.jp', port=443) at 0x7f02c19bfad0>, 'Connection to www.pref.yamanashi.jp timed out. (connect timeout=60)'))"
+      "records": 765,
+      "with_coords": 0,
+      "with_date": 762,
+      "date_min": "2016-04-20",
+      "date_max": "2026-09-07",
+      "species": [
+        "tsukinowaguma"
+      ]
     },
     {
       "id": "kamisunagawa-higuma",
@@ -311,11 +318,11 @@
       "adapter": "ckan",
       "license": "CC-BY-4.0",
       "redistribute": true,
-      "records": 1240,
-      "with_coords": 1240,
-      "with_date": 1239,
+      "records": 1241,
+      "with_coords": 1241,
+      "with_date": 1240,
       "date_min": "2023-04-01",
-      "date_max": "2026-09-07",
+      "date_max": "2026-09-08",
       "species": [
         "bear"
       ]
