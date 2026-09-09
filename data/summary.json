@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-09T08:07:47.731305+09:00",
-  "records_published": 41533,
+  "generated_at": "2026-09-10T07:53:22.301990+09:00",
+  "records_published": 41534,
   "sources": [
     {
       "id": "akita-kumadas",
@@ -55,11 +55,11 @@
       "adapter": "arcgis",
       "license": "unknown",
       "redistribute": false,
-      "records": 1756,
-      "with_coords": 1756,
-      "with_date": 1756,
+      "records": 1764,
+      "with_coords": 1764,
+      "with_date": 1764,
       "date_min": "2024-04-02",
-      "date_max": "2026-09-07",
+      "date_max": "2026-09-09",
       "species": [
         "tsukinowaguma"
       ]
@@ -228,11 +228,11 @@
       "adapter": "arcgis",
       "license": "unknown",
       "redistribute": false,
-      "records": 4513,
-      "with_coords": 4513,
-      "with_date": 4513,
+      "records": 4515,
+      "with_coords": 4515,
+      "with_date": 4515,
       "date_min": "2022-04-04",
-      "date_max": "2026-09-08",
+      "date_max": "2026-09-09",
       "species": [
         "tsukinowaguma"
       ]
@@ -288,9 +288,9 @@
       "adapter": "pdf_bbox",
       "license": "unknown",
       "redistribute": false,
-      "records": 765,
+      "records": 766,
       "with_coords": 0,
-      "with_date": 762,
+      "with_date": 763,
       "date_min": "2016-04-20",
       "date_max": "2026-09-07",
       "species": [
@@ -318,9 +318,9 @@
       "adapter": "ckan",
       "license": "CC-BY-4.0",
       "redistribute": true,
-      "records": 1241,
-      "with_coords": 1241,
-      "with_date": 1240,
+      "records": 1242,
+      "with_coords": 1242,
+      "with_date": 1241,
       "date_min": "2023-04-01",
       "date_max": "2026-09-08",
       "species": [
