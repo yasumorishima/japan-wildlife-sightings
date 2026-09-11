@@ -45403,7 +45403,8 @@ akita-kumadas:24208,05,秋田県,2026-04-27T07:46:00,tsukinowaguma,ツキノワ�
 akita-kumadas:24050,05,秋田県,2026-04-27T07:50:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,北秋田市,〒018-4201 秋田県北秋田市増沢沼ノ上周辺,40.18714788,140.2949935,【投稿】,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:24290,05,秋田県,2026-04-27T08:00:00,inoshishi,イノシシ,trace,痕跡(その他),,大館市,秋田県大館市比内町大葛字下森合　地内,40.15525747,140.6324866,水田内の掘り返し。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:24047,05,秋田県,2026-04-27T08:10:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,秋田市,〒010-0948 秋田県秋田市川尻新川町９－３９,39.70508997,140.0953573,【投稿】通勤途中、川を渡る熊を確認,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
-yamaguchi-bear:yp-2026:25,35,山口県,2026-04-27T09:00:00+09:00,bear,クマ,damage,休耕田にて、タケノコの食害を発見したもの,,,岩国市美和町阿賀,34.28927,132.06733,休耕田にて、タケノコの食害を発見したもの,yamaguchi-bear,https://yamaguchi-opendata.jp/ckan/dataset/yp-2026,CC-BY-4.0,山口県オープンデータカタログサイト（山口県警察本部地域企画課）
+yamaguchi-bear:yp-2026:25,35,山口県,2026-04-27T09:00:00+09:00,bear,クマ,damage,休耕田にて、タケノコの食害を発見したもの,,,"岩国市美和町阿賀
+       休耕田",34.28927,132.06733,休耕田にて、タケノコの食害を発見したもの,yamaguchi-bear,https://yamaguchi-opendata.jp/ckan/dataset/yp-2026,CC-BY-4.0,山口県オープンデータカタログサイト（山口県警察本部地域企画課）
 akita-kumadas:24059,05,秋田県,2026-04-27T09:50:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,大館市,〒018-5751 秋田県大館市二井田背中町地内,40.23955458,140.5572581,近隣住民がクマ１頭（体長1.0ｍ）を目撃/進行方向東/直近民家まで約100ｍ,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:24053,05,秋田県,2026-04-27T09:54:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,由利本荘市,秋田県由利本荘市薬師堂字谷地地内,39.37065957,140.0526953,"体長　0.8m
 人家までの距離　100m",akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
@@ -47737,8 +47738,6 @@ yamaguchi-bear:yp-2026:119,35,山口県,2026-06-17T19:30:00+09:00,bear,クマ,si
 　　国道上",34.2965,131.67601,車で走行中、国道上にいる熊を目撃したもの,yamaguchi-bear,https://yamaguchi-opendata.jp/ckan/dataset/yp-2026,CC-BY-4.0,山口県オープンデータカタログサイト（山口県警察本部地域企画課）
 akita-kumadas:26010,05,秋田県,2026-06-17T21:25:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,能代市,秋田県能代市,40.25744433,140.0730515,【投稿】初めは道路を走っていた、車のライトに照らされて驚いたのか、急いで薮の中に入って行った。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:26011,05,秋田県,2026-06-17T23:13:00,inoshishi,イノシシ,sighting,目撃,1,秋田市,〒010-1404 秋田県秋田市上北手古野大繋沢１０５,39.66111443,140.1914237,【投稿】車道と中央分離帯の辺りを行ったり来たりしながら大仙市方向に走っていた。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
-yamaguchi-bear:yp-2026:120,35,山口県,2026-06-18,bear,クマ,sighting,車で走行中、国道上を横断する熊を目撃したもの,1,,"山口市阿東徳佐上
-　　国道上",34.43133,131.76554,車で走行中、国道上を横断する熊を目撃したもの,yamaguchi-bear,https://yamaguchi-opendata.jp/ckan/dataset/yp-2026,CC-BY-4.0,山口県オープンデータカタログサイト（山口県警察本部地域企画課）
 akita-kumadas:26013,05,秋田県,2026-06-18T04:25:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,秋田市,〒010-1211 秋田県秋田市雄和椿川奥椿岱１９４－１５,39.62569941,140.1947871,道路上に居る熊(0.5m)を目撃した。その後、熊は南の方向へ立ち去った。付近建物まで10m。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:26019,05,秋田県,2026-06-18T06:00:00,tsukinowaguma,ツキノワグマ,trace,痕跡(その他),1,横手市,秋田県横手市十文字町佐賀会中川原,39.21376118,140.507462,"大豆畑に複数の足跡を発見。西側の河川敷から行き来している模様。
 14日（日）から本日18日（木）の間で複数回出没していると思われる。",akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
@@ -47789,7 +47788,7 @@ akita-kumadas:26042,05,秋田県,2026-06-18T18:30:00,tsukinowaguma,ツキノワ�
 付近に民家なし。",akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:26043,05,秋田県,2026-06-18T18:55:00,tsukinowaguma,ツキノワグマ,sighting,目撃,3,三種町,〒018-2305 秋田県山本郡三種町外岡外岡北２４８,40.13491772,140.0580992,【投稿】車で走行中、３頭の小熊が道路を横断していた。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:26047,05,秋田県,2026-06-18T19:20:00,inoshishi,イノシシ,sighting,目撃,1,北秋田市,〒018-3451 秋田県北秋田市小森伯父ケ沢周辺,40.17513529,140.4718459,【投稿】成獣と思われる一頭が国道を横切った,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
-yamaguchi-bear:yp-2026:121,35,山口県,2026-06-18T20:31:00+09:00,bear,クマ,sighting,車で走行中、県道上を横断する熊を目撃したもの,1,,"下関市菊川町大字久野
+yamaguchi-bear:yp-2026:120,35,山口県,2026-06-18T20:31:00+09:00,bear,クマ,sighting,車で走行中、県道上を横断する熊を目撃したもの,1,,"下関市菊川町大字久野
 　　県道上",34.15222,131.96122,車で走行中、県道上を横断する熊を目撃したもの,yamaguchi-bear,https://yamaguchi-opendata.jp/ckan/dataset/yp-2026,CC-BY-4.0,山口県オープンデータカタログサイト（山口県警察本部地域企画課）
 akita-kumadas:26058,05,秋田県,2026-06-19T04:30:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,井川町,〒018-1523 秋田県南秋田郡井川町坂本大野地２８５,39.89549751,140.1025057,西の方向に山の茂みに入っていった。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:26073,05,秋田県,2026-06-19T05:30:00,inoshishi,イノシシ,damage,痕跡(食害),2,大館市,〒018-5731 秋田県大館市比内町笹館字下沼田地内,40.21240795,140.5468619,ジャガイモの掘り返し被害,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
@@ -47810,7 +47809,7 @@ akita-kumadas:26059,05,秋田県,2026-06-19T08:30:00,tsukinowaguma,ツキノワ�
 その後北方向の林に入って行った",akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:26075,05,秋田県,2026-06-19T08:30:00,inoshishi,イノシシ,damage,痕跡(食害),2,大館市,〒018-5732 秋田県大館市比内町谷地中大巻地内,40.18614384,140.5611205,ジャガイモの掘り返し被害,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:26056,05,秋田県,2026-06-19T09:08:00,shika,ニホンジカ,sighting,目撃,1,大仙市,〒014-0801 秋田県大仙市戸地谷天ケ沢２１０－１,39.4664216,140.4992627,【投稿】,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
-yamaguchi-bear:yp-2026:122,35,山口県,2026-06-19T09:46:00+09:00,bear,クマ,sighting,車で走行中、県道上を横断する熊を目撃したもの,1,,"下関市大字吉田
+yamaguchi-bear:yp-2026:121,35,山口県,2026-06-19T09:46:00+09:00,bear,クマ,sighting,車で走行中、県道上を横断する熊を目撃したもの,1,,"下関市大字吉田
 　　県道上",34.09154,131.0791,車で走行中、県道上を横断する熊を目撃したもの,yamaguchi-bear,https://yamaguchi-opendata.jp/ckan/dataset/yp-2026,CC-BY-4.0,山口県オープンデータカタログサイト（山口県警察本部地域企画課）
 akita-kumadas:26068,05,秋田県,2026-06-19T12:40:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,能代市,〒018-3102 秋田県能代市二ツ井町小繋 道路,40.21180165,140.2675707,"体長１ｍくらいのクマが国道にいた。
 北の山へ逃げた。",akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
@@ -47819,7 +47818,7 @@ akita-kumadas:26062,05,秋田県,2026-06-19T13:40:00,tsukinowaguma,ツキノワ�
 akita-kumadas:26070,05,秋田県,2026-06-19T14:00:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,仙北市,秋田県仙北市角館町山谷川崎山谷,39.65440755,140.5198789,現場作業終わりに茂みの中に見えた、体長約0.5m、立ち去り方向不明、民家までの距離約20m,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:26066,05,秋田県,2026-06-19T14:10:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,にかほ市,秋田県にかほ市象潟町小滝字向本田,39.19945666,139.9214458,体長80ｃｍのクマが海側から山側へむかった。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:26067,05,秋田県,2026-06-19T14:33:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,湯沢市,〒019-0321 秋田県湯沢市秋ノ宮山居野１１,38.96061012,140.5404031,【投稿】小熊と思われる,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
-yamaguchi-bear:yp-2026:123,35,山口県,2026-06-19T14:44:00+09:00,bear,クマ,sighting,車で走行中、県道上にいる熊を目撃したもの,1,,"下関市大字吉田
+yamaguchi-bear:yp-2026:122,35,山口県,2026-06-19T14:44:00+09:00,bear,クマ,sighting,車で走行中、県道上にいる熊を目撃したもの,1,,"下関市大字吉田
 　　県道上",34.09908,131.07568,車で走行中、県道上にいる熊を目撃したもの,yamaguchi-bear,https://yamaguchi-opendata.jp/ckan/dataset/yp-2026,CC-BY-4.0,山口県オープンデータカタログサイト（山口県警察本部地域企画課）
 akita-kumadas:26088,05,秋田県,2026-06-19T15:45:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,秋田市,秋田県秋田市雄和平尾鳥馬落,39.59141127,140.2335906,【投稿】道路を横切る1m程のクマを目撃,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:26091,05,秋田県,2026-06-19T16:00:00,tsukinowaguma,ツキノワグマ,trace,痕跡(その他),1,湯沢市,秋田県湯沢市角間沢山　市民の森,39.15093836,140.5112877,ツキノワグマのものと思われる糞があると通報を受け現場確認した。ツキノワグマの糞であると思われた。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
@@ -47858,7 +47857,7 @@ akita-kumadas:26102,05,秋田県,2026-06-20T13:00:00,tsukinowaguma,ツキノワ�
 akita-kumadas:26113,05,秋田県,2026-06-20T14:30:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,秋田市,秋田県秋田市河辺神内,39.67525318,140.2930284,【投稿】車で走行中、約1.5mの熊が道路を横切って林へ入っていった,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:26106,05,秋田県,2026-06-20T14:40:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,にかほ市,〒018-0436 秋田県にかほ市樋目野中山地内,39.25509757,139.9387085,県道を北から南へ横断し森へ入った。体長約1m。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:26109,05,秋田県,2026-06-20T15:00:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,鹿角市,〒018-5141秋田県鹿角市八幡平字尻無沢,40.148818,140.8149557,【投稿】車に驚いた様子で斜面をあがっていった,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
-yamaguchi-bear:yp-2026:124,35,山口県,2026-06-20T15:00:00+09:00,bear,クマ,sighting,車で走行中、県道上を横断する熊を目撃したもの,1,,"山陽小野田市大字山野井
+yamaguchi-bear:yp-2026:123,35,山口県,2026-06-20T15:00:00+09:00,bear,クマ,sighting,車で走行中、県道上を横断する熊を目撃したもの,1,,"山陽小野田市大字山野井
 　　県道上",34.05959,131.14386,車で走行中、県道上を横断する熊を目撃したもの,yamaguchi-bear,https://yamaguchi-opendata.jp/ckan/dataset/yp-2026,CC-BY-4.0,山口県オープンデータカタログサイト（山口県警察本部地域企画課）
 akita-kumadas:26108,05,秋田県,2026-06-20T16:30:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,秋田市,〒010-1225 秋田県秋田市雄和左手子 道路,39.56371985,140.2201438,【投稿】かなり大型の熊が雄物川側から道路を横断して山に入って行った,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:26107,05,秋田県,2026-06-20T17:44:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,秋田市,〒010-1212 秋田県秋田市雄和平尾鳥小平４,39.6001442,140.2062893,【投稿】雄物川で釣りをしている方？の駐車車両の横に体長1メートルくらいの熊がいた。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
@@ -47868,7 +47867,7 @@ akita-kumadas:26111,05,秋田県,2026-06-20T19:43:00,inoshishi,イノシシ,sigh
 akita-kumadas:26114,05,秋田県,2026-06-20T21:55:00,shika,ニホンジカ,sighting,目撃,1,秋田市,〒010-0123 秋田県秋田市金足片田竹原８５,39.82994893,140.1026344,【投稿】道路の真ん中に立ち、しばらく動くことなく居た。その後ゆっくり茂みの方に入っていった。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:26142,05,秋田県,2026-06-21T05:00:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,大館市,〒018-5745 秋田県大館市比内町片貝伊勢堂北　地内,40.22210421,140.5589951,民家の庭先でクマ1頭（体長1.2ｍ）を目撃/進行方向北/達子森球場の西200ｍ,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:26116,05,秋田県,2026-06-21T06:45:00,tsukinowaguma,ツキノワグマ,trace,痕跡(その他),1,秋田市,〒010-0043 秋田県秋田市桜ガ丘４丁目３－１１,39.70223723,140.1518838,道路を通行中にクマのフンを発見した。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
-yamaguchi-bear:yp-2026:125,35,山口県,2026-06-21T07:00:00+09:00,bear,クマ,sighting,車で走行中、国道上を横断する熊を目撃したもの,1,,"山口市阿東地福
+yamaguchi-bear:yp-2026:124,35,山口県,2026-06-21T07:00:00+09:00,bear,クマ,sighting,車で走行中、国道上を横断する熊を目撃したもの,1,,"山口市阿東地福
 　　国道上",34.37237,131.68626,車で走行中、国道上を横断する熊を目撃したもの,yamaguchi-bear,https://yamaguchi-opendata.jp/ckan/dataset/yp-2026,CC-BY-4.0,山口県オープンデータカタログサイト（山口県警察本部地域企画課）
 akita-kumadas:26115,05,秋田県,2026-06-21T07:07:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,大仙市,〒019-1701 秋田県大仙市神宮寺坊ヶ沢堂ノ後８－９,39.5023727,140.4434225,【投稿】体調１メートル以上農道から藪に入った,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:26120,05,秋田県,2026-06-21T07:20:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,大館市,〒018-5741 秋田県大館市比内町達子風袋付近,40.21647162,140.5652672,通行人がクマ1頭を目撃/（体長0.7ｍ）/進行方向不明/比内支援学校の近くで目撃,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
@@ -47876,7 +47875,7 @@ akita-kumadas:26118,05,秋田県,2026-06-21T07:50:00,tsukinowaguma,ツキノワ�
 akita-kumadas:26121,05,秋田県,2026-06-21T08:00:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,大仙市,〒014-0001 秋田県大仙市花館上大戸８５,39.49062723,140.4804802,"【投稿】田んぼ近くの側溝を泳いで、地上に上がってきた。
 軽トラに驚いて走っていった。
 体調は約1m。痩せてはいなかったとのこと。",akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
-yamaguchi-bear:yp-2026:126,35,山口県,2026-06-21T08:00:00+09:00,bear,クマ,sighting,車で走行中、県道上にいる熊を目撃したもの,1,,"柳井市柳井
+yamaguchi-bear:yp-2026:125,35,山口県,2026-06-21T08:00:00+09:00,bear,クマ,sighting,車で走行中、県道上にいる熊を目撃したもの,1,,"柳井市柳井
 　　県道上",34.01462,132.0758,車で走行中、県道上にいる熊を目撃したもの,yamaguchi-bear,https://yamaguchi-opendata.jp/ckan/dataset/yp-2026,CC-BY-4.0,山口県オープンデータカタログサイト（山口県警察本部地域企画課）
 akita-kumadas:26123,05,秋田県,2026-06-21T08:30:00,shika,ニホンジカ,sighting,目撃,1,小坂町,〒017-0201 秋田県鹿角郡小坂町小坂湯ノ谷地周辺,40.361964,140.7379103,【投稿】小坂町小坂字欠下５４の田んぼの農道脇に、体長１メートルほどのニホンジカ１頭が立っていた。町道から農道に入る所の低地に立っていて、運転中に見つけたが、通り過ぎるまで動かずに立っていた。ここの田んぼでは、二日続けて畦畔法面の同じ場所に、イノシシと思われる大きく激しい破壊痕跡が発見され、その修復作業中にニホンジカを目撃した。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:26119,05,秋田県,2026-06-21T08:45:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,秋田市,〒011-0936 秋田県秋田市将軍野南１丁目２－２１ 高清水児童センター,39.74355201,140.0852644,【投稿】聖霊短大の敷地に入っていた,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
@@ -47897,8 +47896,6 @@ akita-kumadas:26175,05,秋田県,2026-06-21T20:25:00,inoshishi,イノシシ,sigh
 ライトに照らされたのは2頭
 （6月23日投稿）",akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:26141,05,秋田県,2026-06-22T07:00:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,大館市,〒017-0804 秋田県大館市柄沢狐台７－１６ 狐台児童公園,40.25760263,140.5740917,近隣住民がクマ１頭（体長0.7ｍ）を目撃/進行方向不明/直近民家まで約20ｍ,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
-yamaguchi-bear:yp-2026:128,35,山口県,2026-06-22T07:05:00+09:00,bear,クマ,sighting,目撃者が山中を歩く熊ようの動物を目撃したもの,,,"山口市阿東蔵目喜
-　　山中",34.38453,131.57402,目撃者が山中を歩く熊ようの動物を目撃したもの,yamaguchi-bear,https://yamaguchi-opendata.jp/ckan/dataset/yp-2026,CC-BY-4.0,山口県オープンデータカタログサイト（山口県警察本部地域企画課）
 akita-kumadas:26198,05,秋田県,2026-06-22T07:15:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,小坂町,〒017-0203 秋田県鹿角郡小坂町上向 栃沢橋,40.35210594,140.7772094,【投稿】車道上におり、私のクルマを見ても、怖がる様子はなく、ゆっくり道路脇の藪の中に入っていった。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:26154,05,秋田県,2026-06-22T07:31:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,大館市,〒017-0005 秋田県大館市花岡町七ツ館周辺,40.32738905,140.5497667,"【投稿】終業後、駐車場わきの茂みに体長５０センチほどのクマを目撃。
 その後茂みの奥に入っていった。",akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
@@ -47907,7 +47904,7 @@ akita-kumadas:26133,05,秋田県,2026-06-22T08:20:00,tsukinowaguma,ツキノワ�
 akita-kumadas:26144,05,秋田県,2026-06-22T11:20:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,大仙市,〒019-2335 秋田県大仙市強首上野台８－２０,39.53932427,140.3218532,秋田自動車道を秋田方向に走行中サービスエリアに向かって右から左に道路を横切る子グマ一頭を目撃,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:26146,05,秋田県,2026-06-22T11:30:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,羽後町,〒012-1121 秋田県雄勝郡羽後町大久保前川原１４－２,39.22501533,140.434174,"畑を徘徊している成獣（１メートル程度）を目撃。
 しばらく畑の中をうろつき、北東の雄物川方向へ立ち去った。",akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
-yamaguchi-bear:yp-2026:127,35,山口県,2026-06-22T13:00:00+09:00,bear,クマ,sighting,車で走行中、県道上を横断する熊を目撃したもの,1,,"岩国市錦町宇佐郷
+yamaguchi-bear:yp-2026:126,35,山口県,2026-06-22T13:00:00+09:00,bear,クマ,sighting,車で走行中、県道上を横断する熊を目撃したもの,1,,"岩国市錦町宇佐郷
 　　県道上",34.38067,132.01773,車で走行中、県道上を横断する熊を目撃したもの,yamaguchi-bear,https://yamaguchi-opendata.jp/ckan/dataset/yp-2026,CC-BY-4.0,山口県オープンデータカタログサイト（山口県警察本部地域企画課）
 akita-kumadas:26147,05,秋田県,2026-06-22T13:20:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,大館市,〒017-0005 秋田県大館市花岡町猫鼻４２－１,40.32131093,140.5473018,会社員がクマ1頭（体長50㎝）を目撃／進行方向北東／会社敷地内,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:26148,05,秋田県,2026-06-22T16:15:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,秋田市,〒011-0909 秋田県秋田市寺内児桜３丁目,39.73893486,140.086922,"車で走行中南へ立ち去った
@@ -47942,7 +47939,7 @@ akita-kumadas:26176,05,秋田県,2026-06-23T19:30:00,shika,ニホンジカ,sight
 akita-kumadas:26185,05,秋田県,2026-06-23T21:24:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,秋田市,秋田県秋田市河辺戸島七曲台,39.64061988,140.2188063,【投稿】車で走行中、左側の藪の中から飛び出してきた。体長１ｍほど。ぶつからなかったがしばらく道路をうろついた後、藪の中へ戻っていった。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:26179,05,秋田県,2026-06-24T05:10:00,inoshishi,イノシシ,sighting,目撃,1,横手市,秋田県横手市雄物川町大沢寺田,39.26966088,140.3935764,"【投稿】豆畑にいた。
 見ていると川の藪に入って行った。",akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
-yamaguchi-bear:yp-2026:129,35,山口県,2026-06-24T05:30:00+09:00,bear,クマ,sighting,車で走行中、国道上を横断する熊を目撃したもの,1,,"萩市川上
+yamaguchi-bear:yp-2026:127,35,山口県,2026-06-24T05:30:00+09:00,bear,クマ,sighting,車で走行中、国道上を横断する熊を目撃したもの,1,,"萩市川上
 　　国道上",34.3583,131.42237,車で走行中、国道上を横断する熊を目撃したもの,yamaguchi-bear,https://yamaguchi-opendata.jp/ckan/dataset/yp-2026,CC-BY-4.0,山口県オープンデータカタログサイト（山口県警察本部地域企画課）
 akita-kumadas:26178,05,秋田県,2026-06-24T05:50:00,inoshishi,イノシシ,sighting,目撃,1,横手市,秋田県横手市雄物川町大沢大沢,39.27170829,140.384542,【投稿】車で横手方向に進行中田んぼのくろを歩いて国道近くまで来ていたのでクラクションを鳴らしたら逃げて行った 約1メートルの成獣,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:26182,05,秋田県,2026-06-24T07:06:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,男鹿市,〒010-0342 秋田県男鹿市脇本脇本脇本１７５－２,39.90408225,139.9009538,体長約60ｃｍのクマ1頭を目撃。クマは南方向に去って行った。直近建物まで5ｍ。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
@@ -47951,7 +47948,7 @@ akita-kumadas:26180,05,秋田県,2026-06-24T07:40:00,tsukinowaguma,ツキノワ�
 akita-kumadas:26184,05,秋田県,2026-06-24T10:00:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,鹿角市,〒018-5202秋田県鹿角市尾去沢大物地内,40.18927749,140.734663,【投稿】小熊が道路を歩いていました。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:26186,05,秋田県,2026-06-24T10:30:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,大仙市,〒019-1917 秋田県大仙市南外薬師堂,39.43034211,140.3625475,郵便局の配達員が、東の山林に体長約1.5mのクマ1頭を目撃。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:26187,05,秋田県,2026-06-24T12:00:00,tsukinowaguma,ツキノワグマ,sighting,目撃,2,秋田市,〒010-0042 秋田県秋田市桜４丁目１２－１,39.70996129,140.1554561,桜小学校のプール北側の斜面に親子グマらしき獣を目撃。北側へ立ち去り。体長は不明。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
-yamaguchi-bear:yp-2026:130,35,山口県,2026-06-24T13:03:00+09:00,bear,クマ,sighting,目撃者が県道上を横断する熊を目撃したもの,1,,"萩市大字上小川西分
+yamaguchi-bear:yp-2026:128,35,山口県,2026-06-24T13:03:00+09:00,bear,クマ,sighting,目撃者が県道上を横断する熊を目撃したもの,1,,"萩市大字上小川西分
 　　県道上",34.56287,131.66292,目撃者が県道上を横断する熊を目撃したもの,yamaguchi-bear,https://yamaguchi-opendata.jp/ckan/dataset/yp-2026,CC-BY-4.0,山口県オープンデータカタログサイト（山口県警察本部地域企画課）
 akita-kumadas:26188,05,秋田県,2026-06-24T13:30:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,大仙市,〒014-0073 秋田県大仙市内小友塞ノ神６６－３,39.43522301,140.4023425,国道105号を南側へ横断した。事業所までの距離、約50m,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:26189,05,秋田県,2026-06-24T14:47:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,大仙市,〒019-2103 秋田県大仙市大沢郷寺野田家越周辺,39.53505348,140.3297441,【投稿】畑を歩いて、道路の反対側の民家があるほうへいきました。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
@@ -47959,7 +47956,7 @@ akita-kumadas:26190,05,秋田県,2026-06-24T14:47:00,tsukinowaguma,ツキノワ�
 akita-kumadas:26191,05,秋田県,2026-06-24T15:20:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,鹿角市,〒018-5202 秋田県鹿角市尾去沢軽井沢５８－６,40.18609466,140.7709765,"県道／体長0.8ｍ／民家から約70m
 車で県道走行中、南側から北側へ横断する熊1頭を目撃。熊はそのまま北側の林へ侵入した。目撃者との距離約10ｍ。",akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:26194,05,秋田県,2026-06-24T16:45:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,男鹿市,秋田県男鹿市男鹿中杉下,39.93626825,139.8301693,滝川部落と杉下部落の中間の田んぼ上で、クマ１頭を目撃。田んぼの南側奥の川に立ち去った。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
-yamaguchi-bear:yp-2026:131,35,山口県,2026-06-24T17:30:00+09:00,bear,クマ,sighting,車で走行中、国道上を横断する熊を目撃したもの,1,,"宇部市大字川上
+yamaguchi-bear:yp-2026:129,35,山口県,2026-06-24T17:30:00+09:00,bear,クマ,sighting,車で走行中、国道上を横断する熊を目撃したもの,1,,"宇部市大字川上
 　　国道上",33.99776,131.27913,車で走行中、国道上を横断する熊を目撃したもの,yamaguchi-bear,https://yamaguchi-opendata.jp/ckan/dataset/yp-2026,CC-BY-4.0,山口県オープンデータカタログサイト（山口県警察本部地域企画課）
 akita-kumadas:26196,05,秋田県,2026-06-24T17:40:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,男鹿市,〒010-0341 秋田県男鹿市船越一向,39.89431219,139.9400496,体長約1ｍのクマ1頭を船越海岸で目撃。クマは林の中へ立ち去った。向かった方角は不明。直近建物まで200ｍ。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:26195,05,秋田県,2026-06-24T18:40:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,大仙市,秋田県大仙市大沢郷寺字山辺沢地内,39.51293188,140.3407771,【投稿】高速法面で目撃。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
@@ -47995,7 +47992,7 @@ akita-kumadas:26217,05,秋田県,2026-06-25T13:18:00,tsukinowaguma,ツキノワ�
 akita-kumadas:26218,05,秋田県,2026-06-25T13:30:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,大仙市,〒014-0207 秋田県大仙市長野下川原４１３,39.5266888,140.5265415,小グマが長野字高瀬方面から集会所の方へ歩いて行った。民家との距離10m。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:26219,05,秋田県,2026-06-25T13:55:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,大仙市,〒014-0207 秋田県大仙市長野狐塚,39.53323663,140.5302551,田んぼの畔を行ったり来たりしているのを目撃。その後、国道105号線を渡って玉川の方へ逃げていった。民家との距離50m。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:26220,05,秋田県,2026-06-25T14:10:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,美郷町,秋田県仙北郡美郷町浪花上鶴ケ沢８６,39.46716768,140.6262086,【投稿】民家敷地内を南側の林の方から北側の林の方へ立ち去った。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
-yamaguchi-bear:yp-2026:132,35,山口県,2026-06-25T15:10:00+09:00,bear,クマ,sighting,車で走行中、国道上にいる熊を目撃したもの,1,,"山口市徳地掘
+yamaguchi-bear:yp-2026:130,35,山口県,2026-06-25T15:10:00+09:00,bear,クマ,sighting,車で走行中、国道上にいる熊を目撃したもの,1,,"山口市徳地掘
 　　国道上",34.1815,131.67643,車で走行中、国道上にいる熊を目撃したもの,yamaguchi-bear,https://yamaguchi-opendata.jp/ckan/dataset/yp-2026,CC-BY-4.0,山口県オープンデータカタログサイト（山口県警察本部地域企画課）
 akita-kumadas:26221,05,秋田県,2026-06-25T15:30:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,湯沢市,〒019-0321 秋田県湯沢市秋ノ宮水無,38.97312197,140.4875928,東から西へ立ち去るクマ（体長１m程度）を目撃。クマは山の中に入っていった。民家までの距離約100m。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:26222,05,秋田県,2026-06-25T16:45:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,仙北市,秋田県仙北市田沢湖卒田,39.63566258,140.6584686,夏瀬踏切付近を歩いていた、体長約1m、立ち去り方向東側へ、民家までの距離約20m,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
@@ -48077,7 +48074,7 @@ akita-kumadas:26280,05,秋田県,2026-06-27T15:10:00,tsukinowaguma,ツキノワ�
 akita-kumadas:26284,05,秋田県,2026-06-27T15:36:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,三種町,〒018-2101 秋田県山本郡三種町上岩川下砂子沢 道路,40.04344397,140.1299429,"道路脇に、居たが、車に驚き、山へ逃げて行った！
 体長1メートルほど",akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:26282,05,秋田県,2026-06-27T16:00:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,羽後町,〒012-1134 秋田県雄勝郡羽後町田沢桂沢,39.17721017,140.3973771,田んぼの中を鹿内方面に走って行った。体長1m程度,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
-yamaguchi-bear:yp-2026:133,35,山口県,2026-06-27T16:40:00+09:00,bear,クマ,sighting,車で走行中、国道上にいる熊を目撃したもの,1,,"岩国市玖珂町
+yamaguchi-bear:yp-2026:131,35,山口県,2026-06-27T16:40:00+09:00,bear,クマ,sighting,車で走行中、国道上にいる熊を目撃したもの,1,,"岩国市玖珂町
 　　国道上",34.11128,132.10157,車で走行中、国道上にいる熊を目撃したもの,yamaguchi-bear,https://yamaguchi-opendata.jp/ckan/dataset/yp-2026,CC-BY-4.0,山口県オープンデータカタログサイト（山口県警察本部地域企画課）
 akita-kumadas:26285,05,秋田県,2026-06-27T17:10:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,秋田市,〒010-0144 秋田県秋田市下新城岩城右馬之丞７－１,39.78736793,140.0985429,"【投稿】車で通行中、突然横を並走する黒色生き物。
 初めてだったので何かわからずに混乱しましたがクマでした。
@@ -48089,7 +48086,7 @@ akita-kumadas:26290,05,秋田県,2026-06-27T18:45:00,inoshishi,イノシシ,sigh
 akita-kumadas:26311,05,秋田県,2026-06-27T19:00:00,inoshishi,イノシシ,sighting,目撃,1,秋田市,〒010-0825 秋田県秋田市柳田古道,39.74263729,140.146877,"【投稿】東から現れて、道路をしばらく歩いた後、西の藪へ入っていった。
 かなり離れていたので位置はおおよそです。",akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:26287,05,秋田県,2026-06-27T19:20:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,にかほ市,〒018-0401 秋田県にかほ市両前寺井戸尻,39.30673599,139.9805117,国道7号を本荘方面から仁賀保方面へ走行中、体長約1.2mのクマが海側の藪へ隠れた。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
-yamaguchi-bear:yp-2026:134,35,山口県,2026-06-27T19:22:00+09:00,bear,クマ,sighting,車で走行中、県道沿いの藪の中にいる熊を目撃したもの,1,,"萩市大字中小川
+yamaguchi-bear:yp-2026:132,35,山口県,2026-06-27T19:22:00+09:00,bear,クマ,sighting,車で走行中、県道沿いの藪の中にいる熊を目撃したもの,1,,"萩市大字中小川
 　　県道沿いの藪",34.59092,131.68186,車で走行中、県道沿いの藪の中にいる熊を目撃したもの,yamaguchi-bear,https://yamaguchi-opendata.jp/ckan/dataset/yp-2026,CC-BY-4.0,山口県オープンデータカタログサイト（山口県警察本部地域企画課）
 akita-kumadas:26292,05,秋田県,2026-06-27T21:50:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,秋田市,〒011-0902 秋田県秋田市寺内堂ノ沢２丁目１０－１７,39.73456629,140.086441,【投稿】寺内小のグラウンドに逃げるのを目撃,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:26294,05,秋田県,2026-06-28T04:46:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,秋田市,〒011-0909 秋田県秋田市寺内児桜２丁目７－３５,39.73741859,140.0875535,"【投稿】バイクで鉢合わせ。
@@ -48160,7 +48157,7 @@ akita-kumadas:26337,05,秋田県,2026-06-29T05:05:00,tsukinowaguma,ツキノワ�
 akita-kumadas:26339,05,秋田県,2026-06-29T06:09:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,秋田市,〒011-0903 秋田県秋田市寺内油田２丁目地内,39.73115318,140.0897813,民家敷地内で大きさ1.0mのクマを目撃。その後、南側へ立ち去り。建物まで50cm。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:26340,05,秋田県,2026-06-29T06:09:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,秋田市,〒011-0904 秋田県秋田市寺内蛭根１丁目付近,39.7294784,140.090129,【投稿】道路を横断寺内堂の沢方向へ駆け足速度で。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:26342,05,秋田県,2026-06-29T08:10:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,鹿角市,〒018-5201 秋田県鹿角市花輪下タ乳牛,40.21450941,140.8007003,東北道を走行中の自動車から高速道路脇の法面に体長５０センチメートル程のクマ１頭を目撃。その後のクマの移動方向等は不明。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
-yamaguchi-bear:yp-2026:135,35,山口県,2026-06-29T08:25:00+09:00,bear,クマ,sighting,車で走行中、県道上を横断する熊を目撃したもの,1,,"山口市阿東地福上
+yamaguchi-bear:yp-2026:133,35,山口県,2026-06-29T08:25:00+09:00,bear,クマ,sighting,車で走行中、県道上を横断する熊を目撃したもの,1,,"山口市阿東地福上
 　　県道上",34.37288,131.68376,車で走行中、県道上を横断する熊を目撃したもの,yamaguchi-bear,https://yamaguchi-opendata.jp/ckan/dataset/yp-2026,CC-BY-4.0,山口県オープンデータカタログサイト（山口県警察本部地域企画課）
 akita-kumadas:26345,05,秋田県,2026-06-29T08:30:00,tsukinowaguma,ツキノワグマ,sighting,目撃,2,にかほ市,〒018-0402 秋田県にかほ市平沢字笛森,39.28048622,139.9548048,畑から竹林に向かうクマ２頭を目撃。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:26364,05,秋田県,2026-06-29T08:34:00,shika,ニホンジカ,sighting,目撃,1,秋田市,秋田県秋田市外旭川万治沢,39.76821925,140.1217461,【投稿】オスのニホンジカを確認,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
@@ -48222,7 +48219,7 @@ akita-kumadas:26388,05,秋田県,2026-06-30T14:30:00,tsukinowaguma,ツキノワ�
 akita-kumadas:26392,05,秋田県,2026-06-30T14:45:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,横手市,秋田県横手市平鹿町醍醐当面町,39.2589274,140.5413943,体長約1ｍのクマ1頭が金屋こ線橋西側の側道を走り、田んぼ側を出た後、こ線橋下の林に消えた。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:26394,05,秋田県,2026-06-30T15:10:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,仙北市,秋田県仙北市田沢湖田沢高屋,39.76893533,140.6899953,ゲートボール場にクマがいるところを目撃。体長約1m。南方向へ立ち去り。付近の建物まで約10m。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:26396,05,秋田県,2026-06-30T15:15:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,湯沢市,〒012-0183 秋田県湯沢市皆瀬桜坂１７,39.04803568,140.6027484,若畑集落から市道若畑線を運転して下ってきたところ、道路上でクマ１頭を目撃し山へ走り去った。場所は、市道若畑線を板戸から若畑方向へ進み、林道奥宮線の入口を通過して沢沿い、右カーブのところ。体長約1m。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
-yamaguchi-bear:yp-2026:136,35,山口県,2026-06-30T17:04:00+09:00,bear,クマ,sighting,車で走行中、国道上を横断する熊を目撃したもの,1,,"周南市大字須々万奥
+yamaguchi-bear:yp-2026:134,35,山口県,2026-06-30T17:04:00+09:00,bear,クマ,sighting,車で走行中、国道上を横断する熊を目撃したもの,1,,"周南市大字須々万奥
 　　国道上",34.12805,131.87672,車で走行中、国道上を横断する熊を目撃したもの,yamaguchi-bear,https://yamaguchi-opendata.jp/ckan/dataset/yp-2026,CC-BY-4.0,山口県オープンデータカタログサイト（山口県警察本部地域企画課）
 akita-kumadas:26399,05,秋田県,2026-06-30T17:30:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,由利本荘市,秋田県由利本荘市岩城内道川ガザ平地内,39.55572681,140.0648528,"人家との距離：500ｍ
 クマの体長：1.5ｍ
@@ -48233,7 +48230,7 @@ akita-kumadas:26398,05,秋田県,2026-06-30T17:55:00,tsukinowaguma,ツキノワ�
 体長約50cm。",akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:26400,05,秋田県,2026-06-30T18:14:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,大仙市,〒014-0000 秋田県大仙市南外 釜石秋田線,39.50543502,140.3508142,【投稿】秋田自動車道走行中、50mほど手前を横切る熊１頭を目撃,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:26401,05,秋田県,2026-06-30T18:20:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,大館市,〒017-0005 秋田県大館市花岡町二井山　地内,40.3339249,140.548158,ドライバーが道路を横切るクマ1頭（体長1ｍ）を目撃/進行方向南/二井山集落の南東200ｍ,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
-yamaguchi-bear:yp-2026:137,35,山口県,2026-06-30T18:20:00+09:00,bear,クマ,sighting,車で走行中、国道上を横断する熊を目撃したもの,2,,"山口市阿東嘉年下
+yamaguchi-bear:yp-2026:135,35,山口県,2026-06-30T18:20:00+09:00,bear,クマ,sighting,車で走行中、国道上を横断する熊を目撃したもの,2,,"山口市阿東嘉年下
 　　国道上",34.44675,131.67215,車で走行中、国道上を横断する熊を目撃したもの,yamaguchi-bear,https://yamaguchi-opendata.jp/ckan/dataset/yp-2026,CC-BY-4.0,山口県オープンデータカタログサイト（山口県警察本部地域企画課）
 akita-kumadas:26403,05,秋田県,2026-06-30T19:00:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,北秋田市,秋田県北秋田市米内沢中道岱,40.11805476,140.3884844,【投稿】中道岱から山崎団地方面に国道105号を走行中の車の直前を横断しました,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:26404,05,秋田県,2026-06-30T19:00:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,男鹿市,〒010-0343 秋田県男鹿市脇本田谷沢豆沢４９－１,39.91099535,139.8806065,田にいる体長1.5ｍのクマ一頭目撃。クマは北側の山に立ち去った。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
@@ -48288,7 +48285,7 @@ akita-kumadas:26454,05,秋田県,2026-07-01T17:28:00,tsukinowaguma,ツキノワ�
 付近住宅まで、100m圏内",akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:26442,05,秋田県,2026-07-01T17:31:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,仙北市,〒014-0602 秋田県仙北市西木町桧木内長戸呂４１周辺,39.73066077,140.5726978,【投稿】田んぼの中から、山へ移動。その数分後同じ個体か分からないが山とは反対側の桧木内川へ降りていった。川を渡ったかは不明。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:26446,05,秋田県,2026-07-01T18:00:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,大仙市,〒019-2111 秋田県大仙市土川字楯平2-12,39.54948945,140.4546368,土川字楯平2-12の向かいの空き家からクマ一頭が出てきて、2-12の家の脇を通って山に逃げて行った。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
-yamaguchi-bear:yp-2026:138,35,山口県,2026-07-01T18:10:00+09:00,bear,クマ,sighting,車で走行中、県道上を横断する熊を目撃したもの,1,,"美祢市伊佐町伊佐
+yamaguchi-bear:yp-2026:136,35,山口県,2026-07-01T18:10:00+09:00,bear,クマ,sighting,車で走行中、県道上を横断する熊を目撃したもの,1,,"美祢市伊佐町伊佐
 　　県道上",34.15759,131.24708,車で走行中、県道上を横断する熊を目撃したもの,yamaguchi-bear,https://yamaguchi-opendata.jp/ckan/dataset/yp-2026,CC-BY-4.0,山口県オープンデータカタログサイト（山口県警察本部地域企画課）
 akita-kumadas:26553,05,秋田県,2026-07-01T18:20:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,五城目町,〒018-1734 秋田県南秋田郡五城目町大川大川 馬場目川大橋付近,39.93626339,140.0679874,【投稿】馬場目大橋付近でクマを目撃した,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:26443,05,秋田県,2026-07-01T18:30:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,男鹿市,〒010-0352 秋田県男鹿市五里合琴川浜田１３周辺,39.9732192,139.8514196,【投稿】田んぼのあぜ道を猛スピードで海の方へ走って行った,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
@@ -48377,8 +48374,6 @@ akita-kumadas:26530,05,秋田県,2026-07-03T04:26:00,tsukinowaguma,ツキノワ�
 akita-kumadas:26528,05,秋田県,2026-07-03T05:20:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,秋田市,〒011-0907 秋田県秋田市寺内焼山７－１６,39.7407228,140.0781781,"体調1.0mのクマ1頭を目撃。
 西方向へ立ち去り。建物まで5m。",akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:26519,05,秋田県,2026-07-03T05:23:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,秋田市,〒011-0907 秋田県秋田市寺内焼山７－１2,39.74062611,140.0778839,【投稿】裏山の土手上の竹藪から現れて、土手下を覗いたのち、西側に立ち去った。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
-yamaguchi-bear:yp-2026:139,35,山口県,2026-07-03T06:30:00+09:00,bear,クマ,sighting,徒歩で進行中、道路上にいる熊ようの動物を目撃したもの,1,,"萩市大字椿東
-　　道路上",34.41075,131.41312,徒歩で進行中、道路上にいる熊ようの動物を目撃したもの,yamaguchi-bear,https://yamaguchi-opendata.jp/ckan/dataset/yp-2026,CC-BY-4.0,山口県オープンデータカタログサイト（山口県警察本部地域企画課）
 akita-kumadas:26521,05,秋田県,2026-07-03T07:30:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,秋田市,〒011-0938 秋田県秋田市寺内鵜ノ木８,39.74013937,140.0833869,【投稿】小熊が東側に向かって歩いていた。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:26534,05,秋田県,2026-07-03T07:40:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,秋田市,〒011-0938 秋田県秋田市寺内鵜ノ木地内,39.74005156,140.0835503,敷地内で体長0.8mのクマ1頭を目撃した。東側へ立ち去った。直近施設から100m。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:26556,05,秋田県,2026-07-03T07:50:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,秋田市,〒010-1211 秋田県秋田市雄和椿川関田７０,39.620604,140.1824999,【投稿】1.0～1.2m程度のクマが草むらから出てきた。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
@@ -48400,7 +48395,7 @@ akita-kumadas:26558,05,秋田県,2026-07-03T14:35:00,tsukinowaguma,ツキノワ�
 akita-kumadas:26572,05,秋田県,2026-07-03T15:50:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,秋田市,〒010-1211 秋田県秋田市雄和椿川駒坂台４－１,39.62366722,140.2023125,【投稿】ツキノワグマ1頭　大きさ不明　西側の林に入って行った,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:26557,05,秋田県,2026-07-03T15:55:00,tsukinowaguma,ツキノワグマ,sighting,目撃,2,湯沢市,〒012-0824 秋田県湯沢市裏門１丁目２－３３,39.16405786,140.5032545,"みたけ保育園と民家の間の道路を山に向かって歩いているのを目撃。
 体長は親が約1.2ｍ、子が約50cm、民家まで１m。",akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
-yamaguchi-bear:yp-2026:140,35,山口県,2026-07-03T16:20:00+09:00,bear,クマ,trace,市道上及び山中において、熊の足跡を発見したもの,4,,"岩国市美和町生見
+yamaguchi-bear:yp-2026:137,35,山口県,2026-07-03T16:20:00+09:00,bear,クマ,trace,市道上及び山中において、熊の足跡を発見したもの,4,,"岩国市美和町生見
 　　市道上及び山中",34.2515,132.1005,市道上及び山中において、熊の足跡を発見したもの,yamaguchi-bear,https://yamaguchi-opendata.jp/ckan/dataset/yp-2026,CC-BY-4.0,山口県オープンデータカタログサイト（山口県警察本部地域企画課）
 akita-kumadas:26559,05,秋田県,2026-07-03T16:40:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,湯沢市,〒019-0404 秋田県湯沢市高松明戸,39.06497059,140.5173749,"農地付近の水路で子熊１頭でいるのを目撃。
 体長約50cm。民家まで約100ｍ。",akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
@@ -48480,7 +48475,7 @@ akita-kumadas:26615,05,秋田県,2026-07-05T17:30:00,tsukinowaguma,ツキノワ�
 体長不明。",akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:26619,05,秋田県,2026-07-05T18:00:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,秋田市,〒011-0937 秋田県秋田市寺内高野１０－２５,39.74277655,140.084964,【投稿】,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:26617,05,秋田県,2026-07-05T19:00:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,秋田市,〒010-0042 秋田県秋田市桜４丁目２３－２５ 桜第七街区公園,39.7059293,140.155735,【投稿】公園から小熊1頭を目撃。その後林の中へ戻って行った。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
-yamaguchi-bear:yp-2026:141,35,山口県,2026-07-05T19:02:00+09:00,bear,クマ,sighting,車で走行中、市道上を横断する熊を目撃したもの,2,,"宇部市大字東岐波
+yamaguchi-bear:yp-2026:138,35,山口県,2026-07-05T19:02:00+09:00,bear,クマ,sighting,車で走行中、市道上を横断する熊を目撃したもの,2,,"宇部市大字東岐波
 　　市道上",33.97674,131.32177,車で走行中、市道上を横断する熊を目撃したもの,yamaguchi-bear,https://yamaguchi-opendata.jp/ckan/dataset/yp-2026,CC-BY-4.0,山口県オープンデータカタログサイト（山口県警察本部地域企画課）
 akita-kumadas:26620,05,秋田県,2026-07-05T19:23:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,鹿角市,〒018-5421 秋田県鹿角市十和田大湯五ノ岱,40.3020576,140.8407199,"市道／体長70cm／民家から10m／目撃者との距離約50m
 住宅の中から、小型のクマが市道を横断して、東側の大湯川方向に移動するのを目撃した。",akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
@@ -48493,7 +48488,7 @@ akita-kumadas:26626,05,秋田県,2026-07-06T06:30:00,tsukinowaguma,ツキノワ�
 akita-kumadas:26628,05,秋田県,2026-07-06T06:30:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,由利本荘市,秋田県由利本荘市徳沢字前野　地内,39.45172795,140.1430017,"人家との距離：250ｍ
 クマの体長：1.0ｍ",akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:26623,05,秋田県,2026-07-06T06:50:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,横手市,秋田県横手市大雄下根田谷地,39.34690976,140.4961109,体長不明のクマ1頭を目撃。その後クマは西方向に立ち去った。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
-yamaguchi-bear:yp-2026:142,35,山口県,2026-07-06T07:00:00+09:00,bear,クマ,sighting,自宅から屋外に出たところ、市道上にいる熊を目撃したもの,1,,"萩市大字椿東
+yamaguchi-bear:yp-2026:139,35,山口県,2026-07-06T07:00:00+09:00,bear,クマ,sighting,自宅から屋外に出たところ、市道上にいる熊を目撃したもの,1,,"萩市大字椿東
 　　市道上",34.42156,131.43701,自宅から屋外に出たところ、市道上にいる熊を目撃したもの,yamaguchi-bear,https://yamaguchi-opendata.jp/ckan/dataset/yp-2026,CC-BY-4.0,山口県オープンデータカタログサイト（山口県警察本部地域企画課）
 akita-kumadas:26646,05,秋田県,2026-07-06T07:10:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,大館市,秋田県大館市池内地内,40.25602457,140.5473894,【投稿】田んぼに15分くらいうろついて柏木方向へ移動する,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:26622,05,秋田県,2026-07-06T07:15:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,横手市,秋田県横手市大雄中野東,39.34396415,140.4919001,【投稿】西に走って行った,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
@@ -48512,7 +48507,7 @@ akita-kumadas:26634,05,秋田県,2026-07-06T15:40:00,tsukinowaguma,ツキノワ�
 akita-kumadas:26643,05,秋田県,2026-07-06T15:50:00,tsukinowaguma,ツキノワグマ,sighting,目撃,2,横手市,秋田県横手市増田町八木釜川原,39.20014536,140.5276823,"【投稿】皆瀬頭首工、上流約150メートル対岸を南西方向に消えて行った。
 ＊投稿内容と目撃地点が異なっていたため、目撃ポイントを修正。",akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:26638,05,秋田県,2026-07-06T16:27:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,鹿角市,〒018-5201 秋田県鹿角市花輪中ノ崎,40.18436517,140.8011595,東北道上り線を通行中の自動車から、花輪SA付近で体長50センチメートル程のクマ１頭が上り線からセンターポールを超え下り線へ横断する姿を目撃。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
-yamaguchi-bear:yp-2026:144,35,山口県,2026-07-06T16:45:00+09:00,bear,クマ,sighting,車で走行中、県道上にいる熊ようの動物を目撃したもの,1,,"柳井市神代
+yamaguchi-bear:yp-2026:141,35,山口県,2026-07-06T16:45:00+09:00,bear,クマ,sighting,車で走行中、県道上にいる熊ようの動物を目撃したもの,1,,"柳井市神代
 　　県道上",33.97542,132.26901,車で走行中、県道上にいる熊ようの動物を目撃したもの,yamaguchi-bear,https://yamaguchi-opendata.jp/ckan/dataset/yp-2026,CC-BY-4.0,山口県オープンデータカタログサイト（山口県警察本部地域企画課）
 akita-kumadas:26658,05,秋田県,2026-07-06T17:00:00,tsukinowaguma,ツキノワグマ,sighting,目撃,3,仙北市,秋田県仙北市西木町西明寺地区,39.70940967,140.6083775,【投稿】車で走行時に遭遇。小熊2頭と親熊1頭。道路を小熊が横断、母熊は道路脇の茂みにひそんでいた。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:26640,05,秋田県,2026-07-06T17:18:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,秋田市,〒010-1654 秋田県秋田市浜田滝ノ下,39.66230799,140.0692302,農道を北方向へ立ち去るクマを目撃。体長1m、1頭。建物から10m,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
@@ -48520,7 +48515,7 @@ akita-kumadas:26639,05,秋田県,2026-07-06T17:20:00,tsukinowaguma,ツキノワ�
 akita-kumadas:26642,05,秋田県,2026-07-06T18:40:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,秋田市,秋田県秋田市下新城中野街道端西　地内,39.8002542,140.0367405,"車で走行中、体長0.5mのクマ1頭を目撃。
 北側の林へ立ち去り。
 建物まで100m",akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
-yamaguchi-bear:yp-2026:143,35,山口県,2026-07-06T18:55:00+09:00,bear,クマ,sighting,山裾の茂みにおいて、熊ようの動物を目撃したもの,1,,"美祢市美東町大田
+yamaguchi-bear:yp-2026:140,35,山口県,2026-07-06T18:55:00+09:00,bear,クマ,sighting,山裾の茂みにおいて、熊ようの動物を目撃したもの,1,,"美祢市美東町大田
 　　山裾",34.23754,131.35299,山裾の茂みにおいて、熊ようの動物を目撃したもの,yamaguchi-bear,https://yamaguchi-opendata.jp/ckan/dataset/yp-2026,CC-BY-4.0,山口県オープンデータカタログサイト（山口県警察本部地域企画課）
 akita-kumadas:26641,05,秋田県,2026-07-06T19:02:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,仙北市,〒014-0375 秋田県仙北市角館町岩瀬下タ野地区,39.5792264,140.5704466,【投稿】橋を車で渡っていたら河川敷の運動場を熊が歩いてた。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:26645,05,秋田県,2026-07-06T19:10:00,inoshishi,イノシシ,sighting,目撃,1,大館市,〒017-0851 秋田県大館市大披家ノ前周辺,40.24597513,140.5033565,【投稿】,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
@@ -48549,11 +48544,11 @@ akita-kumadas:26654,05,秋田県,2026-07-07T06:38:00,tsukinowaguma,ツキノワ�
 ゴミ捨てで人が多く外出する時間で危なかった",akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:26660,05,秋田県,2026-07-07T07:15:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,由利本荘市,秋田県由利本荘市松ヶ崎字光禅寺前地内,39.49634988,140.0544888,体長：約1m、人家までの距離：約10m,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:26659,05,秋田県,2026-07-07T07:27:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,仙北市,秋田県仙北市角館町西長野川下田,39.61323741,140.4888082,原野にクマがいた。体長約1m。立ち去り方向不明。民家までの距離約50m。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
-yamaguchi-bear:yp-2026:146,35,山口県,2026-07-07T08:00:00+09:00,bear,クマ,sighting,徒歩で進行中、田畑内にいる熊を目撃したもの,1,,"宇部市大字東岐波
+yamaguchi-bear:yp-2026:143,35,山口県,2026-07-07T08:00:00+09:00,bear,クマ,sighting,徒歩で進行中、田畑内にいる熊を目撃したもの,1,,"宇部市大字東岐波
 　　田畑",33.9852,131.34374,徒歩で進行中、田畑内にいる熊を目撃したもの,yamaguchi-bear,https://yamaguchi-opendata.jp/ckan/dataset/yp-2026,CC-BY-4.0,山口県オープンデータカタログサイト（山口県警察本部地域企画課）
 akita-kumadas:26663,05,秋田県,2026-07-07T09:50:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,北秋田市,〒018-4231 秋田県北秋田市上杉金沢４７７,40.18745933,140.3265667,"永楽園サテライト型アネックス付近の畑でクワの実を食べているクマ一頭を目撃。
 その後、北側の林へ立ち去った。",akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
-yamaguchi-bear:yp-2026:145,35,山口県,2026-07-07T11:30:00+09:00,bear,クマ,sighting,除草作業をしようとしたところ、竹藪にいる熊を目撃したもの,1,,"萩市大字福井下
+yamaguchi-bear:yp-2026:142,35,山口県,2026-07-07T11:30:00+09:00,bear,クマ,sighting,除草作業をしようとしたところ、竹藪にいる熊を目撃したもの,1,,"萩市大字福井下
 　　竹藪",34.41781,131.48281,除草作業をしようとしたところ、竹藪にいる熊を目撃したもの,yamaguchi-bear,https://yamaguchi-opendata.jp/ckan/dataset/yp-2026,CC-BY-4.0,山口県オープンデータカタログサイト（山口県警察本部地域企画課）
 akita-kumadas:26665,05,秋田県,2026-07-07T12:10:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,大仙市,〒014-0101 秋田県大仙市松倉鷹ノ巣５８,39.51862713,140.4948475,【投稿】田んぼにいるのを発見。近くの林に逃げた,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:26666,05,秋田県,2026-07-07T12:16:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,秋田市,〒011-0937 秋田県秋田市寺内高野２－１７,39.74012012,140.0856829,草刈りをしていたら、散歩をしていた人からクマを見たと聞いた。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
@@ -48563,7 +48558,7 @@ akita-kumadas:26667,05,秋田県,2026-07-07T13:15:00,tsukinowaguma,ツキノワ�
 akita-kumadas:26668,05,秋田県,2026-07-07T14:20:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,大仙市,〒014-0102 秋田県大仙市四ツ屋上原野地内,39.49572894,140.4935181,田んぼの中にクマ一頭目撃,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:26670,05,秋田県,2026-07-07T15:52:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,鹿角市,〒018-5336 秋田県鹿角市十和田錦木稲生田,40.25373361,140.7660951,東北道上り線を走行中の自動車から、体長50センチメートルほどのクマ１頭が東側から西側方向へ東北道を横断し、そのまま西側の藪へ移動する姿を目撃。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:26672,05,秋田県,2026-07-07T16:30:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,秋田市,〒011-0902 秋田県秋田市寺内堂ノ沢２丁目１４付近,39.73417576,140.0850061,寺内小学校のプールに近い階段付近をうろつくクマ1頭を目撃。体長不明。立ち去り方向不明。建物からの距離10m。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
-yamaguchi-bear:yp-2026:147,35,山口県,2026-07-07T16:43:00+09:00,bear,クマ,sighting,車で走行中、国道上を横断する熊を目撃したもの,1,,"阿武郡阿武町大字福田上
+yamaguchi-bear:yp-2026:144,35,山口県,2026-07-07T16:43:00+09:00,bear,クマ,sighting,車で走行中、国道上を横断する熊を目撃したもの,1,,"阿武郡阿武町大字福田上
 　　国道上",34.52218,131.60838,車で走行中、国道上を横断する熊を目撃したもの,yamaguchi-bear,https://yamaguchi-opendata.jp/ckan/dataset/yp-2026,CC-BY-4.0,山口県オープンデータカタログサイト（山口県警察本部地域企画課）
 akita-kumadas:26676,05,秋田県,2026-07-07T16:50:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,能代市,〒018-2805 秋田県能代市轟２１９,40.22149763,140.1151308,【投稿】道路を横断してた。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:26677,05,秋田県,2026-07-07T17:00:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,由利本荘市,秋田県由利本荘市岩城内道川三嶽堂７２－２２,39.55025053,140.0627232,"人家までの距離　100ｍ
@@ -48668,7 +48663,7 @@ akita-kumadas:26745,05,秋田県,2026-07-09T16:05:00,tsukinowaguma,ツキノワ�
 akita-kumadas:26746,05,秋田県,2026-07-09T16:30:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,秋田市,〒010-0054 秋田県秋田市下北手宝川繁昌田１３９－１,39.70736274,140.2083206,"【投稿】小熊が道路を横断してます。
 近くには、民家が多数あります。",akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:26761,05,秋田県,2026-07-09T17:15:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,羽後町,〒012-1353 秋田県雄勝郡羽後町上仙道仙道沢,39.14828409,140.309555,カーポートから目撃。田の畦畔を歩いて、南側の山へ入っていった。大きさは不明だが、おそらく成獣とのこと。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
-yamaguchi-bear:yp-2026:148,35,山口県,2026-07-09T17:20:00+09:00,bear,クマ,sighting,目撃者が休耕田にいる熊を目撃したもの,1,,"岩国市美和町生見
+yamaguchi-bear:yp-2026:145,35,山口県,2026-07-09T17:20:00+09:00,bear,クマ,sighting,目撃者が休耕田にいる熊を目撃したもの,1,,"岩国市美和町生見
 　　休耕田",34.2492,132.07969,目撃者が休耕田にいる熊を目撃したもの,yamaguchi-bear,https://yamaguchi-opendata.jp/ckan/dataset/yp-2026,CC-BY-4.0,山口県オープンデータカタログサイト（山口県警察本部地域企画課）
 akita-kumadas:26760,05,秋田県,2026-07-09T17:25:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,にかほ市,〒018-0176 秋田県にかほ市象潟町横山,39.19837164,139.9174654,"車で走行中、右から左に向かうクマを目撃。
 体長約1m",akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
@@ -48733,14 +48728,14 @@ akita-kumadas:26808,05,秋田県,2026-07-11T17:22:00,tsukinowaguma,ツキノワ�
 akita-kumadas:26810,05,秋田県,2026-07-12T05:00:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,秋田市,秋田県秋田市柳田扇ノ沢,39.74797363,140.1468801,【投稿】,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:26811,05,秋田県,2026-07-12T06:00:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,秋田市,〒010-0821 秋田県秋田市濁川後田９４,39.74959867,140.1245785,【投稿】道路を北側に横断,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:26818,05,秋田県,2026-07-12T07:30:00,shika,ニホンジカ,sighting,目撃,2,小坂町,秋田県小坂町小坂字松倉出口２５,40.37664476,140.7585633,【投稿】小坂町小坂字松倉出口２５の田んぼ近くの農道に、体長１メートルほどと７０センチメートルほどのニホンジカ２頭がいた。軽トラックに気づいたら、慌てて西側の山林へ駆け込んでいった。目撃現場近くでは、クマの出没があり捕獲もされている。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
-yamaguchi-bear:yp-2026:150,35,山口県,2026-07-12T08:15:00+09:00,bear,クマ,sighting,目撃者が、河川を渡る熊を目撃したもの,1,,"周南市大字鹿野上
+yamaguchi-bear:yp-2026:147,35,山口県,2026-07-12T08:15:00+09:00,bear,クマ,sighting,目撃者が、河川を渡る熊を目撃したもの,1,,"周南市大字鹿野上
 　　河川内",34.24361,131.82643,目撃者が、河川を渡る熊を目撃したもの,yamaguchi-bear,https://yamaguchi-opendata.jp/ckan/dataset/yp-2026,CC-BY-4.0,山口県オープンデータカタログサイト（山口県警察本部地域企画課）
 akita-kumadas:26814,05,秋田県,2026-07-12T08:20:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,大館市,〒017-0876 秋田県大館市餅田２丁目地内,40.27488051,140.5258481,近隣住民がクマ１頭（体長約1.0ｍ）を目撃/進行方向は不明/直近民家から約10ｍ,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:26813,05,秋田県,2026-07-12T08:40:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,にかほ市,〒018-0153 秋田県にかほ市象潟町小滝浜道５９,39.1888073,139.9432415,【投稿】,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:26815,05,秋田県,2026-07-12T09:45:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,五城目町,〒018-1711 秋田県南秋田郡五城目町高崎雀舘下川原 周辺,39.94259882,140.1243889,【投稿】小学校方面から走ってきて塀を登っていきました。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:26816,05,秋田県,2026-07-12T09:47:00,shika,ニホンジカ,sighting,目撃,1,秋田市,秋田県秋田市金足浦山,39.83168738,140.0894505,【投稿】,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:26817,05,秋田県,2026-07-12T10:00:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,五城目町,〒018-1711 秋田県南秋田郡五城目町高崎雀舘下川原周辺,39.94287438,140.1248181,【投稿】五城目小学校付近にてツキノワグマの目撃があった,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
-yamaguchi-bear:yp-2026:149,35,山口県,2026-07-12T10:25:00+09:00,bear,クマ,sighting,車で走行中、市道上を横断する熊を目撃したもの,1,,"周南市大字八代
+yamaguchi-bear:yp-2026:146,35,山口県,2026-07-12T10:25:00+09:00,bear,クマ,sighting,車で走行中、市道上を横断する熊を目撃したもの,1,,"周南市大字八代
 　　市道上",34.08859,131.93494,車で走行中、市道上を横断する熊を目撃したもの,yamaguchi-bear,https://yamaguchi-opendata.jp/ckan/dataset/yp-2026,CC-BY-4.0,山口県オープンデータカタログサイト（山口県警察本部地域企画課）
 akita-kumadas:26821,05,秋田県,2026-07-12T13:30:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,五城目町,〒018-1713 秋田県南秋田郡五城目町馬場目大吹沢周辺,39.91345592,140.1845276,【投稿】馬場目字大吹沢付近で体長1m程のクマを目撃。クマはその後山へ逃げていった。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:26819,05,秋田県,2026-07-12T14:00:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,五城目町,〒018-1713 秋田県南秋田郡五城目町馬場目大吹沢付近,39.91372543,140.1841342,【投稿】敷地内で目撃。山の方へ向かっていった。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
@@ -48760,8 +48755,6 @@ akita-kumadas:26897,05,秋田県,2026-07-13T07:30:00,tsukinowaguma,ツキノワ�
 akita-kumadas:26828,05,秋田県,2026-07-13T07:38:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,秋田市,〒011-0908 秋田県秋田市寺内大小路５地域,39.73704694,140.0782478,"【投稿】道の真ん中にいるのを車の中から発見。動くことなく寺内側を向いていましたが、車に気づき、薮の方に逃げて行きました。
 離れていたので正確な大きさは分かりませんが、1m以上の成獣に見えました。",akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:26830,05,秋田県,2026-07-13T08:23:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,秋田市,〒010-0821 秋田県秋田市濁川鎌ノ沢,39.75404544,140.1285603,【投稿】,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
-yamaguchi-bear:yp-2026:151,35,山口県,2026-07-13T08:30:00+09:00,bear,クマ,sighting,車で走行中、県道上を横断する熊を目撃したもの,1,,"萩市大字椿
-　　県道上",34.37255,131.41068,車で走行中、県道上を横断する熊を目撃したもの,yamaguchi-bear,https://yamaguchi-opendata.jp/ckan/dataset/yp-2026,CC-BY-4.0,山口県オープンデータカタログサイト（山口県警察本部地域企画課）
 akita-kumadas:26833,05,秋田県,2026-07-13T09:30:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,東成瀬村,〒019-0802 秋田県雄勝郡東成瀬村岩井川城下１３－１,39.17444691,140.7095325,成獣とみられるクマを目撃,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:26832,05,秋田県,2026-07-13T09:46:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,由利本荘市,秋田県由利本荘市矢島元町周辺,39.18746666,140.1251053,【投稿】走行中、前方の道路を横断した,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:26836,05,秋田県,2026-07-13T10:10:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,由利本荘市,秋田県由利本荘市岩城二古字川尻地内,39.53142358,140.0530028,体長：約1ｍ、人家までの距離：約5ｍ,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
@@ -48782,11 +48775,11 @@ akita-kumadas:26849,05,秋田県,2026-07-13T14:20:00,tsukinowaguma,ツキノワ�
 akita-kumadas:26845,05,秋田県,2026-07-13T14:50:00,tsukinowaguma,ツキノワグマ,sighting,目撃,2,北秋田市,〒018-4513 秋田県北秋田市小又羽根川岱地域,40.04854683,140.4279348,【投稿】道路左側から親子クマが渡ろうとして、車が近付いてきたので引き返したかたち,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:26858,05,秋田県,2026-07-13T15:00:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,小坂町,秋田県小坂町小坂字大作地域,40.37301574,140.755409,【投稿】小坂町小坂字村下１の田んぼの畦畔に、体長８０センチメートルほどのクマ１頭がいた。西側へ向かって歩いていて、畦畔や水路脇の草を食べながら、西側斜面のやぶを登って町道を横切り、西側の山林へ入り込んでいった。町道上の軽トラックを見つけたら、やぶに戻って避けるように距離をおいて町道を横切っていた。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:26847,05,秋田県,2026-07-13T15:25:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,男鹿市,秋田県男鹿市福米沢柳下地内,40.00283217,139.9411333,道路走行中に熊が横切り、藪の中へ入っていった。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
-yamaguchi-bear:yp-2026:152,35,山口県,2026-07-13T15:30:00+09:00,bear,クマ,sighting,車で走行中、県道上を横断する熊を目撃したもの,1,,"周南市大字中須北
+yamaguchi-bear:yp-2026:148,35,山口県,2026-07-13T15:30:00+09:00,bear,クマ,sighting,車で走行中、県道上を横断する熊を目撃したもの,1,,"周南市大字中須北
 　　県道上",34.127,131.91559,車で走行中、県道上を横断する熊を目撃したもの,yamaguchi-bear,https://yamaguchi-opendata.jp/ckan/dataset/yp-2026,CC-BY-4.0,山口県オープンデータカタログサイト（山口県警察本部地域企画課）
 akita-kumadas:26848,05,秋田県,2026-07-13T15:45:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,秋田市,〒010-0055 秋田県秋田市下北手通沢下前田,39.71915378,140.1815128,【投稿】小熊1頭が秋田中央インターチェンジ付近（秋田南インターチェンジ寄り）で高速道路を横断、ヤブの中に入って行った。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:26863,05,秋田県,2026-07-13T16:26:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,大館市,〒018-5731 秋田県大館市比内町達子字曲谷地124-1内の西側,40.21431078,140.5645993,【投稿】監視カメラに映っていた。体長1m。南の茂みに駆け込んで行った。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
-yamaguchi-bear:yp-2026:154,35,山口県,2026-07-13T17:00:00+09:00,bear,クマ,trace,山中において熊の足跡を発見したもの,1,,"岩国市美和町生見
+yamaguchi-bear:yp-2026:149,35,山口県,2026-07-13T17:00:00+09:00,bear,クマ,trace,山中において熊の足跡を発見したもの,1,,"岩国市美和町生見
 　　山中",34.25136,132.10065,山中において熊の足跡を発見したもの,yamaguchi-bear,https://yamaguchi-opendata.jp/ckan/dataset/yp-2026,CC-BY-4.0,山口県オープンデータカタログサイト（山口県警察本部地域企画課）
 akita-kumadas:26857,05,秋田県,2026-07-13T17:30:00,inoshishi,イノシシ,sighting,目撃,1,羽後町,〒012-1102 秋田県雄勝郡羽後町新町鵜巣３４,39.25589116,140.4015102,【投稿】車で走行中に横を見たら道路脇にいた。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:26850,05,秋田県,2026-07-13T17:41:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,秋田市,〒010-0812 秋田県秋田市泉三嶽根１５－２５,39.73950137,140.1178801,【投稿】左の林から出てきて坂を横断、石材店の裏手へ入っていった。体長1m前後。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
@@ -48800,8 +48793,6 @@ akita-kumadas:26856,05,秋田県,2026-07-13T18:30:00,tsukinowaguma,ツキノワ�
 akita-kumadas:26859,05,秋田県,2026-07-13T18:30:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,三種町,秋田県三種町鹿渡字牡丹家の前,40.06800266,140.0731357,【投稿】農道で遭遇。上のヤブに入った,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:26855,05,秋田県,2026-07-13T18:35:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,大館市,秋田県大館市比内町達子字曲谷地124-1の東側に隣接する農作業用道路,40.21436403,140.566611,【投稿】監視カメラに映っていた(写真左上)。体長1m。農作業用道路を南に移動。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:26853,05,秋田県,2026-07-13T18:48:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,大仙市,〒014-1413 秋田県大仙市角間川町稲荷中島１,39.4061185,140.4771806,道路を走行中雄物川方向から東の住宅地側に向かって行く１m程度のクマを目撃した,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
-yamaguchi-bear:yp-2026:153,35,山口県,2026-07-13T19:40:00+09:00,bear,クマ,sighting,車で走行中、山中にいる熊を目撃したもの,1,,"山口市徳地柚木
-　　国道上",34.3552,131.71859,車で走行中、山中にいる熊を目撃したもの,yamaguchi-bear,https://yamaguchi-opendata.jp/ckan/dataset/yp-2026,CC-BY-4.0,山口県オープンデータカタログサイト（山口県警察本部地域企画課）
 akita-kumadas:26864,05,秋田県,2026-07-13T23:10:00,tsukinowaguma,ツキノワグマ,sighting,目撃,3,三種町,〒018-2303 秋田県山本郡三種町森岳枝沢台２０８－２,40.08231827,140.0766277,【投稿】道路から茂みへ入って行った。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:26865,05,秋田県,2026-07-14T05:45:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,大館市,〒017-0005 秋田県大館市花岡町土目内３１６地域,40.34825204,140.5586293,"【投稿】民家から100メートルほど離れた所を南から北方向へ歩いて行っていた。
 成体と思われるが体長は不明。",akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
@@ -48880,7 +48871,7 @@ akita-kumadas:26940,05,秋田県,2026-07-15T12:40:00,tsukinowaguma,ツキノワ�
 akita-kumadas:26936,05,秋田県,2026-07-15T12:45:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,羽後町,〒012-1241 秋田県雄勝郡羽後町田代梺１０６,39.2071262,140.3137028,車で走行中に成獣１頭が山すそにいるのを目撃した。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:26941,05,秋田県,2026-07-15T13:00:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,北秋田市,〒018-4221 秋田県北秋田市下杉字梅栄,40.16477267,140.3502345,体長60センチほどのクマ1頭を目撃。その後、東側の山林へ立ち去る。付近の民家まで約30メートル。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:26955,05,秋田県,2026-07-15T13:00:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,秋田市,〒019-2623 秋田県秋田市河辺赤平小曽根６９,39.6777484,140.2588047,グランドにいる熊を目撃した。北側の墓地の方に立ち去った。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
-yamaguchi-bear:yp-2026:155,35,山口県,2026-07-15T13:00:00+09:00,bear,クマ,sighting,車で走行中、市道沿いの法面にいる熊を目撃したもの,1,,"萩市大字下田万
+yamaguchi-bear:yp-2026:150,35,山口県,2026-07-15T13:00:00+09:00,bear,クマ,sighting,車で走行中、市道沿いの法面にいる熊を目撃したもの,1,,"萩市大字下田万
 　　市道上",34.6371,131.66677,車で走行中、市道沿いの法面にいる熊を目撃したもの,yamaguchi-bear,https://yamaguchi-opendata.jp/ckan/dataset/yp-2026,CC-BY-4.0,山口県オープンデータカタログサイト（山口県警察本部地域企画課）
 akita-kumadas:26943,05,秋田県,2026-07-15T13:30:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,由利本荘市,秋田県由利本荘市西目町沼田新道下　地内,39.35513974,140.0172222,"人家との距離：5.0ｍ
 クマの体長：1.0ｍ",akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
@@ -48905,7 +48896,7 @@ akita-kumadas:26970,05,秋田県,2026-07-15T17:47:00,tsukinowaguma,ツキノワ�
 akita-kumadas:26958,05,秋田県,2026-07-15T17:50:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,大仙市,〒019-2111 秋田県大仙市土川楯平２－１２,39.54949,140.4545766,【投稿】家の前を子グマが通って山に入って行った,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:26964,05,秋田県,2026-07-15T17:50:00,inoshishi,イノシシ,sighting,目撃,1,三種町,〒018-2302 秋田県山本郡三種町下岩川 道路,40.09336648,140.1153982,【投稿】,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:26966,05,秋田県,2026-07-15T17:55:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,由利本荘市,秋田県由利本荘市西目町沼田字新道下地内,39.35746254,140.0169754,体長：約1ｍ、人家までの距離：約50m,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
-yamaguchi-bear:yp-2026:156,35,山口県,2026-07-15T18:00:00+09:00,bear,クマ,trace,市道上において、熊の足跡を発見したもの,,,"岩国市本郷町本谷
+yamaguchi-bear:yp-2026:151,35,山口県,2026-07-15T18:00:00+09:00,bear,クマ,trace,市道上において、熊の足跡を発見したもの,,,"岩国市本郷町本谷
 　　市道上",34.32235,132.04274,市道上において、熊の足跡を発見したもの,yamaguchi-bear,https://yamaguchi-opendata.jp/ckan/dataset/yp-2026,CC-BY-4.0,山口県オープンデータカタログサイト（山口県警察本部地域企画課）
 akita-kumadas:26965,05,秋田県,2026-07-15T18:13:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,秋田市,〒010-0144 秋田県秋田市下新城岩城右馬之丞１７４,39.79109426,140.0971735,【投稿】走行中の車にクラクションをならされ、休耕田に逃げこんだ,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:26967,05,秋田県,2026-07-15T18:15:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,秋田市,〒010-0144 秋田市下新城岩城字右之丞341,39.7888354,140.0998396,【投稿】田んぼの畦を走って北東の山に入って行った,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
@@ -48958,7 +48949,7 @@ akita-kumadas:27015,05,秋田県,2026-07-16T18:30:00,tsukinowaguma,ツキノワ�
 akita-kumadas:27009,05,秋田県,2026-07-16T18:35:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,三種町,〒018-2401 秋田県山本郡三種町鵜川館の上鵜川館の上,40.10069388,140.0220267,【投稿】県道森岳鵜川線から境内へ入る。走って西側の墓地方面へ駆けていった。体調は1メートル内外。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:27019,05,秋田県,2026-07-16T19:30:00,tsukinowaguma,ツキノワグマ,sighting,目撃,3,鹿角市,〒018-5421 秋田県鹿角市十和田大湯大湯 道路,40.36183592,140.9416097,"【投稿】道路の中央で、小熊を遊ばせてるように見えた。
 通ることが出来ず、30m程手前で止まり、クラクションを鳴らすと道路脇の斜面を登って行った。",akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
-yamaguchi-bear:yp-2026:157,35,山口県,2026-07-16T22:25:00+09:00,bear,クマ,sighting,車で走行中、市道上を横断する熊を目撃したもの,1,,"宇部市大字善和
+yamaguchi-bear:yp-2026:152,35,山口県,2026-07-16T22:25:00+09:00,bear,クマ,sighting,車で走行中、市道上を横断する熊を目撃したもの,1,,"宇部市大字善和
 　　市道上",34.00067,131.29213,車で走行中、市道上を横断する熊を目撃したもの,yamaguchi-bear,https://yamaguchi-opendata.jp/ckan/dataset/yp-2026,CC-BY-4.0,山口県オープンデータカタログサイト（山口県警察本部地域企画課）
 akita-kumadas:27023,05,秋田県,2026-07-17T04:45:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,秋田市,〒019-2621 秋田県秋田市河辺諸井野田４４,39.66123014,140.2382845,【投稿】子熊が道路の上にいました,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:27021,05,秋田県,2026-07-17T05:35:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,秋田市,〒010-1211 秋田県秋田市雄和椿川山籠,39.60970634,140.1986351,【投稿】車で走行中、道路沿いに体長0.8m程度の子グマ１頭を目撃。北方向へ立ち去った。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
@@ -49035,9 +49026,9 @@ akita-kumadas:27080,05,秋田県,2026-07-18T05:45:00,tsukinowaguma,ツキノワ�
 駐車場の詳細な場所は記載されていません。
 タクミアリーナ側に移動し、警察が7時頃まで巡回してくださるそうです
 クマダスに反映なっていないので、投稿します",akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
-yamaguchi-bear:yp-2026:158,35,山口県,2026-07-18T07:18:00+09:00,bear,クマ,sighting,車で走行中、市道沿いの山麓にいる熊を目撃したもの,1,,"山口市徳地岸見
+yamaguchi-bear:yp-2026:153,35,山口県,2026-07-18T07:18:00+09:00,bear,クマ,sighting,車で走行中、市道沿いの山麓にいる熊を目撃したもの,1,,"山口市徳地岸見
 　　山麓",34.15023,131.6201,車で走行中、市道沿いの山麓にいる熊を目撃したもの,yamaguchi-bear,https://yamaguchi-opendata.jp/ckan/dataset/yp-2026,CC-BY-4.0,山口県オープンデータカタログサイト（山口県警察本部地域企画課）
-yamaguchi-bear:yp-2026:159,35,山口県,2026-07-18T07:40:00+09:00,bear,クマ,sighting,車で走行中、県道上を横断する熊を目撃したもの,1,,"周南市大字八代
+yamaguchi-bear:yp-2026:154,35,山口県,2026-07-18T07:40:00+09:00,bear,クマ,sighting,車で走行中、県道上を横断する熊を目撃したもの,1,,"周南市大字八代
 　　県道上",34.0968,131.92643,車で走行中、県道上を横断する熊を目撃したもの,yamaguchi-bear,https://yamaguchi-opendata.jp/ckan/dataset/yp-2026,CC-BY-4.0,山口県オープンデータカタログサイト（山口県警察本部地域企画課）
 akita-kumadas:27083,05,秋田県,2026-07-18T08:15:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,鹿角市,〒018-5201 秋田県鹿角市花輪柴内大久保,40.23999683,140.8351135,農業用ハウスの前に体調1mほどのクマ1頭を目撃。その後クマは西側の道路を渡り、北側方向へ移動する姿を確認。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:27088,05,秋田県,2026-07-18T09:30:00,inoshishi,イノシシ,sighting,目撃,1,八峰町,〒018-2500 秋田県山本郡八峰町八森三十釜,40.38957575,140.0252348,【投稿】車で通りかかったところ体長80cm程度のイノシシを目撃。道路際から水田脇を通り真瀬川の方へ向った,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
@@ -49105,7 +49096,7 @@ akita-kumadas:27194,05,秋田県,2026-07-19T08:50:00,tsukinowaguma,ツキノワ�
 akita-kumadas:27138,05,秋田県,2026-07-19T09:06:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,にかほ市,〒018-0311 秋田県にかほ市金浦鳥長根地内,39.25799414,139.9259949,草刈り中、森側へ行く熊を1頭目撃。体長約1m。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:27142,05,秋田県,2026-07-19T09:10:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,大館市,〒017-0002 秋田県大館市白沢白沢４０７－９付近,40.33616683,140.5886132,近隣住民が畑にいるクマ1頭を目撃/（体長1.0ｍ）/進行方向不明/直近民家まで約150ｍ,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:27187,05,秋田県,2026-07-19T09:10:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,仙北市,秋田県仙北市角館町下延西川原,39.55850201,140.5272388,木の上に登っていた。体長約1m。東側の山方向へ立ち去り。付近の民家までの距離約20m。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
-yamaguchi-bear:yp-2026:160,35,山口県,2026-07-19T11:30:00+09:00,bear,クマ,sighting,車で走行中、登山道を横断する熊を目撃したもの,1,,"萩市大字明木
+yamaguchi-bear:yp-2026:155,35,山口県,2026-07-19T11:30:00+09:00,bear,クマ,sighting,車で走行中、登山道を横断する熊を目撃したもの,1,,"萩市大字明木
 　　石ノ巷山登山道",34.34772,131.41015,車で走行中、登山道を横断する熊を目撃したもの,yamaguchi-bear,https://yamaguchi-opendata.jp/ckan/dataset/yp-2026,CC-BY-4.0,山口県オープンデータカタログサイト（山口県警察本部地域企画課）
 akita-kumadas:27145,05,秋田県,2026-07-19T11:32:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,秋田市,〒010-0802 秋田県秋田市外旭川鳥谷場,39.74717897,140.0921094,八柳踏切付近でクマ1頭目撃。体長1m。東方向へ立ち去り。最寄り建物からの距離30m。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:27143,05,秋田県,2026-07-19T11:37:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,秋田市,〒011-0936 秋田県秋田市将軍野南５丁目１－１０,39.74762992,140.0909382,【投稿】線路を横切り、外旭川方面から将軍野地区方面に行った。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
@@ -49266,7 +49257,7 @@ akita-kumadas:27282,05,秋田県,2026-07-22T17:10:00,tsukinowaguma,ツキノワ�
 akita-kumadas:27283,05,秋田県,2026-07-22T17:10:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,秋田市,〒019-2614 秋田県秋田市河辺豊成虚空蔵大台滝２４－４,39.64824102,140.1770818,【投稿】子熊。中型犬くらいの大きさ。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:27315,05,秋田県,2026-07-22T17:30:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,北秋田市,〒018-4514 秋田県北秋田市五味堀柏木岱家ノ前,40.04299201,140.4017544,体長1.6メートルのクマ1頭を目撃。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:27316,05,秋田県,2026-07-22T19:00:00,inoshishi,イノシシ,sighting,目撃,7,北秋田市,秋田県北秋田市七日市字森越,40.12220705,140.4369771,そば畑の近くでイノシシの群れを目撃。イノシシに掘り返された跡を確認した。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
-yamaguchi-bear:yp-2026:161,35,山口県,2026-07-23T05:00:00+09:00,bear,クマ,trace,目撃者が畑において熊の足跡を発見したもの,,,"柳井市伊陸
+yamaguchi-bear:yp-2026:156,35,山口県,2026-07-23T05:00:00+09:00,bear,クマ,trace,目撃者が畑において熊の足跡を発見したもの,,,"柳井市伊陸
 　　畑",34.02413,132.13066,目撃者が畑において熊の足跡を発見したもの,yamaguchi-bear,https://yamaguchi-opendata.jp/ckan/dataset/yp-2026,CC-BY-4.0,山口県オープンデータカタログサイト（山口県警察本部地域企画課）
 akita-kumadas:27296,05,秋田県,2026-07-23T06:10:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,秋田市,〒011-0931 秋田県秋田市将軍野東２丁目２２,39.75496295,140.0882792,体長1m。敷地内を西側へ立ち去り。建物からの距離15m。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:27301,05,秋田県,2026-07-23T06:10:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,秋田市,〒011-0931 秋田県秋田市将軍野東２丁目２２－３－６,39.75476499,140.0889623,【投稿】,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
@@ -49334,7 +49325,7 @@ akita-kumadas:27343,05,秋田県,2026-07-23T20:00:00,tsukinowaguma,ツキノワ�
 akita-kumadas:27345,05,秋田県,2026-07-24T05:22:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,秋田市,〒011-0946 秋田県秋田市土崎港中央４丁目４－５２,39.75249532,140.0726134,体長1m。敷地内から西側へ立ち去るクマを目撃。建物からの距離30m。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:27381,05,秋田県,2026-07-24T06:00:00,inoshishi,イノシシ,trace,痕跡(その他),,大館市,〒018-5711 秋田県大館市比内町味噌内字二又沢　地内,40.19164512,140.6334963,被害：他の畔の破壊,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:27346,05,秋田県,2026-07-24T06:45:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,秋田市,〒010-0872 秋田県秋田市千秋北の丸３,39.7268529,140.1257524,体長1m。西側へ立ち去るクマを目撃。建物からの距離3m。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
-yamaguchi-bear:yp-2026:162,35,山口県,2026-07-24T07:43:00+09:00,bear,クマ,sighting,目撃者が徒歩で帰宅中、市道上にいる熊ようの動物を目撃したもの,1,,"山口市阿東地福上
+yamaguchi-bear:yp-2026:157,35,山口県,2026-07-24T07:43:00+09:00,bear,クマ,sighting,目撃者が徒歩で帰宅中、市道上にいる熊ようの動物を目撃したもの,1,,"山口市阿東地福上
 　　市道上",34.35123,131.66944,目撃者が徒歩で帰宅中、市道上にいる熊ようの動物を目撃したもの,yamaguchi-bear,https://yamaguchi-opendata.jp/ckan/dataset/yp-2026,CC-BY-4.0,山口県オープンデータカタログサイト（山口県警察本部地域企画課）
 akita-kumadas:27347,05,秋田県,2026-07-24T09:37:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,能代市,〒016-0122 秋田県能代市扇田扇渕１４,40.1985929,140.069772,1.2mのクマ1頭を目撃。西側のやぶに逃げた。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:27348,05,秋田県,2026-07-24T09:50:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,秋田市,〒010-0146 秋田県秋田市下新城中野琵琶沼２０８－８,39.80676816,140.0583297,追分駅の南側にある草むらに逃げ込んで、そこにいるようだ。体長1.0m,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
@@ -49368,9 +49359,9 @@ akita-kumadas:27374,05,秋田県,2026-07-24T13:45:00,tsukinowaguma,ツキノワ�
 akita-kumadas:27375,05,秋田県,2026-07-24T13:45:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,秋田市,〒011-0946 秋田県秋田市土崎港中央４丁目４,39.75283901,140.072304,クマ捜索中、クマ現認。ナイスのある東側へ立ち去り。体長1m。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:27369,05,秋田県,2026-07-24T13:52:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,秋田市,〒010-0146 秋田県秋田市下新城中野街道端西２４０－２７ 体育施設棟,39.80119498,140.048461,【投稿】草むらを歩いていた,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:27376,05,秋田県,2026-07-24T14:00:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,秋田市,〒011-0946 秋田県秋田市土崎港中央２丁目８,39.7510855,140.0738919,クマ捜索中、嶺梅院の北側の丁字路を東側へ立ち去るクマを現認。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
-yamaguchi-bear:yp-2026:165,35,山口県,2026-07-24T14:00:00+09:00,bear,クマ,sighting,目撃者が車内で休憩中、石船橋を渡る熊を目撃したもの,1,,"周南市大字鹿野上
+yamaguchi-bear:yp-2026:160,35,山口県,2026-07-24T14:00:00+09:00,bear,クマ,sighting,目撃者が車内で休憩中、石船橋を渡る熊を目撃したもの,1,,"周南市大字鹿野上
 　　石船橋上",34.25184,131.82795,目撃者が車内で休憩中、石船橋を渡る熊を目撃したもの,yamaguchi-bear,https://yamaguchi-opendata.jp/ckan/dataset/yp-2026,CC-BY-4.0,山口県オープンデータカタログサイト（山口県警察本部地域企画課）
-yamaguchi-bear:yp-2026:163,35,山口県,2026-07-24T14:24:00+09:00,bear,クマ,sighting,車で走行中、国道上にいる熊を目撃したもの,1,,"山口市徳地柚木
+yamaguchi-bear:yp-2026:158,35,山口県,2026-07-24T14:24:00+09:00,bear,クマ,sighting,車で走行中、国道上にいる熊を目撃したもの,1,,"山口市徳地柚木
 　　国道上",34.34151,131.74543,車で走行中、国道上にいる熊を目撃したもの,yamaguchi-bear,https://yamaguchi-opendata.jp/ckan/dataset/yp-2026,CC-BY-4.0,山口県オープンデータカタログサイト（山口県警察本部地域企画課）
 akita-kumadas:27371,05,秋田県,2026-07-24T14:25:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,大仙市,〒019-2401 秋田県大仙市協和船岡沢内８８６,39.67043838,140.3679219,【投稿】道路を横断していた。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:27380,05,秋田県,2026-07-24T14:30:00,inoshishi,イノシシ,sighting,目撃,1,鹿角市,〒018-5201 秋田県鹿角市花輪地羅野,40.22127873,140.8060364,"畑／体長不明、頭数不明／住宅から5m／目撃者との距離-
@@ -49380,7 +49371,7 @@ akita-kumadas:27377,05,秋田県,2026-07-24T15:30:00,tsukinowaguma,ツキノワ�
 akita-kumadas:27475,05,秋田県,2026-07-24T15:30:00,inoshishi,イノシシ,trace,痕跡(その他),1,大仙市,秋田県大仙市鑓見内字野中,39.52389991,140.5141926,掘り返し跡多数発見,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:27379,05,秋田県,2026-07-24T16:00:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,鹿角市,〒018-5334 秋田県鹿角市十和田毛馬内寺ノ上,40.27613492,140.7733612,"市道／体長1m／住宅から20m／目撃者との距離20m
 市道をオートバイで走行中、クマが市道を東から西に横断して草むらに入っていくのを目撃した。",akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
-yamaguchi-bear:yp-2026:164,35,山口県,2026-07-24T16:20:00+09:00,bear,クマ,sighting,車で走行中、国道上を横断する熊を目撃したもの,1,,"阿武郡阿武町大字奈古
+yamaguchi-bear:yp-2026:159,35,山口県,2026-07-24T16:20:00+09:00,bear,クマ,sighting,車で走行中、国道上を横断する熊を目撃したもの,1,,"阿武郡阿武町大字奈古
 　　国道上",34.51458,131.4842,車で走行中、国道上を横断する熊を目撃したもの,yamaguchi-bear,https://yamaguchi-opendata.jp/ckan/dataset/yp-2026,CC-BY-4.0,山口県オープンデータカタログサイト（山口県警察本部地域企画課）
 akita-kumadas:27386,05,秋田県,2026-07-24T17:00:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,秋田市,〒011-0911 秋田県秋田市飯島古道下川端２１７－６,39.7819267,140.0511926,"火力発電所跡地付近で作業中、約60ｍほど離れた北側の門付近に居る熊１頭、大きさ約１mを目撃した
 熊は北側に立ち去った
@@ -49389,7 +49380,7 @@ akita-kumadas:27387,05,秋田県,2026-07-24T17:00:00,tsukinowaguma,ツキノワ�
 体長約１ｍ",akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:27388,05,秋田県,2026-07-24T17:33:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,男鹿市,秋田県男鹿市脇本脇本字狭間田1,39.91236966,139.8963511,体長不明（成獣）のクマ1頭を確認。直近建物から約170ｍ。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:27385,05,秋田県,2026-07-24T18:43:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,大館市,〒018-5601 秋田県大館市十二所水上 道路,40.20698559,140.6910282,【投稿】運転中道路の端に小熊が居た,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
-yamaguchi-bear:yp-2026:168,35,山口県,2026-07-25T05:30:00+09:00,bear,クマ,trace,目撃者が畑において熊の足跡を発見したもの,,,"柳井市伊陸
+yamaguchi-bear:yp-2026:163,35,山口県,2026-07-25T05:30:00+09:00,bear,クマ,trace,目撃者が畑において熊の足跡を発見したもの,,,"柳井市伊陸
 　　畑",34.02413,132.13066,目撃者が畑において熊の足跡を発見したもの,yamaguchi-bear,https://yamaguchi-opendata.jp/ckan/dataset/yp-2026,CC-BY-4.0,山口県オープンデータカタログサイト（山口県警察本部地域企画課）
 akita-kumadas:27391,05,秋田県,2026-07-25T05:43:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,男鹿市,秋田県男鹿市脇本脇本字狭間田1,39.91234497,139.8963323,"クマ1頭を確認。
 直近建物から約170ｍ。",akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
@@ -49397,7 +49388,7 @@ akita-kumadas:27393,05,秋田県,2026-07-25T06:20:00,tsukinowaguma,ツキノワ�
 畑にいるとき、クマが畑を通って東に向かって行くのを見た。",akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:27390,05,秋田県,2026-07-25T07:00:00,tsukinowaguma,ツキノワグマ,damage,痕跡(食害),1,横手市,秋田県横手市大森町菅生田,39.34679278,140.4140335,【投稿】民家に植えていたトウモロコシが茎ごと倒され食べられていた,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:27392,05,秋田県,2026-07-25T07:40:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,五城目町,〒018-1713 秋田県南秋田郡五城目町馬場目蓬内台,39.91363696,140.1599559,【投稿】,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
-yamaguchi-bear:yp-2026:166,35,山口県,2026-07-25T09:43:00+09:00,bear,クマ,sighting,車で走行中、県道上を横断する熊を目撃したもの,1,,"山口市小郡上郷
+yamaguchi-bear:yp-2026:161,35,山口県,2026-07-25T09:43:00+09:00,bear,クマ,sighting,車で走行中、県道上を横断する熊を目撃したもの,1,,"山口市小郡上郷
 　　県道上",34.15139,131.37388,車で走行中、県道上を横断する熊を目撃したもの,yamaguchi-bear,https://yamaguchi-opendata.jp/ckan/dataset/yp-2026,CC-BY-4.0,山口県オープンデータカタログサイト（山口県警察本部地域企画課）
 akita-kumadas:27397,05,秋田県,2026-07-25T11:10:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,三種町,〒018-2303 秋田県山本郡三種町森岳家後,40.07812049,140.0613498,体長1m   畑に居た,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:27398,05,秋田県,2026-07-25T11:30:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,男鹿市,〒010-0341 秋田県男鹿市船越一向１９５－１３,39.8900808,139.954362,"体長約1.5ｍのクマ1頭を目撃。
@@ -49417,10 +49408,10 @@ akita-kumadas:27404,05,秋田県,2026-07-25T16:35:00,tsukinowaguma,ツキノワ�
 体長　約1.3m",akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:27403,05,秋田県,2026-07-25T16:40:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,秋田市,〒011-0905 秋田県秋田市寺内神屋敷１－６,39.73256274,140.0848174,【投稿】秋田城方面からファミリーマート方面へ車で走行中、道路を横断するクマを目撃。1mほど。民家の庭へと侵入していた。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:27405,05,秋田県,2026-07-25T17:10:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,鹿角市,〒018-5201 秋田県鹿角市花輪字案内,40.19000419,140.8085489,西側から東側へ車で移動中に、体長５０センチメートル程のクマ１頭が北側の藪の中に歩いて行くのを目撃。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
-yamaguchi-bear:yp-2026:167,35,山口県,2026-07-25T22:20:00+09:00,bear,クマ,sighting,車で走行中、国道上にいる熊を目撃したもの,1,,"長門市三隅上
+yamaguchi-bear:yp-2026:162,35,山口県,2026-07-25T22:20:00+09:00,bear,クマ,sighting,車で走行中、国道上にいる熊を目撃したもの,1,,"長門市三隅上
 　　国道上",34.35422,131.28876,車で走行中、国道上にいる熊を目撃したもの,yamaguchi-bear,https://yamaguchi-opendata.jp/ckan/dataset/yp-2026,CC-BY-4.0,山口県オープンデータカタログサイト（山口県警察本部地域企画課）
 akita-kumadas:27408,05,秋田県,2026-07-26T00:20:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,男鹿市,秋田県男鹿市野石大場沢下,40.0407743,139.9261236,目撃場所敷地内を横断するクマを確認。進行方向は不明。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
-yamaguchi-bear:yp-2026:169,35,山口県,2026-07-26T06:00:00+09:00,bear,クマ,trace,目撃者が畑において熊の足跡を発見したもの,,,"柳井市伊陸
+yamaguchi-bear:yp-2026:164,35,山口県,2026-07-26T06:00:00+09:00,bear,クマ,trace,目撃者が畑において熊の足跡を発見したもの,,,"柳井市伊陸
 　　畑",34.02413,132.13066,目撃者が畑において熊の足跡を発見したもの,yamaguchi-bear,https://yamaguchi-opendata.jp/ckan/dataset/yp-2026,CC-BY-4.0,山口県オープンデータカタログサイト（山口県警察本部地域企画課）
 akita-kumadas:27407,05,秋田県,2026-07-26T06:15:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,大館市,〒017-0005 秋田県大館市花岡町大森野,40.33318174,140.5615783,"【投稿】道路脇に1頭立ち止まっていた。
 周辺1分ほど、ウロウロし道路下の草むらに下りていった。",akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
@@ -49464,7 +49455,7 @@ akita-kumadas:27430,05,秋田県,2026-07-26T20:15:00,inoshishi,イノシシ,sigh
 akita-kumadas:27432,05,秋田県,2026-07-26T22:33:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,秋田市,〒011-0931 秋田県秋田市将軍野東２丁目１３－２４,39.75135849,140.088402,【投稿】小熊が双葉町の方に走って行った,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:27444,05,秋田県,2026-07-27T05:00:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,男鹿市,〒010-0681 秋田県男鹿市北浦相川泉野５９－３,39.95471251,139.7897399,"道路走行中、橋の上に体長約0.8ｍのクマを目撃。
 直近建物より70ｍ。",akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
-yamaguchi-bear:yp-2026:170,35,山口県,2026-07-27T05:00:00+09:00,bear,クマ,trace,目撃者が畑において熊の足跡を発見したもの,,,"柳井市伊陸
+yamaguchi-bear:yp-2026:165,35,山口県,2026-07-27T05:00:00+09:00,bear,クマ,trace,目撃者が畑において熊の足跡を発見したもの,,,"柳井市伊陸
 　　畑",34.02413,132.13066,目撃者が畑において熊の足跡を発見したもの,yamaguchi-bear,https://yamaguchi-opendata.jp/ckan/dataset/yp-2026,CC-BY-4.0,山口県オープンデータカタログサイト（山口県警察本部地域企画課）
 akita-kumadas:27436,05,秋田県,2026-07-27T05:40:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,秋田市,〒011-0904 秋田県秋田市寺内蛭根１丁目４－６,39.72909591,140.0888622,"【投稿】約1mの大きさ
 道路に沿って海の方向へ歩いて行った
@@ -49510,7 +49501,7 @@ akita-kumadas:27467,05,秋田県,2026-07-27T20:43:00,tsukinowaguma,ツキノワ�
 ishikari-higuma:247,01,北海道,2026-07-28,higuma,ヒグマ,unknown,ヒグマ,,石狩市,石狩市浜益幌１３６５番地付近,43.64527006798413,141.35450256160098,目撃者（通報者）が、浜益幌から厚田聚富に向かう途中、旧国道沿い幌橋を渡り、左折したところ親子２頭（体長1.5m及び1.0m、毛色は黒）の熊に遭遇。親子熊は斜面から出てきたが、その後民家方面の草むらへ下って行った。その後の動向は不明。,ishikari-higuma,https://www.city.ishikari.hokkaido.jp/,CC-BY-4.0,石狩市
 akita-kumadas:27517,05,秋田県,2026-07-28T04:30:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,大館市,〒017-0021 秋田県大館市雪沢下谷地,40.29643381,140.6402081,【投稿】トラップカメラに写った。（日時表示は未設定のため実際と異なる）,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:27468,05,秋田県,2026-07-28T05:45:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,秋田市,〒011-0905 秋田県秋田市寺内神屋敷,39.73100206,140.0804973,ユースパル付近を車で走行中に大駐車場にいたクマを目撃。その後、ユースパルの北側の林へ立ち去り。体長1m。建物からの距離20m。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
-yamaguchi-bear:yp-2026:171,35,山口県,2026-07-28T06:00:00+09:00,bear,クマ,trace,目撃者が畑において熊の足跡を発見したもの,,,"柳井市伊陸
+yamaguchi-bear:yp-2026:166,35,山口県,2026-07-28T06:00:00+09:00,bear,クマ,trace,目撃者が畑において熊の足跡を発見したもの,,,"柳井市伊陸
 　　畑",34.02411,132.13066,目撃者が畑において熊の足跡を発見したもの,yamaguchi-bear,https://yamaguchi-opendata.jp/ckan/dataset/yp-2026,CC-BY-4.0,山口県オープンデータカタログサイト（山口県警察本部地域企画課）
 akita-kumadas:27474,05,秋田県,2026-07-28T07:20:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,大館市,秋田県大館市比内町達子字大谷地,40.21433536,140.565699,【投稿】7:20から7:40ごろまで複数の監視カメラに映っていた。体長90センチほど。食べ物を探していたようで、数年前に伐採したアカシアの木に繁殖した虫に興味を示していたようだ。行先不明。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:27470,05,秋田県,2026-07-28T08:50:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,三種町,〒018-2401 秋田県山本郡三種町鵜川大曲家の上,40.10394652,140.0133169,体長不明　道路上に居た　その後北方向薮に入って行った。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
@@ -49524,7 +49515,7 @@ akita-kumadas:27482,05,秋田県,2026-07-28T14:30:00,inoshishi,イノシシ,sigh
 akita-kumadas:27479,05,秋田県,2026-07-28T14:50:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,横手市,秋田県横手市大森町八沢木,39.34773391,140.3448343,"道路を横断するクマ一頭を目撃。
 山林へ去っていった。",akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:27478,05,秋田県,2026-07-28T15:10:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,秋田市,〒010-0822 秋田県秋田市添川東台沢 道路,39.7724903,140.1339537,【投稿】さとみ温泉側から添川へ抜けて行く時に道路を横断したのを目撃,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
-yamaguchi-bear:yp-2026:172,35,山口県,2026-07-28T15:30:00+09:00,bear,クマ,sighting,車で走行中、市道上にいる熊を目撃したもの,2,,"山口市徳地柚木
+yamaguchi-bear:yp-2026:167,35,山口県,2026-07-28T15:30:00+09:00,bear,クマ,sighting,車で走行中、市道上にいる熊を目撃したもの,2,,"山口市徳地柚木
 　　市道上",34.34506,131.73644,車で走行中、市道上にいる熊を目撃したもの,yamaguchi-bear,https://yamaguchi-opendata.jp/ckan/dataset/yp-2026,CC-BY-4.0,山口県オープンデータカタログサイト（山口県警察本部地域企画課）
 akita-kumadas:27481,05,秋田県,2026-07-28T15:52:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,秋田市,〒019-2742 秋田県秋田市河辺三内丸舞１－１,39.74184434,140.3166164,ユフォーレ敷地内東側中庭で1.5mの熊を目撃した。1頭　建物まですぐ,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:27486,05,秋田県,2026-07-28T18:00:00,tsukinowaguma,ツキノワグマ,sighting,目撃,3,大館市,〒017-0005 秋田県大館市花岡町姥沢５８－２,40.3224743,140.5453813,ドライバーがクマ3頭（体長不明、親グマ1、子グマ2）を目撃/進行方向東/旧花岡体育館の西約150ｍ,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
@@ -49556,7 +49547,7 @@ akita-kumadas:27499,05,秋田県,2026-07-29T20:25:00,tsukinowaguma,ツキノワ�
 akita-kumadas:27500,05,秋田県,2026-07-29T20:50:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,三種町,〒018-2303 秋田県山本郡三種町森岳木戸沢地域,40.0837548,140.0897402,"【投稿】イチヂクの木に来ていたようだ
 人に気づいて杉林に逃げていった",akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:27505,05,秋田県,2026-07-30T05:20:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,北秋田市,〒018-4203 秋田県北秋田市木戸石 道路,40.17693875,140.3048837,二ツ井森吉線を南から北へ横断するクマ一頭を目撃。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
-yamaguchi-bear:yp-2026:175,35,山口県,2026-07-30T06:30:00+09:00,bear,クマ,trace,目撃者が市道上において熊の足跡を発見したもの,,,"岩国市美和町阿賀
+yamaguchi-bear:yp-2026:170,35,山口県,2026-07-30T06:30:00+09:00,bear,クマ,trace,目撃者が市道上において熊の足跡を発見したもの,,,"岩国市美和町阿賀
 　　市道上",34.27977,132.06875,目撃者が市道上において熊の足跡を発見したもの,yamaguchi-bear,https://yamaguchi-opendata.jp/ckan/dataset/yp-2026,CC-BY-4.0,山口県オープンデータカタログサイト（山口県警察本部地域企画課）
 akita-kumadas:27502,05,秋田県,2026-07-30T06:32:00,inoshishi,イノシシ,sighting,目撃,1,横手市,秋田県横手市十文字町海道下,39.22889149,140.5217278,【投稿】（状況の記載なし）,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:27507,05,秋田県,2026-07-30T06:50:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,羽後町,〒012-1353 秋田県雄勝郡羽後町上仙道仙道沢,39.14929074,140.3094949,民家裏北側の山で目撃。音を出したら山の中へ逃げて行った。体長１ｍ程度,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
@@ -49581,7 +49572,7 @@ akita-kumadas:27528,05,秋田県,2026-07-30T18:54:00,tsukinowaguma,ツキノワ�
 akita-kumadas:27543,05,秋田県,2026-07-31T05:35:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,秋田市,秋田県秋田市上北手猿田猿田沢,39.68605343,140.1872635,【投稿】秋田南インターから北上中、東側の路肩薮から飛び出し目の前を横断、西側の路肩薮に入って行った,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:27530,05,秋田県,2026-07-31T05:40:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,羽後町,〒012-1136 秋田県雄勝郡羽後町飯沢真田倉９,39.15196568,140.3421874,民家付近にいる熊を目撃。隣の家とも連絡をとり爆竹を鳴らした後、離れて行ったと思われる,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:27531,05,秋田県,2026-07-31T05:56:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,にかほ市,〒018-0411 秋田県にかほ市院内字嶋田 地内,39.28249664,139.9638784,南側へ移動する熊を1頭目撃。体長約1m。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
-yamaguchi-bear:yp-2026:174,35,山口県,2026-07-31T06:20:00+09:00,bear,クマ,sighting,車で走行中、県道を横断する熊を目撃したもの,1,,"萩市大字椿東
+yamaguchi-bear:yp-2026:169,35,山口県,2026-07-31T06:20:00+09:00,bear,クマ,sighting,車で走行中、県道を横断する熊を目撃したもの,1,,"萩市大字椿東
 　　県道上",34.38358,131.43292,車で走行中、県道を横断する熊を目撃したもの,yamaguchi-bear,https://yamaguchi-opendata.jp/ckan/dataset/yp-2026,CC-BY-4.0,山口県オープンデータカタログサイト（山口県警察本部地域企画課）
 akita-kumadas:27545,05,秋田県,2026-07-31T06:30:00,inoshishi,イノシシ,sighting,目撃,10,秋田市,〒010-1343 秋田県秋田市雄和繋梵天野１４２－２,39.53126497,140.217644,【投稿】親子合計10匹のイノシシが田んぼのあぜ道にいました。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:27562,05,秋田県,2026-07-31T08:10:00,inoshishi,イノシシ,sighting,目撃,1,鹿角市,〒018-5141 秋田県鹿角市八幡平谷内,40.11340285,140.7900529,【投稿】民家から裏山まで100メートル。熊よけのためロケット花火を裏山に向けて発射してから山裾から10メートルほど接近した所、山裾の藪から突然１メートル位のイノシシが現れ北側の寺の方に爆走して行った。一瞬の出来事でびっくり、あの勢いで向かって来られたらひとたまりも無いと思っています,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
@@ -49602,7 +49593,7 @@ akita-kumadas:27700,05,秋田県,2026-07-31T17:15:00,tsukinowaguma,ツキノワ�
 akita-kumadas:27550,05,秋田県,2026-07-31T17:36:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,秋田市,秋田県秋田市外旭川万治沢,39.76822887,140.1217282,【投稿】跨道橋を外旭川方向に渡ってきたのを確認,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:27546,05,秋田県,2026-07-31T18:10:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,羽後町,〒012-1102 秋田県雄勝郡羽後町新町字高寺,39.24360428,140.383996,農業ハウス付近から道路を横切り、南側の山の方へ走って行った。大きさは不明だが小さめ。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:27549,05,秋田県,2026-07-31T18:30:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,秋田市,〒011-0905 秋田県秋田市寺内神屋敷２－１,39.73255861,140.0835773,【投稿】,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
-yamaguchi-bear:yp-2026:173,35,山口県,2026-07-31T20:30:00+09:00,bear,クマ,sighting,車で走行中、町道上にいる熊を目撃したもの,1,,"阿武町大字奈古
+yamaguchi-bear:yp-2026:168,35,山口県,2026-07-31T20:30:00+09:00,bear,クマ,sighting,車で走行中、町道上にいる熊を目撃したもの,1,,"阿武町大字奈古
 　　町道上",34.51106,131.45809,車で走行中、町道上にいる熊を目撃したもの,yamaguchi-bear,https://yamaguchi-opendata.jp/ckan/dataset/yp-2026,CC-BY-4.0,山口県オープンデータカタログサイト（山口県警察本部地域企画課）
 akita-kumadas:27551,05,秋田県,2026-08-01T07:05:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,秋田市,〒011-0904 秋田県秋田市寺内蛭根１丁目３地内,39.72927881,140.0895204,道路上にいるのを住居内から目撃。南側へ立ち去り。体長1.3m。建物まで5m。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:27553,05,秋田県,2026-08-01T07:50:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,由利本荘市,秋田県由利本荘市岩城勝手字大沢地内,39.56788501,140.0670383,"人家までの距離　５００ｍ
@@ -49622,7 +49613,7 @@ akita-kumadas:27561,05,秋田県,2026-08-01T16:30:00,tsukinowaguma,ツキノワ�
 体長約60cm。",akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 ishikari-higuma:249,01,北海道,2026-08-02,higuma,ヒグマ,unknown,ヒグマ,,石狩市,浜益送毛線（千本ナラ付近）,43.52894738572837,141.37388390552914,目撃者が観光目的のため、毘砂別地区から市道毘砂別送毛線を車で通行中、千本ナラ付近で道路上にいるヒグマ１頭を目撃。ヒグマは東側の茂みに移動しその後の動向は不明。,ishikari-higuma,https://www.city.ishikari.hokkaido.jp/,CC-BY-4.0,石狩市
 akita-kumadas:27567,05,秋田県,2026-08-02T05:30:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,男鹿市,〒010-0401 秋田県男鹿市野石申川下墓,40.00828077,139.9041295,道路沿いに体長約1ｍのクマ1頭を目撃。クマは西側の林に立ち去った。直近建物から500ｍ。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
-yamaguchi-bear:yp-2026:176,35,山口県,2026-08-02T06:30:00+09:00,bear,クマ,sighting,車で走行中、国道を横断する熊を目撃したもの,1,,"周南市大字八代
+yamaguchi-bear:yp-2026:171,35,山口県,2026-08-02T06:30:00+09:00,bear,クマ,sighting,車で走行中、国道を横断する熊を目撃したもの,1,,"周南市大字八代
 　　国道上",34.10756,131.96325,車で走行中、国道を横断する熊を目撃したもの,yamaguchi-bear,https://yamaguchi-opendata.jp/ckan/dataset/yp-2026,CC-BY-4.0,山口県オープンデータカタログサイト（山口県警察本部地域企画課）
 akita-kumadas:27607,05,秋田県,2026-08-02T07:00:00,tsukinowaguma,ツキノワグマ,damage,痕跡(食害),,大館市,秋田県大館市比内町味噌内字間戸石上坂,40.18568376,140.6333283,被害：比内地鶏の食害/間戸石集落の南300ｍ,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:27565,05,秋田県,2026-08-02T08:10:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,八峰町,〒018-2503 秋田県山本郡八峰町峰浜塙５０,40.3014457,140.0876194,"寝そべっていた熊１頭を目撃。
@@ -49684,14 +49675,14 @@ akita-kumadas:27628,05,秋田県,2026-08-04T05:30:00,inoshishi,イノシシ,sigh
 akita-kumadas:27615,05,秋田県,2026-08-04T06:10:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,秋田市,〒011-0904 秋田県秋田市寺内蛭根２丁目２－２６,39.72788147,140.087896,【投稿】町内の市道を山の方向へ歩いて行った。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:27616,05,秋田県,2026-08-04T06:15:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,秋田市,〒011-0904 秋田県秋田市寺内蛭根２丁目９－７,39.72826035,140.0863044,【投稿】敷地内から出て道路を横切り向いの敷地入って行った。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:27617,05,秋田県,2026-08-04T06:15:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,秋田市,〒011-0904 秋田県秋田市寺内蛭根２丁目９－７,39.72823709,140.0862896,【投稿】住宅の敷地内から出没、道路を横切って向いの住宅敷地内に入って行った。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
-yamaguchi-bear:yp-2026:177,35,山口県,2026-08-04T06:30:00+09:00,bear,クマ,sighting,罠にかかった熊を発見するも、その後、いなくなっていたもの。,1,,"周南市大字八代
+yamaguchi-bear:yp-2026:172,35,山口県,2026-08-04T06:30:00+09:00,bear,クマ,sighting,罠にかかった熊を発見するも、その後、いなくなっていたもの。,1,,"周南市大字八代
 　　山中",34.08774,131.92487,罠にかかった熊を発見するも、その後、いなくなっていたもの。,yamaguchi-bear,https://yamaguchi-opendata.jp/ckan/dataset/yp-2026,CC-BY-4.0,山口県オープンデータカタログサイト（山口県警察本部地域企画課）
 akita-kumadas:27619,05,秋田県,2026-08-04T08:05:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,秋田市,〒011-0904 秋田県秋田市寺内蛭根３丁目,39.73135397,140.0842559,【投稿】町内（さつき台）を感恩講方面に走って行く熊を目撃。途中、住宅の中に入って行った。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:27620,05,秋田県,2026-08-04T08:10:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,秋田市,〒011-0905 秋田県秋田市寺内神屋敷２－２５,39.73131917,140.0827358,【投稿】ガレージケンの店舗側から飛び出してきてガレージケンの中古車展示場に入っていった,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:27621,05,秋田県,2026-08-04T08:29:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,秋田市,〒011-0905 秋田県秋田市寺内神屋敷５,39.73433803,140.0813287,【投稿】,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:27622,05,秋田県,2026-08-04T08:30:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,秋田市,〒010-0062 秋田県秋田市牛島東７丁目２－１６,39.69754267,140.127646,【投稿】城南中学校の方から牛島住宅地の方へ走って行った。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:27627,05,秋田県,2026-08-04T10:25:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,小坂町,〒017-0201 秋田県鹿角郡小坂町小坂砂子沢地域,40.36549552,140.7448626,【投稿】町道東側の笹藪から出没。車に気づいてまた笹藪に逃げた,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
-yamaguchi-bear:yp-2026:178,35,山口県,2026-08-04T10:30:00+09:00,bear,クマ,sighting,目撃者が市道沿いの擁壁において熊の爪痕を発見したもの,,,"岩国市青木町
+yamaguchi-bear:yp-2026:173,35,山口県,2026-08-04T10:30:00+09:00,bear,クマ,sighting,目撃者が市道沿いの擁壁において熊の爪痕を発見したもの,,,"岩国市青木町
 　　市道沿い",34.09443,132.19489,目撃者が市道沿いの擁壁において熊の爪痕を発見したもの,yamaguchi-bear,https://yamaguchi-opendata.jp/ckan/dataset/yp-2026,CC-BY-4.0,山口県オープンデータカタログサイト（山口県警察本部地域企画課）
 akita-kumadas:27671,05,秋田県,2026-08-04T12:45:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,北秋田市,〒018-4611 秋田県北秋田市阿仁水無湯口内,40.0162351,140.3967024,【投稿】道路を横断し、茂みに入った。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:27630,05,秋田県,2026-08-04T14:05:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,由利本荘市,秋田県由利本荘市岩城富田字升田沢地内,39.51259302,140.0741467,"人家までの距離　300ｍ
@@ -49699,7 +49690,7 @@ akita-kumadas:27630,05,秋田県,2026-08-04T14:05:00,tsukinowaguma,ツキノワ�
 akita-kumadas:27629,05,秋田県,2026-08-04T14:40:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,大仙市,〒019-2121 秋田県大仙市北野目三条川原５２－１,39.5348162,140.3727125,旧国道を秋田市から大仙市に走行中付近の田んぼにて体長約1.2mの成獣一頭を目撃。走行中のためその後は不明。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:27631,05,秋田県,2026-08-04T16:20:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,大仙市,〒019-2112 秋田県大仙市刈和野２０１－１,39.5415501,140.3712751,堤防道路から町内方向(刈和野交番方向)に約1メートルのクマ一頭が向かって行った,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:27660,05,秋田県,2026-08-04T16:20:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,大館市,秋田県大館市花岡町字大森上岱地内,40.33734478,140.5655602,近隣住民がクマ１頭（体長50cm）を目撃/進行方向は不明/直近民家から約170ｍ,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
-yamaguchi-bear:yp-2026:179,35,山口県,2026-08-04T16:30:00+09:00,bear,クマ,sighting,車で走行中、市道沿いの山の斜面を登る熊を目撃したもの,1,,"萩市大字紫福
+yamaguchi-bear:yp-2026:174,35,山口県,2026-08-04T16:30:00+09:00,bear,クマ,sighting,車で走行中、市道沿いの山の斜面を登る熊を目撃したもの,1,,"萩市大字紫福
 　　市道沿い",34.44098,131.53289,車で走行中、市道沿いの山の斜面を登る熊を目撃したもの,yamaguchi-bear,https://yamaguchi-opendata.jp/ckan/dataset/yp-2026,CC-BY-4.0,山口県オープンデータカタログサイト（山口県警察本部地域企画課）
 akita-kumadas:27632,05,秋田県,2026-08-04T16:35:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,三種町,〒018-2305 秋田県山本郡三種町外岡渡道,40.14813911,140.0442699,体長1m   右（東方向）の田から出てきて道路を横断し、左（西方向）へ移動して行った。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:27633,05,秋田県,2026-08-04T16:58:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,秋田市,〒011-0905 秋田県秋田市寺内神屋敷１７－１６,39.73672414,140.0792576,【投稿】,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
@@ -49738,7 +49729,7 @@ akita-kumadas:27661,05,秋田県,2026-08-06T05:30:00,tsukinowaguma,ツキノワ�
 akita-kumadas:27655,05,秋田県,2026-08-06T07:17:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,秋田市,〒010-0976 秋田県秋田市八橋南２丁目１０－１６,39.71937522,140.0883991,"【投稿】JAビル駐車場にて徘徊クマ発見
 そのまま面影橋方向に逃げていった",akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:27656,05,秋田県,2026-08-06T07:35:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,秋田市,〒010-1654 秋田県秋田市浜田滝ノ元,39.66362911,140.0704352,はまなす広場から本庄方面に150mの地点で、道路を東から西に横断するクマ1頭を目撃。体長1.5m、民家まで100m。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
-yamaguchi-bear:yp-2026:180,35,山口県,2026-08-06T09:20:00+09:00,bear,クマ,sighting,二輪車で走行中、山林にいる熊を目撃したもの,2,,"萩市大字高佐上
+yamaguchi-bear:yp-2026:175,35,山口県,2026-08-06T09:20:00+09:00,bear,クマ,sighting,二輪車で走行中、山林にいる熊を目撃したもの,2,,"萩市大字高佐上
 　　山林",34.48308,131.60458,二輪車で走行中、山林にいる熊を目撃したもの,yamaguchi-bear,https://yamaguchi-opendata.jp/ckan/dataset/yp-2026,CC-BY-4.0,山口県オープンデータカタログサイト（山口県警察本部地域企画課）
 akita-kumadas:27658,05,秋田県,2026-08-06T13:10:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,北秋田市,〒018-4231 秋田県北秋田市上杉中山沢,40.15736046,140.3721857,"米内沢方面に向かって道路走行中、道路上に80センチ程のクマ1頭を目撃。
 茂みに向かったり道路に戻ってきたりとうろうろしながら、北欧の杜公園のドッグランの方へ向かっていった。",akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
@@ -49749,16 +49740,16 @@ akita-kumadas:27662,05,秋田県,2026-08-06T18:15:00,inoshishi,イノシシ,sigh
 akita-kumadas:27686,05,秋田県,2026-08-06T19:10:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,秋田市,秋田県秋田市新屋町三ツ小屋,39.69372873,140.068152,"【投稿】友人(計3名)と海からの帰りに自転車で通行していたところ、進行方向右側の大きな草むらの中から大型動物の荒い息遣い（ハァハァという重い呼吸音）が聞こえました。
 姿は草むらに隠れて目視できませんでしたが、すぐ近くに潜んでいるような音がしました。",akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:27665,05,秋田県,2026-08-06T20:50:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,秋田市,〒010-1622 秋田県秋田市新屋日吉町２９－２０,39.68094251,140.0776738,車で走行中に路上にいたクマを目撃。東側へ立ち去り。体長1m。民家からの距離5m。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
-yamaguchi-bear:yp-2026:183,35,山口県,2026-08-07T06:15:00+09:00,bear,クマ,sighting,車で走行中、県道上にいる熊を目撃したもの,1,,"岩国市美和町北中山
+yamaguchi-bear:yp-2026:178,35,山口県,2026-08-07T06:15:00+09:00,bear,クマ,sighting,車で走行中、県道上にいる熊を目撃したもの,1,,"岩国市美和町北中山
 　　県道上",34.3074,132.09216,車で走行中、県道上にいる熊を目撃したもの,yamaguchi-bear,https://yamaguchi-opendata.jp/ckan/dataset/yp-2026,CC-BY-4.0,山口県オープンデータカタログサイト（山口県警察本部地域企画課）
 akita-kumadas:27675,05,秋田県,2026-08-07T06:30:00,shika,ニホンジカ,damage,痕跡(食害),2,鹿角市,〒018-5201秋田県鹿角市花輪字元苗代,40.24578356,140.8277866,"果樹園／体長、頭数不明／民家から500m／目撃者との距離-
 今朝、畑に行くと、リンゴの葉が落ちていて、実がなくなっていた。被害本数10本、被害個数50個。
 足跡、食害痕から、ニホンジカと判断した。大小の足跡があったため、群れと思われる。",akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:27666,05,秋田県,2026-08-07T07:00:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,秋田市,〒010-1654 秋田県秋田市浜田元中村２１８,39.67764788,140.0718749,車で走行中に路上にいたクマを目撃。東から西へ立ち去り。体長1m。民家からの距離30ｍ。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:27672,05,秋田県,2026-08-07T07:00:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,秋田市,〒010-1654 秋田県秋田市浜田元中村２１６－１,39.67746621,140.0717976,【投稿】車前方を熊が走って横断,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
-yamaguchi-bear:yp-2026:182,35,山口県,2026-08-07T07:00:00+09:00,bear,クマ,sighting,目撃者の所有する倉庫内において熊の爪痕を発見したもの,,,"山口市徳地柚木
+yamaguchi-bear:yp-2026:177,35,山口県,2026-08-07T07:00:00+09:00,bear,クマ,sighting,目撃者の所有する倉庫内において熊の爪痕を発見したもの,,,"山口市徳地柚木
 　　倉庫内",34.34456,131.73039,目撃者の所有する倉庫内において熊の爪痕を発見したもの,yamaguchi-bear,https://yamaguchi-opendata.jp/ckan/dataset/yp-2026,CC-BY-4.0,山口県オープンデータカタログサイト（山口県警察本部地域企画課）
-yamaguchi-bear:yp-2026:181,35,山口県,2026-08-07T07:10:00+09:00,bear,クマ,sighting,車で走行中、国道を横断する熊を目撃したもの,1,,"周南市大字須々万奥
+yamaguchi-bear:yp-2026:176,35,山口県,2026-08-07T07:10:00+09:00,bear,クマ,sighting,車で走行中、国道を横断する熊を目撃したもの,1,,"周南市大字須々万奥
 　　国道上",34.12887,131.87709,車で走行中、国道を横断する熊を目撃したもの,yamaguchi-bear,https://yamaguchi-opendata.jp/ckan/dataset/yp-2026,CC-BY-4.0,山口県オープンデータカタログサイト（山口県警察本部地域企画課）
 akita-kumadas:27668,05,秋田県,2026-08-07T08:15:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,大館市,〒018-3505 秋田県大館市早口大渕７５,40.32928865,140.3905857,近隣住民がクマ１頭（体長1.0ｍ）を目撃/進行方向不明/直近民家まで約30ｍ,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:27669,05,秋田県,2026-08-07T09:10:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,羽後町,秋田県雄勝郡羽後町 羽後街道,39.17039628,140.3379285,仙道方面から真坂峠を下ってきた際に、山側から谷側へ道路を横断する子熊を目撃。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
@@ -49806,7 +49797,7 @@ akita-kumadas:27712,05,秋田県,2026-08-10T18:30:00,tsukinowaguma,ツキノワ�
 akita-kumadas:27710,05,秋田県,2026-08-10T19:00:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,上小阿仁村,〒018-4401 秋田県北秋田郡上小阿仁村沖田面字屋布31,40.04695415,140.2896606,地区住民が外に出るため玄関を開けたところ、目の前を体長約70ｃｍのツキノワグマ1頭が横切るのを目撃した。玄関手前約5ｍ付近を東から西方向に移動したが、その後の詳細は不明。目撃箇所は村営住宅水無団地付近。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:27711,05,秋田県,2026-08-10T19:00:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,仙北市,秋田県仙北市田沢湖田沢高屋,39.76750179,140.6933141,民家裏に居座り、南方向へ立ち去った。体長約1.5m。民家までの距離約3m。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:27713,05,秋田県,2026-08-11T04:16:00,shika,ニホンジカ,sighting,目撃,1,秋田市,秋田県秋田市外旭川万治沢　跨道橋,39.76816702,140.1216745,【投稿】上新城方向に渡って行った,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
-yamaguchi-bear:yp-2026:184,35,山口県,2026-08-11T07:00:00+09:00,bear,クマ,trace,目撃者が山中において熊の糞を発見したもの,1,,"萩市川上
+yamaguchi-bear:yp-2026:179,35,山口県,2026-08-11T07:00:00+09:00,bear,クマ,trace,目撃者が山中において熊の糞を発見したもの,1,,"萩市川上
 　　山中",34.38185,131.44562,目撃者が山中において熊の糞を発見したもの,yamaguchi-bear,https://yamaguchi-opendata.jp/ckan/dataset/yp-2026,CC-BY-4.0,山口県オープンデータカタログサイト（山口県警察本部地域企画課）
 akita-kumadas:27752,05,秋田県,2026-08-11T07:30:00,inoshishi,イノシシ,damage,痕跡(食害),2,大館市,秋田県大館市沼館字下堤沢地内,40.29756305,140.5345988,サツマイモの掘り返し被害,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:27714,05,秋田県,2026-08-11T14:00:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,由利本荘市,秋田県由利本荘市鳥海町下笹子間木ノ平　地内,39.13049301,140.2852929,"人家との距離：５ｍ
@@ -49815,7 +49806,7 @@ akita-kumadas:27714,05,秋田県,2026-08-11T14:00:00,tsukinowaguma,ツキノワ�
 akita-kumadas:27715,05,秋田県,2026-08-11T15:30:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,東成瀬村,〒019-0803 秋田県雄勝郡東成瀬村椿川周辺,38.98086716,140.7663043,【投稿】,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:27733,05,秋田県,2026-08-11T16:40:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,北秋田市,〒018-3331 秋田県北秋田市鷹巣小沼６,40.21542296,140.3606629,"米代川河川緑地付近で体長80センチほどのクマ１頭を目撃。
 茂みに立ち去った。",akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
-yamaguchi-bear:yp-2026:185,35,山口県,2026-08-12T00:55:00+09:00,bear,クマ,sighting,目撃者が屋根の上にいる熊を目撃したもの,1,,"萩市大字椿東
+yamaguchi-bear:yp-2026:180,35,山口県,2026-08-12T00:55:00+09:00,bear,クマ,sighting,目撃者が屋根の上にいる熊を目撃したもの,1,,"萩市大字椿東
 　　民家敷地内",34.38554,131.4296,目撃者が屋根の上にいる熊を目撃したもの,yamaguchi-bear,https://yamaguchi-opendata.jp/ckan/dataset/yp-2026,CC-BY-4.0,山口県オープンデータカタログサイト（山口県警察本部地域企画課）
 akita-kumadas:27755,05,秋田県,2026-08-12T07:00:00,inoshishi,イノシシ,damage,痕跡(食害),,大館市,秋田県大館市比内町谷地中字弥助　地内,40.17902898,140.5616452,水稲の食害,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:27757,05,秋田県,2026-08-12T07:00:00,inoshishi,イノシシ,trace,痕跡(その他),,大館市,〒017-0005 秋田県大館市花岡町泉田　地内,40.31169557,140.5476553,田の畔の掘り起こし,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
@@ -49833,7 +49824,7 @@ akita-kumadas:27721,05,秋田県,2026-08-12T17:00:00,tsukinowaguma,ツキノワ�
 akita-kumadas:27722,05,秋田県,2026-08-12T17:50:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,仙北市,〒014-0602 秋田県仙北市西木町桧木内６７－３,39.72456835,140.582267,【投稿】道路を渡って森に入っていった,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:27783,05,秋田県,2026-08-12T19:00:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,湯沢市,〒019-0202 秋田県湯沢市桑崎栩葉沢,39.07259476,140.4792219,（投稿）集落入り口の林でクマを目撃。その後、林の中に逃げて行った。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:27739,05,秋田県,2026-08-12T19:10:00,shika,ニホンジカ,sighting,目撃,1,秋田市,〒010-1409 秋田県秋田市南ケ丘２丁目９－３,39.68842712,140.1622349,【投稿】,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
-yamaguchi-bear:yp-2026:186,35,山口県,2026-08-12T19:30:00+09:00,bear,クマ,sighting,徒歩で帰宅中、草むらにいる熊を目撃したもの,1,,"周南市大字徳山
+yamaguchi-bear:yp-2026:181,35,山口県,2026-08-12T19:30:00+09:00,bear,クマ,sighting,徒歩で帰宅中、草むらにいる熊を目撃したもの,1,,"周南市大字徳山
 　　草むら",34.05851,131.82147,徒歩で帰宅中、草むらにいる熊を目撃したもの,yamaguchi-bear,https://yamaguchi-opendata.jp/ckan/dataset/yp-2026,CC-BY-4.0,山口県オープンデータカタログサイト（山口県警察本部地域企画課）
 akita-kumadas:27724,05,秋田県,2026-08-12T20:00:00,inoshishi,イノシシ,sighting,目撃,2,大館市,〒017-0005 秋田県大館市花岡町神山,40.31610051,140.5543781,道路を横切るイノシシ2頭（体長不明）をドライバーが目撃/進行方向東/花岡総合スポーツ公園の東250ｍ,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:27731,05,秋田県,2026-08-13T04:50:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,由利本荘市,秋田県由利本荘市松ヶ崎荒町北側,39.49779853,140.0485638,"民家までの距離：50m
@@ -49841,7 +49832,7 @@ akita-kumadas:27731,05,秋田県,2026-08-13T04:50:00,tsukinowaguma,ツキノワ�
 akita-kumadas:27725,05,秋田県,2026-08-13T06:10:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,にかほ市,〒018-0143 秋田県にかほ市象潟町小砂川タカコヤ 付近,39.12299407,139.8798287,森側から海側に国道を横断するクマ1頭を目撃。体長約1m。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:27726,05,秋田県,2026-08-13T06:40:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,にかほ市,〒018-0143 秋田県にかほ市象潟町小砂川砂畑 地内,39.12984594,139.8869553,薮近くに佇むクマ1頭を目撃。体長約1m。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:27727,05,秋田県,2026-08-13T07:40:00,shika,ニホンジカ,sighting,目撃,1,秋田市,〒010-0904 秋田県秋田市保戸野原の町１６－２６,39.72817864,140.1142091,【投稿】住宅の前を走って通り過ぎて行った。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
-yamaguchi-bear:yp-2026:187,35,山口県,2026-08-13T08:30:00+09:00,bear,クマ,sighting,車で走行中、国道を横断する熊を目撃したもの,1,,"周南市大字大潮
+yamaguchi-bear:yp-2026:182,35,山口県,2026-08-13T08:30:00+09:00,bear,クマ,sighting,車で走行中、国道を横断する熊を目撃したもの,1,,"周南市大字大潮
 　　国道上",34.3298,131.75536,車で走行中、国道を横断する熊を目撃したもの,yamaguchi-bear,https://yamaguchi-opendata.jp/ckan/dataset/yp-2026,CC-BY-4.0,山口県オープンデータカタログサイト（山口県警察本部地域企画課）
 akita-kumadas:27771,05,秋田県,2026-08-13T09:20:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,由利本荘市,〒015-0721 秋田県由利本荘市鳥海町上笹子模渕,39.0967144,140.2983955,【投稿】,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:27735,05,秋田県,2026-08-13T09:35:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,羽後町,〒012-1241 秋田県雄勝郡羽後町田代梺,39.20816775,140.3120968,県道を仙道方面へ走行中、東側の川から道路を横切り西の山へ向かう熊を目撃。おそらく成獣とのこと。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
@@ -49880,16 +49871,16 @@ akita-kumadas:27764,05,秋田県,2026-08-15T06:05:00,tsukinowaguma,ツキノワ�
 akita-kumadas:27763,05,秋田県,2026-08-15T06:19:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,秋田市,〒011-0905 秋田県秋田市寺内神屋敷５,39.73439165,140.081327,【投稿】,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:27769,05,秋田県,2026-08-15T12:00:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,由利本荘市,秋田県由利本荘市東鮎川石垣　地内,39.33001536,140.075756,人家との距離：5０ｍ,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:27765,05,秋田県,2026-08-15T16:03:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,羽後町,〒012-1115 秋田県雄勝郡羽後町足田岩城堤,39.227034,140.3978448,岩城堤を泳いでいる熊を目撃,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
-yamaguchi-bear:yp-2026:188,35,山口県,2026-08-16T05:41:00+09:00,bear,クマ,sighting,車で走行中、県道上にいる熊を目撃したもの,1,,"岩国市柱野
+yamaguchi-bear:yp-2026:183,35,山口県,2026-08-16T05:41:00+09:00,bear,クマ,sighting,車で走行中、県道上にいる熊を目撃したもの,1,,"岩国市柱野
 　　県道上",34.1387,132.15433,車で走行中、県道上にいる熊を目撃したもの,yamaguchi-bear,https://yamaguchi-opendata.jp/ckan/dataset/yp-2026,CC-BY-4.0,山口県オープンデータカタログサイト（山口県警察本部地域企画課）
 akita-kumadas:27767,05,秋田県,2026-08-16T06:07:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,大仙市,〒019-1701 秋田県大仙市神宮寺上高野,39.50926222,140.4353133,【投稿】高野神社方面から家畜診療所方面に県道を子熊が渡って、車の方を見た,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:27768,05,秋田県,2026-08-16T08:50:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,能代市,〒016-0000 秋田県能代市厚柳７,40.16310828,140.0397742,大人のようなクマが道路を横断するのを目撃,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:27770,05,秋田県,2026-08-16T12:15:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,北秋田市,〒018-3452 秋田県北秋田市七日市下桜ケ岱,40.17073187,140.4091465,【投稿】品類から105号に向かって車で走行中、川から山に横切った,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:27772,05,秋田県,2026-08-16T14:30:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,能代市,〒016-0151 秋田県能代市檜山大友水碇付近,40.17226605,140.0646329,【投稿】農道に立っていたら150メートル先の別の農道を熊が走っていった。大型犬より少し大きい印象。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:27774,05,秋田県,2026-08-17T08:00:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,秋田市,〒010-1232 秋田県秋田市雄和戸賀沢旧戸米川小学校前,39.57424257,140.1956749,秋田県農業試験場の畑の圃場で熊(0.8m)を目撃した。熊はその後、南の旧戸米川小学校方向へ立ち去った。付近施設まで50m。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
-yamaguchi-bear:yp-2026:189,35,山口県,2026-08-17T08:20:00+09:00,bear,クマ,sighting,車で走行中、市道上にいる熊を目撃したもの,1,,"萩市大字須佐
+yamaguchi-bear:yp-2026:184,35,山口県,2026-08-17T08:20:00+09:00,bear,クマ,sighting,車で走行中、市道上にいる熊を目撃したもの,1,,"萩市大字須佐
 　　市道上",34.63615,131.60698,車で走行中、市道上にいる熊を目撃したもの,yamaguchi-bear,https://yamaguchi-opendata.jp/ckan/dataset/yp-2026,CC-BY-4.0,山口県オープンデータカタログサイト（山口県警察本部地域企画課）
-yamaguchi-bear:yp-2026:190,35,山口県,2026-08-17T10:30:00+09:00,bear,クマ,sighting,二輪車で走行中、市道上にいる熊を目撃したもの,1,,"山口市徳地船路
+yamaguchi-bear:yp-2026:185,35,山口県,2026-08-17T10:30:00+09:00,bear,クマ,sighting,二輪車で走行中、市道上にいる熊を目撃したもの,1,,"山口市徳地船路
 　　市道上",34.25892,131.64663,二輪車で走行中、市道上にいる熊を目撃したもの,yamaguchi-bear,https://yamaguchi-opendata.jp/ckan/dataset/yp-2026,CC-BY-4.0,山口県オープンデータカタログサイト（山口県警察本部地域企画課）
 akita-kumadas:27777,05,秋田県,2026-08-17T13:20:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,鹿角市,〒018-5201 秋田県鹿角市花輪本苗代,40.25106036,140.837034,果樹園地内において、体長1メートル程のクマ1頭を建物内から目撃。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:27778,05,秋田県,2026-08-17T13:55:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,秋田市,〒011-0905 秋田県秋田市寺内神屋敷１８,39.73526897,140.0801253,調査中、クマを発見。体長不明。クマは北側へ立ち去り。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
@@ -49941,9 +49932,9 @@ akita-kumadas:27813,05,秋田県,2026-08-21T05:40:00,inoshishi,イノシシ,sigh
 akita-kumadas:27810,05,秋田県,2026-08-21T06:02:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,秋田市,〒011-0905 秋田県秋田市寺内神屋敷１８,39.73526072,140.0798678,【投稿】,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:27812,05,秋田県,2026-08-21T09:00:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,大仙市,〒019-1701 秋田県大仙市神宮寺笹倉15-5,39.51109316,140.4359802,"民家脇の農道から出できたクマ一頭を目撃、県道を横断して藪に入って行った。
 体長1ｍ程",akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
-yamaguchi-bear:yp-2026:191,35,山口県,2026-08-21T10:30:00+09:00,bear,クマ,sighting,目撃者が自宅の窓から山中にいる熊を目撃したもの,1,,"萩市大字椿東
+yamaguchi-bear:yp-2026:186,35,山口県,2026-08-21T10:30:00+09:00,bear,クマ,sighting,目撃者が自宅の窓から山中にいる熊を目撃したもの,1,,"萩市大字椿東
 　　山中",34.38436,131.43274,目撃者が自宅の窓から山中にいる熊を目撃したもの,yamaguchi-bear,https://yamaguchi-opendata.jp/ckan/dataset/yp-2026,CC-BY-4.0,山口県オープンデータカタログサイト（山口県警察本部地域企画課）
-yamaguchi-bear:yp-2026:192,35,山口県,2026-08-21T16:45:00+09:00,bear,クマ,sighting,車で走行中、県道上を横断する熊を目撃したもの,1,,"萩市大字上田万
+yamaguchi-bear:yp-2026:187,35,山口県,2026-08-21T16:45:00+09:00,bear,クマ,sighting,車で走行中、県道上を横断する熊を目撃したもの,1,,"萩市大字上田万
 　　県道上",34.61868,131.67505,車で走行中、県道上を横断する熊を目撃したもの,yamaguchi-bear,https://yamaguchi-opendata.jp/ckan/dataset/yp-2026,CC-BY-4.0,山口県オープンデータカタログサイト（山口県警察本部地域企画課）
 akita-kumadas:27819,05,秋田県,2026-08-21T17:38:00,inoshishi,イノシシ,sighting,目撃,2,大仙市,〒019-2111 秋田県大仙市土川半道寺台林,39.53659933,140.428884,【投稿】２頭がソバ畑にいた。こちらを見て北に逃げて行った,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:27818,05,秋田県,2026-08-21T18:00:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,羽後町,〒012-1106 秋田県雄勝郡羽後町払体,39.23070407,140.3721453,【投稿】家がある所から国道398号線を横切って反対側の石垣を登って山のある草むらに入って行った。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
@@ -50011,9 +50002,9 @@ akita-kumadas:27870,05,秋田県,2026-08-30T13:45:00,tsukinowaguma,ツキノワ�
 akita-kumadas:27871,05,秋田県,2026-08-30T18:15:00,inoshishi,イノシシ,sighting,目撃,1,小坂町,秋田県小坂町小坂字向地域,40.36663996,140.7522011,【投稿】小坂町小坂字向１５６の田んぼから、体長１メートルほどのイノシシ１頭が出てきた。落水した田んぼの稲の中にいて、人の気配に気づいたら田んぼから出て猛ダッシュ。一目散に東側の山林に逃げ込んでいった。集落内の田んぼなどでは、毎日のようにイノシシ出没の痕跡があり、今朝もここの田んぼを含めて、あたりの複数の田んぼや転作ソバ畑を歩き回っていたようだ。山際や堤防の近くの同じような所に何度も入り込んで、稲の踏み倒しや畦畔の破壊などをしている。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:27877,05,秋田県,2026-08-30T22:00:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,大仙市,〒019-1701 秋田県大仙市神宮寺落貝２,39.48322217,140.4304782,【投稿】車で西から東方向に走行中に北の方から南の山側へ道路を横切るツキノワグマ(体長1mくらいの成獣)に遭遇した。熊はゆっくりと土筆森山方向の茂みに入っていった。この目撃の数分後にすぐ近くに車を停車中に再度目撃したが同一個体かは不明です。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:27878,05,秋田県,2026-08-30T22:10:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,大仙市,〒019-1701 秋田県大仙市神宮寺落貝２,39.4827626,140.4313432,【投稿】車を停車中にツキノワグマ(約１mの成獣)が東方向から西の茂みにゆっくりと歩いていくのを目撃した。この目撃の数分前に目撃した個体と同一かは不明です。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
-yamaguchi-bear:yp-2026:193,35,山口県,2026-08-31T01:00:00+09:00,bear,クマ,sighting,車で走行中、国道上にいる熊を目撃したもの,1,,"山口市徳地野谷
+yamaguchi-bear:yp-2026:188,35,山口県,2026-08-31T01:00:00+09:00,bear,クマ,sighting,車で走行中、国道上にいる熊を目撃したもの,1,,"山口市徳地野谷
 　　国道上",34.31402,131.68683,車で走行中、国道上にいる熊を目撃したもの,yamaguchi-bear,https://yamaguchi-opendata.jp/ckan/dataset/yp-2026,CC-BY-4.0,山口県オープンデータカタログサイト（山口県警察本部地域企画課）
-yamaguchi-bear:yp-2026:194,35,山口県,2026-08-31T05:45:00+09:00,bear,クマ,sighting,目撃者が自宅の窓から、田んぼにいる熊を目撃したもの,1,,"山口市徳地柚木
+yamaguchi-bear:yp-2026:189,35,山口県,2026-08-31T05:45:00+09:00,bear,クマ,sighting,目撃者が自宅の窓から、田んぼにいる熊を目撃したもの,1,,"山口市徳地柚木
 　　田んぼ",34.34231,131.72984,目撃者が自宅の窓から、田んぼにいる熊を目撃したもの,yamaguchi-bear,https://yamaguchi-opendata.jp/ckan/dataset/yp-2026,CC-BY-4.0,山口県オープンデータカタログサイト（山口県警察本部地域企画課）
 akita-kumadas:27873,05,秋田県,2026-08-31T06:00:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,秋田市,〒011-0937 秋田県秋田市寺内高野地内,39.740131,140.0877111,敷地北側の林の中を移動し、林北西へ立ち去った。体長1.0ｍ。民家から10ｍ。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:27872,05,秋田県,2026-08-31T06:05:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,秋田市,〒011-0937 秋田県秋田市寺内高野４地域,39.74029547,140.0876811,【投稿】西隣の民家の方から来て、北の竹林の方に小走りで走っていった,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
@@ -50023,25 +50014,25 @@ akita-kumadas:27875,05,秋田県,2026-08-31T08:30:00,tsukinowaguma,ツキノワ�
 akita-kumadas:27876,05,秋田県,2026-08-31T12:02:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,八峰町,〒018-2506 秋田県山本郡八峰町峰浜小手萩萩ノ城地域,40.26917901,140.0705624,【投稿】,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:27879,05,秋田県,2026-08-31T13:30:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,鹿角市,〒018-5421 秋田県鹿角市十和田大湯下川原,40.29209669,140.8169174,自動車で国道103号線を十和田湖方面へ走行中に、反対車線に体長1ｍ程のクマ1頭を目撃。その後、クマが南東方向の藪へ移動する姿を確認。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:27880,05,秋田県,2026-08-31T14:53:00,tsukinowaguma,ツキノワグマ,trace,痕跡(その他),1,秋田市,〒011-0909 秋田県秋田市寺内児桜２丁目１５,39.73767533,140.0838375,家の近くから「うーっ」というクマの鳴き声が聞こえた,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
-yamaguchi-bear:yp-2026:195,35,山口県,2026-08-31T23:15:00+09:00,bear,クマ,sighting,目撃者が空き地にいる熊を目撃したもの,1,,"宇部市大字東須恵
+yamaguchi-bear:yp-2026:190,35,山口県,2026-08-31T23:15:00+09:00,bear,クマ,sighting,目撃者が空き地にいる熊を目撃したもの,1,,"宇部市大字東須恵
 　　空き地",33.99229,131.20602,目撃者が空き地にいる熊を目撃したもの,yamaguchi-bear,https://yamaguchi-opendata.jp/ckan/dataset/yp-2026,CC-BY-4.0,山口県オープンデータカタログサイト（山口県警察本部地域企画課）
-yamaguchi-bear:yp-2026:196,35,山口県,2026-09-01T15:20:00+09:00,bear,クマ,sighting,自転車で走行中、道路上にいる熊を目撃したもの,2,,"熊毛郡田布施町大字波野
+yamaguchi-bear:yp-2026:191,35,山口県,2026-09-01T15:20:00+09:00,bear,クマ,sighting,自転車で走行中、道路上にいる熊を目撃したもの,2,,"熊毛郡田布施町大字波野
 　　道路上",33.96906,132.0542,自転車で走行中、道路上にいる熊を目撃したもの,yamaguchi-bear,https://yamaguchi-opendata.jp/ckan/dataset/yp-2026,CC-BY-4.0,山口県オープンデータカタログサイト（山口県警察本部地域企画課）
-yamaguchi-bear:yp-2026:197,35,山口県,2026-09-02T13:00:00+09:00,bear,クマ,sighting,車で走行中、雑草地にいる熊を目撃したもの,1,,"周南市大字大潮
+yamaguchi-bear:yp-2026:192,35,山口県,2026-09-02T13:00:00+09:00,bear,クマ,sighting,車で走行中、雑草地にいる熊を目撃したもの,1,,"周南市大字大潮
 　　雑草地",34.29756,131.76651,車で走行中、雑草地にいる熊を目撃したもの,yamaguchi-bear,https://yamaguchi-opendata.jp/ckan/dataset/yp-2026,CC-BY-4.0,山口県オープンデータカタログサイト（山口県警察本部地域企画課）
-yamaguchi-bear:yp-2026:198,35,山口県,2026-09-03T17:30:00+09:00,bear,クマ,sighting,車で走行中、国道上にいる熊を目撃したもの,1,,"岩国市美川町南桑
+yamaguchi-bear:yp-2026:193,35,山口県,2026-09-03T17:30:00+09:00,bear,クマ,sighting,車で走行中、国道上にいる熊を目撃したもの,1,,"岩国市美川町南桑
 　　国道上",34.21478,132.01681,車で走行中、国道上にいる熊を目撃したもの,yamaguchi-bear,https://yamaguchi-opendata.jp/ckan/dataset/yp-2026,CC-BY-4.0,山口県オープンデータカタログサイト（山口県警察本部地域企画課）
-yamaguchi-bear:yp-2026:199,35,山口県,2026-09-03T20:50:00+09:00,bear,クマ,sighting,車で走行中、国道上にいる熊を目撃したもの,1,,"萩市川上
+yamaguchi-bear:yp-2026:194,35,山口県,2026-09-03T20:50:00+09:00,bear,クマ,sighting,車で走行中、国道上にいる熊を目撃したもの,1,,"萩市川上
 　　国道上",34.36392,131.44004,車で走行中、国道上にいる熊を目撃したもの,yamaguchi-bear,https://yamaguchi-opendata.jp/ckan/dataset/yp-2026,CC-BY-4.0,山口県オープンデータカタログサイト（山口県警察本部地域企画課）
-yamaguchi-bear:yp-2026:202,35,山口県,2026-09-06T16:50:00+09:00,bear,クマ,sighting,徒歩で進行中、山中にいる熊を目撃したもの,1,,"山口市阿東生雲中
+yamaguchi-bear:yp-2026:197,35,山口県,2026-09-06T16:50:00+09:00,bear,クマ,sighting,徒歩で進行中、山中にいる熊を目撃したもの,1,,"山口市阿東生雲中
 　　山中",34.3879,131.60036,徒歩で進行中、山中にいる熊を目撃したもの,yamaguchi-bear,https://yamaguchi-opendata.jp/ckan/dataset/yp-2026,CC-BY-4.0,山口県オープンデータカタログサイト（山口県警察本部地域企画課）
-yamaguchi-bear:yp-2026:200,35,山口県,2026-09-06T21:48:00+09:00,bear,クマ,sighting,列車を運行中、線路上にいる熊を目撃したもの,1,,"山口市阿東篠目
+yamaguchi-bear:yp-2026:195,35,山口県,2026-09-06T21:48:00+09:00,bear,クマ,sighting,列車を運行中、線路上にいる熊を目撃したもの,1,,"山口市阿東篠目
 　　線路上",34.26759,131.55977,列車を運行中、線路上にいる熊を目撃したもの,yamaguchi-bear,https://yamaguchi-opendata.jp/ckan/dataset/yp-2026,CC-BY-4.0,山口県オープンデータカタログサイト（山口県警察本部地域企画課）
-yamaguchi-bear:yp-2026:201,35,山口県,2026-09-07T06:05:00+09:00,bear,クマ,sighting,徒歩で進行中、市道上を横断する熊を目撃したもの,1,,"周南市大字鹿野下
+yamaguchi-bear:yp-2026:196,35,山口県,2026-09-07T06:05:00+09:00,bear,クマ,sighting,徒歩で進行中、市道上を横断する熊を目撃したもの,1,,"周南市大字鹿野下
 　　市道上",34.22493,131.82038,徒歩で進行中、市道上を横断する熊を目撃したもの,yamaguchi-bear,https://yamaguchi-opendata.jp/ckan/dataset/yp-2026,CC-BY-4.0,山口県オープンデータカタログサイト（山口県警察本部地域企画課）
-yamaguchi-bear:yp-2026:203,35,山口県,2026-09-08T04:42:00+09:00,bear,クマ,sighting,徒歩で進行中、市道上を横断する熊を目撃したもの,3,,"長門市深川湯本
+yamaguchi-bear:yp-2026:198,35,山口県,2026-09-08T04:42:00+09:00,bear,クマ,sighting,徒歩で進行中、市道上を横断する熊を目撃したもの,3,,"長門市深川湯本
 　　市道上",34.3442,131.17421,徒歩で進行中、市道上を横断する熊を目撃したもの,yamaguchi-bear,https://yamaguchi-opendata.jp/ckan/dataset/yp-2026,CC-BY-4.0,山口県オープンデータカタログサイト（山口県警察本部地域企画課）
-yamaguchi-bear:yp-2026:204,35,山口県,2026-09-08T06:00:00+09:00,bear,クマ,sighting,車で走行中、市道上を横断する熊を目撃したもの,1,,"岩国市柱野
+yamaguchi-bear:yp-2026:199,35,山口県,2026-09-08T06:00:00+09:00,bear,クマ,sighting,車で走行中、市道上を横断する熊を目撃したもの,1,,"岩国市柱野
 　　市道上",34.11922,132.12626,車で走行中、市道上を横断する熊を目撃したもの,yamaguchi-bear,https://yamaguchi-opendata.jp/ckan/dataset/yp-2026,CC-BY-4.0,山口県オープンデータカタログサイト（山口県警察本部地域企画課）
-yamaguchi-bear:yp-2026:205,35,山口県,2026-09-09T18:34:00+09:00,bear,クマ,sighting,車で走行中、国道上を横断する熊を目撃したもの,1,,"山陽小野田市大字厚狭
+yamaguchi-bear:yp-2026:200,35,山口県,2026-09-09T18:34:00+09:00,bear,クマ,sighting,車で走行中、国道上を横断する熊を目撃したもの,1,,"山陽小野田市大字厚狭
 　　国道上",34.09079,131.17597,車で走行中、国道上を横断する熊を目撃したもの,yamaguchi-bear,https://yamaguchi-opendata.jp/ckan/dataset/yp-2026,CC-BY-4.0,山口県オープンデータカタログサイト（山口県警察本部地域企画課）
