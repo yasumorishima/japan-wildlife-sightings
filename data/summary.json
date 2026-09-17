@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-17T08:29:26.473928+09:00",
-  "records_published": 41543,
+  "generated_at": "2026-09-18T08:20:19.198973+09:00",
+  "records_published": 41544,
   "sources": [
     {
       "id": "akita-kumadas",
@@ -40,11 +40,11 @@
       "adapter": "arcgis",
       "license": "unknown",
       "redistribute": false,
-      "records": 4185,
-      "with_coords": 4185,
-      "with_date": 4185,
+      "records": 4190,
+      "with_coords": 4190,
+      "with_date": 4190,
       "date_min": "2025-04-07",
-      "date_max": "2026-09-14",
+      "date_max": "2026-09-17",
       "species": [
         "tsukinowaguma"
       ]
@@ -198,9 +198,9 @@
       "adapter": "arcgis",
       "license": "unknown",
       "redistribute": false,
-      "records": 110,
-      "with_coords": 110,
-      "with_date": 110,
+      "records": 111,
+      "with_coords": 111,
+      "with_date": 111,
       "date_min": "2025-09-12",
       "date_max": "2026-09-16",
       "species": [
@@ -228,11 +228,11 @@
       "adapter": "arcgis",
       "license": "unknown",
       "redistribute": false,
-      "records": 4530,
-      "with_coords": 4530,
-      "with_date": 4530,
+      "records": 4532,
+      "with_coords": 4532,
+      "with_date": 4532,
       "date_min": "2022-04-04",
-      "date_max": "2026-09-16",
+      "date_max": "2026-09-17",
       "species": [
         "tsukinowaguma"
       ]
@@ -318,11 +318,11 @@
       "adapter": "ckan",
       "license": "CC-BY-4.0",
       "redistribute": true,
-      "records": 1244,
-      "with_coords": 1244,
-      "with_date": 1243,
+      "records": 1245,
+      "with_coords": 1245,
+      "with_date": 1244,
       "date_min": "2023-04-01",
-      "date_max": "2026-09-15",
+      "date_max": "2026-09-17",
       "species": [
         "bear"
       ]
