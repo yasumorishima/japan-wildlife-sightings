@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-22T08:47:10.121244+09:00",
-  "records_published": 41546,
+  "generated_at": "2026-09-23T08:26:32.107576+09:00",
+  "records_published": 41547,
   "sources": [
     {
       "id": "akita-kumadas",
@@ -40,11 +40,11 @@
       "adapter": "arcgis",
       "license": "unknown",
       "redistribute": false,
-      "records": 4191,
-      "with_coords": 4191,
-      "with_date": 4191,
+      "records": 4192,
+      "with_coords": 4192,
+      "with_date": 4192,
       "date_min": "2025-04-07",
-      "date_max": "2026-09-18",
+      "date_max": "2026-09-22",
       "species": [
         "tsukinowaguma"
       ]
@@ -258,11 +258,11 @@
       "adapter": "arcgis",
       "license": "CC-BY-4.0",
       "redistribute": true,
-      "records": 215,
-      "with_coords": 215,
-      "with_date": 213,
+      "records": 216,
+      "with_coords": 216,
+      "with_date": 214,
       "date_min": "2020-06-19",
-      "date_max": "2026-09-19",
+      "date_max": "2026-09-21",
       "species": [
         "higuma"
       ]
