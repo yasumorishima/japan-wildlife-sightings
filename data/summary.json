@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-09-30T09:02:29.972491+09:00",
-  "records_published": 41565,
+  "generated_at": "2026-10-01T09:19:48.683762+09:00",
+  "records_published": 41566,
   "sources": [
     {
       "id": "akita-kumadas",
@@ -40,11 +40,11 @@
       "adapter": "arcgis",
       "license": "unknown",
       "redistribute": false,
-      "records": 4195,
-      "with_coords": 4195,
-      "with_date": 4195,
+      "records": 4196,
+      "with_coords": 4196,
+      "with_date": 4196,
       "date_min": "2025-04-07",
-      "date_max": "2026-09-28",
+      "date_max": "2026-09-30",
       "species": [
         "tsukinowaguma"
       ]
@@ -70,9 +70,9 @@
       "adapter": "arcgis",
       "license": "unknown",
       "redistribute": false,
-      "records": 373,
-      "with_coords": 373,
-      "with_date": 373,
+      "records": 375,
+      "with_coords": 375,
+      "with_date": 375,
       "date_min": "2024-04-11",
       "date_max": "2026-09-27",
       "species": [
@@ -183,11 +183,11 @@
       "adapter": "arcgis",
       "license": "unknown",
       "redistribute": false,
-      "records": 4630,
-      "with_coords": 4630,
-      "with_date": 4630,
+      "records": 4632,
+      "with_coords": 4632,
+      "with_date": 4632,
       "date_min": "2017-01-03",
-      "date_max": "2026-09-29",
+      "date_max": "2026-09-30",
       "species": [
         "tsukinowaguma"
       ]
@@ -228,11 +228,11 @@
       "adapter": "arcgis",
       "license": "unknown",
       "redistribute": false,
-      "records": 4540,
-      "with_coords": 4540,
-      "with_date": 4540,
+      "records": 4544,
+      "with_coords": 4544,
+      "with_date": 4544,
       "date_min": "2022-04-04",
-      "date_max": "2026-09-30",
+      "date_max": "2026-10-01",
       "species": [
         "tsukinowaguma"
       ]
@@ -258,11 +258,11 @@
       "adapter": "arcgis",
       "license": "CC-BY-4.0",
       "redistribute": true,
-      "records": 218,
-      "with_coords": 218,
-      "with_date": 216,
+      "records": 219,
+      "with_coords": 219,
+      "with_date": 217,
       "date_min": "2020-06-19",
-      "date_max": "2026-09-26",
+      "date_max": "2026-09-30",
       "species": [
         "higuma"
       ]
