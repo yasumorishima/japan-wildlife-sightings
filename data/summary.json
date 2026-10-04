@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-04T08:28:49.413004+09:00",
+  "generated_at": "2026-10-05T08:47:18.026895+09:00",
   "records_published": 41570,
   "sources": [
     {
@@ -40,11 +40,11 @@
       "adapter": "arcgis",
       "license": "unknown",
       "redistribute": false,
-      "records": 4198,
-      "with_coords": 4198,
-      "with_date": 4198,
+      "records": 4199,
+      "with_coords": 4199,
+      "with_date": 4199,
       "date_min": "2025-04-07",
-      "date_max": "2026-10-01",
+      "date_max": "2026-10-04",
       "species": [
         "tsukinowaguma"
       ]
@@ -55,11 +55,11 @@
       "adapter": "arcgis",
       "license": "unknown",
       "redistribute": false,
-      "records": 1792,
-      "with_coords": 1792,
-      "with_date": 1792,
+      "records": 1794,
+      "with_coords": 1794,
+      "with_date": 1794,
       "date_min": "2024-04-02",
-      "date_max": "2026-09-28",
+      "date_max": "2026-10-03",
       "species": [
         "tsukinowaguma"
       ]
