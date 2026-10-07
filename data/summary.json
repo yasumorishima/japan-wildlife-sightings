@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-06T10:39:00.994142+09:00",
-  "records_published": 41574,
+  "generated_at": "2026-10-07T09:19:24.933745+09:00",
+  "records_published": 41575,
   "sources": [
     {
       "id": "akita-kumadas",
@@ -40,11 +40,11 @@
       "adapter": "arcgis",
       "license": "unknown",
       "redistribute": false,
-      "records": 4203,
-      "with_coords": 4203,
-      "with_date": 4203,
+      "records": 4204,
+      "with_coords": 4204,
+      "with_date": 4204,
       "date_min": "2025-04-07",
-      "date_max": "2026-10-05",
+      "date_max": "2026-10-07",
       "species": [
         "tsukinowaguma"
       ]
@@ -55,9 +55,9 @@
       "adapter": "arcgis",
       "license": "unknown",
       "redistribute": false,
-      "records": 1794,
-      "with_coords": 1794,
-      "with_date": 1794,
+      "records": 1795,
+      "with_coords": 1795,
+      "with_date": 1795,
       "date_min": "2024-04-02",
       "date_max": "2026-10-03",
       "species": [
@@ -183,11 +183,11 @@
       "adapter": "arcgis",
       "license": "unknown",
       "redistribute": false,
-      "records": 4638,
-      "with_coords": 4638,
-      "with_date": 4638,
+      "records": 4640,
+      "with_coords": 4640,
+      "with_date": 4640,
       "date_min": "2017-01-03",
-      "date_max": "2026-10-05",
+      "date_max": "2026-10-07",
       "species": [
         "tsukinowaguma"
       ]
@@ -228,11 +228,11 @@
       "adapter": "arcgis",
       "license": "unknown",
       "redistribute": false,
-      "records": 4548,
-      "with_coords": 4548,
-      "with_date": 4548,
+      "records": 4549,
+      "with_coords": 4549,
+      "with_date": 4549,
       "date_min": "2022-04-04",
-      "date_max": "2026-10-05",
+      "date_max": "2026-10-06",
       "species": [
         "tsukinowaguma"
       ]
@@ -318,11 +318,11 @@
       "adapter": "ckan",
       "license": "CC-BY-4.0",
       "redistribute": true,
-      "records": 1268,
-      "with_coords": 1268,
-      "with_date": 1267,
+      "records": 1269,
+      "with_coords": 1269,
+      "with_date": 1268,
       "date_min": "2023-04-01",
-      "date_max": "2026-10-03",
+      "date_max": "2026-10-06",
       "species": [
         "bear"
       ]
