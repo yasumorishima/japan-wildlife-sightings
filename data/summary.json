@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-12T09:09:25.766497+09:00",
+  "generated_at": "2026-10-13T11:22:38.517556+09:00",
   "records_published": 41731,
   "sources": [
     {
@@ -40,11 +40,11 @@
       "adapter": "arcgis",
       "license": "unknown",
       "redistribute": false,
-      "records": 4210,
-      "with_coords": 4210,
-      "with_date": 4210,
+      "records": 4211,
+      "with_coords": 4211,
+      "with_date": 4211,
       "date_min": "2025-04-07",
-      "date_max": "2026-10-09",
+      "date_max": "2026-10-11",
       "species": [
         "tsukinowaguma"
       ]
@@ -70,9 +70,9 @@
       "adapter": "arcgis",
       "license": "unknown",
       "redistribute": false,
-      "records": 384,
-      "with_coords": 384,
-      "with_date": 384,
+      "records": 385,
+      "with_coords": 385,
+      "with_date": 385,
       "date_min": "2024-04-11",
       "date_max": "2026-10-09",
       "species": [
@@ -198,11 +198,11 @@
       "adapter": "arcgis",
       "license": "unknown",
       "redistribute": false,
-      "records": 127,
-      "with_coords": 127,
-      "with_date": 127,
+      "records": 128,
+      "with_coords": 128,
+      "with_date": 128,
       "date_min": "2025-09-12",
-      "date_max": "2026-10-08",
+      "date_max": "2026-10-12",
       "species": [
         "bear"
       ]
@@ -228,11 +228,11 @@
       "adapter": "arcgis",
       "license": "unknown",
       "redistribute": false,
-      "records": 4548,
-      "with_coords": 4548,
-      "with_date": 4548,
+      "records": 4549,
+      "with_coords": 4549,
+      "with_date": 4549,
       "date_min": "2022-04-04",
-      "date_max": "2026-10-06",
+      "date_max": "2026-10-10",
       "species": [
         "tsukinowaguma"
       ]
@@ -288,11 +288,11 @@
       "adapter": "pdf_bbox",
       "license": "unknown",
       "redistribute": false,
-      "records": 796,
+      "records": 797,
       "with_coords": 0,
-      "with_date": 791,
+      "with_date": 792,
       "date_min": "2016-04-20",
-      "date_max": "2026-10-06",
+      "date_max": "2026-10-08",
       "species": [
         "tsukinowaguma"
       ]
