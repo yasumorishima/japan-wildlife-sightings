@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-17T08:13:23.341072+09:00",
-  "records_published": 41755,
+  "generated_at": "2026-10-18T07:50:16.498377+09:00",
+  "records_published": 41756,
   "sources": [
     {
       "id": "akita-kumadas",
@@ -258,11 +258,11 @@
       "adapter": "arcgis",
       "license": "CC-BY-4.0",
       "redistribute": true,
-      "records": 221,
-      "with_coords": 221,
-      "with_date": 219,
+      "records": 222,
+      "with_coords": 222,
+      "with_date": 220,
       "date_min": "2020-06-19",
-      "date_max": "2026-10-08",
+      "date_max": "2026-10-17",
       "species": [
         "higuma"
       ]
