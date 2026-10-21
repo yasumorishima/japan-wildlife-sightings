@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-21T08:35:54.513312+09:00",
-  "records_published": 41764,
+  "generated_at": "2026-10-22T08:53:16.694489+09:00",
+  "records_published": 41766,
   "sources": [
     {
       "id": "akita-kumadas",
@@ -8,6 +8,8 @@
       "adapter": "csv",
       "license": "CC-BY-4.0",
       "redistribute": true,
+      "error": "ConnectionError: HTTPSConnectionPool(host='ckan.pref.akita.lg.jp', port=443): Max retries exceeded with url: /dataset/f801a10f-f076-47e4-b5a6-0bb5569639e0/resource/0678f9b3-4bf7-4212-9c0e-c0cb9b09b3cf/download/050008_kumadas.csv (Caused by NewConnectionError(\"HTTPSConnection(host='ckan.pref.akita.lg.jp', port=443): Failed to establish a new connection: [Errno 111] Connection refused\"))",
+      "reused_previous": 24757,
       "records": 24757,
       "with_coords": 24757,
       "with_date": 24757,
@@ -55,9 +57,9 @@
       "adapter": "arcgis",
       "license": "unknown",
       "redistribute": false,
-      "records": 1835,
-      "with_coords": 1835,
-      "with_date": 1835,
+      "records": 1836,
+      "with_coords": 1836,
+      "with_date": 1836,
       "date_min": "2024-04-02",
       "date_max": "2026-10-20",
       "species": [
@@ -70,11 +72,11 @@
       "adapter": "arcgis",
       "license": "unknown",
       "redistribute": false,
-      "records": 407,
-      "with_coords": 407,
-      "with_date": 407,
+      "records": 411,
+      "with_coords": 411,
+      "with_date": 411,
       "date_min": "2024-04-11",
-      "date_max": "2026-10-20",
+      "date_max": "2026-10-21",
       "species": [
         "tsukinowaguma"
       ]
@@ -138,11 +140,11 @@
       "adapter": "kml",
       "license": "unknown",
       "redistribute": false,
-      "records": 319,
-      "with_coords": 317,
-      "with_date": 317,
+      "records": 326,
+      "with_coords": 324,
+      "with_date": 324,
       "date_min": "2025-01-16",
-      "date_max": "2026-10-15",
+      "date_max": "2026-10-20",
       "species": [
         "tsukinowaguma"
       ]
@@ -198,11 +200,11 @@
       "adapter": "arcgis",
       "license": "unknown",
       "redistribute": false,
-      "records": 137,
-      "with_coords": 137,
-      "with_date": 137,
+      "records": 138,
+      "with_coords": 138,
+      "with_date": 138,
       "date_min": "2025-09-12",
-      "date_max": "2026-10-19",
+      "date_max": "2026-10-20",
       "species": [
         "bear"
       ]
@@ -288,11 +290,11 @@
       "adapter": "pdf_bbox",
       "license": "unknown",
       "redistribute": false,
-      "records": 828,
+      "records": 832,
       "with_coords": 0,
-      "with_date": 823,
+      "with_date": 827,
       "date_min": "2016-04-20",
-      "date_max": "2026-10-18",
+      "date_max": "2026-10-21",
       "species": [
         "tsukinowaguma"
       ]
@@ -318,11 +320,11 @@
       "adapter": "ckan",
       "license": "CC-BY-4.0",
       "redistribute": true,
-      "records": 1302,
-      "with_coords": 1302,
-      "with_date": 1301,
+      "records": 1304,
+      "with_coords": 1304,
+      "with_date": 1303,
       "date_min": "2023-04-01",
-      "date_max": "2026-10-19",
+      "date_max": "2026-10-21",
       "species": [
         "bear"
       ]
