@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-23T08:50:13.016333+09:00",
+  "generated_at": "2026-10-24T08:43:59.990198+09:00",
   "records_published": 41766,
   "sources": [
     {
@@ -70,9 +70,9 @@
       "adapter": "arcgis",
       "license": "unknown",
       "redistribute": false,
-      "records": 418,
-      "with_coords": 418,
-      "with_date": 418,
+      "records": 422,
+      "with_coords": 422,
+      "with_date": 422,
       "date_min": "2024-04-11",
       "date_max": "2026-10-23",
       "species": [
@@ -198,11 +198,11 @@
       "adapter": "arcgis",
       "license": "unknown",
       "redistribute": false,
-      "records": 139,
-      "with_coords": 139,
-      "with_date": 139,
+      "records": 141,
+      "with_coords": 141,
+      "with_date": 141,
       "date_min": "2025-09-12",
-      "date_max": "2026-10-22",
+      "date_max": "2026-10-23",
       "species": [
         "bear"
       ]
@@ -228,11 +228,11 @@
       "adapter": "arcgis",
       "license": "unknown",
       "redistribute": false,
-      "records": 4561,
-      "with_coords": 4561,
-      "with_date": 4561,
+      "records": 4563,
+      "with_coords": 4563,
+      "with_date": 4563,
       "date_min": "2022-04-04",
-      "date_max": "2026-10-19",
+      "date_max": "2026-10-21",
       "species": [
         "tsukinowaguma"
       ]
@@ -273,11 +273,11 @@
       "adapter": "pdf",
       "license": "unknown",
       "redistribute": false,
-      "records": 2174,
+      "records": 2188,
       "with_coords": 0,
-      "with_date": 2174,
+      "with_date": 2188,
       "date_min": "2025-09-01",
-      "date_max": "2026-10-15",
+      "date_max": "2026-10-21",
       "species": [
         "tsukinowaguma"
       ]
@@ -288,11 +288,11 @@
       "adapter": "pdf_bbox",
       "license": "unknown",
       "redistribute": false,
-      "records": 832,
+      "records": 845,
       "with_coords": 0,
-      "with_date": 827,
+      "with_date": 840,
       "date_min": "2016-04-20",
-      "date_max": "2026-10-21",
+      "date_max": "2026-10-23",
       "species": [
         "tsukinowaguma"
       ]
