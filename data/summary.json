@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-10-29T09:33:58.861721+09:00",
-  "records_published": 41774,
+  "generated_at": "2026-10-30T09:33:38.298210+09:00",
+  "records_published": 41775,
   "sources": [
     {
       "id": "akita-kumadas",
@@ -40,11 +40,11 @@
       "adapter": "arcgis",
       "license": "unknown",
       "redistribute": false,
-      "records": 4225,
-      "with_coords": 4225,
-      "with_date": 4225,
+      "records": 4226,
+      "with_coords": 4226,
+      "with_date": 4226,
       "date_min": "2025-04-07",
-      "date_max": "2026-10-27",
+      "date_max": "2026-10-28",
       "species": [
         "tsukinowaguma"
       ]
@@ -55,11 +55,11 @@
       "adapter": "arcgis",
       "license": "unknown",
       "redistribute": false,
-      "records": 1843,
-      "with_coords": 1843,
-      "with_date": 1843,
+      "records": 1845,
+      "with_coords": 1845,
+      "with_date": 1845,
       "date_min": "2024-04-02",
-      "date_max": "2026-10-27",
+      "date_max": "2026-10-29",
       "species": [
         "tsukinowaguma"
       ]
@@ -70,11 +70,11 @@
       "adapter": "arcgis",
       "license": "unknown",
       "redistribute": false,
-      "records": 430,
-      "with_coords": 430,
-      "with_date": 430,
+      "records": 431,
+      "with_coords": 431,
+      "with_date": 431,
       "date_min": "2024-04-11",
-      "date_max": "2026-10-27",
+      "date_max": "2026-10-29",
       "species": [
         "tsukinowaguma"
       ]
@@ -288,11 +288,11 @@
       "adapter": "pdf_bbox",
       "license": "unknown",
       "redistribute": false,
-      "records": 859,
+      "records": 862,
       "with_coords": 0,
-      "with_date": 854,
+      "with_date": 857,
       "date_min": "2016-04-20",
-      "date_max": "2026-10-27",
+      "date_max": "2026-10-28",
       "species": [
         "tsukinowaguma"
       ]
@@ -318,9 +318,9 @@
       "adapter": "ckan",
       "license": "CC-BY-4.0",
       "redistribute": true,
-      "records": 1311,
-      "with_coords": 1311,
-      "with_date": 1310,
+      "records": 1312,
+      "with_coords": 1312,
+      "with_date": 1311,
       "date_min": "2023-04-01",
       "date_max": "2026-10-28",
       "species": [
