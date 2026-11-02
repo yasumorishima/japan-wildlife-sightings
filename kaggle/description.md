@@ -35,4 +35,5 @@ The data stays under each source's licence. When you use it, credit the sources 
 - The three Kanazawa sources and Miyagi Prefecture's FY2026 list give only a town or district name, so `lat`/`lon` are empty.
 - Sendai City's records also appear in Miyagi Prefecture's FY2026 list, so the same sighting can be counted twice.
 - `species` and `category` are normalised; the publisher's original wording is kept in `species_label` / `category_raw`, and values that could not be classified are `unknown` rather than guessed.
+- Personal names that publishers wrote next to home addresses ("○○氏宅") are replaced with `（個人名）`.
 - A sighting reported to more than one publisher can appear more than once.

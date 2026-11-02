@@ -1230,7 +1230,7 @@
       "page": "https://www.city.susono.shizuoka.jp/soshiki/8/3/emergency/7278.html",
       "license": {
         "id": "CC-BY-2.1-JP",
-        "attribution": "裾野市",
+        "attribution": "クマ出没情報地図、裾野市",
         "redistribute": true,
         "basis": "市のクマ出没ページに「クマ出没情報地図で使用しているデータをオープンデータとして公開します。」として kViewer の外部公開 API を案内。市の利用規約（deta_utilization/19717.html）に「本ページの内容（掲載されている情報を含む。）に存在する著作物の著作権は、注があるものを除いて、クリエイティブ・コモンズ・ライセンス 表示 2.1のもとでライセンスされています。」",
         "verified": "2026-11-02"
@@ -1269,7 +1269,7 @@
       "page": "https://opendata.pref.saitama.lg.jp/datasets/2290",
       "license": {
         "id": "PDL-1.0",
-        "attribution": "埼玉県",
+        "attribution": "埼玉県オープンデータポータルサイト",
         "redistribute": true,
         "basis": "埼玉県オープンデータポータルのリソース（resources/6788 ほか）に「ライセンス 公共データ利用規約第1.0版（PDL1.0）」。出典の記載例は「出典：埼玉県オープンデータポータルサイト （当該ページのURL）」",
         "verified": "2026-11-02"
