@@ -66,6 +66,13 @@ def build(rows: list[dict], src: dict) -> list[dict]:
         # 層ごとに書式が違う出典があるため）。
         occurred = None
         names = m.get("occurred_at") or []
+        # 月と日が別の列で年が無い出典（宮城県の公表用 xlsx）は「M月D日」に組み立てて、
+        # fiscal_year で年を補う
+        if src.get("date_from"):
+            mon, day = (row.get(c) for c in src["date_from"])
+            if isinstance(mon, (int, float)) and isinstance(day, (int, float)):
+                row = dict(row, _md=f"{int(mon)}月{int(day)}日")
+                names = ["_md"]
         for name in ([names] if isinstance(names, str) else names):
             occurred = normalize.occurred_at(row.get(name), col("time"),
                                              src.get("fiscal_year"))
@@ -73,6 +80,12 @@ def build(rows: list[dict], src: dict) -> list[dict]:
                 break
         skey, slabel = normalize.species(col("species"), src.get("species_default"))
         ckey, craw = normalize.category(col("category"))
+        # 区分が「目撃有」「足跡有」のような印の列に分かれている出典（森町）。重い区分から見る
+        if ckey == "unknown" and src.get("category_flags"):
+            for name, key in src["category_flags"].items():
+                if str(row.get(name) or "").strip() in ("◯", "○", "〇", "有", "1"):
+                    ckey, craw = key, name
+                    break
         # 出没区分の列を持たない出典（そもそも目撃情報だけを載せている等）は
         # 設定側で既定値を宣言できる。列から読めた場合はそちらを優先する。
         if ckey == "unknown" and src.get("category_default"):

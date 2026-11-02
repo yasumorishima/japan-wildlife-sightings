@@ -60,16 +60,18 @@ def species(raw: str | None, default_key: str | None = None) -> tuple[str, str]:
 _CATEGORY = [
     ("injury", ("人身", "負傷", "襲わ")),
     ("damage", ("被害", "食害", "農作物")),
-    ("capture", ("捕獲", "駆除", "有害捕獲")),
-    ("trace", ("痕跡", "足跡", "糞", "フン", "爪跡", "爪痕", "食痕", "掘り起こし", "掘り返し", "掘り跡", "掘跡", "堀り跡", "被毛", "枝折り")),
-    ("sighting", ("目撃", "出没", "発見", "確認")),
+    ("capture", ("捕獲", "駆除", "有害捕獲", "capture")),
+    ("trace", ("trace", "痕跡", "足跡", "糞", "フン", "爪跡", "爪痕", "食痕", "掘り起こし", "掘り返し", "掘り跡", "掘跡", "堀り跡", "被毛", "枝折り")),
+    # 東京都は英語（Witness / Filming＝カメラでの撮影 / trace / capture）
+    ("sighting", ("目撃", "出没", "発見", "確認", "witness", "filming")),
 ]
 
 
 def category(raw: str | None) -> tuple[str, str]:
     text = (raw or "").strip()
+    low = text.lower()
     for key, needles in _CATEGORY:
-        if any(n in text for n in needles):
+        if any(n in low for n in needles):
             return key, text
     return "unknown", text
 
