@@ -229,6 +229,10 @@ def main() -> int:
             entry["error"] = f"{type(exc).__name__}: {exc}"
             if entry["redistribute"]:
                 prev = previous_rows(src["id"])
+                if not prev:
+                    # まだ一度も data/ に入っていない出典。止めると他の出典の更新まで止まるので
+                    # validate は警告に留める（倉敷市・埼玉県の DataEye は GitHub の runner から 403）
+                    entry["never_published"] = True
                 if prev:
                     entry["reused_previous"] = len(prev)
                     entry.update(quality(prev))
