@@ -68,14 +68,19 @@ def build(rows: list[dict], src: dict) -> list[dict]:
         names = m.get("occurred_at") or []
         # 月と日が別の列で年が無い出典（宮城県の公表用 xlsx）は「M月D日」に組み立てて、
         # fiscal_year で年を補う
+        fiscal_year = row.get("_fiscal_year") or src.get("fiscal_year")
         if src.get("date_from"):
             mon, day = (row.get(c) for c in src["date_from"])
             if isinstance(mon, (int, float)) and isinstance(day, (int, float)):
                 row = dict(row, _md=f"{int(mon)}月{int(day)}日")
                 names = ["_md"]
+            elif mon and day:
+                # 「０５月」「１５日」（岐阜県）。単位が無ければ足す
+                mon, day = normalize._z2h(str(mon).strip()), normalize._z2h(str(day).strip())
+                row = dict(row, _md=mon.rstrip("月") + "月" + day.rstrip("日") + "日")
+                names = ["_md"]
         for name in ([names] if isinstance(names, str) else names):
-            occurred = normalize.occurred_at(row.get(name), col("time"),
-                                             src.get("fiscal_year"))
+            occurred = normalize.occurred_at(row.get(name), col("time"), fiscal_year)
             if occurred:
                 break
         skey, slabel = normalize.species(col("species"), src.get("species_default"))

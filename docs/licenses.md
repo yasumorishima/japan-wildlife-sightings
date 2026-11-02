@@ -39,6 +39,7 @@
 | 宮城県 仙台市 クマ出没情報 | ✅ 収録 | G空間情報センター（[sendaikurashinomap](https://www.geospatial.jp/ckan/dataset/sendaikurashinomap)、組織: 仙台市）の metadata が `cc-by`（「クリエイティブ・コモンズ 表示」） | 2026-11-02 |
 | 宮城県 令和8年度クマ目撃等情報 | ✅ 収録 | 県のページ（[r8kumamokugeki](https://www.pref.miyagi.jp/soshiki/sizenhogo/r8kumamokugeki.html)）に「本ページで公開しているクマ目撃等情報は、出典を明記することを条件に、自由に複製・加工・編集や頒布などの二次利用が可能です。」「出典：宮城県「令和8年度クマ目撃等情報」」。令和6・7年度のページにはこの記載が無いので取得しない | 2026-11-02 |
 | 新潟県 長岡市 クマ出没情報 | ✅ 収録 | 市の「【オープンデータ】クマ出没情報」ページ（[03.html](https://www.city.nagaoka.niigata.jp/shisei/cate10/bousai/03.html)）のメタデータに「ライセンス CC BY（表示）」 | 2026-11-02 |
+| 岐阜県 クママップ（過去） | ✅ 収録 | 岐阜県オープンデータカタログ（[c11265-010](https://gifu-opendata.pref.gifu.lg.jp/dataset/c11265-010)、組織: 岐阜県 環境エネルギー生活部）の metadata が `cc-by-21-jp` | 2026-11-02 |
 | 北海道 森町 ヒグマ出没状況 | ✅ 収録 | G空間情報センター（[013455-001](https://www.geospatial.jp/ckan/dataset/013455-001)、組織: 森町）の metadata が `CC-BY` | 2026-11-02 |
 
 ## 北海道について（2026-08-28 に訂正）

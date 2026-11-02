@@ -8,14 +8,16 @@
 
 - **変更は PR を作って main へのマージまで自分でやる**（オーナーの指示）。確認は求めなくてよい。
   マージ前に `python3 validate.py` など関係する確認を通しておく。
+- **途中で止まって確認を取らずに最後まで進める**（オーナーの指示）。区切りごとに PR・マージし、次の作業へ進む。
 - ただし `data/` の手動 commit、収録出典（`redistribute`）の追加・変更、ワークフローの変更のように
   公開データや自動収集に影響するものは、マージ前に内容を一言伝える。
 
 ## 構成
 
 - `sources.json` — 出典の定義（id / adapter / params / license / 列の対応 `map`）
-- `collectors/adapters.py` — 公開形式ごとの取得処理（`csv` `xlsx` `arcgis` `kml` `pdf` `pdf_bbox` `bodik`/`ckan`）
+- `collectors/adapters.py` — 公開形式ごとの取得処理（`csv` `xlsx` `arcgis` `kml` `pdf` `pdf_bbox` `bodik`/`ckan` `ckan_shp`）
 - `collectors/normalize.py` — 日付・獣種・区分・座標の正規化（日本の緯度経度範囲 `JP_LAT`/`JP_LON` もここ）
+- `collectors/shapefile.py` — 点の Shapefile の読み手と、平面直角座標→緯度経度の変換（依存を増やさないため自前）
 - `collectors/pdf_table.py` / `pdf_bbox.py` — PDF の表読み（`pdftotext` が要る）
 - `collect.py` — 全出典を取得して `data/sightings.csv` / `sightings.geojson.gz` / `summary.json` を作る
 - `validate.py` — 生成物の検算（CI でも実行）
