@@ -17,6 +17,7 @@ import gzip
 
 import json
 import pathlib
+import re
 import sys
 
 from collectors import normalize
@@ -34,7 +35,10 @@ def _num(v):
     try:
         return float(str(v).replace(",", "").strip())
     except ValueError:
-        return None
+        pass
+    # 「2頭」「約3頭」のように単位つきで書く出典がある（柏崎市・福岡県）。「不明」は None のまま
+    m = re.fullmatch(r"\D{0,3}?(\d+)\s*頭.*", normalize._z2h(str(v).strip()))
+    return float(m.group(1)) if m else None
 
 
 def build(rows: list[dict], src: dict) -> list[dict]:
