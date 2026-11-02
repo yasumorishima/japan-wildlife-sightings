@@ -246,3 +246,52 @@ def fetch_ckan(query: str | None = None, base: str = "https://data.bodik.jp",
 ADAPTERS["ckan"] = fetch_ckan
 # BODIK は CKAN の既定の引き先。既存の出典設定をそのまま動かすため名前を残す。
 ADAPTERS["bodik"] = fetch_ckan
+
+
+def fetch_ckan_shp(base: str, name: str, plane_zone: int | None = None, encoding: str = "cp932",
+                   csv_lat: str | None = None, csv_lon: str | None = None, **_) -> list[dict]:
+    """CKAN のデータセットにある年度別の Shapefile（ZIP）と CSV を全部読む（岐阜県）。
+
+    各行に _fiscal_year（リソース名の「令和７年度」等から）を付ける。表に年の列が無く、
+    月と日しか無いため。.prj が無い Shapefile は平面直角座標（plane_zone 系）として変換する。
+    """
+    from . import normalize
+    from .shapefile import plane_to_latlon, read_zip
+
+    api = base.rstrip("/") + "/api/3/action/"
+    pkg = _get(api + "package_show", params={"id": name}).json()["result"]
+    out = []
+    for res in pkg.get("resources", []):
+        m = re.search(r"(令和|平成)\s*([0-9０-９元]+)\s*年度", res.get("name") or "")
+        if not m:
+            continue
+        n = normalize._z2h(m.group(2))
+        fy = {"令和": 2018, "平成": 1988}[m.group(1)] + (1 if n == "元" else int(n))
+        fmt = (res.get("format") or "").upper()
+        if fmt == "CSV":
+            rows = fetch_csv(res["url"], encoding=None)
+            for r in rows:
+                try:
+                    r["_lat"], r["_lon"] = float(r[csv_lat]), float(r[csv_lon])
+                except (KeyError, TypeError, ValueError):
+                    pass
+        elif fmt == "ZIP":
+            rows, prj = read_zip(_get(res["url"]).content, encoding)
+            for r in rows:
+                if "_x" not in r:
+                    continue
+                if prj and "GEOGCS" in prj:
+                    r["_lon"], r["_lat"] = r.pop("_x"), r.pop("_y")
+                elif plane_zone:
+                    r["_lat"], r["_lon"] = plane_to_latlon(r.pop("_x"), r.pop("_y"), plane_zone)
+        else:
+            continue
+        for i, r in enumerate(rows):
+            r["_fiscal_year"] = fy
+            r["_dataset"] = str(fy)
+            r["_row"] = str(i + 1)
+            out.append(r)
+    return out
+
+
+ADAPTERS["ckan_shp"] = fetch_ckan_shp
