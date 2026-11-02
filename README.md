@@ -8,6 +8,7 @@
 - 収録データ: [`data/sightings.csv`](data/sightings.csv) / [`data/sightings.geojson`](data/sightings.geojson)
 - 取得状況と品質: [`data/summary.json`](data/summary.json)
 - 再配布可否の根拠: [`docs/licenses.md`](docs/licenses.md)
+- Kaggle: [Japan Wildlife Sightings](https://www.kaggle.com/datasets/yasunorim/japan-wildlife-sightings)（`data/` と同じ収録範囲。毎日更新）
 
 ## なぜ作るのか
 
@@ -131,6 +132,21 @@ python3 validate.py                   # 生成物の検算
 ```
 
 依存は `requests` と `openpyxl` だけです。
+
+## Kaggle への公開
+
+日次実行（`.github/workflows/collect.yml`）の最後に、`data/` と同じものを Kaggle に上げます。
+`build_kaggle.py` が `_kaggle/` に一式（`sightings.csv`・`sightings.geojson`・出典ごとの帰属表示
+`attribution.csv`・`summary.json`・説明文）を作り、`kaggle_published.py` が Kaggle の最新版と
+`data/` の最新 commit を突き合わせて、違っていれば新しい版を出します。
+データセットがまだ無ければ公開で新規作成します。
+
+動かすには、リポジトリに次を設定します（未設定なら Kaggle の手順は飛ばされます）。
+
+- Secrets: `KAGGLE_USERNAME`（`yasunorim`）と `KAGGLE_KEY`
+- Variables: `KAGGLE_PUBLISH` = `true`
+
+手動実行（Run workflow）で `publish` を付けると、変化が無くても今のデータで版を出します。
 
 ## スキーマ
 
