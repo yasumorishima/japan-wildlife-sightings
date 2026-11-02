@@ -223,17 +223,31 @@ _PERSON_PATTERNS = [
 ]
 
 
+# 「農区長○○氏」「猟友会○○氏」のように肩書きの直後に氏名が続く形。肩書きは残して氏名だけ伏せる
+_ROLE = re.compile(r"^(.*?(?:区長|会長|班長|組長|部長|課長|議員|隊長|隊員|猟友会|自治会|町内会))([一-龥]{1,4})$")
+# 歴史上の人物・家名は個人情報ではない（秋田県の「藩主佐竹氏」など）
+_HISTORIC = ("藩主", "城主", "領主", "大名", "将軍", "天皇")
+_PHONE = re.compile(r"0\d{1,4}[-‐ー－(（]\d{1,4}[-‐ー－)）]\d{3,4}|(?<!\d)0[5-9]0\d{8}(?!\d)")
+_EMAIL = re.compile(r"[\w.+-]+@[\w-]+\.[\w.-]+")
+
+
 def mask_person(text: str | None) -> str | None:
+    """氏名・電話番号・メールアドレスを伏せる。"""
     if not text:
         return text
-    out = text
+    out = _EMAIL.sub("（メールアドレス）", _PHONE.sub("（電話番号）", text))
     for pat in _PERSON_PATTERNS:
         def repl(m):
             name = m.group(1)
+            if any(h in name for h in _HISTORIC):
+                return m.group(0)
+            role = _ROLE.match(name)
+            if role:
+                return role.group(1) + "（個人名）" + m.group(2)
             # 「目撃者宅」「地元住民宅」「帰宅」「ご近所さん」のような、人の役割や一般語は名前ではない
             if (any(name.startswith(w) or name == w for w in _NOT_NAME)
                     or name.endswith(("住", "自", "者", "民", "人", "所", "員", "主", "方"))
-                    or any(w in name for w in ("帰", "近所", "個人", "住所", "上記", "付近"))):
+                    or any(w in name for w in ("帰", "近所", "近隣", "個人", "住所", "上記", "付近"))):
                 return m.group(0)
             return "（個人名）" + m.group(2)
         out = pat.sub(repl, out)

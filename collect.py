@@ -189,6 +189,9 @@ def previous_rows(source_id: str) -> list[dict]:
             for key in ("lat", "lon"):
                 rec[key] = float(rec[key]) if rec[key] is not None else None
             rec["count"] = int(float(rec["count"])) if rec["count"] is not None else None
+            # 据え置く行も、伏せる規則を今の版で掛け直す（規則を足した後に古い行が残らないように）
+            for key in ("place", "note"):
+                rec[key] = normalize.mask_person(rec[key])
             out.append(rec)
     return out
 
