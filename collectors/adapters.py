@@ -299,3 +299,35 @@ def fetch_ckan_shp(base: str, name: str, plane_zone: int | None = None, encoding
 
 
 ADAPTERS["ckan_shp"] = fetch_ckan_shp
+
+
+def fetch_kviewer(url: str, hide_field: str | None = None, hide_value: str | None = None, **_) -> list[dict]:
+    """トヨクモ kViewer の外部公開 API（JSON）を読む（裾野市）。
+
+    各項目は {"type", "value"} なので value だけを取り出す。日時（DATETIME）は UTC なので
+    日本時間の ISO 8601 にする。公開元が地図で非表示にしている記録は hide_field で除ける。
+    """
+    import datetime as dt
+
+    out, page = [], 1
+    while True:
+        j = _get(url.rstrip("/").rsplit("/", 1)[0] + f"/{page}").json()
+        recs = j.get("records") or []
+        for rec in recs:
+            row = {}
+            for key, cell in rec.items():
+                v = cell.get("value") if isinstance(cell, dict) else cell
+                if isinstance(cell, dict) and cell.get("type") == "DATETIME" and v:
+                    v = dt.datetime.fromisoformat(v.replace("Z", "+00:00")).astimezone(
+                        dt.timezone(dt.timedelta(hours=9))).isoformat()
+                row[key] = v
+            if hide_field and row.get(hide_field) == hide_value:
+                continue
+            out.append(row)
+        if not recs or len(out) >= int(j.get("totalCount") or 0) or page > 100:
+            break
+        page += 1
+    return out
+
+
+ADAPTERS["kviewer"] = fetch_kviewer

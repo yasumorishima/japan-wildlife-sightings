@@ -1181,6 +1181,79 @@
         ],
         "note": "出没の詳細"
       }
+    },
+    {
+      "id": "kurashiki-choju",
+      "pref_code": "33",
+      "pref": "岡山県",
+      "adapter": "csv",
+      "params": {
+        "urls": [
+          "https://kurashiki.dataeye.jp/resource_download/7123",
+          "https://kurashiki.dataeye.jp/resource_download/7124",
+          "https://kurashiki.dataeye.jp/resource_download/7125"
+        ]
+      },
+      "page": "https://www.okayama-opendata.jp/datasets/1696",
+      "license": {
+        "id": "PDL-1.0",
+        "attribution": "倉敷市",
+        "redistribute": true,
+        "basis": "おかやまオープンデータカタログのリソース（例 resources/7123）に「ライセンス PDL1.0（公共データ利用規約第1.0版）」。市の目撃情報ページ末尾にも「クリエイティブ・コモンズ 表示 4.0 国際 ライセンスの下に提供されています」",
+        "verified": "2026-11-02"
+      },
+      "note": "イノシシ・シカ・サルの 3 ファイル。緯度経度は「おおよその位置」（データセットの説明）。CSV は市の HTML 一覧より 1 か月ほど遅れる。情報提供者の列は取り込まない",
+      "category_default": "sighting",
+      "map": {
+        "native_id": "_row",
+        "occurred_at": "日付",
+        "time": "時刻",
+        "species": "種",
+        "municipality": "市区町村名",
+        "place": "所在地情報",
+        "count": "個体数",
+        "note": "状況",
+        "lat": "緯度",
+        "lon": "経度"
+      }
+    },
+    {
+      "id": "susono-bear",
+      "pref_code": "22",
+      "pref": "静岡県",
+      "adapter": "kviewer",
+      "params": {
+        "url": "https://5f545e21.viewer.kintoneapp.com/public/api/records/f6c9c1dbd326b49b16e24d7f21647fd8481cd9e27a9950fcbbb8ae2cec5100c9/1",
+        "hide_field": "表示フラグ",
+        "hide_value": "非表示"
+      },
+      "page": "https://www.city.susono.shizuoka.jp/soshiki/8/3/emergency/7278.html",
+      "license": {
+        "id": "CC-BY-2.1-JP",
+        "attribution": "裾野市",
+        "redistribute": true,
+        "basis": "市のクマ出没ページに「クマ出没情報地図で使用しているデータをオープンデータとして公開します。」として kViewer の外部公開 API を案内。市の利用規約（deta_utilization/19717.html）に「本ページの内容（掲載されている情報を含む。）に存在する著作物の著作権は、注があるものを除いて、クリエイティブ・コモンズ・ライセンス 表示 2.1のもとでライセンスされています。」",
+        "verified": "2026-11-02"
+      },
+      "note": "公開元が地図で「非表示」にしている記録は除く。種別に「クマと思われる動物」がある",
+      "species_default": "bear",
+      "category_default": "sighting",
+      "map": {
+        "native_id": "$id",
+        "occurred_at": "日時",
+        "species": "種別",
+        "place": "目標地",
+        "count": "目撃報告数",
+        "note": [
+          "コメント",
+          "種別"
+        ],
+        "lat": "緯度",
+        "lon": "経度"
+      },
+      "constants": {
+        "municipality": "裾野市"
+      }
     }
   ]
 }
