@@ -8,6 +8,11 @@ on:
       memo:
         description: "実行の意図"
         required: false
+      publish:
+        description: "Kaggle に今のデータで新しい版を出す（変化が無くても）"
+        required: false
+        default: false
+        type: boolean
   push:
     branches: [main]
     paths: ["collect.py", "validate.py", "collectors/**", "sources.json", ".github/workflows/collect.yml"]
@@ -21,6 +26,9 @@ jobs:
     timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
+        with:
+          # Kaggle の版メモに書く「data/ を最後に変えた commit」を git log で引くため
+          fetch-depth: 50
       - uses: actions/setup-python@v5
         with:
           python-version: "3.11"
@@ -47,3 +55,33 @@ jobs:
             git commit -m "data: 出没情報を更新"
             git push
           fi
+
+      # Kaggle への公開。リポジトリ変数 KAGGLE_PUBLISH が true の時だけ動く（未設定なら何もしない）。
+      # Kaggle の最新版のメモにある commit と data/ の最新 commit が違えば新しい版を出すので、
+      # 失敗した日の分は翌日の実行で取り返す。データセットがまだ無ければ公開で新規作成する。
+      - name: Kaggle の公開状況を確かめる
+        id: kaggle
+        if: github.event_name != 'push' && vars.KAGGLE_PUBLISH == 'true'
+        env:
+          KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
+          KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
+        run: |
+          pip install -q kaggle==2.2.5 six  # kaggle は six を宣言せずに import する
+          python3 kaggle_published.py yasunorim/japan-wildlife-sightings "$(git log -1 --format=%h -- data/)"
+      - name: Kaggle に新しい版を出す
+        if: steps.kaggle.outcome == 'success' && (inputs.publish || steps.kaggle.outputs.behind == 'true')
+        env:
+          KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
+          KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
+        run: |
+          set -o pipefail
+          python3 build_kaggle.py
+          commit=$(git log -1 --format=%h -- data/)
+          built=$(jq -r '.generated_at[:10]' data/summary.json)
+          if [ "${{ steps.kaggle.outputs.exists }}" = "true" ]; then
+            kaggle datasets version -p _kaggle -m "Data built $built (commit $commit)" 2>&1 | tee kaggle.log
+          else
+            kaggle datasets create -p _kaggle --public 2>&1 | tee kaggle.log
+          fi
+          # CLI は失敗を表示しても 0 で終わることがある
+          if grep -qiE "error|unsuccessful" kaggle.log; then exit 1; fi

@@ -20,6 +20,8 @@
 - `collect.py` — 全出典を取得して `data/sightings.csv` / `sightings.geojson.gz` / `summary.json` を作る
 - `validate.py` — 生成物の検算（CI でも実行）
 - `build_map.py` — `docs/data/sightings.min.geojson` を作る
+- `build_kaggle.py` — Kaggle に上げる一式を `_kaggle/`（git 管理外）に作る。列の説明 `COLUMNS` と CSV の見出しが違うと失敗する
+- `kaggle_published.py` / `kaggle/` — Kaggle の版との突き合わせと、データセットのメタデータ・説明文（`description.md`）
 - `docs/` — MapLibre の地図ページ（`docs/vendor/` に同梱、外部 CDN は使わない）
 
 ## コマンド
@@ -29,6 +31,7 @@ python3 collect.py --only <source_id> --no-write  # 1 出典だけ取得して�
 python3 collect.py --no-write                     # 全出典を取得・確認だけ
 python3 validate.py                               # 生成物の検算。変更後は必ず通す
 python3 build_map.py                              # 地図用データを作り直す
+python3 build_kaggle.py                           # Kaggle 用の一式を _kaggle/ に作る（上げはしない）
 python3 -m http.server -d docs                    # 地図を手元で見る
 ```
 
@@ -47,6 +50,8 @@ python3 -m http.server -d docs                    # 地図を手元で見る
 - **推測で埋めない。** 判定できない値は原文（`category_raw` など）に残す。置いた仮定は README の
   「正規化で置いた仮定」に書き出す。
 - 証明書の検証は緩めない（山口県は暗号の要求だけを緩めている）。
+- **スキーマ（列）を変えたら `build_kaggle.py` の `COLUMNS` も直す。** Kaggle へは日次実行だけが上げる
+  （変数 `KAGGLE_PUBLISH` が true の時）。手元やクラウドセッションから Kaggle に直接上げない。
 - 範囲などの定数は 1 か所に置いて読む（例: `validate.py` は `normalize.JP_LAT` を使う）。
 
 ## 実行環境による違い

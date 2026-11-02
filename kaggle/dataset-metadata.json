@@ -1,0 +1,18 @@
+{
+  "title": "Japan Wildlife Sightings (Bears, Boars, Deer)",
+  "subtitle": "Bear, boar, deer and monkey sightings published by Japanese municipalities",
+  "id": "yasunorim/japan-wildlife-sightings",
+  "licenses": [
+    {
+      "name": "other"
+    }
+  ],
+  "keywords": [
+    "animals",
+    "japan",
+    "geospatial analysis",
+    "environment",
+    "earth and nature"
+  ],
+  "expectedUpdateFrequency": "daily"
+}
