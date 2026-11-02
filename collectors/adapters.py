@@ -78,12 +78,14 @@ def _find_link(page: str, pattern: str) -> str:
 
 def fetch_csv(url: str | None = None, encoding: str | None = None, link_from: str | None = None,
               link_pattern: str | None = None, urls: list[str] | None = None, **_) -> list[dict]:
-    # 年度ごとに別ファイルの出典（仙台市）は urls に並べる。_dataset で id を分ける
+    # 年度ごとに別ファイルの出典（仙台市）は urls に並べる。_dataset（ファイル名）で id を分ける
     if urls:
         out = []
-        for n, u in enumerate(urls):
-            for row in fetch_csv(u, encoding=encoding):
-                row["_dataset"] = str(n)
+        for u in urls:
+            stem = u.rstrip("/").rsplit("/", 1)[-1].rsplit(".", 1)[0]
+            for n, row in enumerate(fetch_csv(u, encoding=encoding), start=1):
+                row["_dataset"] = stem
+                row["_row"] = str(n)
                 out.append(row)
         return out
     # ファイル名に更新日が入り、更新のたびに URL が変わる出典（山形県・東京都）は、公開ページの
@@ -128,13 +130,15 @@ def fetch_arcgis(layer_url: str | None = None, page: int = 1000, layer_urls: lis
     """FeatureServer のレイヤを全件取得する。列名は alias（日本語）に置き換える。
 
     年度ごとに別レイヤで公開する出典（柏崎市など）は layer_urls に並べる。各行に
-    _dataset（並べた順の番号）を付けるので、レイヤごとに 1 から振り直す番号でも id が重ならない。
+    _dataset（サービス名）を付けるので、レイヤごとに 1 から振り直す番号でも id が重ならない。
+    並び順の番号にしないのは、年度を足したときに既存の id が変わらないようにするため。
     """
     if layer_urls:
         out = []
-        for n, url in enumerate(layer_urls):
+        for url in layer_urls:
+            service = url.split("/rest/services/")[-1].split("/FeatureServer")[0]
             for row in fetch_arcgis(url, page=page):
-                row["_dataset"] = str(n)
+                row["_dataset"] = service
                 out.append(row)
         return out
     meta = _get(layer_url, params={"f": "json"}).json()
