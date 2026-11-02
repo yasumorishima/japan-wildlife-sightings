@@ -129,8 +129,8 @@ def build(rows: list[dict], src: dict) -> list[dict]:
             "occurred_at": occurred, "species": skey, "species_label": slabel,
             "category": ckey, "category_raw": craw,
             "count": int(count) if count else None,
-            "municipality": (col("municipality") or None), "place": (col("place") or None),
-            "lat": lat, "lon": lon, "note": (col("note") or None),
+            "municipality": (col("municipality") or None), "place": normalize.mask_person(col("place") or None),
+            "lat": lat, "lon": lon, "note": normalize.mask_person(col("note") or None),
             "source_id": src["id"], "source_page": src.get("page"),
             "license": lic.get("id"), "attribution": lic.get("attribution"),
         })
