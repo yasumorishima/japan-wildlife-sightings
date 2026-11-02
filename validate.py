@@ -82,7 +82,12 @@ def main() -> int:
     warned = 0
     for s in summary["sources"]:
         if s.get("error"):
-            if s.get("redistribute") and not s.get("reused_previous"):
+            if s.get("redistribute") and s.get("never_published"):
+                # まだ一度も収録していない出典は、取れなくても消えるデータが無い。警告に留め、
+                # ほかの出典の日次更新を止めない
+                warned += 1
+                print(f"警告: 収録対象だが未収録のまま取得できず: {s['id']} {s['error']}")
+            elif s.get("redistribute") and not s.get("reused_previous"):
                 fails.append(f"収録対象の取得に失敗: {s['id']} {s['error']}")
             elif s.get("reused_previous"):
                 # 取得できなかったが前回の行を残した。データが古いままなのは事実なので

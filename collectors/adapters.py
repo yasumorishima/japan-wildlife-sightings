@@ -93,6 +93,10 @@ def fetch_csv(url: str | None = None, encoding: str | None = None, link_from: st
     if link_from:
         url = _find_link(link_from, link_pattern)
     text = _decode(_get(url).content, encoding)
+    # 配布元によっては、無い URL にも 200 で HTML のページを返す（埼玉県の DataEye）。
+    # それを CSV として読むと、中身の無い行が大量に「収録」されるので失敗にする
+    if re.match(r"\s*<(!doctype|html|\?xml)", text[:200], re.I):
+        raise ValueError(f"CSV のはずが HTML が返ってきた: {url}")
     out = []
     for row in csv.DictReader(io.StringIO(text)):
         clean = {(k or "").strip(): v for k, v in row.items()}
