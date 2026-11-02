@@ -147,7 +147,8 @@
       "pref": "山形県",
       "adapter": "csv",
       "params": {
-        "url": "https://www.pref.yamagata.jp/documents/2414/20260823_kemonote-cleaned.csv"
+        "link_from": "https://www.pref.yamagata.jp/050011/kurashi/shizen/seibutsu/about_kuma/kuma_yamagata_top.html",
+        "link_pattern": "kemonote.*\\.csv$"
       },
       "page": "https://www.pref.yamagata.jp/050011/kurashi/shizen/seibutsu/about_kuma/kuma_yamagata_top.html",
       "license": {
@@ -399,7 +400,7 @@
       "pref": "長野県",
       "adapter": "arcgis",
       "params": {
-        "layer_url": "https://services1.arcgis.com/4GMefrLcjv8z16wh/arcgis/rest/services/クマ出没マップ/FeatureServer/0"
+        "layer_url": "https://services1.arcgis.com/4GMefrLcjv8z16wh/arcgis/rest/services/choujyumokugeki_publicview/FeatureServer/0"
       },
       "page": "https://www.city.okaya.lg.jp/",
       "license": {
@@ -420,7 +421,8 @@
       },
       "constants": {
         "municipality": "岡谷市"
-      }
+      },
+      "note": "以前の「クマ出没マップ」（48 件）は、この公開ビュー（全獣種）にすべて含まれていたので置き換えた（2026-11-02）"
     },
     {
       "id": "fukushima-bear",
@@ -810,6 +812,136 @@
           "場所（詳細）",
           "体長（おおよそm）"
         ]
+      }
+    },
+    {
+      "id": "kashiwazaki-boar",
+      "pref_code": "15",
+      "pref": "新潟県",
+      "adapter": "arcgis",
+      "params": {
+        "layer_urls": [
+          "https://services1.arcgis.com/XlTFoh9FvQbdpw6d/arcgis/rest/services/イノシシ目撃情報_R2/FeatureServer/0",
+          "https://services1.arcgis.com/XlTFoh9FvQbdpw6d/arcgis/rest/services/イノシシ目撃情報_R3/FeatureServer/0",
+          "https://services1.arcgis.com/XlTFoh9FvQbdpw6d/arcgis/rest/services/イノシシ目撃情報_R4/FeatureServer/0",
+          "https://services1.arcgis.com/XlTFoh9FvQbdpw6d/arcgis/rest/services/イノシシ目撃情報_R5/FeatureServer/0",
+          "https://services1.arcgis.com/XlTFoh9FvQbdpw6d/arcgis/rest/services/イノシシ目撃情報_令和6（2024）年度/FeatureServer/0",
+          "https://services1.arcgis.com/XlTFoh9FvQbdpw6d/arcgis/rest/services/イノシシ目撃情報R7/FeatureServer/0",
+          "https://services1.arcgis.com/XlTFoh9FvQbdpw6d/arcgis/rest/services/イノシシ目撃情報R8/FeatureServer/2"
+        ]
+      },
+      "page": "https://www.arcgis.com/home/item.html?id=221ca237ca5e4560b693e0b1279a284e",
+      "license": {
+        "id": "CC-BY",
+        "attribution": "柏崎市",
+        "redistribute": true,
+        "basis": "柏崎市（ArcGIS の組織 kashiwazaki_admin）が各年度のレイヤの licenseInfo に「CC BY 2.1 JP」（令和2〜5年度）・「CC BY 4.0 JP」（令和6年度〜）と明記。市サイトの著作権条項も「各ページに利用規約など特段の定めがある場合を除く」",
+        "verified": "2026-11-02"
+      },
+      "species_default": "inoshishi",
+      "map": {
+        "native_id": "OBJECTID",
+        "occurred_at": "目撃年月日",
+        "time": "出没時間",
+        "category": "区分",
+        "place": "大字",
+        "count": "頭数",
+        "note": "状況等"
+      },
+      "constants": {
+        "municipality": "柏崎市"
+      }
+    },
+    {
+      "id": "fukuoka-choju",
+      "pref_code": "40",
+      "pref": "福岡県",
+      "adapter": "arcgis",
+      "params": {
+        "layer_url": "https://services1.arcgis.com/UzywP0SobSWMx2Pl/arcgis/rest/services/MokugekiHigai_apps_view/FeatureServer/0"
+      },
+      "page": "https://www.pref.fukuoka.lg.jp/contents/choju-system.html",
+      "license": {
+        "id": "unknown",
+        "attribution": "福岡県",
+        "redistribute": false,
+        "basis": "ArcGIS の項目にライセンス記載なし。案内ページの規約に「本サイトを第三者がさらに複製する場合には、サイト管理者の承認を得なければなりません」",
+        "verified": "2026-11-02"
+      },
+      "map": {
+        "native_id": "ObjectID",
+        "occurred_at": "日時",
+        "species": [
+          "獣種・鳥種名",
+          "動物の種別"
+        ],
+        "category": [
+          "被害の種別",
+          "痕跡の種別 "
+        ],
+        "municipality": "市町村名",
+        "count": "動物の頭数",
+        "note": "目撃個体の特徴等"
+      }
+    },
+    {
+      "id": "aizuwakamatsu-choju",
+      "pref_code": "07",
+      "pref": "福島県",
+      "adapter": "arcgis",
+      "params": {
+        "layer_url": "https://services9.arcgis.com/Sg9gBvx912jkVYU6/arcgis/rest/services/獣マップ会津若松市データ（20260729_115613時点）_ビュー/FeatureServer/0"
+      },
+      "page": "https://www.arcgis.com/home/item.html?id=e2e8c981a7974d1e837d53061e75110a",
+      "license": {
+        "id": "unknown",
+        "attribution": "会津若松市",
+        "redistribute": false,
+        "basis": "ArcGIS の項目（所有者 aizu_kikaku）にライセンス記載なし。市の公式ページからの参照も未確認。サービス名に「20260729時点」とあり、時点の写しの可能性がある",
+        "verified": "2026-11-02"
+      },
+      "map": {
+        "native_id": "ObjectId",
+        "occurred_at": "発生年月日",
+        "time": "発生時刻",
+        "species": "鳥獣害情報種別ID名称",
+        "category": "情報分類名称",
+        "place": "所在",
+        "count": "頭数",
+        "note": "備考",
+        "lat": "緯度",
+        "lon": "経度"
+      },
+      "constants": {
+        "municipality": "会津若松市"
+      }
+    },
+    {
+      "id": "tsuru-bear",
+      "pref_code": "19",
+      "pref": "山梨県",
+      "adapter": "arcgis",
+      "params": {
+        "layer_url": "https://services8.arcgis.com/dwwLA5QaLYDb0O08/arcgis/rest/services/ヒグマ出没・目撃情報報告_閲覧用/FeatureServer/0"
+      },
+      "page": "https://www.arcgis.com/home/item.html?id=b3f2b34816804d4888fa35b18767b90e",
+      "license": {
+        "id": "unknown",
+        "attribution": "都留市",
+        "redistribute": false,
+        "basis": "ArcGIS の項目（所有者 Administrator_tsuru）にライセンス記載なし。市の公式ページからの参照は未確認",
+        "verified": "2026-11-02"
+      },
+      "note": "レイヤ名は「ヒグマ」だが本州（山梨県）の記録なのでツキノワグマとして扱う",
+      "species_default": "tsukinowaguma",
+      "category_default": "sighting",
+      "map": {
+        "native_id": "ObjectID",
+        "occurred_at": "目撃年月日と時刻",
+        "municipality": "目撃市町村",
+        "place": "目撃場所（地域）",
+        "count": "目撃頭数",
+        "note": "目撃したクマの行動・被害"
       }
     }
   ]

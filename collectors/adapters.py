@@ -66,7 +66,22 @@ def _decode(raw: bytes, encoding: str | None) -> str:
     return raw.decode("utf-8", errors="replace")
 
 
-def fetch_csv(url: str, encoding: str | None = None, **_) -> list[dict]:
+def _find_link(page: str, pattern: str) -> str:
+    """公開ページから、pattern に合う最初のリンクの絶対 URL を返す。"""
+    from urllib.parse import urljoin
+    html = _decode(_get(page).content, None)
+    for href in re.findall(r'href="([^"]+)"', html):
+        if re.search(pattern, href):
+            return urljoin(page, href)
+    raise LookupError(f"{page} に {pattern} に合うリンクが無い")
+
+
+def fetch_csv(url: str | None = None, encoding: str | None = None, link_from: str | None = None,
+              link_pattern: str | None = None, **_) -> list[dict]:
+    # ファイル名に更新日が入り、更新のたびに URL が変わる出典（山形県）は、公開ページの
+    # リンクから毎回たどる。固定 URL だと古いファイルが消えた日に 404 になる。
+    if link_from:
+        url = _find_link(link_from, link_pattern)
     text = _decode(_get(url).content, encoding)
     out = []
     for row in csv.DictReader(io.StringIO(text)):
@@ -96,8 +111,20 @@ def fetch_xlsx(url: str, sheet: int = 0, header_row: int = 1, **_) -> list[dict]
     return out
 
 
-def fetch_arcgis(layer_url: str, page: int = 1000, **_) -> list[dict]:
-    """FeatureServer のレイヤを全件取得する。列名は alias（日本語）に置き換える。"""
+def fetch_arcgis(layer_url: str | None = None, page: int = 1000, layer_urls: list[str] | None = None,
+                 **_) -> list[dict]:
+    """FeatureServer のレイヤを全件取得する。列名は alias（日本語）に置き換える。
+
+    年度ごとに別レイヤで公開する出典（柏崎市など）は layer_urls に並べる。各行に
+    _dataset（並べた順の番号）を付けるので、レイヤごとに 1 から振り直す番号でも id が重ならない。
+    """
+    if layer_urls:
+        out = []
+        for n, url in enumerate(layer_urls):
+            for row in fetch_arcgis(url, page=page):
+                row["_dataset"] = str(n)
+                out.append(row)
+        return out
     meta = _get(layer_url, params={"f": "json"}).json()
     alias = {f["name"]: (f.get("alias") or f["name"]) for f in meta.get("fields", [])}
     out, offset = [], 0

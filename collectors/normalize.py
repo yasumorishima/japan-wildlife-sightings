@@ -36,9 +36,10 @@ _SPECIES = [
     ("tsukinowaguma", "ツキノワグマ", ("ツキノワグマ", "つきのわぐま", "月の輪熊")),
     ("bear", "クマ", ("クマ", "くま", "熊", "bear")),
     ("inoshishi", "イノシシ", ("イノシシ", "いのしし", "猪", "野生イノシシ")),
+    # カモシカは「シカ」を含むので、シカより先に判定する（岡谷市の 115 件がシカになっていた）
+    ("kamoshika", "カモシカ", ("カモシカ", "かもしか", "羚羊")),
     ("shika", "ニホンジカ", ("ニホンジカ", "シカ", "しか", "鹿")),
     ("saru", "ニホンザル", ("ニホンザル", "サル", "猿")),
-    ("kamoshika", "カモシカ", ("カモシカ", "羚羊")),
 ]
 
 # 都道府県によっては「ヒグマ」しか扱わない等、既定値を持たせたい場合がある
@@ -60,7 +61,7 @@ _CATEGORY = [
     ("injury", ("人身", "負傷", "襲わ")),
     ("damage", ("被害", "食害", "農作物")),
     ("capture", ("捕獲", "駆除", "有害捕獲")),
-    ("trace", ("痕跡", "足跡", "糞", "爪跡")),
+    ("trace", ("痕跡", "足跡", "糞", "フン", "爪跡", "爪痕", "食痕", "掘り起こし", "掘り返し", "掘り跡", "掘跡", "堀り跡", "被毛", "枝折り")),
     ("sighting", ("目撃", "出没", "発見", "確認")),
 ]
 
@@ -154,7 +155,17 @@ def occurred_at(raw, time_hint: str | None = None, fiscal_year: int | None = Non
     if isinstance(raw, (int, float)) and not isinstance(raw, bool):
         # ArcGIS FeatureServer の esriFieldTypeDate は UTC の epoch ms
         dt = _dt.datetime.fromtimestamp(raw / 1000, tz=_dt.timezone.utc)
-        return dt.astimezone(_dt.timezone(_dt.timedelta(hours=9))).isoformat()
+        jst = dt.astimezone(_dt.timezone(_dt.timedelta(hours=9)))
+        # 日付だけの列で時刻が別列にある出典は、別列の時刻を使う。日付だけの値は
+        # 日本時間の 0:00（三重県）か UTC の 0:00＝日本時間 9:00（岡谷市）で入っている
+        if not time_hint:
+            return jst.isoformat()
+        if (jst.hour, jst.minute, jst.second) == (0, 0, 0):
+            raw = jst.date().isoformat()
+        elif (dt.hour, dt.minute, dt.second) == (0, 0, 0):
+            raw = dt.date().isoformat()
+        else:
+            return jst.isoformat()
     text = _z2h(str(raw).strip())
     d = wareki_to_date(text) or excel_serial(text)
     if d:
@@ -179,9 +190,16 @@ def occurred_at(raw, time_hint: str | None = None, fiscal_year: int | None = Non
                 return None
             base = f"{int(m.group(1)):04d}-{int(m.group(2)):02d}-{int(m.group(3)):02d}"
     if time_hint and len(base) == 10:
-        t = re.search(r"(\d{1,2})[:：時](\d{1,2})?", _z2h(str(time_hint)))
+        hint = _z2h(str(time_hint))
+        t = re.search(r"(\d{1,2})[:：時](\d{1,2})?", hint)
         if t:
-            hh = min(int(t.group(1)), 23)
+            hh = int(t.group(1))
+            # 「午後3時30分」（柏崎市など）。午後を落とすと 15 時が 3 時になる
+            if re.search(r"午後|PM|ＰＭ|p\.?m\.?", hint, re.I) and hh < 12:
+                hh += 12
+            elif re.search(r"午前|AM|ＡＭ|a\.?m\.?", hint, re.I) and hh == 12:
+                hh = 0
+            hh = min(hh, 23)
             mm = min(int(t.group(2) or 0), 59)
             base = f"{base}T{hh:02d}:{mm:02d}:00+09:00"
     return base
