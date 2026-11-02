@@ -208,3 +208,33 @@ def occurred_at(raw, time_hint: str | None = None, fiscal_year: int | None = Non
             mm = min(int(t.group(2) or 0), 59)
             base = f"{base}T{hh:02d}:{mm:02d}:00+09:00"
     return base
+
+
+# --- 個人名 -----------------------------------------------------------
+# 公開元の自由記述に、通報者・土地の所有者の氏名が自宅の番地と一緒に入ることがある
+# （京都府の「舞鶴市字白屋町8-2（○○○○氏宅）」など）。再配布で広げないよう、氏名だけを
+# 「（個人名）」に置き換える。判定は「氏」「○○宅」「○○さん宅／の畑」のように人を指す形に限る。
+_NOT_NAME = ("自", "住", "民", "社", "邸", "別", "帰", "在", "お", "隣", "家", "空", "旧", "本", "新",
+             "農", "当", "同", "知人", "親戚", "実家", "区長", "町長", "市長", "猟友会", "会長")
+_PERSON_PATTERNS = [
+    re.compile(r"(?<![一-龥])([一-龥]{1,4}[ 　]?[一-龥]{1,4})(氏)(?![名神子族])"),
+    re.compile(r"(?<![一-龥])([一-龥]{2,5})(宅)(?![地配])"),
+    re.compile(r"(?<![一-龥])([一-龥]{2,5})(さん|様)(?=宅|方|の自宅|自宅|の家|の畑|の田|の栗|の柿|所有|の倉|の小屋)"),
+]
+
+
+def mask_person(text: str | None) -> str | None:
+    if not text:
+        return text
+    out = text
+    for pat in _PERSON_PATTERNS:
+        def repl(m):
+            name = m.group(1)
+            # 「目撃者宅」「地元住民宅」「帰宅」「ご近所さん」のような、人の役割や一般語は名前ではない
+            if (any(name.startswith(w) or name == w for w in _NOT_NAME)
+                    or name.endswith(("住", "自", "者", "民", "人", "所", "員", "主", "方"))
+                    or any(w in name for w in ("帰", "近所", "個人", "住所", "上記", "付近"))):
+                return m.group(0)
+            return "（個人名）" + m.group(2)
+        out = pat.sub(repl, out)
+    return out
