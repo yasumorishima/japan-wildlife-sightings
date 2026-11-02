@@ -4,6 +4,13 @@
 データセット（`data/`）と地図ページ（`docs/`、GitHub Pages）を作るリポジトリ。
 詳しい経緯・判断は README.md にある。応答・コメント・commit メッセージは日本語で書く。
 
+## 作業の進め方
+
+- **変更は PR を作って main へのマージまで自分でやる**（オーナーの指示）。確認は求めなくてよい。
+  マージ前に `python3 validate.py` など関係する確認を通しておく。
+- ただし `data/` の手動 commit、収録出典（`redistribute`）の追加・変更、ワークフローの変更のように
+  公開データや自動収集に影響するものは、マージ前に内容を一言伝える。
+
 ## 構成
 
 - `sources.json` — 出典の定義（id / adapter / params / license / 列の対応 `map`）
