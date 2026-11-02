@@ -943,6 +943,188 @@
         "count": "目撃頭数",
         "note": "目撃したクマの行動・被害"
       }
+    },
+    {
+      "id": "tokyo-bear",
+      "pref_code": "13",
+      "pref": "東京都",
+      "adapter": "csv",
+      "params": {
+        "link_from": "https://www.kankyo.metro.tokyo.lg.jp/nature/animals_plants/bear/data",
+        "link_pattern": "tukinowaguma_source\\d+"
+      },
+      "page": "https://catalog.data.metro.tokyo.lg.jp/dataset/t000009d2000000060",
+      "license": {
+        "id": "CC-BY-4.0",
+        "attribution": "東京都環境局",
+        "redistribute": true,
+        "basis": "東京都オープンデータカタログのデータセット metadata が license_id `CC-BY-4.0`（「クリエイティブ・コモンズ 表示（CC BY）」）",
+        "verified": "2026-11-02"
+      },
+      "note": "市町村名の列が無い。accuracy（high/middle）は位置の確からしさ",
+      "species_default": "tsukinowaguma",
+      "map": {
+        "native_id": "number",
+        "occurred_at": "date",
+        "category": "sightings, traces, etc.",
+        "lat": "lat",
+        "lon": "lon"
+      }
+    },
+    {
+      "id": "sendai-bear",
+      "pref_code": "04",
+      "pref": "宮城県",
+      "adapter": "csv",
+      "params": {
+        "urls": [
+          "https://www2.wagmap.jp/sendaicity/sendaicity/opendatafile/map_331/CSV/opendata_20125.csv",
+          "https://www2.wagmap.jp/sendaicity/sendaicity/opendatafile/map_331/CSV/opendata_20126.csv",
+          "https://www2.wagmap.jp/sendaicity/sendaicity/opendatafile/map_331/CSV/opendata_20127.csv",
+          "https://www2.wagmap.jp/sendaicity/sendaicity/opendatafile/map_331/CSV/opendata_20128.csv",
+          "https://www2.wagmap.jp/sendaicity/sendaicity/opendatafile/map_331/CSV/opendata_20129.csv"
+        ]
+      },
+      "page": "https://www.geospatial.jp/ckan/dataset/sendaikurashinomap",
+      "license": {
+        "id": "CC-BY",
+        "attribution": "仙台市",
+        "redistribute": true,
+        "basis": "G空間情報センターのデータセット「せんだいくらしのマップ」（組織: 仙台市）の metadata が license_id `cc-by`（「クリエイティブ・コモンズ 表示」）",
+        "verified": "2026-11-02"
+      },
+      "note": "令和4〜8年度のクマ出没情報。R2・R3 は KML/SHP のみなので未取得。宮城県の令和8年度分と重なる記録がある",
+      "species_default": "tsukinowaguma",
+      "category_default": "sighting",
+      "map": {
+        "occurred_at": "出没日時",
+        "time": "出没日時",
+        "place": "出没場所",
+        "count": "頭数及び体長",
+        "note": [
+          "その他",
+          "頭数及び体長"
+        ],
+        "lat": "緯度",
+        "lon": "経度"
+      },
+      "constants": {
+        "municipality": "仙台市"
+      }
+    },
+    {
+      "id": "miyagi-bear-r8",
+      "pref_code": "04",
+      "pref": "宮城県",
+      "adapter": "xlsx",
+      "params": {
+        "link_from": "https://www.pref.miyagi.jp/soshiki/sizenhogo/r8kumamokugeki.html",
+        "link_pattern": "koukaiyou_\\d+\\.xlsx$",
+        "header_row": 3
+      },
+      "page": "https://www.pref.miyagi.jp/soshiki/sizenhogo/r8kumamokugeki.html",
+      "license": {
+        "id": "other",
+        "attribution": "宮城県「令和8年度クマ目撃等情報」",
+        "redistribute": true,
+        "basis": "県のページに「本ページで公開しているクマ目撃等情報は、出典を明記することを条件に、自由に複製・加工・編集や頒布などの二次利用が可能です。」「出典：宮城県「令和8年度クマ目撃等情報」」。令和6・7年度のページにはこの記載が無いので取得しない",
+        "verified": "2026-11-02"
+      },
+      "note": "座標なし（市区町村と地区まで）。月・日・時刻が別列で年が無いので fiscal_year で補う。令和9年度は別ページになる見込み",
+      "fiscal_year": 2026,
+      "date_from": [
+        "発見日時",
+        "col2"
+      ],
+      "species_default": "tsukinowaguma",
+      "require": [
+        "occurred_at"
+      ],
+      "map": {
+        "native_id": "番号",
+        "time": "col3",
+        "municipality": "市区町村",
+        "place": "地区",
+        "count": "発見頭数",
+        "category": "痕跡",
+        "note": "市街地判定"
+      }
+    },
+    {
+      "id": "nagaoka-bear",
+      "pref_code": "15",
+      "pref": "新潟県",
+      "adapter": "csv",
+      "params": {
+        "urls": [
+          "https://www.city.nagaoka.niigata.jp/shisei/cate10/bousai/file/03-01u.csv",
+          "https://www.city.nagaoka.niigata.jp/shisei/cate10/bousai/file/03-02u.csv"
+        ]
+      },
+      "page": "https://www.city.nagaoka.niigata.jp/shisei/cate10/bousai/03.html",
+      "license": {
+        "id": "CC-BY",
+        "attribution": "長岡市",
+        "redistribute": true,
+        "basis": "市の「【オープンデータ】クマ出没情報」ページのメタデータに「ライセンス CC BY（表示）」",
+        "verified": "2026-11-02"
+      },
+      "note": "平成26・27年度のみ（平成28年6月以降更新なし）",
+      "species_default": "tsukinowaguma",
+      "map": {
+        "native_id": "No",
+        "occurred_at": "出没日、痕跡確認日",
+        "category": "区分",
+        "place": [
+          "場所",
+          "地域名"
+        ],
+        "note": "状況",
+        "lat": "緯度",
+        "lon": "経度"
+      },
+      "constants": {
+        "municipality": "長岡市"
+      }
+    },
+    {
+      "id": "mori-higuma",
+      "pref_code": "01",
+      "pref": "北海道",
+      "adapter": "csv",
+      "params": {
+        "url": "https://www.geospatial.jp/ckan/dataset/b61aecf5-704b-41f3-ac2a-4c1beb9dec1e/resource/7a813d64-fce2-4d96-b940-9aea8956993e/download/013455higuma.csv"
+      },
+      "page": "https://www.geospatial.jp/ckan/dataset/013455-001",
+      "license": {
+        "id": "CC-BY",
+        "attribution": "森町",
+        "redistribute": true,
+        "basis": "G空間情報センターのデータセット「ヒグマ出没状況」（組織: 森町）の metadata が license_id `CC-BY`",
+        "verified": "2026-11-02"
+      },
+      "note": "2018 年 4〜8 月のみ（以後更新なし）",
+      "species_default": "higuma",
+      "category_flags": {
+        "捕獲有": "capture",
+        "目撃有": "sighting",
+        "足跡有": "trace",
+        "その他の痕跡": "trace"
+      },
+      "map": {
+        "native_id": "事例ID",
+        "occurred_at": "出没等発生年月日",
+        "count": "出没頭数",
+        "note": [
+          "クマの行動",
+          "環境等"
+        ],
+        "lat": "緯度",
+        "lon": "経度"
+      },
+      "constants": {
+        "municipality": "森町"
+      }
     }
   ]
 }
