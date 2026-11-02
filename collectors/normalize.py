@@ -169,6 +169,9 @@ def occurred_at(raw, time_hint: str | None = None, fiscal_year: int | None = Non
         else:
             return jst.isoformat()
     text = _z2h(str(raw).strip())
+    # 時差つきの ISO 8601（kViewer から日本時間に直したもの）はそのまま受ける
+    if re.match(r"^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}(:\d{2})?([+-]\d{2}:\d{2})$", text):
+        return _dt.datetime.fromisoformat(text).isoformat()
     d = wareki_to_date(text) or excel_serial(text)
     if d:
         base = d.isoformat()
