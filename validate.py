@@ -28,6 +28,14 @@ def main() -> int:
     if len(rows) != summary["records_published"]:
         fails.append(f"summary の件数 {summary['records_published']} と CSV {len(rows)} が食い違う")
 
+    # 個人情報: 伏せる規則（normalize.mask_person）を掛けても変わらないこと。変わる行が
+    # あれば、氏名・電話番号・メールアドレスが伏せられないまま収録されている
+    from collectors.normalize import mask_person
+    leaked = [(r["id"], k) for r in rows for k in ("place", "note", "municipality")
+              if r.get(k) and mask_person(r[k]) != r[k]]
+    if leaked:
+        fails.append(f"個人情報が伏せられていない: {len(leaked)} 件 例 {leaked[:3]}")
+
     ids = collections.Counter(r["id"] for r in rows)
     dup = [k for k, v in ids.items() if v > 1]
     if dup:
