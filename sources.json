@@ -1183,41 +1183,6 @@
       }
     },
     {
-      "id": "kurashiki-choju",
-      "pref_code": "33",
-      "pref": "岡山県",
-      "adapter": "csv",
-      "params": {
-        "urls": [
-          "https://kurashiki.dataeye.jp/resource_download/7123",
-          "https://kurashiki.dataeye.jp/resource_download/7124",
-          "https://kurashiki.dataeye.jp/resource_download/7125"
-        ]
-      },
-      "page": "https://www.okayama-opendata.jp/datasets/1696",
-      "license": {
-        "id": "PDL-1.0",
-        "attribution": "倉敷市",
-        "redistribute": true,
-        "basis": "おかやまオープンデータカタログのリソース（例 resources/7123）に「ライセンス PDL1.0（公共データ利用規約第1.0版）」。市の目撃情報ページ末尾にも「クリエイティブ・コモンズ 表示 4.0 国際 ライセンスの下に提供されています」",
-        "verified": "2026-11-02"
-      },
-      "note": "イノシシ・シカ・サルの 3 ファイル。緯度経度は「おおよその位置」（データセットの説明）。CSV は市の HTML 一覧より 1 か月ほど遅れる",
-      "category_default": "sighting",
-      "map": {
-        "native_id": "_row",
-        "occurred_at": "日付",
-        "time": "時刻",
-        "species": "種",
-        "municipality": "市区町村名",
-        "place": "所在地情報",
-        "count": "個体数",
-        "note": "状況",
-        "lat": "緯度",
-        "lon": "経度"
-      }
-    },
-    {
       "id": "susono-bear",
       "pref_code": "22",
       "pref": "静岡県",
@@ -1253,47 +1218,6 @@
       },
       "constants": {
         "municipality": "裾野市"
-      }
-    },
-    {
-      "id": "saitama-bear-od",
-      "pref_code": "11",
-      "pref": "埼玉県",
-      "adapter": "csv",
-      "params": {
-        "urls": [
-          "https://opendata.pref.saitama.lg.jp/resource_download/6788",
-          "https://opendata.pref.saitama.lg.jp/resource_download/6789"
-        ]
-      },
-      "page": "https://opendata.pref.saitama.lg.jp/datasets/2290",
-      "license": {
-        "id": "PDL-1.0",
-        "attribution": "埼玉県オープンデータポータルサイト",
-        "redistribute": true,
-        "basis": "埼玉県オープンデータポータルのリソース（resources/6788 ほか）に「ライセンス 公共データ利用規約第1.0版（PDL1.0）」。出典の記載例は「出典：埼玉県オープンデータポータルサイト （当該ページのURL）」",
-        "verified": "2026-11-02"
-      },
-      "note": "令和6年度分と令和7年12月末時点の 2 ファイル。県の ArcGIS（saitama-bear、収録しない）と同じ系統で、こちらは更新が年度ごと。年・月・日が別の列",
-      "species_default": "tsukinowaguma",
-      "category_default": "sighting",
-      "date_from": [
-        [
-          "出没年",
-          "出没日"
-        ],
-        "月",
-        "日"
-      ],
-      "map": {
-        "native_id": "_row",
-        "time": "出没時間",
-        "municipality": "市町村名",
-        "place": "地名",
-        "count": "出没頭数",
-        "note": "出没状況の概要",
-        "lat": "y",
-        "lon": "x"
       }
     },
     {
