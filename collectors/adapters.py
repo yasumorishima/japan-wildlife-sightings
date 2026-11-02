@@ -77,8 +77,16 @@ def _find_link(page: str, pattern: str) -> str:
 
 
 def fetch_csv(url: str | None = None, encoding: str | None = None, link_from: str | None = None,
-              link_pattern: str | None = None, **_) -> list[dict]:
-    # ファイル名に更新日が入り、更新のたびに URL が変わる出典（山形県）は、公開ページの
+              link_pattern: str | None = None, urls: list[str] | None = None, **_) -> list[dict]:
+    # 年度ごとに別ファイルの出典（仙台市）は urls に並べる。_dataset で id を分ける
+    if urls:
+        out = []
+        for n, u in enumerate(urls):
+            for row in fetch_csv(u, encoding=encoding):
+                row["_dataset"] = str(n)
+                out.append(row)
+        return out
+    # ファイル名に更新日が入り、更新のたびに URL が変わる出典（山形県・東京都）は、公開ページの
     # リンクから毎回たどる。固定 URL だと古いファイルが消えた日に 404 になる。
     if link_from:
         url = _find_link(link_from, link_pattern)
@@ -93,8 +101,12 @@ def fetch_csv(url: str | None = None, encoding: str | None = None, link_from: st
     return out
 
 
-def fetch_xlsx(url: str, sheet: int = 0, header_row: int = 1, **_) -> list[dict]:
+def fetch_xlsx(url: str | None = None, sheet: int = 0, header_row: int = 1, link_from: str | None = None,
+               link_pattern: str | None = None, **_) -> list[dict]:
     import openpyxl
+
+    if link_from:  # 宮城県はファイル名に更新日が入る
+        url = _find_link(link_from, link_pattern)
 
     wb = openpyxl.load_workbook(io.BytesIO(_get(url).content), read_only=True, data_only=True)
     ws = wb.worksheets[sheet]

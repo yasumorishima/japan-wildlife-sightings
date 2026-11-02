@@ -231,7 +231,7 @@ map.on("load", async () => {
   }
 
   document.getElementById("credit").innerHTML =
-    'データ出典: 秋田県・京都府・石川県・金沢市・山口県・札幌市・室蘭市・石狩市・上砂川町・柏崎市（CC BY）。背景は地理院タイルと NASA EOSDIS GIBS。' +
+    'データ出典: 秋田県・京都府・石川県・金沢市・山口県・東京都・宮城県・札幌市・室蘭市・石狩市・上砂川町・森町・仙台市・柏崎市・長岡市（CC BY ほか）。背景は地理院タイルと NASA EOSDIS GIBS。' +
     '<a href="https://github.com/yasumorishima/japan-wildlife-sightings">リポジトリ</a>・' +
     '<a href="THIRD-PARTY-NOTICES.txt">ライセンス表示</a>';
 });
