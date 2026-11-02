@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-01T08:56:12.433944+09:00",
-  "records_published": 41777,
+  "generated_at": "2026-11-02T15:29:52.130712+09:00",
+  "records_published": 55421,
   "sources": [
     {
       "id": "akita-kumadas",
@@ -55,11 +55,11 @@
       "adapter": "arcgis",
       "license": "unknown",
       "redistribute": false,
-      "records": 1850,
-      "with_coords": 1850,
-      "with_date": 1850,
+      "records": 1853,
+      "with_coords": 1853,
+      "with_date": 1853,
       "date_min": "2024-04-02",
-      "date_max": "2026-10-30",
+      "date_max": "2026-11-01",
       "species": [
         "tsukinowaguma"
       ]
@@ -70,11 +70,11 @@
       "adapter": "arcgis",
       "license": "unknown",
       "redistribute": false,
-      "records": 433,
-      "with_coords": 433,
-      "with_date": 433,
+      "records": 435,
+      "with_coords": 435,
+      "with_date": 435,
       "date_min": "2024-04-11",
-      "date_max": "2026-10-30",
+      "date_max": "2026-11-01",
       "species": [
         "tsukinowaguma"
       ]
@@ -85,7 +85,14 @@
       "adapter": "csv",
       "license": "unknown",
       "redistribute": false,
-      "error": "HTTPError: 404 Client Error: Not Found for url: https://www.pref.yamagata.jp/documents/2414/20260823_kemonote-cleaned.csv"
+      "records": 943,
+      "with_coords": 943,
+      "with_date": 943,
+      "date_min": "2026-01-01",
+      "date_max": "2026-10-22",
+      "species": [
+        "tsukinowaguma"
+      ]
     },
     {
       "id": "ishikawa-bear",
@@ -153,11 +160,11 @@
       "adapter": "arcgis",
       "license": "unknown",
       "redistribute": false,
-      "records": 71,
-      "with_coords": 71,
-      "with_date": 71,
+      "records": 72,
+      "with_coords": 72,
+      "with_date": 72,
       "date_min": "2021-04-20",
-      "date_max": "2026-10-28",
+      "date_max": "2026-11-01",
       "species": [
         "higuma"
       ]
@@ -198,11 +205,11 @@
       "adapter": "arcgis",
       "license": "unknown",
       "redistribute": false,
-      "records": 144,
-      "with_coords": 144,
-      "with_date": 144,
+      "records": 145,
+      "with_coords": 145,
+      "with_date": 145,
       "date_min": "2025-09-12",
-      "date_max": "2026-10-29",
+      "date_max": "2026-10-31",
       "species": [
         "bear"
       ]
@@ -213,13 +220,18 @@
       "adapter": "arcgis",
       "license": "unknown",
       "redistribute": false,
-      "records": 48,
-      "with_coords": 48,
-      "with_date": 48,
-      "date_min": "2024-04-10",
-      "date_max": "2026-07-26",
+      "records": 270,
+      "with_coords": 270,
+      "with_date": 270,
+      "date_min": "2024-01-12",
+      "date_max": "2026-10-25",
       "species": [
-        "tsukinowaguma"
+        "inoshishi",
+        "kamoshika",
+        "saru",
+        "shika",
+        "tsukinowaguma",
+        "unknown"
       ]
     },
     {
@@ -228,11 +240,11 @@
       "adapter": "arcgis",
       "license": "unknown",
       "redistribute": false,
-      "records": 4566,
-      "with_coords": 4566,
-      "with_date": 4566,
+      "records": 4572,
+      "with_coords": 4572,
+      "with_date": 4572,
       "date_min": "2022-04-04",
-      "date_max": "2026-10-25",
+      "date_max": "2026-11-01",
       "species": [
         "tsukinowaguma"
       ]
@@ -318,6 +330,8 @@
       "adapter": "ckan",
       "license": "CC-BY-4.0",
       "redistribute": true,
+      "error": "SSLError: HTTPSConnectionPool(host='yamaguchi-opendata.jp', port=443): Max retries exceeded with url: /ckan/api/3/action/package_search?q=%E7%86%8A&rows=50 (Caused by SSLError(SSLError(1, '[SSL: TLSV1_ALERT_INSUFFICIENT_SECURITY] tlsv1 alert insufficient security (_ssl.c:1035)')))",
+      "reused_previous": 1314,
       "records": 1314,
       "with_coords": 1314,
       "with_date": 1313,
@@ -408,6 +422,225 @@
       "date_max": "2025-12-25",
       "species": [
         "inoshishi"
+      ]
+    },
+    {
+      "id": "kashiwazaki-boar",
+      "pref": "新潟県",
+      "adapter": "arcgis",
+      "license": "CC-BY",
+      "redistribute": true,
+      "records": 795,
+      "with_coords": 794,
+      "with_date": 791,
+      "date_min": "2020-04-28",
+      "date_max": "2026-05-28",
+      "species": [
+        "inoshishi"
+      ]
+    },
+    {
+      "id": "fukuoka-choju",
+      "pref": "福岡県",
+      "adapter": "arcgis",
+      "license": "unknown",
+      "redistribute": false,
+      "records": 1559,
+      "with_coords": 1558,
+      "with_date": 1559,
+      "date_min": "2020-06-24",
+      "date_max": "2026-11-02",
+      "species": [
+        "inoshishi",
+        "saru",
+        "shika",
+        "unknown"
+      ]
+    },
+    {
+      "id": "aizuwakamatsu-choju",
+      "pref": "福島県",
+      "adapter": "arcgis",
+      "license": "unknown",
+      "redistribute": false,
+      "records": 824,
+      "with_coords": 824,
+      "with_date": 824,
+      "date_min": "2022-04-10",
+      "date_max": "2026-07-28",
+      "species": [
+        "bear",
+        "inoshishi",
+        "saru",
+        "shika",
+        "unknown"
+      ]
+    },
+    {
+      "id": "tsuru-bear",
+      "pref": "山梨県",
+      "adapter": "arcgis",
+      "license": "unknown",
+      "redistribute": false,
+      "records": 76,
+      "with_coords": 76,
+      "with_date": 74,
+      "date_min": "2023-04-05",
+      "date_max": "2026-10-30",
+      "species": [
+        "tsukinowaguma"
+      ]
+    },
+    {
+      "id": "tokyo-bear",
+      "pref": "東京都",
+      "adapter": "csv",
+      "license": "CC-BY-4.0",
+      "redistribute": true,
+      "records": 996,
+      "with_coords": 995,
+      "with_date": 996,
+      "date_min": "2023-04-01",
+      "date_max": "2026-06-08",
+      "species": [
+        "tsukinowaguma"
+      ]
+    },
+    {
+      "id": "sendai-bear",
+      "pref": "宮城県",
+      "adapter": "csv",
+      "license": "CC-BY",
+      "redistribute": true,
+      "records": 2604,
+      "with_coords": 2604,
+      "with_date": 2597,
+      "date_min": "2020-04-05",
+      "date_max": "2026-10-29",
+      "species": [
+        "tsukinowaguma"
+      ]
+    },
+    {
+      "id": "miyagi-bear-r8",
+      "pref": "宮城県",
+      "adapter": "xlsx",
+      "license": "other",
+      "redistribute": true,
+      "records": 1406,
+      "with_coords": 0,
+      "with_date": 1406,
+      "date_min": "2026-04-01",
+      "date_max": "2026-10-31",
+      "species": [
+        "tsukinowaguma"
+      ]
+    },
+    {
+      "id": "nagaoka-bear",
+      "pref": "新潟県",
+      "adapter": "csv",
+      "license": "CC-BY",
+      "redistribute": true,
+      "records": 166,
+      "with_coords": 166,
+      "with_date": 166,
+      "date_min": "2014-04-09",
+      "date_max": "2016-03-30",
+      "species": [
+        "tsukinowaguma"
+      ]
+    },
+    {
+      "id": "mori-higuma",
+      "pref": "北海道",
+      "adapter": "csv",
+      "license": "CC-BY",
+      "redistribute": true,
+      "records": 53,
+      "with_coords": 53,
+      "with_date": 53,
+      "date_min": "2018-04-28",
+      "date_max": "2018-08-27",
+      "species": [
+        "higuma"
+      ]
+    },
+    {
+      "id": "gifu-bear",
+      "pref": "岐阜県",
+      "adapter": "ckan_shp",
+      "license": "CC-BY-2.1-JP",
+      "redistribute": true,
+      "records": 6946,
+      "with_coords": 6946,
+      "with_date": 6914,
+      "date_min": "2014-04-02",
+      "date_max": "2025-10-20",
+      "species": [
+        "tsukinowaguma"
+      ]
+    },
+    {
+      "id": "kurashiki-choju",
+      "pref": "岡山県",
+      "adapter": "csv",
+      "license": "PDL-1.0",
+      "redistribute": true,
+      "records": 273,
+      "with_coords": 273,
+      "with_date": 273,
+      "date_min": "2018-11-27",
+      "date_max": "2026-09-08",
+      "species": [
+        "inoshishi",
+        "saru",
+        "shika"
+      ]
+    },
+    {
+      "id": "susono-bear",
+      "pref": "静岡県",
+      "adapter": "kviewer",
+      "license": "CC-BY-2.1-JP",
+      "redistribute": true,
+      "records": 17,
+      "with_coords": 17,
+      "with_date": 17,
+      "date_min": "2026-04-11",
+      "date_max": "2026-06-04",
+      "species": [
+        "bear"
+      ]
+    },
+    {
+      "id": "saitama-bear-od",
+      "pref": "埼玉県",
+      "adapter": "csv",
+      "license": "PDL-1.0",
+      "redistribute": true,
+      "records": 271,
+      "with_coords": 271,
+      "with_date": 271,
+      "date_min": "2024-04-11",
+      "date_max": "2025-12-26",
+      "species": [
+        "tsukinowaguma"
+      ]
+    },
+    {
+      "id": "shiroishi-monkey",
+      "pref": "宮城県",
+      "adapter": "csv",
+      "license": "CC-BY-4.0",
+      "redistribute": true,
+      "records": 117,
+      "with_coords": 105,
+      "with_date": 117,
+      "date_min": "2022-09-24",
+      "date_max": "2026-05-26",
+      "species": [
+        "saru"
       ]
     }
   ]
