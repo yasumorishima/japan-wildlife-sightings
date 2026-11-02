@@ -1254,6 +1254,81 @@
       "constants": {
         "municipality": "裾野市"
       }
+    },
+    {
+      "id": "saitama-bear-od",
+      "pref_code": "11",
+      "pref": "埼玉県",
+      "adapter": "csv",
+      "params": {
+        "urls": [
+          "https://opendata.pref.saitama.lg.jp/resource_download/6788",
+          "https://opendata.pref.saitama.lg.jp/resource_download/6789"
+        ]
+      },
+      "page": "https://opendata.pref.saitama.lg.jp/datasets/2290",
+      "license": {
+        "id": "PDL-1.0",
+        "attribution": "埼玉県",
+        "redistribute": true,
+        "basis": "埼玉県オープンデータポータルのリソース（resources/6788 ほか）に「ライセンス 公共データ利用規約第1.0版（PDL1.0）」。出典の記載例は「出典：埼玉県オープンデータポータルサイト （当該ページのURL）」",
+        "verified": "2026-11-02"
+      },
+      "note": "令和6年度分と令和7年12月末時点の 2 ファイル。県の ArcGIS（saitama-bear、収録しない）と同じ系統で、こちらは更新が年度ごと。年・月・日が別の列",
+      "species_default": "tsukinowaguma",
+      "category_default": "sighting",
+      "date_from": [
+        [
+          "出没年",
+          "出没日"
+        ],
+        "月",
+        "日"
+      ],
+      "map": {
+        "native_id": "_row",
+        "time": "出没時間",
+        "municipality": "市町村名",
+        "place": "地名",
+        "count": "出没頭数",
+        "note": "出没状況の概要",
+        "lat": "y",
+        "lon": "x"
+      }
+    },
+    {
+      "id": "shiroishi-monkey",
+      "pref_code": "04",
+      "pref": "宮城県",
+      "adapter": "csv",
+      "params": {
+        "url": "https://miyagi.dataeye.jp/resource_download/316"
+      },
+      "page": "https://miyagi.dataeye.jp/datasets/278",
+      "license": {
+        "id": "CC-BY-4.0",
+        "attribution": "白石市",
+        "redistribute": true,
+        "basis": "宮城県・市町村オープンデータポータル（DataEye）のリソース（resources/316）に「ライセンス CC BY 4.0（クリエイティブ・コモンズ表示4.0国際）」",
+        "verified": "2026-11-02"
+      },
+      "note": "ニホンザル。頭数は「１０頭以上」「２頭～数頭程度」などの区分（幅のあるものは空にする）。緯度経度の空欄がある",
+      "species_default": "saru",
+      "category_default": "sighting",
+      "map": {
+        "native_id": "No",
+        "occurred_at": "出没日",
+        "time": "時間",
+        "municipality": "市町村名",
+        "place": "住所",
+        "count": "頭数",
+        "note": [
+          "被害内容",
+          "備考"
+        ],
+        "lat": "緯度",
+        "lon": "経度"
+      }
     }
   ]
 }

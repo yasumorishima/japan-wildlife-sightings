@@ -37,7 +37,11 @@ def _num(v):
     except ValueError:
         pass
     # 「2頭」「約3頭」のように単位つきで書く出典がある（柏崎市・福岡県）。「不明」は None のまま
-    m = re.fullmatch(r"\D{0,3}?(\d+)\s*頭.*", normalize._z2h(str(v).strip()))
+    text = normalize._z2h(str(v).strip())
+    # 「２頭～数頭程度」「１０頭以上」のような幅のある書き方は推測しない
+    if re.search(r"[～〜~]|以上|程度|数頭|前後|くらい|位", text):
+        return None
+    m = re.fullmatch(r"\D{0,3}?(\d+)\s*頭.*", text)
     return float(m.group(1)) if m else None
 
 
@@ -70,8 +74,20 @@ def build(rows: list[dict], src: dict) -> list[dict]:
         # fiscal_year で年を補う
         fiscal_year = row.get("_fiscal_year") or src.get("fiscal_year")
         if src.get("date_from"):
-            mon, day = (row.get(c) for c in src["date_from"])
-            if isinstance(mon, (int, float)) and isinstance(day, (int, float)):
+            # 各要素は列名か候補のリスト（埼玉県は年の列名がファイルで「出没日」「出没年」と違う）
+            def pick(names):
+                for name in ([names] if isinstance(names, str) else names):
+                    if row.get(name) not in (None, ""):
+                        return row.get(name)
+                return None
+            parts = [pick(c) for c in src["date_from"]]
+            year = parts.pop(0) if len(parts) == 3 else None
+            mon, day = parts
+            if year and mon and day:
+                y, mo, d = (normalize._z2h(str(v).strip()) for v in (year, mon, day))
+                row = dict(row, _md=f"{y}/{mo}/{d}")
+                names = ["_md"]
+            elif isinstance(mon, (int, float)) and isinstance(day, (int, float)):
                 row = dict(row, _md=f"{int(mon)}月{int(day)}日")
                 names = ["_md"]
             elif mon and day:
