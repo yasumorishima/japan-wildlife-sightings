@@ -978,6 +978,8 @@
       "adapter": "csv",
       "params": {
         "urls": [
+          "https://www2.wagmap.jp/sendaicity/sendaicity/opendatafile/map_331/CSV/opendata_20123.csv",
+          "https://www2.wagmap.jp/sendaicity/sendaicity/opendatafile/map_331/CSV/opendata_20124.csv",
           "https://www2.wagmap.jp/sendaicity/sendaicity/opendatafile/map_331/CSV/opendata_20125.csv",
           "https://www2.wagmap.jp/sendaicity/sendaicity/opendatafile/map_331/CSV/opendata_20126.csv",
           "https://www2.wagmap.jp/sendaicity/sendaicity/opendatafile/map_331/CSV/opendata_20127.csv",
@@ -993,7 +995,7 @@
         "basis": "G空間情報センターのデータセット「せんだいくらしのマップ」（組織: 仙台市）の metadata が license_id `cc-by`（「クリエイティブ・コモンズ 表示」）",
         "verified": "2026-11-02"
       },
-      "note": "令和4〜8年度のクマ出没情報。R2・R3 は KML/SHP のみなので未取得。宮城県の令和8年度分と重なる記録がある",
+      "note": "令和2〜8年度のクマ出没情報（年度ごとの CSV。G空間情報センターでは R2・R3 が KML/SHP だけと表示されるが、CSV も同じ場所にある）。宮城県の令和8年度分と重なる記録がある",
       "species_default": "tsukinowaguma",
       "category_default": "sighting",
       "map": {
@@ -1006,7 +1008,8 @@
           "頭数及び体長"
         ],
         "lat": "緯度",
-        "lon": "経度"
+        "lon": "経度",
+        "native_id": "_row"
       },
       "constants": {
         "municipality": "仙台市"
