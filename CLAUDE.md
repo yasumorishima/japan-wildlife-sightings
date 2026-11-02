@@ -72,6 +72,16 @@ python3 -m http.server -d docs                    # 地図を手元で見る
 倉敷市・埼玉県の DataEye はこの理由で収録していない（2026-11-02）。
 クラウド環境で取れなくてもコードの不具合とは限らない。届かない出典は警告として出る。
 
+## 現在の状態と残っている作業（2026-11-02 時点）
+
+- **main の履歴は 2026-11-02 に書き換えた**（過去の data/ を含めて個人情報を伏せるため、force push 済み）。
+  それより前の clone は `git fetch && git reset --hard origin/main` で合わせる。古い履歴を push し戻さないこと。
+- **Kaggle は未公開。** 始めるにはリポジトリの Secrets に `KAGGLE_USERNAME` / `KAGGLE_KEY`、Variables に
+  `KAGGLE_PUBLISH=true` を設定する（オーナーのローカル環境の gh から設定できる。クラウドセッションからは設定しない）。
+- 書き換え前の commit メッセージが、Actions の過去の実行の表示に残っている。消すのはオーナーが Actions 画面から行う。
+- 規約で収録できない県（新潟・山形・静岡・宮城の令和7年度以前・福島など）は、担当課から許諾を得れば収録できる。
+  問い合わせ先は docs/licenses.md。
+
 ## 出典の追加手順
 
 1. `sources.json` にエントリを足す
