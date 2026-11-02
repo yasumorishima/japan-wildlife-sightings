@@ -1125,6 +1125,59 @@
       "constants": {
         "municipality": "森町"
       }
+    },
+    {
+      "id": "gifu-bear",
+      "pref_code": "21",
+      "pref": "岐阜県",
+      "adapter": "ckan_shp",
+      "params": {
+        "base": "https://gifu-opendata.pref.gifu.lg.jp",
+        "name": "c11265-010",
+        "plane_zone": 7,
+        "csv_lat": "JGD2011_10進_Y",
+        "csv_lon": "JGD2011_10進_X"
+      },
+      "page": "https://gifu-opendata.pref.gifu.lg.jp/dataset/c11265-010",
+      "license": {
+        "id": "CC-BY-2.1-JP",
+        "attribution": "岐阜県",
+        "redistribute": true,
+        "basis": "岐阜県オープンデータカタログのデータセット「クママップ （過去）」（組織: 岐阜県 環境エネルギー生活部）の metadata が license_id / license_title とも `cc-by-21-jp`",
+        "verified": "2026-11-02"
+      },
+      "note": "平成26年度〜令和7年度（令和7年度は 2025-10 までの途中分）。年度ごとの Shapefile と令和元年度の CSV。令和2年度以降は .prj が無く平面直角座標（第 VII 系として変換）。通報者・入力者の氏名の列は取り込まない",
+      "species_default": "tsukinowaguma",
+      "category_default": "sighting",
+      "date_from": [
+        "出没月",
+        "出没日"
+      ],
+      "map": {
+        "native_id": "_row",
+        "time": [
+          "出没時間時",
+          "出没時間（",
+          "出没時間"
+        ],
+        "municipality": [
+          "出没市町村",
+          "出没市町_1",
+          "市町村名"
+        ],
+        "place": [
+          "出没地名住",
+          "出没地名（",
+          "出没旧市町",
+          "出没（旧市",
+          "旧市町村名"
+        ],
+        "count": [
+          "出没頭数",
+          "頭数"
+        ],
+        "note": "出没の詳細"
+      }
     }
   ]
 }
