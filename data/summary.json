@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-02T15:29:52.130712+09:00",
-  "records_published": 55421,
+  "generated_at": "2026-11-03T11:45:53.280502+09:00",
+  "records_published": 54877,
   "sources": [
     {
       "id": "akita-kumadas",
@@ -70,11 +70,11 @@
       "adapter": "arcgis",
       "license": "unknown",
       "redistribute": false,
-      "records": 435,
-      "with_coords": 435,
-      "with_date": 435,
+      "records": 439,
+      "with_coords": 439,
+      "with_date": 439,
       "date_min": "2024-04-11",
-      "date_max": "2026-11-01",
+      "date_max": "2026-11-30",
       "species": [
         "tsukinowaguma"
       ]
@@ -300,11 +300,11 @@
       "adapter": "pdf_bbox",
       "license": "unknown",
       "redistribute": false,
-      "records": 863,
+      "records": 873,
       "with_coords": 0,
-      "with_date": 858,
+      "with_date": 868,
       "date_min": "2016-04-20",
-      "date_max": "2026-10-29",
+      "date_max": "2026-11-02",
       "species": [
         "tsukinowaguma"
       ]
@@ -330,8 +330,6 @@
       "adapter": "ckan",
       "license": "CC-BY-4.0",
       "redistribute": true,
-      "error": "SSLError: HTTPSConnectionPool(host='yamaguchi-opendata.jp', port=443): Max retries exceeded with url: /ckan/api/3/action/package_search?q=%E7%86%8A&rows=50 (Caused by SSLError(SSLError(1, '[SSL: TLSV1_ALERT_INSUFFICIENT_SECURITY] tlsv1 alert insufficient security (_ssl.c:1035)')))",
-      "reused_previous": 1314,
       "records": 1314,
       "with_coords": 1314,
       "with_date": 1313,
@@ -445,9 +443,9 @@
       "adapter": "arcgis",
       "license": "unknown",
       "redistribute": false,
-      "records": 1559,
-      "with_coords": 1558,
-      "with_date": 1559,
+      "records": 1560,
+      "with_coords": 1559,
+      "with_date": 1560,
       "date_min": "2020-06-24",
       "date_max": "2026-11-02",
       "species": [
@@ -582,23 +580,6 @@
       ]
     },
     {
-      "id": "kurashiki-choju",
-      "pref": "岡山県",
-      "adapter": "csv",
-      "license": "PDL-1.0",
-      "redistribute": true,
-      "records": 273,
-      "with_coords": 273,
-      "with_date": 273,
-      "date_min": "2018-11-27",
-      "date_max": "2026-09-08",
-      "species": [
-        "inoshishi",
-        "saru",
-        "shika"
-      ]
-    },
-    {
       "id": "susono-bear",
       "pref": "静岡県",
       "adapter": "kviewer",
@@ -611,21 +592,6 @@
       "date_max": "2026-06-04",
       "species": [
         "bear"
-      ]
-    },
-    {
-      "id": "saitama-bear-od",
-      "pref": "埼玉県",
-      "adapter": "csv",
-      "license": "PDL-1.0",
-      "redistribute": true,
-      "records": 271,
-      "with_coords": 271,
-      "with_date": 271,
-      "date_min": "2024-04-11",
-      "date_max": "2025-12-26",
-      "species": [
-        "tsukinowaguma"
       ]
     },
     {
