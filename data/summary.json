@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-04T10:01:33.835983+09:00",
-  "records_published": 54877,
+  "generated_at": "2026-11-05T10:16:34.006475+09:00",
+  "records_published": 54882,
   "sources": [
     {
       "id": "akita-kumadas",
@@ -40,11 +40,11 @@
       "adapter": "arcgis",
       "license": "unknown",
       "redistribute": false,
-      "records": 4229,
-      "with_coords": 4229,
-      "with_date": 4229,
+      "records": 4230,
+      "with_coords": 4230,
+      "with_date": 4230,
       "date_min": "2025-04-07",
-      "date_max": "2026-10-30",
+      "date_max": "2026-11-02",
       "species": [
         "tsukinowaguma"
       ]
@@ -55,9 +55,9 @@
       "adapter": "arcgis",
       "license": "unknown",
       "redistribute": false,
-      "records": 1854,
-      "with_coords": 1854,
-      "with_date": 1854,
+      "records": 1856,
+      "with_coords": 1856,
+      "with_date": 1856,
       "date_min": "2024-04-02",
       "date_max": "2026-11-03",
       "species": [
@@ -70,11 +70,11 @@
       "adapter": "arcgis",
       "license": "unknown",
       "redistribute": false,
-      "records": 440,
-      "with_coords": 440,
-      "with_date": 440,
+      "records": 442,
+      "with_coords": 442,
+      "with_date": 442,
       "date_min": "2024-04-11",
-      "date_max": "2026-11-30",
+      "date_max": "2026-11-04",
       "species": [
         "tsukinowaguma"
       ]
@@ -85,11 +85,11 @@
       "adapter": "csv",
       "license": "unknown",
       "redistribute": false,
-      "records": 943,
-      "with_coords": 943,
-      "with_date": 943,
+      "records": 948,
+      "with_coords": 948,
+      "with_date": 948,
       "date_min": "2026-01-01",
-      "date_max": "2026-10-22",
+      "date_max": "2026-10-30",
       "species": [
         "tsukinowaguma"
       ]
@@ -145,11 +145,11 @@
       "adapter": "kml",
       "license": "unknown",
       "redistribute": false,
-      "records": 331,
-      "with_coords": 329,
-      "with_date": 329,
+      "records": 335,
+      "with_coords": 333,
+      "with_date": 333,
       "date_min": "2025-01-16",
-      "date_max": "2026-10-27",
+      "date_max": "2026-11-02",
       "species": [
         "tsukinowaguma"
       ]
@@ -160,11 +160,11 @@
       "adapter": "arcgis",
       "license": "unknown",
       "redistribute": false,
-      "records": 72,
-      "with_coords": 72,
-      "with_date": 72,
+      "records": 73,
+      "with_coords": 73,
+      "with_date": 73,
       "date_min": "2021-04-20",
-      "date_max": "2026-11-01",
+      "date_max": "2026-11-05",
       "species": [
         "higuma"
       ]
@@ -190,11 +190,11 @@
       "adapter": "arcgis",
       "license": "unknown",
       "redistribute": false,
-      "records": 4654,
-      "with_coords": 4654,
-      "with_date": 4654,
+      "records": 4655,
+      "with_coords": 4655,
+      "with_date": 4655,
       "date_min": "2017-01-03",
-      "date_max": "2026-10-31",
+      "date_max": "2026-11-03",
       "species": [
         "tsukinowaguma"
       ]
@@ -205,11 +205,11 @@
       "adapter": "arcgis",
       "license": "unknown",
       "redistribute": false,
-      "records": 145,
-      "with_coords": 145,
-      "with_date": 145,
+      "records": 149,
+      "with_coords": 149,
+      "with_date": 149,
       "date_min": "2025-09-12",
-      "date_max": "2026-10-31",
+      "date_max": "2026-11-04",
       "species": [
         "bear"
       ]
@@ -300,11 +300,11 @@
       "adapter": "pdf_bbox",
       "license": "unknown",
       "redistribute": false,
-      "records": 873,
+      "records": 880,
       "with_coords": 0,
-      "with_date": 868,
+      "with_date": 875,
       "date_min": "2016-04-20",
-      "date_max": "2026-11-02",
+      "date_max": "2026-11-03",
       "species": [
         "tsukinowaguma"
       ]
@@ -330,11 +330,11 @@
       "adapter": "ckan",
       "license": "CC-BY-4.0",
       "redistribute": true,
-      "records": 1314,
-      "with_coords": 1314,
-      "with_date": 1313,
+      "records": 1318,
+      "with_coords": 1318,
+      "with_date": 1317,
       "date_min": "2023-04-01",
-      "date_max": "2026-10-29",
+      "date_max": "2026-11-04",
       "species": [
         "bear"
       ]
@@ -480,11 +480,11 @@
       "adapter": "arcgis",
       "license": "unknown",
       "redistribute": false,
-      "records": 76,
-      "with_coords": 76,
-      "with_date": 74,
+      "records": 77,
+      "with_coords": 77,
+      "with_date": 75,
       "date_min": "2023-04-05",
-      "date_max": "2026-10-30",
+      "date_max": "2026-11-03",
       "species": [
         "tsukinowaguma"
       ]
@@ -510,11 +510,11 @@
       "adapter": "csv",
       "license": "CC-BY",
       "redistribute": true,
-      "records": 2604,
-      "with_coords": 2604,
-      "with_date": 2597,
+      "records": 2605,
+      "with_coords": 2605,
+      "with_date": 2598,
       "date_min": "2020-04-05",
-      "date_max": "2026-10-29",
+      "date_max": "2026-11-04",
       "species": [
         "tsukinowaguma"
       ]
