@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-06T10:20:32.879052+09:00",
-  "records_published": 54882,
+  "generated_at": "2026-11-07T09:35:42.620187+09:00",
+  "records_published": 55023,
   "sources": [
     {
       "id": "akita-kumadas",
@@ -8,11 +8,11 @@
       "adapter": "csv",
       "license": "CC-BY-4.0",
       "redistribute": true,
-      "records": 24757,
-      "with_coords": 24757,
-      "with_date": 24757,
+      "records": 24887,
+      "with_coords": 24887,
+      "with_date": 24887,
       "date_min": "2022-04-10",
-      "date_max": "2026-09-30",
+      "date_max": "2026-10-31",
       "species": [
         "inoshishi",
         "shika",
@@ -55,9 +55,9 @@
       "adapter": "arcgis",
       "license": "unknown",
       "redistribute": false,
-      "records": 1857,
-      "with_coords": 1857,
-      "with_date": 1857,
+      "records": 1859,
+      "with_coords": 1859,
+      "with_date": 1859,
       "date_min": "2024-04-02",
       "date_max": "2026-11-04",
       "species": [
@@ -70,9 +70,9 @@
       "adapter": "arcgis",
       "license": "unknown",
       "redistribute": false,
-      "records": 448,
-      "with_coords": 448,
-      "with_date": 448,
+      "records": 453,
+      "with_coords": 453,
+      "with_date": 453,
       "date_min": "2024-04-11",
       "date_max": "2026-11-05",
       "species": [
@@ -190,11 +190,11 @@
       "adapter": "arcgis",
       "license": "unknown",
       "redistribute": false,
-      "records": 4655,
-      "with_coords": 4655,
-      "with_date": 4655,
+      "records": 4656,
+      "with_coords": 4656,
+      "with_date": 4656,
       "date_min": "2017-01-03",
-      "date_max": "2026-11-03",
+      "date_max": "2026-11-06",
       "species": [
         "tsukinowaguma"
       ]
@@ -220,11 +220,11 @@
       "adapter": "arcgis",
       "license": "unknown",
       "redistribute": false,
-      "records": 270,
-      "with_coords": 270,
-      "with_date": 270,
+      "records": 271,
+      "with_coords": 271,
+      "with_date": 271,
       "date_min": "2024-01-12",
-      "date_max": "2026-10-25",
+      "date_max": "2026-11-05",
       "species": [
         "inoshishi",
         "kamoshika",
@@ -285,11 +285,11 @@
       "adapter": "pdf",
       "license": "unknown",
       "redistribute": false,
-      "records": 2204,
+      "records": 2210,
       "with_coords": 0,
-      "with_date": 2204,
+      "with_date": 2210,
       "date_min": "2025-09-01",
-      "date_max": "2026-10-29",
+      "date_max": "2026-11-04",
       "species": [
         "tsukinowaguma"
       ]
@@ -300,11 +300,11 @@
       "adapter": "pdf_bbox",
       "license": "unknown",
       "redistribute": false,
-      "records": 882,
+      "records": 886,
       "with_coords": 0,
-      "with_date": 877,
+      "with_date": 881,
       "date_min": "2016-04-20",
-      "date_max": "2026-11-04",
+      "date_max": "2026-11-06",
       "species": [
         "tsukinowaguma"
       ]
@@ -443,9 +443,9 @@
       "adapter": "arcgis",
       "license": "unknown",
       "redistribute": false,
-      "records": 1560,
-      "with_coords": 1559,
-      "with_date": 1560,
+      "records": 1561,
+      "with_coords": 1560,
+      "with_date": 1561,
       "date_min": "2020-06-24",
       "date_max": "2026-11-02",
       "species": [
@@ -525,11 +525,11 @@
       "adapter": "xlsx",
       "license": "other",
       "redistribute": true,
-      "records": 1406,
+      "records": 1417,
       "with_coords": 0,
-      "with_date": 1406,
+      "with_date": 1417,
       "date_min": "2026-04-01",
-      "date_max": "2026-10-31",
+      "date_max": "2026-11-05",
       "species": [
         "tsukinowaguma"
       ]
