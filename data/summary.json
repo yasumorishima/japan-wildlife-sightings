@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-08T09:10:09.420466+09:00",
+  "generated_at": "2026-11-09T09:27:34.029433+09:00",
   "records_published": 55023,
   "sources": [
     {
@@ -55,11 +55,11 @@
       "adapter": "arcgis",
       "license": "unknown",
       "redistribute": false,
-      "records": 1859,
-      "with_coords": 1859,
-      "with_date": 1859,
+      "records": 1860,
+      "with_coords": 1860,
+      "with_date": 1860,
       "date_min": "2024-04-02",
-      "date_max": "2026-11-04",
+      "date_max": "2026-11-07",
       "species": [
         "tsukinowaguma"
       ]
@@ -443,11 +443,11 @@
       "adapter": "arcgis",
       "license": "unknown",
       "redistribute": false,
-      "records": 1563,
-      "with_coords": 1562,
-      "with_date": 1563,
+      "records": 1565,
+      "with_coords": 1564,
+      "with_date": 1565,
       "date_min": "2020-06-24",
-      "date_max": "2026-11-07",
+      "date_max": "2026-11-08",
       "species": [
         "inoshishi",
         "saru",
