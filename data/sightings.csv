@@ -20644,7 +20644,7 @@ akita-kumadas:6619,05,秋田県,2022-10-01T18:00:00,shika,ニホンジカ,sighti
 sendai-bear:opendata_20125:144,04,宮城県,2022-10-01T21:00:00+09:00,tsukinowaguma,ツキノワグマ,sighting,,1,仙台市,太白区茂庭字町田,38.2280199106955,140.78966677212,1頭・体長不明,sendai-bear,https://www.geospatial.jp/ckan/dataset/sendaikurashinomap,CC-BY,仙台市
 sapporo-higuma:798,01,北海道,2022-10-02T12:04:00+09:00,higuma,ヒグマ,sighting,ヒグマを目撃(2頭),,札幌市,南区硬石山無番地(硬石山水管橋の北側地点),42.967446,141.323566,ヒグマを目撃(2頭),sapporo-higuma,https://ckan.pf-sapporo.jp/dataset/sapporo_bear_appearance,CC-BY-4.0,札幌市
 sapporo-higuma:799,01,北海道,2022-10-02T15:17:00+09:00,higuma,ヒグマ,sighting,ヒグマを目撃(2頭),,札幌市,南区硬石山1番地付近(硬石山配水池付近),42.970333,141.330167,ヒグマを目撃(2頭),sapporo-higuma,https://ckan.pf-sapporo.jp/dataset/sapporo_bear_appearance,CC-BY-4.0,札幌市
-ishikari-higuma:57,01,北海道,2022-10-03,higuma,ヒグマ,unknown,ヒグマ,,石狩市,八幡町高岡２７０番地１８,43.25997976144962,141.44289418568442,住民が自宅の裏でヒグマの糞を発見した。被害等はなし。,ishikari-higuma,https://www.city.ishikari.hokkaido.jp/,CC-BY-4.0,石狩市
+ishikari-higuma:57,01,北海道,2022-10-03,higuma,ヒグマ,unknown,ヒグマ,,石狩市,八幡町高岡２７０番地１８,43.259979761449614,141.44289418568442,住民が自宅の裏でヒグマの糞を発見した。被害等はなし。,ishikari-higuma,https://www.city.ishikari.hokkaido.jp/,CC-BY-4.0,石狩市
 ishikari-higuma:58,01,北海道,2022-10-03,higuma,ヒグマ,unknown,ヒグマ,,石狩市,石狩市浜益区幌２１３－１番地先,43.64462601236237,141.3554615233368,国道を北上していたドライバーが「クマが国道を山側から海側に横断した」と警察に通報した。足跡やフンなどの痕跡はなし。,ishikari-higuma,https://www.city.ishikari.hokkaido.jp/,CC-BY-4.0,石狩市
 sapporo-higuma:800,01,北海道,2022-10-03T06:00:00+09:00,higuma,ヒグマ,sighting,ヒグマを目撃(2頭),,札幌市,南区硬石山無番地(硬石山水管橋の北側地点),42.9673625,141.3235036,ヒグマを目撃(2頭),sapporo-higuma,https://ckan.pf-sapporo.jp/dataset/sapporo_bear_appearance,CC-BY-4.0,札幌市
 sapporo-higuma:801,01,北海道,2022-10-03T13:55:00+09:00,higuma,ヒグマ,trace,フンを確認,,札幌市,南区白川市民の森(案内板2番から3番側へ約20m付近),42.979083,141.292694,フンを確認,sapporo-higuma,https://ckan.pf-sapporo.jp/dataset/sapporo_bear_appearance,CC-BY-4.0,札幌市
@@ -41885,7 +41885,7 @@ sendai-bear:opendata_20128:306,04,宮城県,2025-10-05T21:10:00+09:00,tsukinowag
 sapporo-higuma:210,01,北海道,2025-10-05T21:27:00+09:00,higuma,ヒグマ,sighting,カメラでヒグマを確認,,札幌市,南区中ノ沢1812番地731付近,43.000028,141.306389,カメラでヒグマを確認,sapporo-higuma,https://ckan.pf-sapporo.jp/dataset/sapporo_bear_appearance,CC-BY-4.0,札幌市
 akita-kumadas:12217,05,秋田県,2025-10-05T22:25:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,秋田市,〒010-0851 秋田県秋田市手形大沢３８４－３,39.73310729,140.1339787,【投稿】体長80cm程の丸々とした熊が道路を走り右側の民家敷地へ潜り込んだ。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 sapporo-higuma:208,01,北海道,2025-10-05T23:37:00+09:00,higuma,ヒグマ,sighting,ヒグマを目撃(親子),,札幌市,南区白川1814番地331付近※同日の22時20分頃にも同じ場所でヒグマ1頭の目撃あり,42.970761,141.289916,ヒグマを目撃(親子),sapporo-higuma,https://ckan.pf-sapporo.jp/dataset/sapporo_bear_appearance,CC-BY-4.0,札幌市
-ishikari-higuma:212,01,北海道,2025-10-06,higuma,ヒグマ,unknown,ヒグマ,,石狩市,石狩市浜益区実田168番地2付近,43.58466761488669,141.42962337432604,目撃者（通報者）が、水田の畔にヒグマらしき動物1頭がいるのを目撃した。,ishikari-higuma,https://www.city.ishikari.hokkaido.jp/,CC-BY-4.0,石狩市
+ishikari-higuma:212,01,北海道,2025-10-06,higuma,ヒグマ,unknown,ヒグマ,,石狩市,石狩市浜益区実田168番地2付近,43.58466761488668,141.42962337432604,目撃者（通報者）が、水田の畔にヒグマらしき動物1頭がいるのを目撃した。,ishikari-higuma,https://www.city.ishikari.hokkaido.jp/,CC-BY-4.0,石狩市
 ishikari-higuma:213,01,北海道,2025-10-06,higuma,ヒグマ,unknown,ヒグマ,,石狩市,石狩市浜益区送毛209番地10付近（国道231号、新送毛トンネル付近）,43.51507242466265,141.38674553224166,目撃者（通報者）が、国道231号を車両で札幌方面に走行中、新送毛トンネルを出た辺りで、道路を西方向に横断する体長約1.5から2メートルのヒグマ1頭を目撃した。,ishikari-higuma,https://www.city.ishikari.hokkaido.jp/,CC-BY-4.0,石狩市
 tokyo-bear:745,13,東京都,2025-10-06,tsukinowaguma,ツキノワグマ,sighting,Witness,,,,35.8187,139.24123,,tokyo-bear,https://catalog.data.metro.tokyo.lg.jp/dataset/t000009d2000000060,CC-BY-4.0,東京都環境局
 tokyo-bear:746,13,東京都,2025-10-06,tsukinowaguma,ツキノワグマ,trace,trace,,,,35.79228,139.2425,,tokyo-bear,https://catalog.data.metro.tokyo.lg.jp/dataset/t000009d2000000060,CC-BY-4.0,東京都環境局
@@ -57245,7 +57245,7 @@ miyagi-bear-r8:160,04,宮城県,2026-05-02T18:30:00+09:00,tsukinowaguma,ツキ�
 akita-kumadas:24192,05,秋田県,2026-05-02T19:03:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,大館市,秋田県大館市雪沢上中羽立 上小雪沢,40.29966328,140.6499982,【投稿】県道から山林へ向かって行った。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 miyagi-bear-r8:151,04,宮城県,2026-05-02T22:15:00+09:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,富谷市,一ノ関臑合山,,,報告外,miyagi-bear-r8,https://www.pref.miyagi.jp/soshiki/sizenhogo/r8kumamokugeki.html,other,宮城県「令和8年度クマ目撃等情報」
 akita-kumadas:24194,05,秋田県,2026-05-02T23:10:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,井川町,秋田県南秋田郡井川町今戸新堤,39.92102047,140.0793908,【投稿】クマかどうかはわからないが黒っぽい生き物(50～60cmくらい)が砂利道の上にいた。東側に歩いていった。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
-ishikari-higuma:239,01,北海道,2026-05-03,higuma,ヒグマ,unknown,ヒグマ,,石狩市,石狩市浜益毘砂別236番地5付近（毘砂別会館付近）,43.560898453432486,141.37890276613487,目撃者（通報者）が国道231号を札幌方面から増毛方面へ走行中、毘砂別会館付近においてヒグマ1頭（体長約1.0m、毛色不明）を目撃した。ヒグマは山側の道路脇から斜面方向へ移動し、その後、姿を消したため、以降の動向は不明。,ishikari-higuma,https://www.city.ishikari.hokkaido.jp/,CC-BY-4.0,石狩市
+ishikari-higuma:239,01,北海道,2026-05-03,higuma,ヒグマ,unknown,ヒグマ,,石狩市,石狩市浜益毘砂別236番地5付近（毘砂別会館付近）,43.56089845343248,141.37890276613487,目撃者（通報者）が国道231号を札幌方面から増毛方面へ走行中、毘砂別会館付近においてヒグマ1頭（体長約1.0m、毛色不明）を目撃した。ヒグマは山側の道路脇から斜面方向へ移動し、その後、姿を消したため、以降の動向は不明。,ishikari-higuma,https://www.city.ishikari.hokkaido.jp/,CC-BY-4.0,石狩市
 tokyo-bear:969,13,東京都,2026-05-03,tsukinowaguma,ツキノワグマ,capture,capture,,,,35.807191,139.007726,,tokyo-bear,https://catalog.data.metro.tokyo.lg.jp/dataset/t000009d2000000060,CC-BY-4.0,東京都環境局
 akita-kumadas:24197,05,秋田県,2026-05-03T04:10:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,横手市,秋田県横手市条里１丁目　横手市役所条里南庁舎前,39.31014208,140.5523087,横手市役所南庁舎付近で体長約1.2mのクマと思われる動物を目撃。動物は道路を東側へ横断した。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:24201,05,秋田県,2026-05-03T04:30:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,横手市,秋田県横手市田中町,39.3136451,140.5642842,体長約1.5mのクマと思われる動物が、ドラッグストア・光明寺公園・ゆりのき通りというルートで周囲を移動するのを目撃した。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
@@ -63833,5 +63833,13 @@ yamaguchi-bear:yp-2026:280,35,山口県,2026-11-03T22:55:00+09:00,bear,クマ,si
 sendai-bear:opendata_20129:312,04,宮城県,2026-11-04T01:00:00+09:00,tsukinowaguma,ツキノワグマ,sighting,,,仙台市,太白区茂庭字原,38.2141156617,140.781858432744,1頭・体長100cm以上,sendai-bear,https://www.geospatial.jp/ckan/dataset/sendaikurashinomap,CC-BY,仙台市
 yamaguchi-bear:yp-2026:279,35,山口県,2026-11-04T01:55:00+09:00,bear,クマ,sighting,徒歩で歩いていたところ、空き地にいる熊を目撃したもの,1,,"周南市大字夜市
 　　空き地",34.09851,131.71649,徒歩で歩いていたところ、空き地にいる熊を目撃したもの,yamaguchi-bear,https://yamaguchi-opendata.jp/ckan/dataset/yp-2026,CC-BY-4.0,山口県オープンデータカタログサイト（山口県警察本部地域企画課）
+miyagi-bear-r8:1427,04,宮城県,2026-11-04T16:40:00+09:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,気仙沼市,松崎鶴巻,,,住居集合地域等,miyagi-bear-r8,https://www.pref.miyagi.jp/soshiki/sizenhogo/r8kumamokugeki.html,other,宮城県「令和8年度クマ目撃等情報」
 miyagi-bear-r8:1426,04,宮城県,2026-11-04T20:35:00+09:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,富谷市,大清水一丁目　付近,,,住居集合地域等,miyagi-bear-r8,https://www.pref.miyagi.jp/soshiki/sizenhogo/r8kumamokugeki.html,other,宮城県「令和8年度クマ目撃等情報」
+miyagi-bear-r8:1428,04,宮城県,2026-11-04T22:40:00+09:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,大郷町,東成田字長松沢山,,,住居集合地域等以外,miyagi-bear-r8,https://www.pref.miyagi.jp/soshiki/sizenhogo/r8kumamokugeki.html,other,宮城県「令和8年度クマ目撃等情報」
 miyagi-bear-r8:1421,04,宮城県,2026-11-05T06:20:00+09:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,利府町,菅谷字舘,,,不明,miyagi-bear-r8,https://www.pref.miyagi.jp/soshiki/sizenhogo/r8kumamokugeki.html,other,宮城県「令和8年度クマ目撃等情報」
+yamaguchi-bear:yp-2026:281,35,山口県,2026-11-07T13:40:00+09:00,bear,クマ,sighting,目撃者が公園内の雑草地にいる熊ようの動物を目撃したもの,1,,"下松市旗岡
+　　雑草地",34.0102,131.87762,目撃者が公園内の雑草地にいる熊ようの動物を目撃したもの,yamaguchi-bear,https://yamaguchi-opendata.jp/ckan/dataset/yp-2026,CC-BY-4.0,山口県オープンデータカタログサイト（山口県警察本部地域企画課）
+yamaguchi-bear:yp-2026:282,35,山口県,2026-11-08T06:15:00+09:00,bear,クマ,injury,ジョギング中、熊に襲われたもの,1,,"周南市大字鹿野上
+　　鹿野薬師付近",34.22887,131.81682,ジョギング中、熊に襲われたもの,yamaguchi-bear,https://yamaguchi-opendata.jp/ckan/dataset/yp-2026,CC-BY-4.0,山口県オープンデータカタログサイト（山口県警察本部地域企画課）
+yamaguchi-bear:yp-2026:283,35,山口県,2026-11-08T16:20:00+09:00,bear,クマ,sighting,車両で走行中、県道上を横断する熊を目撃したもの,1,,"山口市阿東嘉年下
+　　県道上",34.4732,131.68427,車両で走行中、県道上を横断する熊を目撃したもの,yamaguchi-bear,https://yamaguchi-opendata.jp/ckan/dataset/yp-2026,CC-BY-4.0,山口県オープンデータカタログサイト（山口県警察本部地域企画課）

@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-09T09:27:34.029433+09:00",
-  "records_published": 55023,
+  "generated_at": "2026-11-10T12:08:54.739446+09:00",
+  "records_published": 55028,
   "sources": [
     {
       "id": "akita-kumadas",
@@ -55,11 +55,11 @@
       "adapter": "arcgis",
       "license": "unknown",
       "redistribute": false,
-      "records": 1860,
-      "with_coords": 1860,
-      "with_date": 1860,
+      "records": 1865,
+      "with_coords": 1865,
+      "with_date": 1865,
       "date_min": "2024-04-02",
-      "date_max": "2026-11-07",
+      "date_max": "2026-11-09",
       "species": [
         "tsukinowaguma"
       ]
@@ -70,11 +70,11 @@
       "adapter": "arcgis",
       "license": "unknown",
       "redistribute": false,
-      "records": 453,
-      "with_coords": 453,
-      "with_date": 453,
+      "records": 458,
+      "with_coords": 458,
+      "with_date": 458,
       "date_min": "2024-04-11",
-      "date_max": "2026-11-05",
+      "date_max": "2026-11-10",
       "species": [
         "tsukinowaguma"
       ]
@@ -145,11 +145,11 @@
       "adapter": "kml",
       "license": "unknown",
       "redistribute": false,
-      "records": 335,
-      "with_coords": 333,
-      "with_date": 333,
+      "records": 340,
+      "with_coords": 338,
+      "with_date": 338,
       "date_min": "2025-01-16",
-      "date_max": "2026-11-02",
+      "date_max": "2026-11-09",
       "species": [
         "tsukinowaguma"
       ]
@@ -190,9 +190,9 @@
       "adapter": "arcgis",
       "license": "unknown",
       "redistribute": false,
-      "records": 4657,
-      "with_coords": 4657,
-      "with_date": 4657,
+      "records": 4658,
+      "with_coords": 4658,
+      "with_date": 4658,
       "date_min": "2017-01-03",
       "date_max": "2026-11-07",
       "species": [
@@ -300,11 +300,11 @@
       "adapter": "pdf_bbox",
       "license": "unknown",
       "redistribute": false,
-      "records": 886,
+      "records": 572,
       "with_coords": 0,
-      "with_date": 881,
+      "with_date": 570,
       "date_min": "2016-04-20",
-      "date_max": "2026-11-06",
+      "date_max": "2026-03-28",
       "species": [
         "tsukinowaguma"
       ]
@@ -330,11 +330,11 @@
       "adapter": "ckan",
       "license": "CC-BY-4.0",
       "redistribute": true,
-      "records": 1318,
-      "with_coords": 1318,
-      "with_date": 1317,
+      "records": 1321,
+      "with_coords": 1321,
+      "with_date": 1320,
       "date_min": "2023-04-01",
-      "date_max": "2026-11-04",
+      "date_max": "2026-11-08",
       "species": [
         "bear"
       ]
@@ -443,11 +443,11 @@
       "adapter": "arcgis",
       "license": "unknown",
       "redistribute": false,
-      "records": 1565,
-      "with_coords": 1564,
-      "with_date": 1565,
+      "records": 1569,
+      "with_coords": 1568,
+      "with_date": 1569,
       "date_min": "2020-06-24",
-      "date_max": "2026-11-08",
+      "date_max": "2026-11-10",
       "species": [
         "inoshishi",
         "saru",
@@ -510,6 +510,8 @@
       "adapter": "csv",
       "license": "CC-BY",
       "redistribute": true,
+      "error": "ConnectTimeout: HTTPSConnectionPool(host='www2.wagmap.jp', port=443): Max retries exceeded with url: /sendaicity/sendaicity/opendatafile/map_331/CSV/opendata_20123.csv (Caused by ConnectTimeoutError(<HTTPSConnection(host='www2.wagmap.jp', port=443) at 0x76edd3e9c990>, 'Connection to www2.wagmap.jp timed out. (connect timeout=60)'))",
+      "reused_previous": 2605,
       "records": 2605,
       "with_coords": 2605,
       "with_date": 2598,
@@ -525,9 +527,9 @@
       "adapter": "xlsx",
       "license": "other",
       "redistribute": true,
-      "records": 1417,
+      "records": 1419,
       "with_coords": 0,
-      "with_date": 1417,
+      "with_date": 1419,
       "date_min": "2026-04-01",
       "date_max": "2026-11-05",
       "species": [
