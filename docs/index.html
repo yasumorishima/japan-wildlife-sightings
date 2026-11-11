@@ -38,6 +38,14 @@
   .jumps{display:flex;flex-wrap:wrap;gap:4px;margin-bottom:2px}
   .jumps button{cursor:pointer;font-size:12px}
   .note{color:var(--sub);font-size:11px;margin-top:8px}
+  .fresh{font-size:12px}
+  .fresh details summary{cursor:pointer;color:var(--sub)}
+  .fresh ul{list-style:none;margin:4px 0 0;padding:0}
+  .fresh li{display:flex;justify-content:space-between;gap:6px;border-bottom:1px dotted var(--line);padding:2px 0}
+  .fresh .tag{font-size:11px;border-radius:4px;padding:0 4px;white-space:nowrap;align-self:flex-start}
+  .fresh .ok{color:#166534;background:#dcfce7}
+  .fresh .stale{color:#92400e;background:#fef3c7}
+  .fresh .frozen{color:#1e3a8a;background:#dbeafe}
   .note a{color:inherit}
   .toggle{position:absolute;top:12px;left:12px;z-index:3;display:none}
   .maplibregl-popup-content{font-size:13px;line-height:1.6;max-width:280px}
@@ -77,6 +85,11 @@
   <fieldset>
     <legend>年</legend>
     <select id="year"><option value="">すべて</option></select>
+  </fieldset>
+
+  <fieldset>
+    <legend>データの鮮度</legend>
+    <div id="fresh" class="fresh">読み込み中…</div>
   </fieldset>
 
   <p class="note" id="credit"></p>
