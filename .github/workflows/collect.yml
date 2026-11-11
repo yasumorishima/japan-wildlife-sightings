@@ -2,7 +2,8 @@ name: collect
 
 on:
   schedule:
-    - cron: "0 21 * * *"   # 毎日 JST 06:00
+    # 毎日 JST 05:17。毎時 0 分は GitHub の予定実行が混んで数時間遅れるので外す
+    - cron: "17 20 * * *"
   workflow_dispatch:
     inputs:
       memo:
@@ -15,10 +16,15 @@ on:
         type: boolean
   push:
     branches: [main]
-    paths: ["collect.py", "validate.py", "collectors/**", "sources.json", ".github/workflows/collect.yml"]
+    paths: ["collect.py", "validate.py", "collectors/**", "sources.json", "tests/**", ".github/workflows/collect.yml"]
 
 permissions:
   contents: write
+
+# 予定実行と手動実行が重なって、同じ data/ を 2 本が書くのを防ぐ（後から来た方は前の終わりを待つ）
+concurrency:
+  group: collect
+  cancel-in-progress: false
 
 jobs:
   collect:
@@ -35,6 +41,8 @@ jobs:
       - name: pdftotext を入れる（PDF しか出していない県の表を読むのに要る）
         run: sudo apt-get update -qq && sudo apt-get install -y -qq poppler-utils
       - run: python3 -m pip install -r requirements.txt
+      - name: テスト（通信なし。個人情報を伏せる規則など）
+        run: python3 -m unittest discover -s tests
       - name: 取得して data/ を作り直す
         run: python3 collect.py
       - name: 生成物を検算する
@@ -42,9 +50,10 @@ jobs:
       - name: 地図ページ用のデータを作る
         run: python3 build_map.py
       - name: 変わっていれば commit する
-        # push で走った時は commit しない。コードを直すたびに data の差分が
-        # 別 commit で入り、手元の作業と毎回衝突するため。日次実行だけが書く。
-        if: github.event_name != 'push'
+        # 書くのは main の予定実行と手動実行だけ。push で走った時は commit しない（コードを直すたびに
+        # data の差分が別 commit で入り、手元の作業と毎回衝突するため）。「push 以外」と書くと、
+        # 将来ほかのきっかけ（pull_request など）を足した時に、そこからも書いてしまう。
+        if: (github.event_name == 'schedule' || github.event_name == 'workflow_dispatch') && github.ref == 'refs/heads/main'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -61,7 +70,7 @@ jobs:
       # 失敗した日の分は翌日の実行で取り返す。データセットがまだ無ければ公開で新規作成する。
       - name: Kaggle の公開状況を確かめる
         id: kaggle
-        if: github.event_name != 'push' && vars.KAGGLE_PUBLISH == 'true'
+        if: (github.event_name == 'schedule' || github.event_name == 'workflow_dispatch') && github.ref == 'refs/heads/main' && vars.KAGGLE_PUBLISH == 'true'
         env:
           KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
           KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
