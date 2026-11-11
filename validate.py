@@ -95,6 +95,13 @@ def main() -> int:
     # GitHub の runner から接続タイムアウト）、1 県のために日次の更新ごと止めるのは割に合わない。
     warned, stale = 0, []
     for s in summary["sources"]:
+        if s.get("frozen"):
+            # 凍結した出典は取りに行かないので失敗ではない。いつ時点のデータかだけを出す
+            print(f"凍結: {s['id']} は {s['frozen'].get('fetched')} 時点の "
+                  f"{s.get('reused_previous') or 0} 件を据え置き")
+            if s.get("redistribute") and not s.get("reused_previous"):
+                print(f"警告: 凍結した出典の行が data/ にありません: {s['id']}")
+            continue
         if s.get("error"):
             if s.get("redistribute") and s.get("never_published"):
                 # まだ一度も収録していない出典は、取れなくても消えるデータが無い。警告に留め、

@@ -246,6 +246,22 @@ def main() -> int:
         entry = {"id": src["id"], "pref": src["pref"], "adapter": src["adapter"],
                  "license": src["license"].get("id"),
                  "redistribute": bool(src["license"].get("redistribute"))}
+        if src.get("frozen"):
+            # 凍結した出典は取りに行かない（配布元が拒否している等）。前回の行をそのまま残し、
+            # いつ時点の取得かを summary に出す
+            frozen = src["frozen"]
+            entry["frozen"] = {"fetched": frozen.get("fetched"), "since": frozen.get("since")}
+            entry["last_success_at"] = frozen.get("fetched")
+            prev = previous_rows(src["id"]) if entry["redistribute"] else []
+            if prev:
+                entry["reused_previous"] = len(prev)
+                entry.update(quality(prev))
+                shareable.extend(prev)
+            elif entry["redistribute"]:
+                entry["never_published"] = True
+            summary.append(entry)
+            print(f"[--] {src['id']:<24} 凍結（{frozen.get('fetched')} 時点の {len(prev)} 件を据え置き）")
+            continue
         try:
             rows = ADAPTERS[src["adapter"]](**src["params"])
             recs = build(rows, src)
