@@ -183,7 +183,8 @@ def occurred_at(raw, time_hint: str | None = None, fiscal_year: int | None = Non
             except ValueError:
                 continue
             # 書式に時刻が含まれない場合は日付のみを返し、time_hint を効かせる
-            base = parsed.isoformat() if "%H" in fmt else parsed.date().isoformat()
+            # 時刻つきの値は日本時間として時差を付ける（ほかの出典の時刻つきの値と書式を揃える）
+            base = parsed.isoformat() + "+09:00" if "%H" in fmt else parsed.date().isoformat()
             break
         if base is None and fiscal_year is not None:
             fd = month_day_with_fiscal_year(text, fiscal_year)

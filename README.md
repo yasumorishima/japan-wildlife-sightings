@@ -179,9 +179,9 @@ python3 validate.py                   # 生成物の検算
 
 | 列 | 意味 |
 |---|---|
-| `id` | `<出典 id>:<公開元の ID または行番号>` |
+| `id` | `<出典 id>:<公開元の ID または行番号>`。年度ごとのファイルに分かれた出典は `<出典 id>:<ファイル・データセット>:<行番号>` で、ほかの年度の行が増えても変わらない |
 | `pref_code` / `pref` | 都道府県コード（JIS）/ 名称 |
-| `occurred_at` | ISO8601。時刻が公開されていない出典は `YYYY-MM-DD` |
+| `occurred_at` | ISO8601。時刻つきは日本時間の時差つき（`YYYY-MM-DDThh:mm:ss+09:00`）。時刻が公開されていない出典は `YYYY-MM-DD` |
 | `species` / `species_label` | `tsukinowaguma` `higuma` `inoshishi` `shika` `saru` `kamoshika` `bear` `unknown` |
 | `category` / `category_raw` | `sighting` `trace` `damage` `injury` `capture` `unknown` と、公開元の原文 |
 | `count` | 頭数（公開されていれば） |
