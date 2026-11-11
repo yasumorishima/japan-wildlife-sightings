@@ -30,8 +30,8 @@ def main() -> int:
 
     # 個人情報: 伏せる規則（normalize.mask_person）を掛けても変わらないこと。変わる行が
     # あれば、氏名・電話番号・メールアドレスが伏せられないまま収録されている
-    from collectors.normalize import mask_person
-    leaked = [(r["id"], k) for r in rows for k in ("place", "note", "municipality")
+    from collectors.normalize import MASKED_FIELDS, mask_person
+    leaked = [(r["id"], k) for r in rows for k in MASKED_FIELDS
               if r.get(k) and mask_person(r[k]) != r[k]]
     if leaked:
         fails.append(f"個人情報が伏せられていない: {len(leaked)} 件 例 {leaked[:3]}")

@@ -129,8 +129,8 @@ def build(rows: list[dict], src: dict) -> list[dict]:
             "occurred_at": occurred, "species": skey, "species_label": slabel,
             "category": ckey, "category_raw": craw,
             "count": int(count) if count else None,
-            "municipality": (col("municipality") or None), "place": normalize.mask_person(col("place") or None),
-            "lat": lat, "lon": lon, "note": normalize.mask_person(col("note") or None),
+            "municipality": (col("municipality") or None), "place": col("place") or None,
+            "lat": lat, "lon": lon, "note": col("note") or None,
             "source_id": src["id"], "source_page": src.get("page"),
             "license": lic.get("id"), "attribution": lic.get("attribution"),
         })
@@ -138,6 +138,9 @@ def build(rows: list[dict], src: dict) -> list[dict]:
         for key, value in (src.get("constants") or {}).items():
             if not out[-1].get(key):
                 out[-1][key] = value
+        # 自由記述の列を区分や獣種に当てる出典もあるので、原文を残す列はすべて伏せる
+        for key in normalize.MASKED_FIELDS:
+            out[-1][key] = normalize.mask_person(out[-1][key])
         # 様式によっては行番号だけが入った空行が末尾に続く。設定側で「これが無い行は
         # 記録ではない」と宣言できるようにする（山口県は日付の無い行が空行）。
         if any(out[-1].get(k) in (None, "") for k in (src.get("require") or [])):
@@ -190,7 +193,7 @@ def previous_rows(source_id: str) -> list[dict]:
                 rec[key] = float(rec[key]) if rec[key] is not None else None
             rec["count"] = int(float(rec["count"])) if rec["count"] is not None else None
             # 据え置く行も、伏せる規則を今の版で掛け直す（規則を足した後に古い行が残らないように）
-            for key in ("place", "note"):
+            for key in normalize.MASKED_FIELDS:
                 rec[key] = normalize.mask_person(rec[key])
             out.append(rec)
     return out

@@ -37,7 +37,8 @@ python3 build_kaggle.py                           # Kaggle 用の一式を _kagg
 python3 -m http.server -d docs                    # 地図を手元で見る
 ```
 
-テストスイートとリンタは無い。`validate.py` と `collect.py --only ... --no-write` が確認手段。
+リンタは無い。`python3 -m unittest discover -s tests`（通信なし。個人情報を伏せる規則など）と、
+`validate.py`・`collect.py --only ... --no-write` が確認手段。テストの氏名は架空のものだけ使う。
 依存は `requests` / `openpyxl` と `pdftotext`（poppler-utils）。クラウドセッションでは
 `.claude/hooks/session-start.sh` が入れる。
 
@@ -53,7 +54,8 @@ python3 -m http.server -d docs                    # 地図を手元で見る
   - 通報者・入力者・捕獲者などの氏名や連絡先の列は `map` に入れない。
   - 個人情報について、公開の場所（README・コメント・commit メッセージ・PR・issue）に自治体名・番地・件数などの
     具体例を書かない。公開元への連絡や届出（IPA 等）の取扱いが終わる前に第三者へ開示しないため。
-  - 自由記述（場所・状況）の氏名・電話番号・メールアドレスは `normalize.mask_person` で伏せる。新しい出典を足したら、
+  - 原文を残す列（`normalize.MASKED_FIELDS`）の氏名・電話番号・メールアドレスは `normalize.mask_person` で伏せる。
+    規則を足したら `tests/test_normalize.py` に架空の例を足す。新しい出典を足したら、
     `place` と `note` を実際に読んで、規則で拾えない氏名の書き方が無いか確かめ、あれば規則を足す。
   - `validate.py` は伏せ残しがあると失敗する。通すために検査を緩めない。
   - 写真・添付ファイルの列は取り込まない。
