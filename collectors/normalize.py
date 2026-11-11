@@ -67,11 +67,23 @@ _CATEGORY = [
 ]
 
 
+# 語のすぐ後に否定が続く形（「人身被害なし」「被害はありません」）は、その区分にしない
+# 語に続く漢字・カタカナ（「人身」＋「被害」）は読み飛ばして見る
+_NEGATED = re.compile(r"^[一-龥ァ-ヶー]*(は|の|も)?(なし|無し|無い|ない|ありません|なかった|無かった)")
+
+
+def _mentions(low: str, needle: str) -> bool:
+    for m in re.finditer(re.escape(needle), low):
+        if not _NEGATED.match(low[m.end():]):
+            return True
+    return False
+
+
 def category(raw: str | None) -> tuple[str, str]:
     text = (raw or "").strip()
     low = text.lower()
     for key, needles in _CATEGORY:
-        if any(n in low for n in needles):
+        if any(_mentions(low, n) for n in needles):
             return key, text
     return "unknown", text
 
