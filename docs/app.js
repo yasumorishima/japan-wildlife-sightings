@@ -4,8 +4,11 @@
 const SPECIES = [
   ["tsukinowaguma", "ツキノワグマ", "#ef4444"],
   ["higuma", "ヒグマ", "#7c2d12"],
+  ["bear", "クマ（種不明）", "#be185d"],
   ["inoshishi", "イノシシ", "#f59e0b"],
   ["shika", "ニホンジカ", "#10b981"],
+  ["kamoshika", "カモシカ", "#0ea5e9"],
+  ["saru", "ニホンザル", "#8b5cf6"],
   ["unknown", "その他・不明", "#64748b"],
 ];
 const CATEGORY = [
@@ -74,6 +77,10 @@ function setBase(key) {
   });
 }
 
+// 一覧に無い獣種は「その他・不明」として絞り込む（チェックを触ると消えて戻らないのを防ぐ）
+const KNOWN_SPECIES = new Set(SPECIES.map(s => s[0]));
+const speciesKey = s => (KNOWN_SPECIES.has(s) ? s : "unknown");
+
 function filterExpression() {
   const f = ["all",
     ["in", ["get", "s"], ["literal", [...state.species]]],
@@ -89,7 +96,7 @@ function applyFilter() {
   const sp = state.species, ca = state.category, yr = state.year;
   const feats = window.__all.features.filter(ft => {
     const p = ft.properties;
-    return sp.has(p.s) && ca.has(p.c) && (!yr || p.d.slice(0, 4) === yr);
+    return sp.has(speciesKey(p.s)) && ca.has(p.c) && (!yr || p.d.slice(0, 4) === yr);
   });
   src.setData({ type: "FeatureCollection", features: feats });
   document.getElementById("count").textContent = feats.length.toLocaleString("ja-JP");
@@ -132,6 +139,7 @@ function buildControls(years) {
     o.value = y; o.textContent = y + " 年";
     sel.appendChild(o);
   }
+  sel.value = state.year;
   sel.addEventListener("change", e => { state.year = e.target.value; applyFilter(); });
 
   const jumps = document.getElementById("jumps");
@@ -201,8 +209,11 @@ map.on("load", async () => {
 
   const years = [...new Set(data.features.map(f => f.properties.d.slice(0, 4)))]
     .filter(Boolean).sort().reverse();
+  // 初めは今年だけを出す（今年の点が無ければいちばん新しい年）。「すべて」に切り替えられる
+  const thisYear = String(new Date(Date.now() + 9 * 36e5).getUTCFullYear());
+  state.year = years.includes(thisYear) ? thisYear : (years[0] || "");
   buildControls(years);
-  document.getElementById("count").textContent = data.features.length.toLocaleString("ja-JP");
+  applyFilter();
 
   const labelOf = (list, key) => (list.find(x => x[0] === key) || [null, key])[1];
 
