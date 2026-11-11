@@ -10,11 +10,25 @@ from __future__ import annotations
 
 import collections
 import csv
-import gzip
 import json
 import pathlib
 import shutil
 import sys
+
+
+def to_geojson(rows: list[dict]) -> dict:
+    """CSV の行から、座標つきの行だけの GeoJSON を作る（data/ には GeoJSON を置かないため）。"""
+    feats = []
+    for r in rows:
+        if not r.get("lat") or not r.get("lon"):
+            continue
+        props = {k: (v if v != "" else None) for k, v in r.items() if k not in ("lat", "lon")}
+        if props.get("count") is not None:
+            props["count"] = int(float(props["count"]))
+        feats.append({"type": "Feature",
+                      "geometry": {"type": "Point", "coordinates": [float(r["lon"]), float(r["lat"])]},
+                      "properties": props})
+    return {"type": "FeatureCollection", "features": feats}
 
 ROOT = pathlib.Path(__file__).resolve().parent
 DATA = ROOT / "data"
@@ -69,8 +83,7 @@ def main() -> int:
     OUT.mkdir()
     shutil.copy(DATA / "sightings.csv", OUT / "sightings.csv")
     shutil.copy(DATA / "summary.json", OUT / "summary.json")
-    with gzip.open(DATA / "sightings.geojson.gz", "rb") as src, (OUT / "sightings.geojson").open("wb") as dst:
-        shutil.copyfileobj(src, dst)
+    (OUT / "sightings.geojson").write_text(json.dumps(to_geojson(rows), ensure_ascii=False), encoding="utf-8")
 
     # 出典ごとの表示（CC BY の帰属表示に使う）
     counts = collections.Counter(r["source_id"] for r in rows)

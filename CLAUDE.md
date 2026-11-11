@@ -19,9 +19,9 @@
 - `collectors/normalize.py` — 日付・獣種・区分・座標の正規化（日本の緯度経度範囲 `JP_LAT`/`JP_LON` もここ）
 - `collectors/shapefile.py` — 点の Shapefile の読み手と、平面直角座標→緯度経度の変換（依存を増やさないため自前）
 - `collectors/pdf_table.py` / `pdf_bbox.py` — PDF の表読み（`pdftotext` が要る）
-- `collect.py` — 全出典を取得して `data/sightings.csv` / `sightings.geojson.gz` / `summary.json` を作る
+- `collect.py` — 全出典を取得して `data/sightings.csv` / `summary.json` を作る（GeoJSON は履歴が膨らむので置かない）
 - `validate.py` — 生成物の検算（CI でも実行）
-- `build_map.py` — `docs/data/sightings.min.geojson` を作る
+- `build_map.py` — `docs/data/sightings.min.geojson` を作る（1 地点 1 行。日次の差分を小さく保つため）
 - `build_kaggle.py` — Kaggle に上げる一式を `_kaggle/`（git 管理外）に作る。列の説明 `COLUMNS` と CSV の見出しが違うと失敗する
 - `kaggle_published.py` / `kaggle/` — Kaggle の版との突き合わせと、データセットのメタデータ・説明文（`description.md`）
 - `docs/` — MapLibre の地図ページ（`docs/vendor/` に同梱、外部 CDN は使わない）

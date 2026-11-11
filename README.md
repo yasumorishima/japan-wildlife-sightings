@@ -5,7 +5,7 @@
 
 - **地図で見る: https://yasumorishima.github.io/japan-wildlife-sightings/**
   （地理院タイルの淡色地図・空中写真と、NASA GIBS の前日の衛星画像を背景に切り替えられます）
-- 収録データ: [`data/sightings.csv`](data/sightings.csv) / [`data/sightings.geojson.gz`](data/sightings.geojson.gz)（gzip 圧縮の GeoJSON）
+- 収録データ: [`data/sightings.csv`](data/sightings.csv)（緯度・経度の列つき。GeoJSON は 2026-11-11 から置いていません。毎日まるごと履歴に積まれて容量を圧迫するため）
 - 取得状況と品質: [`data/summary.json`](data/summary.json)
 - 再配布可否の根拠: [`docs/licenses.md`](docs/licenses.md)
 

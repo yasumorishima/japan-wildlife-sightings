@@ -4,7 +4,6 @@
 「ファイルが出来た」は中身が正しい証明にならないので、ここで数える。
 """
 import collections
-import gzip
 import csv
 import json
 import pathlib
@@ -35,11 +34,9 @@ def stale_days(entry: dict, generated_at: str | None) -> int | None:
 def main() -> int:
     fails = []
     rows = list(csv.DictReader((DATA / "sightings.csv").open(encoding="utf-8")))
-    with gzip.open(DATA / "sightings.geojson.gz", "rt", encoding="utf-8") as fh:
-        geo = json.load(fh)
     summary = json.loads((DATA / "summary.json").read_text(encoding="utf-8"))
 
-    print(f"records={len(rows)} features={len(geo['features'])} sources={len(summary['sources'])}")
+    print(f"records={len(rows)} sources={len(summary['sources'])}")
     if len(rows) != summary["records_published"]:
         fails.append(f"summary の件数 {summary['records_published']} と CSV {len(rows)} が食い違う")
 
@@ -73,10 +70,6 @@ def main() -> int:
     print(f"座標なし: {no_coords}")
     if out_of_range:
         fails.append(f"日本の範囲外の座標: {out_of_range} 件")
-    # 地物は座標を持つ行だけなので、その差は座標なしの件数と一致するはず
-    if len(rows) - len(geo["features"]) != no_coords:
-        fails.append(f"地物 {len(geo['features'])} と CSV {len(rows)} の差が "
-                     f"座標なし {no_coords} と合わない")
 
     no_date = sum(1 for r in rows if not r["occurred_at"])
     print("日付なし:", no_date)

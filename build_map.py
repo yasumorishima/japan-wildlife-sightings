@@ -38,10 +38,11 @@ def main() -> int:
                     "a": r["attribution"] or "",
                 },
             })
-    feats.sort(key=lambda f: f["properties"]["d"])
     OUT.parent.mkdir(parents=True, exist_ok=True)
-    OUT.write_text(json.dumps({"type": "FeatureCollection", "features": feats},
-                              ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+    # 1 地物を 1 行で書く。全体が 1 行だと、数件の変化でも git が差分を取りにくく、毎日大きく積まれる
+    feats.sort(key=lambda f: (f["properties"]["d"], f["geometry"]["coordinates"]))
+    body = ",\n".join(json.dumps(f, ensure_ascii=False, separators=(",", ":")) for f in feats)
+    OUT.write_text('{"type":"FeatureCollection","features":[\n' + body + "\n]}\n", encoding="utf-8")
     years = sorted({f["properties"]["d"][:4] for f in feats if f["properties"]["d"]})
     print(f"地図用 {len(feats)} 件 -> {OUT.relative_to(ROOT)} "
           f"({OUT.stat().st_size/1e6:.2f}MB, 座標なしで除いた {skipped} 件, "
