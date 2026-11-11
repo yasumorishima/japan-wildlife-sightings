@@ -336,7 +336,8 @@
       },
       "constants": {
         "municipality": "室蘭市"
-      }
+      },
+      "category_default": "sighting"
     },
     {
       "id": "toyama-kumappu",
@@ -503,7 +504,8 @@
       },
       "constants": {
         "municipality": "石狩市"
-      }
+      },
+      "category_default": "sighting"
     },
     {
       "id": "nagano-bear-pdf",
@@ -619,7 +621,7 @@
         "basis": "サイトの利用規約が公共データ利用規約（第1.0版）＝出典表示のみを条件に複製・公衆送信・商用利用を許諾。CKAN のデータセット metadata も license_id=cc-by。PDL1.0 本文に「クリエイティブ・コモンズ・ライセンスの表示4.0 国際ライセンスに規定される著作権利用許諾条件（CC BY）と互換性があります」「利用者が CC BY に従って利用することを許諾します」とあるため license.id は CC-BY-4.0 とした",
         "verified": "2026-08-28"
       },
-      "species_default": "bear",
+      "species_default": "tsukinowaguma",
       "category_default": "sighting",
       "require": [
         "lat"
