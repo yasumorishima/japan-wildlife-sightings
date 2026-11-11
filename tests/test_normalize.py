@@ -8,7 +8,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-from collectors.normalize import mask_person  # noqa: E402
+from collectors.normalize import mask_person, occurred_at  # noqa: E402
 
 
 class MaskPersonTest(unittest.TestCase):
@@ -47,6 +47,26 @@ class MaskPersonTest(unittest.TestCase):
         for text in list(self.masked) + self.kept:
             once = mask_person(text)
             self.assertEqual(mask_person(once), once)
+
+
+class OccurredAtTest(unittest.TestCase):
+    def test_formats(self):
+        cases = {
+            ("2026/10/31 14:05", None): "2026-10-31T14:05:00+09:00",
+            ("2026-10-31", None): "2026-10-31",
+            ("2026-10-31", "午後3時30分"): "2026-10-31T15:30:00+09:00",
+            ("令和7年4月6日", None): "2025-04-06",
+            ("2026-10-31T14:05:00+09:00", None): "2026-10-31T14:05:00+09:00",
+        }
+        for (raw, hint), want in cases.items():
+            with self.subTest(raw=raw, hint=hint):
+                self.assertEqual(occurred_at(raw, hint), want)
+
+    def test_time_has_offset(self):
+        # 時刻つきで返す値は、必ず日本時間の時差を持つ
+        for raw in ("2026/10/31 14:05", "2026/10/31 14:05:09", 1761886800000):
+            with self.subTest(raw=raw):
+                self.assertTrue(occurred_at(raw).endswith("+09:00"))
 
 
 if __name__ == "__main__":

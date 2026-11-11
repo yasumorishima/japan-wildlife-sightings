@@ -239,7 +239,10 @@ def fetch_ckan(query: str | None = None, base: str = "https://data.bodik.jp",
             if (res.get("format") or "").upper() != "CSV":
                 continue
             try:
-                for row in fetch_csv(res["url"], encoding=encoding):
+                for n, row in enumerate(fetch_csv(res["url"], encoding=encoding), start=1):
+                    # 行番号はリソース（年度別の CSV）ごとに振る。全体の通し番号だと、どこかの年度で
+                    # 行が増えたりカタログの返す順が変わったりするたびに、全行の id がずれる
+                    row["_row"] = f"{(res.get('id') or '')[:8]}:{n}"
                     row["_dataset"] = title
                     # id にはタイトルでなく CKAN のスラッグを使う。タイトルは
                     # 公開元が整えると変わる（山口県は年の表記が 2024 と ２０２６ で

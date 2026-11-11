@@ -586,6 +586,7 @@
       "species_default": "higuma",
       "category_default": "sighting",
       "map": {
+        "native_id": "_row",
         "occurred_at": "出没年月日",
         "time": "時刻",
         "municipality": "出没場所_市区町村",
@@ -663,6 +664,7 @@
         "municipality": "札幌市"
       },
       "map": {
+        "native_id": "_row",
         "occurred_at": "日付",
         "time": "時刻",
         "place": "出没場所",
