@@ -13,7 +13,6 @@ from __future__ import annotations
 import argparse
 import csv
 import datetime as dt
-import gzip
 
 import json
 import pathlib
@@ -310,22 +309,14 @@ def main() -> int:
         w = csv.DictWriter(fh, fieldnames=FIELDS)
         w.writeheader()
         w.writerows(shareable)
-    geo = {"type": "FeatureCollection", "features": [
-        {"type": "Feature",
-         "geometry": {"type": "Point", "coordinates": [r["lon"], r["lat"]]},
-         "properties": {k: v for k, v in r.items() if k not in ("lat", "lon")}}
-        for r in shareable if r["lat"] is not None and r["lon"] is not None]}
-    # GeoJSON は非圧縮で 20MB を超え、日次で履歴に積むと取り回せなくなるので gzip で置く。
-    # mtime=0 で書く。既定だと実行時刻が gzip ヘッダに入り、中身が同じでも
-    # 毎回バイト列が変わって 2MB の差分が履歴に積まれる。
-    with (data / "sightings.geojson.gz").open("wb") as raw:
-        with gzip.GzipFile(fileobj=raw, mode="wb", mtime=0) as gz:
-            gz.write(json.dumps(geo, ensure_ascii=False).encode("utf-8"))
+    # GeoJSON は data/ に置かない（2026-11-11）。gzip は差分が効かず、毎日まるごと履歴に積まれていた
+    # （1 日約 1.6MB）。座標は CSV にあるので、要る人は CSV から作れる（build_kaggle.py の to_geojson）。
+    with_coords = sum(1 for r in shareable if r["lat"] is not None and r["lon"] is not None)
     (data / "summary.json").write_text(json.dumps(
         {"generated_at": dt.datetime.now(JST).isoformat(),
          "records_published": len(shareable), "sources": summary},
         ensure_ascii=False, indent=2), encoding="utf-8")
-    print(f"\n収録 {len(shareable)} 件 / 地物 {len(geo['features'])} 件 -> data/")
+    print(f"\n収録 {len(shareable)} 件 / 座標つき {with_coords} 件 -> data/")
     return 0
 
 
