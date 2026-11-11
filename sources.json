@@ -549,8 +549,8 @@
         "id": "unknown",
         "attribution": "山梨県",
         "redistribute": false,
-        "basis": "サイト内で利用規約ページを検出できず（未確認）",
-        "verified": "2026-08-27"
+        "basis": "同じ内容を yamanashi-bear-ckan（やまなしデータプラットフォームの CSV）から収録する。令和8年度の PDF には CC BY の表示が無い",
+        "verified": "2026-11-11"
       },
       "species_default": "tsukinowaguma",
       "note_about_coords": "PDF に座標が無いため lat/lon は空。市町村と地名までしか分からない。",
@@ -563,6 +563,43 @@
         "place": "場所",
         "count": "目撃頭数",
         "note": "目撃時のクマ"
+      }
+    },
+    {
+      "id": "yamanashi-bear-ckan",
+      "pref_code": "19",
+      "pref": "山梨県",
+      "adapter": "ckan",
+      "params": {
+        "base": "https://catalog.dataplatform-yamanashi.jp",
+        "query": "ツキノワグマ",
+        "org": "森林環境部 自然共生推進課",
+        "title_pattern": "年度）$"
+      },
+      "page": "https://catalog.dataplatform-yamanashi.jp/dataset/kuma1",
+      "license": {
+        "id": "CC-BY-4.0",
+        "attribution": "山梨県（やまなしデータプラットフォーム）",
+        "redistribute": true,
+        "basis": "カタログの「このサイトについて」が「利用規約　山梨県オープンデータ利用規約 に準じます。」。同規約（www.pref.yamanashi.jp/opendata/kiyaku.html）は対象を「やまなしデータプラットフォーム（https://dataplatform-yamanashi.jp）…において山梨県・県内市町村等…が提供するデータ」とし、「どなたでも以下の規約に従って、商用利用を含め自由に利用できます。」「本規約は、クリエイティブ・コモンズ・ライセンスの表示4.0国際（CCBY4.0）…と互換性が有り、本規約が適用されるオープンデータはCCライセンスに従うことでも利用できます。」。データセット個別のライセンス欄は空",
+        "verified": "2026-11-11"
+      },
+      "species_default": "tsukinowaguma",
+      "category_default": "sighting",
+      "category_flags": {
+        "人身被害の有無": "injury"
+      },
+      "note": "年度ごとのデータセット（令和2〜8年度）。「直近１か月」は令和8年度と重なるので読まない。目撃者の行動の列は人に関する列なので取り込まない",
+      "map": {
+        "native_id": "No.",
+        "occurred_at": "年月日",
+        "time": "時間",
+        "municipality": "目撃市町村",
+        "place": "場所",
+        "count": "目撃頭数",
+        "note": "目撃時のクマ",
+        "lat": "緯度",
+        "lon": "経度"
       }
     },
     {
@@ -921,8 +958,8 @@
         "id": "unknown",
         "attribution": "会津若松市",
         "redistribute": false,
-        "basis": "ArcGIS の項目（所有者 aizu_kikaku）にライセンス記載なし。市の公式ページからの参照も未確認。サービス名に「20260729時点」とあり、時点の写しの可能性がある",
-        "verified": "2026-11-02"
+        "basis": "市のサイトポリシーが「無断で引用・転載することはできません」。市のオープンデータに出没データは無く、ArcGIS の項目（所有者 aizu_kikaku）にもライセンス記載なし",
+        "verified": "2026-11-11"
       },
       "map": {
         "native_id": "ObjectId",
@@ -953,8 +990,8 @@
         "id": "unknown",
         "attribution": "都留市",
         "redistribute": false,
-        "basis": "ArcGIS の項目（所有者 Administrator_tsuru）にライセンス記載なし。市の公式ページからの参照は未確認",
-        "verified": "2026-11-02"
+        "basis": "市の「ホームページについて」が「都留市の許可なく複製、転用、販売等をすることはできません」。CC BY 4.0 は市のオープンデータ一覧（AED のみ）に限る。ArcGIS の項目にもライセンス記載なし",
+        "verified": "2026-11-11"
       },
       "note": "レイヤ名は「ヒグマ」だが本州（山梨県）の記録なのでツキノワグマとして扱う",
       "species_default": "tsukinowaguma",

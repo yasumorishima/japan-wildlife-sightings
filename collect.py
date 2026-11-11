@@ -122,7 +122,7 @@ def build(rows: list[dict], src: dict) -> list[dict]:
         # 区分が「目撃有」「足跡有」のような印の列に分かれている出典（森町）。重い区分から見る
         if ckey == "unknown" and src.get("category_flags"):
             for name, key in src["category_flags"].items():
-                if str(row.get(name) or "").strip() in ("◯", "○", "〇", "有", "1"):
+                if str(row.get(name) or "").strip() in ("◯", "○", "〇", "有", "有り", "あり", "1"):
                     ckey, craw = key, name
                     break
         # 出没区分の列を持たない出典（そもそも目撃情報だけを載せている等）は
