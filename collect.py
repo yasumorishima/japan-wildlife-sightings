@@ -24,6 +24,25 @@ from collectors import normalize
 from collectors.adapters import ADAPTERS
 
 ROOT = pathlib.Path(__file__).resolve().parent
+JST = dt.timezone(dt.timedelta(hours=9))
+# 収録済みの出典が前回のこの割合より少なくしか取れなかったら、取得の失敗とみなして前回を据え置く。
+# 公開元がカタログ検索で 0 件を返す・空の CSV を返す、といった例外にならない失敗から収録済みデータを守る
+SHRINK_RATIO = 0.5
+
+
+class ShrinkError(Exception):
+    """取得は通ったが、前回より大きく減った。"""
+
+
+def previous_summary() -> dict:
+    """前回の summary.json の出典ごとの記録。据え置きが何日続いているかを引き継ぐ。"""
+    path = ROOT / "data" / "summary.json"
+    if not path.exists():
+        return {}
+    try:
+        return {s["id"]: s for s in json.loads(path.read_text(encoding="utf-8")).get("sources", [])}
+    except (ValueError, KeyError):
+        return {}
 FIELDS = ["id", "pref_code", "pref", "occurred_at", "species", "species_label",
           "category", "category_raw", "count", "municipality", "place", "lat", "lon",
           "note", "source_id", "source_page", "license", "attribution"]
@@ -177,7 +196,7 @@ def previous_rows(source_id: str) -> list[dict]:
     """前回 data/ に書いた行のうち、その出典ぶんを読み直す。
 
     公開元が実行元によっては届かないことがある（石川県のカタログは GitHub の
-    runner の IP から 403、RPi5 からは 200）。届かない回に収録済みの行を消すと、
+    runner の IP から 403）。届かない回に収録済みの行を消すと、
     公開しているデータセットから数千件が黙って落ちるので、前回ぶんを残す。
     """
     path = ROOT / "data" / "sightings.csv"
@@ -219,6 +238,8 @@ def main() -> int:
 
     cfg = json.loads((ROOT / "sources.json").read_text(encoding="utf-8"))
     summary, shareable = [], []
+    now = dt.datetime.now(JST).isoformat(timespec="seconds")
+    before = previous_summary()
     for src in cfg["sources"]:
         if args.only and src["id"] not in args.only:
             continue
@@ -228,8 +249,17 @@ def main() -> int:
         try:
             rows = ADAPTERS[src["adapter"]](**src["params"])
             recs = build(rows, src)
+            if entry["redistribute"]:
+                prev = previous_rows(src["id"])
+                if prev and len(recs) < len(prev) * SHRINK_RATIO:
+                    raise ShrinkError(f"前回 {len(prev)} 件に対し今回 {len(recs)} 件しか取れない")
         except Exception as exc:  # 1 出典の失敗で全体を落とさない
             entry["error"] = f"{type(exc).__name__}: {exc}"
+            # 最後に取れた日時と、失敗が続いている起点を前回から引き継ぐ
+            last = before.get(src["id"], {})
+            if last.get("last_success_at"):
+                entry["last_success_at"] = last["last_success_at"]
+            entry["failing_since"] = last.get("failing_since") or now
             if entry["redistribute"]:
                 prev = previous_rows(src["id"])
                 if not prev:
@@ -246,6 +276,7 @@ def main() -> int:
             print(f"[NG] {src['id']}: {entry['error']}", file=sys.stderr)
             continue
         entry.update(quality(recs))
+        entry["last_success_at"] = now
         summary.append(entry)
         if entry["redistribute"]:
             shareable.extend(recs)
@@ -275,7 +306,7 @@ def main() -> int:
         with gzip.GzipFile(fileobj=raw, mode="wb", mtime=0) as gz:
             gz.write(json.dumps(geo, ensure_ascii=False).encode("utf-8"))
     (data / "summary.json").write_text(json.dumps(
-        {"generated_at": dt.datetime.now(dt.timezone(dt.timedelta(hours=9))).isoformat(),
+        {"generated_at": dt.datetime.now(JST).isoformat(),
          "records_published": len(shareable), "sources": summary},
         ensure_ascii=False, indent=2), encoding="utf-8")
     print(f"\n収録 {len(shareable)} 件 / 地物 {len(geo['features'])} 件 -> data/")

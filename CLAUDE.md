@@ -49,6 +49,7 @@ python3 -m http.server -d docs                    # 地図を手元で見る
 - **再配布の可否は `license.redistribute` で決まる。** true の出典だけが `data/` に入る。
   新しい出典を true にするのは、規約ページを実際に読んで `docs/licenses.md` に引用つきで根拠を書いてから。
 - **取れなかった収録済み出典は前回のデータを据え置く**設計（`summary.json` の `reused_previous`）。
+  前回の半分未満しか取れない回も据え置く（`collect.SHRINK_RATIO`）。`last_success_at` / `failing_since` で何日続いているかが分かる。
   1 つの公開元の失敗で収録済みデータを消さないこと。
 - **個人情報に特に気をつける**（オーナーの指示）。公開元が出していても、再配布で広げない。
   - 通報者・入力者・捕獲者などの氏名や連絡先の列は `map` に入れない。
