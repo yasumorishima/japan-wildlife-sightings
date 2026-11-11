@@ -246,8 +246,11 @@ def fetch_ckan(query: str | None = None, base: str = "https://data.bodik.jp",
                     # 不統一）＝混ぜると当該年度の id が丸ごと入れ替わる。
                     row["_dataset_id"] = pkg.get("name") or title
                     out.append(row)
-            except Exception:
-                continue
+            except Exception as exc:
+                # 1 本でも落ちたら出典ごと失敗にする。握りつぶすとその年度だけ欠けたまま
+                # 「成功」になり、collect の据え置きが働かない
+                raise RuntimeError(f"リソースを取得できない: {title} / {res.get('name') or res['url']}: "
+                                   f"{type(exc).__name__}: {exc}") from exc
     return out
 
 

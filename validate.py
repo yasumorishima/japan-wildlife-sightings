@@ -16,6 +16,21 @@ DATA = ROOT / "data"
 # collect.py は通すのに validate.py が落とす値ができる）。
 from collectors.normalize import JP_LAT as LAT_RANGE, JP_LON as LON_RANGE  # noqa: E402
 
+# 据え置きがこの日数以上続いたら「要確認」として一覧に出す
+STALE_DAYS = 7
+
+
+def stale_days(entry: dict, generated_at: str | None) -> int | None:
+    """失敗が続いている日数（collect.py が summary に書く failing_since から）。"""
+    import datetime as dt
+    since = entry.get("failing_since")
+    if not since or not generated_at:
+        return None
+    try:
+        return (dt.datetime.fromisoformat(generated_at) - dt.datetime.fromisoformat(since)).days
+    except ValueError:
+        return None
+
 
 def main() -> int:
     fails = []
@@ -77,9 +92,8 @@ def main() -> int:
     # 収録している出典の取得失敗は data/ の中身が古くなるので失敗にする。
     # 収録していない出典（アダプタだけ配っている県）の失敗は警告に留める。
     # 公開元のサイトは実行元によって届かないことがあり（2026-08-27: 山梨県は
-    # GitHub の runner から接続タイムアウト、RPi5 からは応答あり）、1 県のために
-    # 日次の更新ごと止めるのは割に合わない。
-    warned = 0
+    # GitHub の runner から接続タイムアウト）、1 県のために日次の更新ごと止めるのは割に合わない。
+    warned, stale = 0, []
     for s in summary["sources"]:
         if s.get("error"):
             if s.get("redistribute") and s.get("never_published"):
@@ -93,15 +107,25 @@ def main() -> int:
                 # 取得できなかったが前回の行を残した。データが古いままなのは事実なので
                 # 必ず表に出す。ただし数千件を消すよりは残すほうが害が小さい。
                 warned += 1
-                print(f"警告: 取得できず前回の {s['reused_previous']} 件を据え置き: "
+                days = stale_days(s, summary.get("generated_at"))
+                since = f"（{days} 日続いている）" if days is not None else ""
+                print(f"警告: 取得できず前回の {s['reused_previous']} 件を据え置き{since}: "
                       f"{s['id']} {s['error'][:100]}")
+                if days is not None and days >= STALE_DAYS:
+                    stale.append(f"{s['id']}: {days} 日（最後に取れたのは {s.get('last_success_at') or '記録なし'}）")
             else:
                 warned += 1
                 print(f"警告: 取得できなかった出典（収録対象外）: {s['id']} {s['error'][:120]}")
         if s.get("redistribute") and s.get("license") in (None, "unknown"):
             fails.append(f"ライセンス未確認なのに収録対象: {s['id']}")
     if warned:
-        print(f"警告 {warned} 件（収録対象外の出典が取れませんでした）")
+        print(f"警告 {warned} 件（取れなかった出典があります）")
+    if stale:
+        # 失敗にはしない（公開元の都合で止まり、ほかの出典の更新まで止めるのは割に合わない）。
+        # 外すか待つかは人が決める
+        print(f"\n要確認: {STALE_DAYS} 日以上、取れずに据え置いている出典:")
+        for line in stale:
+            print("  - " + line)
     if warned > len(summary["sources"]) // 2:
         fails.append(f"取れなかった出典が多すぎます: {warned}/{len(summary['sources'])}")
 
