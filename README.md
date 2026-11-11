@@ -5,10 +5,9 @@
 
 - **地図で見る: https://yasumorishima.github.io/japan-wildlife-sightings/**
   （地理院タイルの淡色地図・空中写真と、NASA GIBS の前日の衛星画像を背景に切り替えられます）
-- 収録データ: [`data/sightings.csv`](data/sightings.csv) / [`data/sightings.geojson`](data/sightings.geojson)
+- 収録データ: [`data/sightings.csv`](data/sightings.csv) / [`data/sightings.geojson.gz`](data/sightings.geojson.gz)（gzip 圧縮の GeoJSON）
 - 取得状況と品質: [`data/summary.json`](data/summary.json)
 - 再配布可否の根拠: [`docs/licenses.md`](docs/licenses.md)
-- Kaggle: [Japan Wildlife Sightings](https://www.kaggle.com/datasets/yasunorim/japan-wildlife-sightings)（`data/` と同じ収録範囲。毎日更新）
 
 ## なぜ作るのか
 
@@ -21,9 +20,10 @@ CKAN の CSV、ArcGIS の Survey123、Google マイマップ、Excel、そして
 
 ## いま取れているもの
 
-39 の公開元から **97,949 件**を取得できています（うち座標つき 92,587 件）。
+39 の公開元から **約 98,000 件**を取得できています（うち座標つき 約 93,000 件。2026-11-11 時点）。
+件数は毎日変わります。最新の数は [`data/summary.json`](data/summary.json) の `records_published`（収録数）と、出典ごとの `records` を見てください。
 **石川県はカタログ経由と Google マイマップ経由の 2 本を取得しているので、この数字では同じ出没を二重に数えています**（`data/` に収録するのはカタログ経由だけです）。
-このうち **54,875 件**を `data/` に収録しています。差は、**公開元の規約で再配布が
+このうち **約 55,000 件**を `data/` に収録しています。差は、**公開元の規約で再配布が
 許されていない出典を収録していない**ためです（アダプタは同梱しているので手元では取得できます）。
 
 | 出典 | 形式 | 件数 | 収録 |
@@ -158,9 +158,11 @@ python3 validate.py                   # 生成物の検算
 
 依存は `requests` と `openpyxl` だけです。
 
-## Kaggle への公開
+## Kaggle への公開（保留中）
 
-日次実行（`.github/workflows/collect.yml`）の最後に、`data/` と同じものを Kaggle に上げます。
+**オーナーの判断で保留しています。** 仕組みだけ用意してあり、下の変数を設定しない限り動きません。
+
+日次実行（`.github/workflows/collect.yml`）の最後に、`data/` と同じものを Kaggle に上げる仕組みです。
 `build_kaggle.py` が `_kaggle/` に一式（`sightings.csv`・`sightings.geojson`・出典ごとの帰属表示
 `attribution.csv`・`summary.json`・説明文）を作り、`kaggle_published.py` が Kaggle の最新版と
 `data/` の最新 commit を突き合わせて、違っていれば新しい版を出します。
