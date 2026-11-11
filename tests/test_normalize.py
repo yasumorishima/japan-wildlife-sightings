@@ -8,7 +8,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
-from collectors.normalize import mask_person, occurred_at  # noqa: E402
+from collectors.normalize import category, mask_person, occurred_at  # noqa: E402
 
 
 class MaskPersonTest(unittest.TestCase):
@@ -67,6 +67,18 @@ class OccurredAtTest(unittest.TestCase):
         for raw in ("2026/10/31 14:05", "2026/10/31 14:05:09", 1761886800000):
             with self.subTest(raw=raw):
                 self.assertTrue(occurred_at(raw).endswith("+09:00"))
+
+
+class CategoryTest(unittest.TestCase):
+    def test_category(self):
+        cases = {
+            "人身被害": "injury", "人身被害なし。道路を横断": "unknown", "人身被害なし、目撃": "sighting",
+            "農作物被害": "damage", "被害はありません。足跡を確認": "trace", "糞": "trace",
+            "目撃": "sighting", "Witness": "sighting", "捕獲": "capture", "": "unknown",
+        }
+        for raw, want in cases.items():
+            with self.subTest(raw=raw):
+                self.assertEqual(category(raw)[0], want)
 
 
 if __name__ == "__main__":
