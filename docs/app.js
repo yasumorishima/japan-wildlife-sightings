@@ -177,6 +177,7 @@ map.on("load", async () => {
   const res = await fetch("data/sightings.min.geojson");
   const data = await res.json();
   window.__all = data;
+  showFreshness();
 
   map.addSource("sightings", {
     type: "geojson", data, cluster: true, clusterRadius: 46, clusterMaxZoom: 11,
@@ -250,4 +251,26 @@ map.on("load", async () => {
 function escapeHtml(s) {
   return String(s).replace(/[&<>"']/g, c =>
     ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+}
+
+// 出典ごとの鮮度（build_map.py が summary.json から作る meta.json）。読めなくても地図は動かす
+async function showFreshness() {
+  const box = document.getElementById("fresh");
+  try {
+    const res = await fetch("data/meta.json");
+    if (!res.ok) throw new Error(res.status);
+    const meta = await res.json();
+    const tag = s => s.status === "frozen" ? `<span class="tag frozen">凍結（${s.since} 時点）</span>`
+      : s.status === "stale" ? `<span class="tag stale">取得できず据え置き${s.since ? `（${s.since}〜）` : ""}</span>`
+      : `<span class="tag ok">更新済み</span>`;
+    const esc = t => String(t).replace(/[&<>"]/g, c => ({"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;"}[c]));
+    const rows = meta.sources.map(s =>
+      `<li><span>${esc(s.label)}<br><small>最新の記録 ${esc(s.latest || "—")}</small></span>${tag(s)}</li>`).join("");
+    const stale = meta.sources.filter(s => s.status !== "ok").length;
+    box.innerHTML = `データ作成: ${esc(meta.generated_at.replace("T", " "))}` +
+      (stale ? `（古いままの出典 ${stale}）` : "") +
+      `<details><summary>出典ごとの最新の記録</summary><ul>${rows}</ul></details>`;
+  } catch (e) {
+    box.textContent = "鮮度の情報を読み込めませんでした";
+  }
 }
