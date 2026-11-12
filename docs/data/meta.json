@@ -1,0 +1,173 @@
+{
+ "generated_at": "2026-11-12T10:59",
+ "sources": [
+  {
+   "label": "上砂川町（ヒグマ）",
+   "pref_code": "01",
+   "records": 105,
+   "latest": "2026-08-19",
+   "status": "ok",
+   "since": "2026-11-12"
+  },
+  {
+   "label": "室蘭市（ヒグマ）",
+   "pref_code": "01",
+   "records": 15,
+   "latest": "2026-09-23",
+   "status": "ok",
+   "since": "2026-11-12"
+  },
+  {
+   "label": "札幌市（ヒグマ）",
+   "pref_code": "01",
+   "records": 1568,
+   "latest": "2025-11-29",
+   "status": "ok",
+   "since": "2026-11-12"
+  },
+  {
+   "label": "森町（ヒグマ）",
+   "pref_code": "01",
+   "records": 53,
+   "latest": "2018-08-27",
+   "status": "ok",
+   "since": "2026-11-12"
+  },
+  {
+   "label": "石狩市（ヒグマ）",
+   "pref_code": "01",
+   "records": 223,
+   "latest": "2026-10-24",
+   "status": "ok",
+   "since": "2026-11-12"
+  },
+  {
+   "label": "仙台市（クマ）",
+   "pref_code": "04",
+   "records": 2605,
+   "latest": "2026-11-04",
+   "status": "stale",
+   "since": "2026-11-12"
+  },
+  {
+   "label": "宮城県（クマ）",
+   "pref_code": "04",
+   "records": 1422,
+   "latest": "2026-11-09",
+   "status": "ok",
+   "since": "2026-11-12"
+  },
+  {
+   "label": "白石市（サル）",
+   "pref_code": "04",
+   "records": 117,
+   "latest": "2026-05-26",
+   "status": "ok",
+   "since": "2026-11-12"
+  },
+  {
+   "label": "秋田県",
+   "pref_code": "05",
+   "records": 24887,
+   "latest": "2026-10-31",
+   "status": "ok",
+   "since": "2026-11-12"
+  },
+  {
+   "label": "東京都（クマ）",
+   "pref_code": "13",
+   "records": 996,
+   "latest": "2026-06-08",
+   "status": "ok",
+   "since": "2026-11-12"
+  },
+  {
+   "label": "柏崎市（イノシシ）",
+   "pref_code": "15",
+   "records": 795,
+   "latest": "2026-05-28",
+   "status": "ok",
+   "since": "2026-11-12"
+  },
+  {
+   "label": "長岡市（クマ）",
+   "pref_code": "15",
+   "records": 166,
+   "latest": "2016-03-30",
+   "status": "ok",
+   "since": "2026-11-12"
+  },
+  {
+   "label": "石川県（クマ）",
+   "pref_code": "17",
+   "records": 2701,
+   "latest": "2025-06-18",
+   "status": "frozen",
+   "since": "2026-08-29"
+  },
+  {
+   "label": "金沢市（イノシシ）",
+   "pref_code": "17",
+   "records": 69,
+   "latest": "2025-12-25",
+   "status": "frozen",
+   "since": "2026-08-29"
+  },
+  {
+   "label": "金沢市（クマ）",
+   "pref_code": "17",
+   "records": 754,
+   "latest": "2026-01-19",
+   "status": "frozen",
+   "since": "2026-08-29"
+  },
+  {
+   "label": "金沢市（サル）",
+   "pref_code": "17",
+   "records": 46,
+   "latest": "2025-12-12",
+   "status": "frozen",
+   "since": "2026-08-29"
+  },
+  {
+   "label": "山梨県（クマ）",
+   "pref_code": "19",
+   "records": 1498,
+   "latest": "2026-10-11",
+   "status": "ok",
+   "since": "2026-11-12"
+  },
+  {
+   "label": "岐阜県（クマ）",
+   "pref_code": "21",
+   "records": 6946,
+   "latest": "2025-10-20",
+   "status": "ok",
+   "since": "2026-11-12"
+  },
+  {
+   "label": "裾野市（クマ）",
+   "pref_code": "22",
+   "records": 17,
+   "latest": "2026-06-04",
+   "status": "ok",
+   "since": "2026-11-12"
+  },
+  {
+   "label": "京都府（クマ）",
+   "pref_code": "26",
+   "records": 10225,
+   "latest": "2018-12-10",
+   "status": "ok",
+   "since": "2026-11-12"
+  },
+  {
+   "label": "山口県（クマ）",
+   "pref_code": "35",
+   "records": 1323,
+   "latest": "2026-11-08",
+   "status": "ok",
+   "since": "2026-11-12"
+  }
+ ]
+}
