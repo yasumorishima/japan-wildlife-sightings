@@ -65265,6 +65265,7 @@ yamanashi-bear-ckan:kuma1:260,19,山梨県,2026-10-17T15:00:00+09:00,tsukinowagu
 akita-kumadas:28167,05,秋田県,2026-10-17T17:10:00+09:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,小坂町,〒017-0203 秋田県鹿角郡小坂町上向狐崎付近,40.30878717,140.7621104,【投稿】敷地から出てきて、道路を走り2軒隣の家の後ろに走って行った,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 yamanashi-bear-ckan:kuma1:261,19,山梨県,2026-10-17T17:40:00+09:00,tsukinowaguma,ツキノワグマ,sighting,,1,上野原市,上野原地区山風呂地内,35.64466672,139.1047152,自宅の敷地内で目撃、その後不明,yamanashi-bear-ckan,https://catalog.dataplatform-yamanashi.jp/dataset/kuma1,CC-BY-4.0,山梨県（やまなしデータプラットフォーム）
 akita-kumadas:28172,05,秋田県,2026-10-17T21:45:00+09:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,仙北市,〒014-0343 秋田県仙北市角館町下延明通り 道路,39.55867157,140.5138063,【投稿】県道10号を西仙北方面に向かい走行中、大曲仙北広域角館一般廃棄物最終処分場を100mほど過ぎたあたりで1.5mくらいの熊が道路を横断、20mほど車と並走して最終処分場側の山に入っていきました。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
+yamanashi-bear-ckan:kuma1:262,19,山梨県,2026-10-18T06:00:00+09:00,tsukinowaguma,ツキノワグマ,sighting,,1,身延町,下山地内,35.420576,138.447666,逃げて行った。,yamanashi-bear-ckan,https://catalog.dataplatform-yamanashi.jp/dataset/kuma1,CC-BY-4.0,山梨県（やまなしデータプラットフォーム）
 yamaguchi-bear:yp-2026:261,35,山口県,2026-10-18T08:00:00+09:00,tsukinowaguma,ツキノワグマ,damage,目撃者が山中において、熊棚及び栗の食害を発見したもの,,,"岩国市美和町西畑
 　　山中",34.21773,132.07483,目撃者が山中において、熊棚及び栗の食害を発見したもの,yamaguchi-bear,https://yamaguchi-opendata.jp/ckan/dataset/yp-2026,CC-BY-4.0,山口県オープンデータカタログサイト（山口県警察本部地域企画課）
 miyagi-bear-r8:1383,04,宮城県,2026-10-18T08:30:00+09:00,tsukinowaguma,ツキノワグマ,sighting,目撃,,大郷町,中村字屋敷前,,,住居集合地域等以外,miyagi-bear-r8,https://www.pref.miyagi.jp/soshiki/sizenhogo/r8kumamokugeki.html,other,宮城県「令和8年度クマ目撃等情報」
@@ -65442,4 +65443,10 @@ miyagi-bear-r8:1439,04,宮城県,2026-11-13T16:05:00+09:00,tsukinowaguma,ツキ�
 miyagi-bear-r8:1440,04,宮城県,2026-11-13T17:55:00+09:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,東松島市,野蒜字大茂倉,,,住居集合地域等以外,miyagi-bear-r8,https://www.pref.miyagi.jp/soshiki/sizenhogo/r8kumamokugeki.html,other,宮城県「令和8年度クマ目撃等情報」
 yamaguchi-bear:yp-2026:294,35,山口県,2026-11-14T16:45:00+09:00,tsukinowaguma,ツキノワグマ,trace,警察官が校庭内において、熊の糞及び足跡を発見したもの,,,"周南市大字鹿野上
 　　鹿野小中学校校庭内",34.22777,131.81555,警察官が校庭内において、熊の糞及び足跡を発見したもの,yamaguchi-bear,https://yamaguchi-opendata.jp/ckan/dataset/yp-2026,CC-BY-4.0,山口県オープンデータカタログサイト（山口県警察本部地域企画課）
+miyagi-bear-r8:1442,04,宮城県,2026-11-15T16:00:00+09:00,tsukinowaguma,ツキノワグマ,sighting,目撃,,仙台市青葉区,上愛子字遠野原３３－１,,,住居集合地域等以外,miyagi-bear-r8,https://www.pref.miyagi.jp/soshiki/sizenhogo/r8kumamokugeki.html,other,宮城県「令和8年度クマ目撃等情報」
 miyagi-bear-r8:1441,04,宮城県,2026-11-15T16:20:00+09:00,tsukinowaguma,ツキノワグマ,sighting,目撃,,富谷市,石積堂ケ沢地区,,,住居集合地域等以外,miyagi-bear-r8,https://www.pref.miyagi.jp/soshiki/sizenhogo/r8kumamokugeki.html,other,宮城県「令和8年度クマ目撃等情報」
+miyagi-bear-r8:1443,04,宮城県,2026-11-15T18:15:00+09:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,仙台市青葉区,高野原３丁目１５－１６,,,不明,miyagi-bear-r8,https://www.pref.miyagi.jp/soshiki/sizenhogo/r8kumamokugeki.html,other,宮城県「令和8年度クマ目撃等情報」
+miyagi-bear-r8:1444,04,宮城県,2026-11-16T06:00:00+09:00,tsukinowaguma,ツキノワグマ,sighting,目撃,,仙台市青葉区,南吉成２丁目２２－２０,,,不明,miyagi-bear-r8,https://www.pref.miyagi.jp/soshiki/sizenhogo/r8kumamokugeki.html,other,宮城県「令和8年度クマ目撃等情報」
+miyagi-bear-r8:1445,04,宮城県,2026-11-16T17:30:00+09:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,仙台市太白区,秋保町長袋字清水久保地内,,,住居集合地域等以外,miyagi-bear-r8,https://www.pref.miyagi.jp/soshiki/sizenhogo/r8kumamokugeki.html,other,宮城県「令和8年度クマ目撃等情報」
+yamaguchi-bear:yp-2026:295,35,山口県,2026-11-18T09:25:00+09:00,tsukinowaguma,ツキノワグマ,sighting,居宅から出たところ、畑にいる熊を目撃したもの,1,,"阿武郡阿武町大字宇田
+　　畑",34.56662,131.56115,居宅から出たところ、畑にいる熊を目撃したもの,yamaguchi-bear,https://yamaguchi-opendata.jp/ckan/dataset/yp-2026,CC-BY-4.0,山口県オープンデータカタログサイト（山口県警察本部地域企画課）

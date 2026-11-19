@@ -54162,6 +54162,7 @@
 {"type":"Feature","geometry":{"type":"Point","coordinates":[141.37972,43.19294]},"properties":{"d":"2026-10-17","s":"higuma","c":"sighting","p":"北海道","m":"石狩市","n":"","t":"目撃者（通報者）が中田農園より西側250m程の用水路付近で用水路に沿って、北側（防風林の方向）へ歩いているヒグマ１頭（体長1.5m、毛色不明）を目撃した。その後の動向は不明。","a":"石狩市"}},
 {"type":"Feature","geometry":{"type":"Point","coordinates":[132.07483,34.21773]},"properties":{"d":"2026-10-18","s":"tsukinowaguma","c":"damage","p":"山口県","m":"","n":"","t":"目撃者が山中において、熊棚及び栗の食害を発見したもの","a":"山口県オープンデータカタログサイト（山口県警察本部地域企画課）"}},
 {"type":"Feature","geometry":{"type":"Point","coordinates":[132.10317,34.14207]},"properties":{"d":"2026-10-18","s":"tsukinowaguma","c":"trace","p":"山口県","m":"","n":"","t":"目撃者が休耕田において、熊の糞を発見したもの","a":"山口県オープンデータカタログサイト（山口県警察本部地域企画課）"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[138.44767,35.42058]},"properties":{"d":"2026-10-18","s":"tsukinowaguma","c":"sighting","p":"山梨県","m":"身延町","n":"1","t":"逃げて行った。","a":"山梨県（やまなしデータプラットフォーム）"}},
 {"type":"Feature","geometry":{"type":"Point","coordinates":[140.13069,39.72972]},"properties":{"d":"2026-10-18","s":"shika","c":"sighting","p":"秋田県","m":"秋田市","n":"1","t":"【投稿】勢い良く走ってきて正面衝突しそうになった。人に気づき、秋田大学方面へ向かっていった","a":"秋田県"}},
 {"type":"Feature","geometry":{"type":"Point","coordinates":[140.14834,39.72536]},"properties":{"d":"2026-10-18","s":"tsukinowaguma","c":"sighting","p":"秋田県","m":"秋田市","n":"1","t":"アパート敷地内にいるのを歩行者が目撃。立ち去り方向不明。体長0.6m。建物まで5m。","a":"秋田県"}},
 {"type":"Feature","geometry":{"type":"Point","coordinates":[140.20069,39.71019]},"properties":{"d":"2026-10-18","s":"shika","c":"sighting","p":"秋田県","m":"秋田市","n":"1","t":"【投稿】","a":"秋田県"}},
@@ -54238,5 +54239,6 @@
 {"type":"Feature","geometry":{"type":"Point","coordinates":[131.97011,33.9406]},"properties":{"d":"2026-11-12","s":"tsukinowaguma","c":"sighting","p":"山口県","m":"","n":"1","t":"自宅から屋外に出たところ、熊が立ち去るのを目撃したもの","a":"山口県オープンデータカタログサイト（山口県警察本部地域企画課）"}},
 {"type":"Feature","geometry":{"type":"Point","coordinates":[131.81832,34.22964]},"properties":{"d":"2026-11-13","s":"tsukinowaguma","c":"trace","p":"山口県","m":"","n":"","t":"目撃者が畑において、熊の足跡を発見したもの","a":"山口県オープンデータカタログサイト（山口県警察本部地域企画課）"}},
 {"type":"Feature","geometry":{"type":"Point","coordinates":[131.83618,34.07978]},"properties":{"d":"2026-11-13","s":"tsukinowaguma","c":"sighting","p":"山口県","m":"","n":"2","t":"車で走行中、雑草地にいる熊を目撃したもの","a":"山口県オープンデータカタログサイト（山口県警察本部地域企画課）"}},
-{"type":"Feature","geometry":{"type":"Point","coordinates":[131.81555,34.22777]},"properties":{"d":"2026-11-14","s":"tsukinowaguma","c":"trace","p":"山口県","m":"","n":"","t":"警察官が校庭内において、熊の糞及び足跡を発見したもの","a":"山口県オープンデータカタログサイト（山口県警察本部地域企画課）"}}
+{"type":"Feature","geometry":{"type":"Point","coordinates":[131.81555,34.22777]},"properties":{"d":"2026-11-14","s":"tsukinowaguma","c":"trace","p":"山口県","m":"","n":"","t":"警察官が校庭内において、熊の糞及び足跡を発見したもの","a":"山口県オープンデータカタログサイト（山口県警察本部地域企画課）"}},
+{"type":"Feature","geometry":{"type":"Point","coordinates":[131.56115,34.56662]},"properties":{"d":"2026-11-18","s":"tsukinowaguma","c":"sighting","p":"山口県","m":"","n":"1","t":"居宅から出たところ、畑にいる熊を目撃したもの","a":"山口県オープンデータカタログサイト（山口県警察本部地域企画課）"}}
 ]}
