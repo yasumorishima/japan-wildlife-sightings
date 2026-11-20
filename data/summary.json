@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-19T10:56:49.375934+09:00",
-  "records_published": 56579,
+  "generated_at": "2026-11-20T10:50:37.503378+09:00",
+  "records_published": 56583,
   "sources": [
     {
       "id": "akita-kumadas",
@@ -8,10 +8,6 @@
       "adapter": "csv",
       "license": "CC-BY-4.0",
       "redistribute": true,
-      "error": "ValueError: CSV のはずが HTML が返ってきた: https://ckan.pref.akita.lg.jp/dataset/f801a10f-f076-47e4-b5a6-0bb5569639e0/resource/0678f9b3-4bf7-4212-9c0e-c0cb9b09b3cf/download/050008_kumadas.csv",
-      "last_success_at": "2026-11-18T11:27:22+09:00",
-      "failing_since": "2026-11-19T10:54:11+09:00",
-      "reused_previous": 24887,
       "records": 24887,
       "with_coords": 24887,
       "with_date": 24887,
@@ -21,7 +17,8 @@
         "inoshishi",
         "shika",
         "tsukinowaguma"
-      ]
+      ],
+      "last_success_at": "2026-11-20T10:47:47+09:00"
     },
     {
       "id": "kyoto-bear",
@@ -37,7 +34,7 @@
       "species": [
         "tsukinowaguma"
       ],
-      "last_success_at": "2026-11-19T10:54:11+09:00"
+      "last_success_at": "2026-11-20T10:47:47+09:00"
     },
     {
       "id": "niigata-bear",
@@ -53,7 +50,7 @@
       "species": [
         "tsukinowaguma"
       ],
-      "last_success_at": "2026-11-19T10:54:11+09:00"
+      "last_success_at": "2026-11-20T10:47:47+09:00"
     },
     {
       "id": "gunma-bear",
@@ -61,15 +58,15 @@
       "adapter": "arcgis",
       "license": "unknown",
       "redistribute": false,
-      "records": 1882,
-      "with_coords": 1882,
-      "with_date": 1882,
+      "records": 1884,
+      "with_coords": 1884,
+      "with_date": 1884,
       "date_min": "2024-04-02",
       "date_max": "2026-11-18",
       "species": [
         "tsukinowaguma"
       ],
-      "last_success_at": "2026-11-19T10:54:11+09:00"
+      "last_success_at": "2026-11-20T10:47:47+09:00"
     },
     {
       "id": "saitama-bear",
@@ -77,15 +74,15 @@
       "adapter": "arcgis",
       "license": "unknown",
       "redistribute": false,
-      "records": 476,
-      "with_coords": 476,
-      "with_date": 476,
+      "records": 478,
+      "with_coords": 478,
+      "with_date": 478,
       "date_min": "2024-04-11",
-      "date_max": "2026-11-17",
+      "date_max": "2026-11-19",
       "species": [
         "tsukinowaguma"
       ],
-      "last_success_at": "2026-11-19T10:54:11+09:00"
+      "last_success_at": "2026-11-20T10:47:47+09:00"
     },
     {
       "id": "yamagata-kemonote",
@@ -101,7 +98,7 @@
       "species": [
         "tsukinowaguma"
       ],
-      "last_success_at": "2026-11-19T10:54:11+09:00"
+      "last_success_at": "2026-11-20T10:47:47+09:00"
     },
     {
       "id": "ishikawa-bear",
@@ -117,7 +114,7 @@
       "species": [
         "tsukinowaguma"
       ],
-      "last_success_at": "2026-11-19T10:54:11+09:00"
+      "last_success_at": "2026-11-20T10:47:47+09:00"
     },
     {
       "id": "miyagi-bear",
@@ -133,7 +130,7 @@
       "species": [
         "tsukinowaguma"
       ],
-      "last_success_at": "2026-11-19T10:54:11+09:00"
+      "last_success_at": "2026-11-20T10:47:47+09:00"
     },
     {
       "id": "shizuoka-bear-r7",
@@ -149,7 +146,7 @@
       "species": [
         "tsukinowaguma"
       ],
-      "last_success_at": "2026-11-19T10:54:11+09:00"
+      "last_success_at": "2026-11-20T10:47:47+09:00"
     },
     {
       "id": "shizuoka-bear-r8",
@@ -165,7 +162,7 @@
       "species": [
         "tsukinowaguma"
       ],
-      "last_success_at": "2026-11-19T10:54:11+09:00"
+      "last_success_at": "2026-11-20T10:47:47+09:00"
     },
     {
       "id": "noboribetsu-bear",
@@ -181,7 +178,7 @@
       "species": [
         "higuma"
       ],
-      "last_success_at": "2026-11-19T10:54:11+09:00"
+      "last_success_at": "2026-11-20T10:47:47+09:00"
     },
     {
       "id": "muroran-bear",
@@ -197,7 +194,7 @@
       "species": [
         "higuma"
       ],
-      "last_success_at": "2026-11-19T10:54:11+09:00"
+      "last_success_at": "2026-11-20T10:47:47+09:00"
     },
     {
       "id": "toyama-kumappu",
@@ -213,7 +210,7 @@
       "species": [
         "tsukinowaguma"
       ],
-      "last_success_at": "2026-11-19T10:54:11+09:00"
+      "last_success_at": "2026-11-20T10:47:47+09:00"
     },
     {
       "id": "mie-bear",
@@ -229,7 +226,7 @@
       "species": [
         "bear"
       ],
-      "last_success_at": "2026-11-19T10:54:11+09:00"
+      "last_success_at": "2026-11-20T10:47:47+09:00"
     },
     {
       "id": "okaya-bear",
@@ -237,11 +234,11 @@
       "adapter": "arcgis",
       "license": "unknown",
       "redistribute": false,
-      "records": 282,
-      "with_coords": 282,
-      "with_date": 282,
+      "records": 283,
+      "with_coords": 283,
+      "with_date": 283,
       "date_min": "2024-01-12",
-      "date_max": "2026-11-18",
+      "date_max": "2026-11-19",
       "species": [
         "inoshishi",
         "kamoshika",
@@ -250,7 +247,7 @@
         "tsukinowaguma",
         "unknown"
       ],
-      "last_success_at": "2026-11-19T10:54:11+09:00"
+      "last_success_at": "2026-11-20T10:47:47+09:00"
     },
     {
       "id": "fukushima-bear",
@@ -266,7 +263,7 @@
       "species": [
         "tsukinowaguma"
       ],
-      "last_success_at": "2026-11-19T10:54:11+09:00"
+      "last_success_at": "2026-11-20T10:47:47+09:00"
     },
     {
       "id": "niigata-bear-2017-2024",
@@ -282,7 +279,7 @@
       "species": [
         "tsukinowaguma"
       ],
-      "last_success_at": "2026-11-19T10:54:11+09:00"
+      "last_success_at": "2026-11-20T10:47:47+09:00"
     },
     {
       "id": "ishikari-higuma",
@@ -298,7 +295,7 @@
       "species": [
         "higuma"
       ],
-      "last_success_at": "2026-11-19T10:54:11+09:00"
+      "last_success_at": "2026-11-20T10:47:47+09:00"
     },
     {
       "id": "nagano-bear-pdf",
@@ -314,7 +311,7 @@
       "species": [
         "tsukinowaguma"
       ],
-      "last_success_at": "2026-11-19T10:54:11+09:00"
+      "last_success_at": "2026-11-20T10:47:47+09:00"
     },
     {
       "id": "yamanashi-bear-pdf",
@@ -330,7 +327,7 @@
       "species": [
         "tsukinowaguma"
       ],
-      "last_success_at": "2026-11-19T10:54:11+09:00"
+      "last_success_at": "2026-11-20T10:47:47+09:00"
     },
     {
       "id": "yamanashi-bear-ckan",
@@ -338,15 +335,15 @@
       "adapter": "ckan",
       "license": "CC-BY-4.0",
       "redistribute": true,
-      "records": 1522,
-      "with_coords": 1504,
-      "with_date": 1522,
+      "records": 1524,
+      "with_coords": 1506,
+      "with_date": 1524,
       "date_min": "2020-04-01",
-      "date_max": "2026-10-18",
+      "date_max": "2026-10-19",
       "species": [
         "tsukinowaguma"
       ],
-      "last_success_at": "2026-11-19T10:54:11+09:00"
+      "last_success_at": "2026-11-20T10:47:47+09:00"
     },
     {
       "id": "kamisunagawa-higuma",
@@ -362,7 +359,7 @@
       "species": [
         "higuma"
       ],
-      "last_success_at": "2026-11-19T10:54:11+09:00"
+      "last_success_at": "2026-11-20T10:47:47+09:00"
     },
     {
       "id": "yamaguchi-bear",
@@ -378,7 +375,7 @@
       "species": [
         "tsukinowaguma"
       ],
-      "last_success_at": "2026-11-19T10:54:11+09:00"
+      "last_success_at": "2026-11-20T10:47:47+09:00"
     },
     {
       "id": "sapporo-higuma",
@@ -394,7 +391,7 @@
       "species": [
         "higuma"
       ],
-      "last_success_at": "2026-11-19T10:54:11+09:00"
+      "last_success_at": "2026-11-20T10:47:47+09:00"
     },
     {
       "id": "ishikawa-bear-ckan",
@@ -494,7 +491,7 @@
       "species": [
         "inoshishi"
       ],
-      "last_success_at": "2026-11-19T10:54:11+09:00"
+      "last_success_at": "2026-11-20T10:47:47+09:00"
     },
     {
       "id": "fukuoka-choju",
@@ -513,7 +510,7 @@
         "shika",
         "unknown"
       ],
-      "last_success_at": "2026-11-19T10:54:11+09:00"
+      "last_success_at": "2026-11-20T10:47:47+09:00"
     },
     {
       "id": "aizuwakamatsu-choju",
@@ -533,7 +530,7 @@
         "shika",
         "unknown"
       ],
-      "last_success_at": "2026-11-19T10:54:11+09:00"
+      "last_success_at": "2026-11-20T10:47:47+09:00"
     },
     {
       "id": "tsuru-bear",
@@ -549,7 +546,7 @@
       "species": [
         "tsukinowaguma"
       ],
-      "last_success_at": "2026-11-19T10:54:11+09:00"
+      "last_success_at": "2026-11-20T10:47:47+09:00"
     },
     {
       "id": "tokyo-bear",
@@ -565,7 +562,7 @@
       "species": [
         "tsukinowaguma"
       ],
-      "last_success_at": "2026-11-19T10:54:11+09:00"
+      "last_success_at": "2026-11-20T10:47:47+09:00"
     },
     {
       "id": "sendai-bear",
@@ -573,7 +570,7 @@
       "adapter": "csv",
       "license": "CC-BY",
       "redistribute": true,
-      "error": "ConnectTimeout: HTTPSConnectionPool(host='www2.wagmap.jp', port=443): Max retries exceeded with url: /sendaicity/sendaicity/opendatafile/map_331/CSV/opendata_20123.csv (Caused by ConnectTimeoutError(<HTTPSConnection(host='www2.wagmap.jp', port=443) at 0x731d4ef9db10>, 'Connection to www2.wagmap.jp timed out. (connect timeout=60)'))",
+      "error": "ConnectTimeout: HTTPSConnectionPool(host='www2.wagmap.jp', port=443): Max retries exceeded with url: /sendaicity/sendaicity/opendatafile/map_331/CSV/opendata_20123.csv (Caused by ConnectTimeoutError(<HTTPSConnection(host='www2.wagmap.jp', port=443) at 0x76bec7bc4d10>, 'Connection to www2.wagmap.jp timed out. (connect timeout=60)'))",
       "failing_since": "2026-11-12T10:56:22+09:00",
       "reused_previous": 2605,
       "records": 2605,
@@ -591,15 +588,15 @@
       "adapter": "xlsx",
       "license": "other",
       "redistribute": true,
-      "records": 1436,
+      "records": 1438,
       "with_coords": 0,
-      "with_date": 1436,
+      "with_date": 1438,
       "date_min": "2026-04-01",
-      "date_max": "2026-11-16",
+      "date_max": "2026-11-17",
       "species": [
         "tsukinowaguma"
       ],
-      "last_success_at": "2026-11-19T10:54:11+09:00"
+      "last_success_at": "2026-11-20T10:47:47+09:00"
     },
     {
       "id": "nagaoka-bear",
@@ -615,7 +612,7 @@
       "species": [
         "tsukinowaguma"
       ],
-      "last_success_at": "2026-11-19T10:54:11+09:00"
+      "last_success_at": "2026-11-20T10:47:47+09:00"
     },
     {
       "id": "mori-higuma",
@@ -631,7 +628,7 @@
       "species": [
         "higuma"
       ],
-      "last_success_at": "2026-11-19T10:54:11+09:00"
+      "last_success_at": "2026-11-20T10:47:47+09:00"
     },
     {
       "id": "gifu-bear",
@@ -647,7 +644,7 @@
       "species": [
         "tsukinowaguma"
       ],
-      "last_success_at": "2026-11-19T10:54:11+09:00"
+      "last_success_at": "2026-11-20T10:47:47+09:00"
     },
     {
       "id": "susono-bear",
@@ -663,7 +660,7 @@
       "species": [
         "bear"
       ],
-      "last_success_at": "2026-11-19T10:54:11+09:00"
+      "last_success_at": "2026-11-20T10:47:47+09:00"
     },
     {
       "id": "shiroishi-monkey",
@@ -679,7 +676,7 @@
       "species": [
         "saru"
       ],
-      "last_success_at": "2026-11-19T10:54:11+09:00"
+      "last_success_at": "2026-11-20T10:47:47+09:00"
     }
   ]
 }
