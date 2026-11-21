@@ -65292,11 +65292,13 @@ sendai-bear:opendata_20129:278,04,宮城県,2026-10-19T20:15:00+09:00,tsukinowag
 yamanashi-bear-ckan:kuma1:263,19,山梨県,2026-10-19T20:55:00+09:00,tsukinowaguma,ツキノワグマ,sighting,,1,身延町,飯富地内,35.433688,138.433694,山側へ逃げた,yamanashi-bear-ckan,https://catalog.dataplatform-yamanashi.jp/dataset/kuma1,CC-BY-4.0,山梨県（やまなしデータプラットフォーム）
 yamanashi-bear-ckan:kuma1:264,19,山梨県,2026-10-19T22:00:00+09:00,tsukinowaguma,ツキノワグマ,sighting,,1,身延町,清澤地内,35.448097,138.491722,山へ行った,yamanashi-bear-ckan,https://catalog.dataplatform-yamanashi.jp/dataset/kuma1,CC-BY-4.0,山梨県（やまなしデータプラットフォーム）
 miyagi-bear-r8:1386,04,宮城県,2026-10-20T02:16:00+09:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,富谷市,明石台九丁目地内,,,住居集合地域等,miyagi-bear-r8,https://www.pref.miyagi.jp/soshiki/sizenhogo/r8kumamokugeki.html,other,宮城県「令和8年度クマ目撃等情報」
+yamanashi-bear-ckan:kuma1:265,19,山梨県,2026-10-20T06:00:00+09:00,tsukinowaguma,ツキノワグマ,sighting,,1,都留市,十日市場地内,35.532504,138.891135,動物の生息状況把握のための赤外線センサーカメラで撮影される。,yamanashi-bear-ckan,https://catalog.dataplatform-yamanashi.jp/dataset/kuma1,CC-BY-4.0,山梨県（やまなしデータプラットフォーム）
 miyagi-bear-r8:1393,04,宮城県,2026-10-20T07:50:00+09:00,tsukinowaguma,ツキノワグマ,sighting,目撃,,仙台市青葉区,高野原１丁目２０－１２付近（南側茂みの中）,,,住居集合地域等,miyagi-bear-r8,https://www.pref.miyagi.jp/soshiki/sizenhogo/r8kumamokugeki.html,other,宮城県「令和8年度クマ目撃等情報」
 sendai-bear:opendata_20129:293,04,宮城県,2026-10-20T07:50:00+09:00,tsukinowaguma,ツキノワグマ,sighting,,2,仙台市,青葉区高野原1丁目,38.2876077805119,140.764550906306,2頭・ともに体長不明,sendai-bear,https://www.geospatial.jp/ckan/dataset/sendaikurashinomap,CC-BY,仙台市
 sendai-bear:opendata_20129:279,04,宮城県,2026-10-20T09:00:00+09:00,tsukinowaguma,ツキノワグマ,sighting,,,仙台市,青葉区作並字神ノ前西,38.3197675363077,140.621795162048,1頭・体長70cm前後,sendai-bear,https://www.geospatial.jp/ckan/dataset/sendaikurashinomap,CC-BY,仙台市
 miyagi-bear-r8:1392,04,宮城県,2026-10-20T09:28:00+09:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,仙台市青葉区,作並字神の前西（作並チエーン脱着場付近）,,,住居集合地域等以外,miyagi-bear-r8,https://www.pref.miyagi.jp/soshiki/sizenhogo/r8kumamokugeki.html,other,宮城県「令和8年度クマ目撃等情報」
 akita-kumadas:28179,05,秋田県,2026-10-20T16:30:00+09:00,tsukinowaguma,ツキノワグマ,trace,痕跡(その他),1,秋田市,〒010-1413 秋田県秋田市御所野地蔵田３丁目１ 御所野総合公園,39.65827046,140.1585495,クマは見ていないが、公園の遊具の南側のヤブからウーと低くうなる声が聞こえ、ガサガサと何かが移動した音を聞いた。クマかもしれないと思い通報した。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
+yamanashi-bear-ckan:kuma1:266,19,山梨県,2026-10-20T17:00:00+09:00,tsukinowaguma,ツキノワグマ,sighting,,2,大月市,七保町葛野,35.62369518,138.9635149,柿の木に登って、その後、裏山に逃げて行った,yamanashi-bear-ckan,https://catalog.dataplatform-yamanashi.jp/dataset/kuma1,CC-BY-4.0,山梨県（やまなしデータプラットフォーム）
 miyagi-bear-r8:1394,04,宮城県,2026-10-21,tsukinowaguma,ツキノワグマ,sighting,目撃,1,村田町,足立字馬立,,,住居集合地域等,miyagi-bear-r8,https://www.pref.miyagi.jp/soshiki/sizenhogo/r8kumamokugeki.html,other,宮城県「令和8年度クマ目撃等情報」
 yamaguchi-bear:yp-2026:266,35,山口県,2026-10-21T09:35:00+09:00,tsukinowaguma,ツキノワグマ,sighting,車で走行中、市道上を横断する熊を目撃したもの,1,,"萩市大字椿東
 　　市道上",34.42634,131.42379,車で走行中、市道上を横断する熊を目撃したもの,yamaguchi-bear,https://yamaguchi-opendata.jp/ckan/dataset/yp-2026,CC-BY-4.0,山口県オープンデータカタログサイト（山口県警察本部地域企画課）
@@ -65368,8 +65370,8 @@ akita-kumadas:28206,05,秋田県,2026-10-29T16:10:00+09:00,tsukinowaguma,ツキ�
 体長　１．２ｍ
 
 道路横断後、南側の山へ行った",akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
-yamaguchi-bear:yp-2026:276,35,山口県,2026-10-29T17:09:00+09:00,tsukinowaguma,ツキノワグマ,sighting,車両で走行中、市道を横断する熊を目撃したもの,1,,"菊川町大字七見
-　　市道上",34.11478,131.0085,車両で走行中、市道を横断する熊を目撃したもの,yamaguchi-bear,https://yamaguchi-opendata.jp/ckan/dataset/yp-2026,CC-BY-4.0,山口県オープンデータカタログサイト（山口県警察本部地域企画課）
+yamaguchi-bear:yp-2026:276,35,山口県,2026-10-29T17:09:00+09:00,tsukinowaguma,ツキノワグマ,sighting,車で走行中、市道を横断する熊を目撃したもの,1,,"菊川町大字七見
+　　市道上",34.11478,131.0085,車で走行中、市道を横断する熊を目撃したもの,yamaguchi-bear,https://yamaguchi-opendata.jp/ckan/dataset/yp-2026,CC-BY-4.0,山口県オープンデータカタログサイト（山口県警察本部地域企画課）
 miyagi-bear-r8:1422,04,宮城県,2026-10-29T18:24:00+09:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,富谷市,明石杉ノ入　地内,,,住居集合地域等,miyagi-bear-r8,https://www.pref.miyagi.jp/soshiki/sizenhogo/r8kumamokugeki.html,other,宮城県「令和8年度クマ目撃等情報」
 akita-kumadas:28208,05,秋田県,2026-10-30T12:50:00+09:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,北秋田市,〒018-4263 秋田県北秋田市三木田,40.1106712,140.3248286,翠雲公園の敷地内で木の上に居る体長1メートル程のクマ1頭を目撃。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 akita-kumadas:28209,05,秋田県,2026-10-30T14:38:00+09:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,潟上市,〒010-0201 秋田県潟上市天王北野１－１８,39.82717639,140.0351286,"湖東消防署南分署の敷地内
@@ -65413,8 +65415,8 @@ yamaguchi-bear:yp-2026:282,35,山口県,2026-11-08T06:15:00+09:00,tsukinowaguma,
 　　鹿野薬師付近",34.22887,131.81682,ジョギング中、熊に襲われたもの,yamaguchi-bear,https://yamaguchi-opendata.jp/ckan/dataset/yp-2026,CC-BY-4.0,山口県オープンデータカタログサイト（山口県警察本部地域企画課）
 yamaguchi-bear:yp-2026:285,35,山口県,2026-11-08T11:00:00+09:00,tsukinowaguma,ツキノワグマ,damage,目撃者が空家敷地内において柿の食害を発見したもの,,,"周南市大字夏切
 　　空家",34.16052,131.74754,目撃者が空家敷地内において柿の食害を発見したもの,yamaguchi-bear,https://yamaguchi-opendata.jp/ckan/dataset/yp-2026,CC-BY-4.0,山口県オープンデータカタログサイト（山口県警察本部地域企画課）
-yamaguchi-bear:yp-2026:283,35,山口県,2026-11-08T16:20:00+09:00,tsukinowaguma,ツキノワグマ,sighting,車両で走行中、県道上を横断する熊を目撃したもの,1,,"山口市阿東嘉年下
-　　県道上",34.4732,131.68427,車両で走行中、県道上を横断する熊を目撃したもの,yamaguchi-bear,https://yamaguchi-opendata.jp/ckan/dataset/yp-2026,CC-BY-4.0,山口県オープンデータカタログサイト（山口県警察本部地域企画課）
+yamaguchi-bear:yp-2026:283,35,山口県,2026-11-08T16:20:00+09:00,tsukinowaguma,ツキノワグマ,sighting,車で走行中、県道上を横断する熊を目撃したもの,1,,"山口市阿東嘉年下
+　　県道上",34.4732,131.68427,車で走行中、県道上を横断する熊を目撃したもの,yamaguchi-bear,https://yamaguchi-opendata.jp/ckan/dataset/yp-2026,CC-BY-4.0,山口県オープンデータカタログサイト（山口県警察本部地域企画課）
 miyagi-bear-r8:1429,04,宮城県,2026-11-09T00:40:00+09:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,気仙沼市,二ノ浜,,,住居集合地域等以外,miyagi-bear-r8,https://www.pref.miyagi.jp/soshiki/sizenhogo/r8kumamokugeki.html,other,宮城県「令和8年度クマ目撃等情報」
 miyagi-bear-r8:1432,04,宮城県,2026-11-09T15:00:00+09:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,仙台市青葉区,芋沢字寺下東２６－１,,,住居集合地域等以外,miyagi-bear-r8,https://www.pref.miyagi.jp/soshiki/sizenhogo/r8kumamokugeki.html,other,宮城県「令和8年度クマ目撃等情報」
 miyagi-bear-r8:1430,04,宮城県,2026-11-09T15:30:00+09:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,大和町,吉田字上嘉太神南,,,住居集合地域等以外,miyagi-bear-r8,https://www.pref.miyagi.jp/soshiki/sizenhogo/r8kumamokugeki.html,other,宮城県「令和8年度クマ目撃等情報」
@@ -65454,3 +65456,7 @@ miyagi-bear-r8:1446,04,宮城県,2026-11-17T19:00:00+09:00,tsukinowaguma,ツキ�
 miyagi-bear-r8:1447,04,宮城県,2026-11-17T20:00:00+09:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,気仙沼市,本吉町長根,,,住居集合地域等,miyagi-bear-r8,https://www.pref.miyagi.jp/soshiki/sizenhogo/r8kumamokugeki.html,other,宮城県「令和8年度クマ目撃等情報」
 yamaguchi-bear:yp-2026:295,35,山口県,2026-11-18T09:25:00+09:00,tsukinowaguma,ツキノワグマ,sighting,居宅から出たところ、畑にいる熊を目撃したもの,1,,"阿武郡阿武町大字宇田
 　　畑",34.56662,131.56115,居宅から出たところ、畑にいる熊を目撃したもの,yamaguchi-bear,https://yamaguchi-opendata.jp/ckan/dataset/yp-2026,CC-BY-4.0,山口県オープンデータカタログサイト（山口県警察本部地域企画課）
+yamaguchi-bear:yp-2026:296,35,山口県,2026-11-19T07:20:00+09:00,tsukinowaguma,ツキノワグマ,sighting,車で走行中、市道上にいる熊を目撃したもの,1,,"山口市嘉川
+　　市道上",34.09092,131.36036,車で走行中、市道上にいる熊を目撃したもの,yamaguchi-bear,https://yamaguchi-opendata.jp/ckan/dataset/yp-2026,CC-BY-4.0,山口県オープンデータカタログサイト（山口県警察本部地域企画課）
+yamaguchi-bear:yp-2026:297,35,山口県,2026-11-20T14:30:00+09:00,tsukinowaguma,ツキノワグマ,sighting,車で走行中、県道上を横断する熊を目撃したもの,1,,"光市大字塩田
+　　県道上",34.00789,132.04472,車で走行中、県道上を横断する熊を目撃したもの,yamaguchi-bear,https://yamaguchi-opendata.jp/ckan/dataset/yp-2026,CC-BY-4.0,山口県オープンデータカタログサイト（山口県警察本部地域企画課）
