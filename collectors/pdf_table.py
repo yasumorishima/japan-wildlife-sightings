@@ -14,6 +14,8 @@ import urllib.parse
 
 import requests
 
+from . import fetchlog
+
 UA = "japan-wildlife-sightings/0.1 (+https://github.com/yasumorishima/japan-wildlife-sightings)"
 DATE = re.compile(r"^(?:\d{4}[/.]\d{1,2}[/.]\d{1,2}|[RHS]\d{1,2}[.]\d{1,2}[.]\d{1,2}|令和\d+年\d+月\d+日)$")
 COUNT = re.compile(r"[0-9０-９一二三四五六七八九十]+\s*頭")
@@ -60,6 +62,7 @@ def parse_rows(text: str) -> list[dict]:
 def fetch_pdf_table(page_url: str, link_pattern: str = r"\.pdf$", **_) -> list[dict]:
     """ページから PDF を集めて表を読む。同じ出没が複数の月次 PDF に載るので重複を除く。"""
     sess = requests.Session()
+    sess.hooks["response"].append(fetchlog.hook)
     sess.headers["User-Agent"] = UA
     page = sess.get(page_url, timeout=60)
     page.raise_for_status()

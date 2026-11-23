@@ -143,7 +143,10 @@ def fetch_pdf_bbox(page_url: str, link_pattern: str, columns: list[str] | None =
 
     import requests
 
+    from . import fetchlog
+
     sess = requests.Session()
+    sess.hooks["response"].append(fetchlog.hook)
     sess.headers["User-Agent"] = (
         "japan-wildlife-sightings/0.1 (+https://github.com/yasumorishima/japan-wildlife-sightings)")
     page = sess.get(page_url, timeout=60)
