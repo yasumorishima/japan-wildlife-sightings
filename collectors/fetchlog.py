@@ -6,15 +6,18 @@ collect.py が出典ごとに reset() し、取得後に entries() / drops() を
 """
 from __future__ import annotations
 
+import hashlib
 from collections import Counter
 
 _seen: dict[str, dict] = {}
 _drops: Counter = Counter()
+_checks: list[dict] = []
 
 
 def reset() -> None:
     _seen.clear()
     _drops.clear()
+    _checks.clear()
 
 
 def drop(reason: str, n: int = 1) -> None:
@@ -34,7 +37,24 @@ def record(url: str, resp=None) -> None:
     headers = getattr(resp, "headers", None) or {}
     if headers.get("Last-Modified"):
         entry["last_modified"] = headers["Last-Modified"]
+    # ファイル（PDF・CSV・xlsx・zip 等）は中身の sha256 も控える。Last-Modified を返さない公開元や、
+    # 同じファイル名で差し替える公開元でも、版が変わったかが分かる。HTML や API の応答は取得ごとに変わるので除く
+    ctype = (headers.get("Content-Type") or "").lower()
+    if resp is not None and not any(t in ctype for t in ("html", "json")):
+        try:
+            entry["sha256"] = hashlib.sha256(resp.content).hexdigest()
+        except Exception:
+            pass
     _seen[url] = entry
+
+
+def check(entry: dict) -> None:
+    """取得した 1 ファイルについて、別の手段で数えた件数と読めた件数の突き合わせを控える。"""
+    _checks.append(entry)
+
+
+def checks() -> list[dict]:
+    return list(_checks)
 
 
 def hook(resp, *args, **kwargs):

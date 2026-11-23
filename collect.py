@@ -250,11 +250,22 @@ def quality(recs: list[dict]) -> dict:
 def record_fetch(entry: dict, stats: Counter) -> None:
     """取りに行った URL・版と、取り込まなかった行の数と理由を summary の出典に載せる。"""
     entry["fetched_urls"] = fetchlog.entries()
+    if fetchlog.checks():
+        # PDF ごとの突き合わせ（テキスト層で数えた件数と、表として読めた件数）
+        entry["pdf_files"] = fetchlog.checks()
     counts = Counter(fetchlog.drops())
     counts.update({k.split(":", 1)[1]: v for k, v in stats.items() if k.startswith("dropped:") and v})
     entry["dropped"] = dict(sorted(counts.items()))
     unparsed = {k.split(":", 1)[1]: v for k, v in stats.items() if k.startswith("unparsed:") and v}
     entry["unparsed"] = dict(sorted(unparsed.items()))
+
+
+def pdf_note(entry: dict) -> str:
+    files = entry.get("pdf_files") or []
+    if not files:
+        return ""
+    bad = [f for f in files if f["status"] not in ("ok", "no_table")]
+    return f" PDF={len(files)}本" + (f" うち保留・読めず={len(bad)}本" if bad else "")
 
 
 def main() -> int:
@@ -335,7 +346,8 @@ def main() -> int:
               f"日付={entry['with_date']:>6} {entry['date_min']}..{entry['date_max']} "
               f"{'収録' if entry['redistribute'] else '収録しない(ライセンス未確認)'}"
               + (f" 除外={entry['dropped']}" if entry["dropped"] else "")
-              + (f" 読めず={entry['unparsed']}" if entry["unparsed"] else ""))
+              + (f" 読めず={entry['unparsed']}" if entry["unparsed"] else "")
+              + pdf_note(entry))
 
     if args.no_write:
         return 0
