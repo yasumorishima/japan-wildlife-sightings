@@ -14,6 +14,8 @@ import xml.etree.ElementTree as ET
 import requests
 from requests.adapters import HTTPAdapter
 
+from . import fetchlog
+
 UA = "japan-wildlife-sightings/0.1 (+https://github.com/yasumorishima/japan-wildlife-sightings)"
 TIMEOUT = 60
 
@@ -52,6 +54,8 @@ def _get(url: str, **kw) -> requests.Response:
               file=sys.stderr)
         r = _legacy().get(url, headers={"User-Agent": UA}, timeout=TIMEOUT, **kw)
     r.raise_for_status()
+    # params は ArcGIS のページ送りなど回ごとに変わるので、URL は渡された形で控える
+    fetchlog.record(url, r)
     return r
 
 
@@ -179,6 +183,7 @@ def fetch_kml(mid: str = None, url: str = None, **_) -> list[dict]:
         try:
             pm = ET.fromstring(re.sub(r'\sxmlns="[^"]+"', "", chunk))
         except ET.ParseError:
+            fetchlog.drop("kml_parse_error")
             continue
         row = {}
         name = pm.findtext("name")
@@ -332,6 +337,7 @@ def fetch_kviewer(url: str, hide_field: str | None = None, hide_value: str | Non
                         dt.timezone(dt.timedelta(hours=9))).isoformat()
                 row[key] = v
             if hide_field and row.get(hide_field) == hide_value:
+                fetchlog.drop("hidden_by_config")
                 continue
             out.append(row)
         if not recs or len(out) >= int(j.get("totalCount") or 0) or page > 100:

@@ -19,7 +19,9 @@ import pathlib
 import re
 import sys
 
-from collectors import normalize
+from collections import Counter
+
+from collectors import fetchlog, normalize
 from collectors.adapters import ADAPTERS
 
 ROOT = pathlib.Path(__file__).resolve().parent
@@ -63,7 +65,9 @@ def _num(v):
     return float(m.group(1)) if m else None
 
 
-def build(rows: list[dict], src: dict) -> list[dict]:
+def build(rows: list[dict], src: dict, stats: Counter | None = None) -> list[dict]:
+    """stats を渡すと、取り込まなかった行（dropped:）と値を読めず空にした行（unparsed:）を数える。"""
+    stats = Counter() if stats is None else stats
     m = src.get("map", {})
     lic = src.get("license", {})
     out = []
@@ -83,7 +87,10 @@ def build(rows: list[dict], src: dict) -> list[dict]:
         lon = row.get("_lon", None)
         if lat is None:
             lat, lon = _num(col("lat")), _num(col("lon"))
+        raw_coords = lat is not None and lon is not None
         lat, lon = normalize.in_japan(lat, lon)
+        if raw_coords and lat is None:
+            stats["unparsed:coords_out_of_range"] += 1
         # 日付は候補列を順に試し、最初に解釈できたものを採る（同じ地図の中で
         # 層ごとに書式が違う出典があるため）。
         occurred = None
@@ -113,10 +120,14 @@ def build(rows: list[dict], src: dict) -> list[dict]:
                 mon, day = normalize._z2h(str(mon).strip()), normalize._z2h(str(day).strip())
                 row = dict(row, _md=mon.rstrip("月") + "月" + day.rstrip("日") + "日")
                 names = ["_md"]
+        date_given = False
         for name in ([names] if isinstance(names, str) else names):
+            date_given = date_given or row.get(name) not in (None, "")
             occurred = normalize.occurred_at(row.get(name), col("time"), fiscal_year)
             if occurred:
                 break
+        if date_given and not occurred:
+            stats["unparsed:date"] += 1
         skey, slabel = normalize.species(col("species"), src.get("species_default"))
         ckey, craw = normalize.category(col("category"))
         # 区分が「目撃有」「足跡有」のような印の列に分かれている出典（森町）。重い区分から見る
@@ -161,8 +172,13 @@ def build(rows: list[dict], src: dict) -> list[dict]:
             out[-1][key] = normalize.mask_person(out[-1][key])
         # 様式によっては行番号だけが入った空行が末尾に続く。設定側で「これが無い行は
         # 記録ではない」と宣言できるようにする（山口県は日付の無い行が空行）。
-        if any(out[-1].get(k) in (None, "") for k in (src.get("require") or [])):
+        missing = [k for k in (src.get("require") or []) if out[-1].get(k) in (None, "")]
+        if missing:
             out.pop()
+            stats[f"dropped:missing_{missing[0]}"] += 1
+            # 日付が無いので落とす行は、日付が読めなかった行としては数えない
+            if date_given and not occurred:
+                stats["unparsed:date"] -= 1
     # 同じ記録が複数の資源に載る出典がある。石川県は 1 件の出没を要因ごとの表に
     # 重ねて載せるので 3,901 行が 2,701 件になり（1,200 行が重複）、金沢市は年度ごとに
     # 累積スナップショットを並べる（古い 696 行は新しい 754 行の部分集合）。
@@ -185,8 +201,10 @@ def build(rows: list[dict], src: dict) -> list[dict]:
             if i is None:
                 pos[key] = len(uniq)
                 uniq.append(rec)
-            elif rank.get(rec["category"], 9) < rank.get(uniq[i]["category"], 9):
-                uniq[i] = rec
+            else:
+                stats["dropped:duplicate"] += 1
+                if rank.get(rec["category"], 9) < rank.get(uniq[i]["category"], 9):
+                    uniq[i] = rec
         out = uniq
     return out
 
@@ -229,6 +247,16 @@ def quality(recs: list[dict]) -> dict:
     }
 
 
+def record_fetch(entry: dict, stats: Counter) -> None:
+    """取りに行った URL・版と、取り込まなかった行の数と理由を summary の出典に載せる。"""
+    entry["fetched_urls"] = fetchlog.entries()
+    counts = Counter(fetchlog.drops())
+    counts.update({k.split(":", 1)[1]: v for k, v in stats.items() if k.startswith("dropped:") and v})
+    entry["dropped"] = dict(sorted(counts.items()))
+    unparsed = {k.split(":", 1)[1]: v for k, v in stats.items() if k.startswith("unparsed:") and v}
+    entry["unparsed"] = dict(sorted(unparsed.items()))
+
+
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--only", action="append", default=None, help="出典 id を指定（複数可）")
@@ -261,15 +289,21 @@ def main() -> int:
             summary.append(entry)
             print(f"[--] {src['id']:<24} 凍結（{frozen.get('fetched')} 時点の {len(prev)} 件を据え置き）")
             continue
+        fetchlog.reset()
+        stats = Counter()
         try:
             rows = ADAPTERS[src["adapter"]](**src["params"])
-            recs = build(rows, src)
+            recs = build(rows, src, stats)
+            if rows and not recs:
+                # 門そのものが壊れた（列の対応が外れた等）。0 件で通さず失敗として据え置く
+                raise ValueError(f"取得した {len(rows)} 行がすべて取り込めなかった")
             if entry["redistribute"]:
                 prev = previous_rows(src["id"])
                 if prev and len(recs) < len(prev) * SHRINK_RATIO:
                     raise ShrinkError(f"前回 {len(prev)} 件に対し今回 {len(recs)} 件しか取れない")
         except Exception as exc:  # 1 出典の失敗で全体を落とさない
             entry["error"] = f"{type(exc).__name__}: {exc}"
+            record_fetch(entry, stats)
             # 最後に取れた日時と、失敗が続いている起点を前回から引き継ぐ
             last = before.get(src["id"], {})
             if last.get("last_success_at"):
@@ -291,13 +325,17 @@ def main() -> int:
             print(f"[NG] {src['id']}: {entry['error']}", file=sys.stderr)
             continue
         entry.update(quality(recs))
+        entry["fetched_rows"] = len(rows)
+        record_fetch(entry, stats)
         entry["last_success_at"] = now
         summary.append(entry)
         if entry["redistribute"]:
             shareable.extend(recs)
         print(f"[ok] {src['id']:<24} n={entry['records']:>6} 座標={entry['with_coords']:>6} "
               f"日付={entry['with_date']:>6} {entry['date_min']}..{entry['date_max']} "
-              f"{'収録' if entry['redistribute'] else '収録しない(ライセンス未確認)'}")
+              f"{'収録' if entry['redistribute'] else '収録しない(ライセンス未確認)'}"
+              + (f" 除外={entry['dropped']}" if entry["dropped"] else "")
+              + (f" 読めず={entry['unparsed']}" if entry["unparsed"] else ""))
 
     if args.no_write:
         return 0
