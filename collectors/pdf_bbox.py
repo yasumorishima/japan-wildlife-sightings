@@ -14,7 +14,8 @@ import tempfile
 
 WORD = re.compile(r'<word xMin="([\d.]+)" yMin="([\d.]+)" xMax="([\d.]+)" yMax="([\d.]+)">([^<]*)</word>')
 PAGE = re.compile(r"<page width=", re.I)
-DATE_WORD = re.compile(r"^[RHS]\d{1,2}[.]\d{1,2}[.]\d{1,2}$")
+# 和暦の略記（R7.4.1）と西暦（2021/4/13。山梨県の令和2〜6年度）
+DATE_WORD = re.compile(r"^(?:[RHS]\d{1,2}[.]\d{1,2}[.]\d{1,2}|\d{4}/\d{1,2}/\d{1,2})$")
 
 
 def _bbox_xml(data: bytes) -> str:
@@ -63,6 +64,16 @@ def _assign(x: float, cols: list[float]) -> int:
     return idx
 
 
+def _col(w: tuple, cols: list[float]) -> int:
+    """語の列。値は左揃えなので左端で決めるが、日付は中央揃えの様式がある（山梨県）。
+    桁の多い日付（R7.10.10）ほど左端が左に出て、最初のページで学んだ列の左端より前に来ると
+    № の列に入り、何十件もが 1 行に潰れた（実測）。日付の語だけは中心で列を決める。
+    """
+    if DATE_WORD.match(w[4]):
+        return _assign((w[0] + w[2]) / 2, cols)
+    return _assign(w[0], cols)
+
+
 def _learn_centers(words, anchors, want=None):
     """1 ページ目の値の並びから列の左端を学ぶ。
 
@@ -104,9 +115,9 @@ def parse_bbox_table(xml: str, columns: list[str]) -> list[dict]:
             # 集まる列を日付欄とみなし、そこにある語だけを 1 件の起点にする。
             # これをしないと本文の日付から幽霊行ができる（実測 114 件）。
             from collections import Counter
-            date_col = Counter(_assign(w[0], centers) for w in words
+            date_col = Counter(_col(w, centers) for w in words
                                if DATE_WORD.match(w[4])).most_common(1)[0][0]
-        anchors = [a for a in anchors if _assign(a[0], centers) == date_col]
+        anchors = [a for a in anchors if _col(a, centers) == date_col]
         if not anchors:
             continue
         body = [w for w in words if w[1] >= anchors[0][1] - 6]
@@ -118,7 +129,12 @@ def parse_bbox_table(xml: str, columns: list[str]) -> list[dict]:
                 if not (top - 5 <= w[1] < bottom - 5):
                     continue
                 # 値は左揃えなので、中心の近さではなく左端で列を決める。
-                cells.setdefault(_assign(w[0], centers), []).append(w)
+                idx = _col(w, centers)
+                # 日付の欄には起点の日付だけを置く。長い時刻（「13:00~15:00頃」）は折り返して
+                # 左端が日付の欄に入り、日付と混ざって読めなくなった（実測 5 件）。右隣の欄へ回す
+                if idx == date_col and w is not anchor:
+                    idx += 1
+                cells.setdefault(idx, []).append(w)
             row = {}
             for idx, ws in sorted(cells.items()):
                 ws.sort(key=lambda w: (w[1], w[0]))
@@ -144,6 +160,7 @@ def fetch_pdf_bbox(page_url: str, link_pattern: str, columns: list[str] | None =
     import requests
 
     from . import fetchlog
+    from .pdf_table import drop_repeats, read_pdf
 
     sess = requests.Session()
     sess.hooks["response"].append(fetchlog.hook)
@@ -156,21 +173,12 @@ def fetch_pdf_bbox(page_url: str, link_pattern: str, columns: list[str] | None =
                     for h in re.findall(r'href="([^"]*\.pdf)"', page.text, re.I)
                     if re.search(link_pattern, urllib.parse.unquote(h))})
     cols = columns or YAMANASHI_HEADERS
-    seen, out = set(), []
+    out = []
     for url in links:
-        try:
-            body = sess.get(url, timeout=120).content
-            if not body.startswith(b"%PDF"):
-                continue
-            rows = parse_bbox_table(_bbox_xml(body), cols)
-        except Exception:
-            continue
+        rows = read_pdf(sess, url, lambda body: parse_bbox_table(_bbox_xml(body), cols))
         for row in rows:
-            key = (row.get("目撃年月日") or row.get("_date_word"),
-                   row.get("目撃市町村"), (row.get("場所") or "")[:20])
-            if key in seen:
-                continue
-            seen.add(key)
             row["_source_pdf"] = url
-            out.append(row)
-    return out
+        out.extend(rows)
+    # 山梨県は年度ごとに 1 本で、行に № がある。№ まで同じものだけを重なりとみなす
+    return drop_repeats(out, lambda r: (r.get("目撃年月日") or r.get("_date_word"), r.get("目撃市町村"),
+                                         r.get("№"), (r.get("場所") or "")[:20]))
