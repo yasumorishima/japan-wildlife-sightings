@@ -1,6 +1,6 @@
 {
-  "generated_at": "2026-11-24T13:52:09.876632+09:00",
-  "records_published": 56587,
+  "generated_at": "2026-11-25T12:36:45.926949+09:00",
+  "records_published": 56612,
   "sources": [
     {
       "id": "akita-kumadas",
@@ -28,7 +28,7 @@
       ],
       "dropped": {},
       "unparsed": {},
-      "last_success_at": "2026-11-24T13:49:30+09:00"
+      "last_success_at": "2026-11-25T12:34:06+09:00"
     },
     {
       "id": "kyoto-bear",
@@ -54,7 +54,7 @@
       ],
       "dropped": {},
       "unparsed": {},
-      "last_success_at": "2026-11-24T13:49:30+09:00"
+      "last_success_at": "2026-11-25T12:34:06+09:00"
     },
     {
       "id": "niigata-bear",
@@ -62,28 +62,28 @@
       "adapter": "arcgis",
       "license": "unknown",
       "redistribute": false,
-      "records": 4240,
-      "with_coords": 4240,
-      "with_date": 4240,
+      "records": 4242,
+      "with_coords": 4242,
+      "with_date": 4242,
       "date_min": "2025-04-07",
-      "date_max": "2026-11-18",
+      "date_max": "2026-11-21",
       "species": [
         "tsukinowaguma"
       ],
-      "fetched_rows": 4240,
+      "fetched_rows": 4242,
       "fetched_urls": [
         {
           "url": "https://services6.arcgis.com/SKz58fvdFlaEB35q/arcgis/rest/services/survey123_08d14b98657b47309b868f49602375c8_results/FeatureServer/0",
-          "last_modified": "Wed, 18 Nov 2026 11:31:16 GMT"
+          "last_modified": "Wed, 25 Nov 2026 00:01:24 GMT"
         },
         {
           "url": "https://services6.arcgis.com/SKz58fvdFlaEB35q/arcgis/rest/services/survey123_08d14b98657b47309b868f49602375c8_results/FeatureServer/0/query",
-          "last_modified": "Wed, 18 Nov 2026 11:31:16 GMT"
+          "last_modified": "Wed, 25 Nov 2026 00:01:24 GMT"
         }
       ],
       "dropped": {},
       "unparsed": {},
-      "last_success_at": "2026-11-24T13:49:30+09:00"
+      "last_success_at": "2026-11-25T12:34:06+09:00"
     },
     {
       "id": "gunma-bear",
@@ -91,28 +91,28 @@
       "adapter": "arcgis",
       "license": "unknown",
       "redistribute": false,
-      "records": 1886,
-      "with_coords": 1886,
-      "with_date": 1886,
+      "records": 1887,
+      "with_coords": 1887,
+      "with_date": 1887,
       "date_min": "2024-04-02",
-      "date_max": "2026-11-18",
+      "date_max": "2026-11-21",
       "species": [
         "tsukinowaguma"
       ],
-      "fetched_rows": 1886,
+      "fetched_rows": 1887,
       "fetched_urls": [
         {
           "url": "https://services7.arcgis.com/DkC6f6v0YUQX0rke/arcgis/rest/services/survey123_a77f33a9b9f649cfada5c7983c67874b_results/FeatureServer/0",
-          "last_modified": "Tue, 24 Nov 2026 04:20:46 GMT"
+          "last_modified": "Tue, 24 Nov 2026 06:08:46 GMT"
         },
         {
           "url": "https://services7.arcgis.com/DkC6f6v0YUQX0rke/arcgis/rest/services/survey123_a77f33a9b9f649cfada5c7983c67874b_results/FeatureServer/0/query",
-          "last_modified": "Tue, 24 Nov 2026 04:20:46 GMT"
+          "last_modified": "Tue, 24 Nov 2026 06:08:46 GMT"
         }
       ],
       "dropped": {},
       "unparsed": {},
-      "last_success_at": "2026-11-24T13:49:30+09:00"
+      "last_success_at": "2026-11-25T12:34:06+09:00"
     },
     {
       "id": "saitama-bear",
@@ -120,28 +120,28 @@
       "adapter": "arcgis",
       "license": "unknown",
       "redistribute": false,
-      "records": 481,
-      "with_coords": 481,
-      "with_date": 481,
+      "records": 483,
+      "with_coords": 483,
+      "with_date": 483,
       "date_min": "2024-04-11",
-      "date_max": "2026-11-20",
+      "date_max": "2026-11-25",
       "species": [
         "tsukinowaguma"
       ],
-      "fetched_rows": 481,
+      "fetched_rows": 483,
       "fetched_urls": [
         {
           "url": "https://services9.arcgis.com/n65w8AXGaYPTqFYI/arcgis/rest/services/survey123_3123e5ed452d4e89845e4ba6129c1e2d_results/FeatureServer/0",
-          "last_modified": "Fri, 20 Nov 2026 09:15:39 GMT"
+          "last_modified": "Wed, 25 Nov 2026 00:42:34 GMT"
         },
         {
           "url": "https://services9.arcgis.com/n65w8AXGaYPTqFYI/arcgis/rest/services/survey123_3123e5ed452d4e89845e4ba6129c1e2d_results/FeatureServer/0/query",
-          "last_modified": "Fri, 20 Nov 2026 09:15:39 GMT"
+          "last_modified": "Wed, 25 Nov 2026 00:42:34 GMT"
         }
       ],
       "dropped": {},
       "unparsed": {},
-      "last_success_at": "2026-11-24T13:49:30+09:00"
+      "last_success_at": "2026-11-25T12:34:06+09:00"
     },
     {
       "id": "yamagata-kemonote",
@@ -171,7 +171,7 @@
       ],
       "dropped": {},
       "unparsed": {},
-      "last_success_at": "2026-11-24T13:49:30+09:00"
+      "last_success_at": "2026-11-25T12:34:06+09:00"
     },
     {
       "id": "ishikawa-bear",
@@ -196,7 +196,7 @@
       ],
       "dropped": {},
       "unparsed": {},
-      "last_success_at": "2026-11-24T13:49:30+09:00"
+      "last_success_at": "2026-11-25T12:34:06+09:00"
     },
     {
       "id": "miyagi-bear",
@@ -223,7 +223,7 @@
       "unparsed": {
         "date": 3
       },
-      "last_success_at": "2026-11-24T13:49:30+09:00"
+      "last_success_at": "2026-11-25T12:34:06+09:00"
     },
     {
       "id": "shizuoka-bear-r7",
@@ -248,7 +248,7 @@
       ],
       "dropped": {},
       "unparsed": {},
-      "last_success_at": "2026-11-24T13:49:30+09:00"
+      "last_success_at": "2026-11-25T12:34:06+09:00"
     },
     {
       "id": "shizuoka-bear-r8",
@@ -273,7 +273,7 @@
       ],
       "dropped": {},
       "unparsed": {},
-      "last_success_at": "2026-11-24T13:49:30+09:00"
+      "last_success_at": "2026-11-25T12:34:06+09:00"
     },
     {
       "id": "noboribetsu-bear",
@@ -302,7 +302,7 @@
       ],
       "dropped": {},
       "unparsed": {},
-      "last_success_at": "2026-11-24T13:49:30+09:00"
+      "last_success_at": "2026-11-25T12:34:06+09:00"
     },
     {
       "id": "muroran-bear",
@@ -331,7 +331,7 @@
       ],
       "dropped": {},
       "unparsed": {},
-      "last_success_at": "2026-11-24T13:49:30+09:00"
+      "last_success_at": "2026-11-25T12:34:06+09:00"
     },
     {
       "id": "toyama-kumappu",
@@ -360,7 +360,7 @@
       ],
       "dropped": {},
       "unparsed": {},
-      "last_success_at": "2026-11-24T13:49:30+09:00"
+      "last_success_at": "2026-11-25T12:34:06+09:00"
     },
     {
       "id": "mie-bear",
@@ -389,7 +389,7 @@
       ],
       "dropped": {},
       "unparsed": {},
-      "last_success_at": "2026-11-24T13:49:30+09:00"
+      "last_success_at": "2026-11-25T12:34:06+09:00"
     },
     {
       "id": "okaya-bear",
@@ -414,7 +414,7 @@
       "fetched_urls": [
         {
           "url": "https://services1.arcgis.com/4GMefrLcjv8z16wh/arcgis/rest/services/choujyumokugeki_publicview/FeatureServer/0",
-          "last_modified": "Thu, 19 Nov 2026 01:58:07 GMT"
+          "last_modified": "Thu, 19 Nov 2026 01:58:08 GMT"
         },
         {
           "url": "https://services1.arcgis.com/4GMefrLcjv8z16wh/arcgis/rest/services/choujyumokugeki_publicview/FeatureServer/0/query",
@@ -423,7 +423,7 @@
       ],
       "dropped": {},
       "unparsed": {},
-      "last_success_at": "2026-11-24T13:49:30+09:00"
+      "last_success_at": "2026-11-25T12:34:06+09:00"
     },
     {
       "id": "fukushima-bear",
@@ -443,16 +443,16 @@
       "fetched_urls": [
         {
           "url": "https://services6.arcgis.com/M9nrgnB1gu8YnLFM/arcgis/rest/services/福島県クマ目撃ポイントレイヤー_202606_view/FeatureServer/0",
-          "last_modified": "Tue, 17 Nov 2026 01:02:36 GMT"
+          "last_modified": "Wed, 25 Nov 2026 01:02:21 GMT"
         },
         {
           "url": "https://services6.arcgis.com/M9nrgnB1gu8YnLFM/arcgis/rest/services/福島県クマ目撃ポイントレイヤー_202606_view/FeatureServer/0/query",
-          "last_modified": "Tue, 17 Nov 2026 01:02:36 GMT"
+          "last_modified": "Wed, 25 Nov 2026 01:02:21 GMT"
         }
       ],
       "dropped": {},
       "unparsed": {},
-      "last_success_at": "2026-11-24T13:49:30+09:00"
+      "last_success_at": "2026-11-25T12:34:06+09:00"
     },
     {
       "id": "niigata-bear-2017-2024",
@@ -481,7 +481,7 @@
       ],
       "dropped": {},
       "unparsed": {},
-      "last_success_at": "2026-11-24T13:49:30+09:00"
+      "last_success_at": "2026-11-25T12:34:06+09:00"
     },
     {
       "id": "ishikari-higuma",
@@ -512,7 +512,7 @@
       "unparsed": {
         "date": 1
       },
-      "last_success_at": "2026-11-24T13:49:30+09:00"
+      "last_success_at": "2026-11-25T12:34:06+09:00"
     },
     {
       "id": "nagano-bear-pdf",
@@ -814,7 +814,7 @@
       ],
       "dropped": {},
       "unparsed": {},
-      "last_success_at": "2026-11-24T13:49:30+09:00"
+      "last_success_at": "2026-11-25T12:34:06+09:00"
     },
     {
       "id": "yamanashi-bear-pdf",
@@ -822,24 +822,24 @@
       "adapter": "pdf_bbox",
       "license": "unknown",
       "redistribute": false,
-      "records": 2183,
+      "records": 2193,
       "with_coords": 0,
-      "with_date": 2183,
+      "with_date": 2193,
       "date_min": "2016-04-20",
-      "date_max": "2026-11-18",
+      "date_max": "2026-11-24",
       "species": [
         "tsukinowaguma"
       ],
-      "fetched_rows": 2183,
+      "fetched_rows": 2193,
       "fetched_urls": [
         {
           "url": "https://www.pref.yamanashi.jp/shizen/kuma2.html",
-          "last_modified": "Fri, 20 Nov 2026 08:00:15 GMT"
+          "last_modified": "Tue, 24 Nov 2026 10:00:06 GMT"
         },
         {
-          "url": "https://www.pref.yamanashi.jp/documents/61009/20261120kumamokugeki.pdf",
-          "last_modified": "Fri, 20 Nov 2026 08:00:15 GMT",
-          "sha256": "df24b679aa03221cbab36515f74cc3c6e20587267cd9c6a935a39642269c6ec5"
+          "url": "https://www.pref.yamanashi.jp/documents/61009/20261124kumamokugeki.pdf",
+          "last_modified": "Tue, 24 Nov 2026 10:00:06 GMT",
+          "sha256": "680cc2318b39481df069f4f92a8035f7749081588de8ed8e7afe169ae8589285"
         },
         {
           "url": "https://www.pref.yamanashi.jp/documents/61009/h28_mokugeki.pdf",
@@ -894,9 +894,9 @@
       ],
       "pdf_files": [
         {
-          "url": "https://www.pref.yamanashi.jp/documents/61009/20261120kumamokugeki.pdf",
-          "expected": 359,
-          "rows": 359,
+          "url": "https://www.pref.yamanashi.jp/documents/61009/20261124kumamokugeki.pdf",
+          "expected": 369,
+          "rows": 369,
           "status": "ok"
         },
         {
@@ -962,7 +962,7 @@
       ],
       "dropped": {},
       "unparsed": {},
-      "last_success_at": "2026-11-24T13:49:30+09:00"
+      "last_success_at": "2026-11-25T12:34:06+09:00"
     },
     {
       "id": "yamanashi-bear-ckan",
@@ -970,15 +970,15 @@
       "adapter": "ckan",
       "license": "CC-BY-4.0",
       "redistribute": true,
-      "records": 1526,
-      "with_coords": 1508,
-      "with_date": 1526,
+      "records": 1545,
+      "with_coords": 1527,
+      "with_date": 1545,
       "date_min": "2020-04-01",
-      "date_max": "2026-10-20",
+      "date_max": "2026-10-24",
       "species": [
         "tsukinowaguma"
       ],
-      "fetched_rows": 1526,
+      "fetched_rows": 1545,
       "fetched_urls": [
         {
           "url": "https://catalog.dataplatform-yamanashi.jp/api/3/action/package_search"
@@ -1015,15 +1015,15 @@
         },
         {
           "url": "https://catalog.dataplatform-yamanashi.jp/dataset/bed5301d-75b2-4976-8687-2b2721ae143a/resource/89d2478e-e29e-46e3-9ad3-19bf44822d4d/download/2026kumadata.csv",
-          "last_modified": "Fri, 20 Nov 2026 07:14:38 GMT",
-          "sha256": "be3565abf35166665841b1302bb1b7ae5930d9ff8aa0fb4e16c05bdd262531e4"
+          "last_modified": "Tue, 24 Nov 2026 07:37:00 GMT",
+          "sha256": "d2f78cb11ac67a21ad40b49325be4f9a6cfbb564ba55aaf953a837ff9326ce26"
         }
       ],
       "dropped": {},
       "unparsed": {
         "coords_out_of_range": 3
       },
-      "last_success_at": "2026-11-24T13:49:30+09:00"
+      "last_success_at": "2026-11-25T12:34:06+09:00"
     },
     {
       "id": "kamisunagawa-higuma",
@@ -1062,7 +1062,7 @@
       ],
       "dropped": {},
       "unparsed": {},
-      "last_success_at": "2026-11-24T13:49:30+09:00"
+      "last_success_at": "2026-11-25T12:34:06+09:00"
     },
     {
       "id": "yamaguchi-bear",
@@ -1070,11 +1070,11 @@
       "adapter": "ckan",
       "license": "CC-BY-4.0",
       "redistribute": true,
-      "records": 1335,
-      "with_coords": 1335,
-      "with_date": 1334,
+      "records": 1336,
+      "with_coords": 1336,
+      "with_date": 1335,
       "date_min": "2023-04-01",
-      "date_max": "2026-11-20",
+      "date_max": "2026-11-23",
       "species": [
         "tsukinowaguma"
       ],
@@ -1099,19 +1099,19 @@
           "sha256": "5ad2fc9d5bed7cba899e4e130ddb15b72f361f5e2955c3eae4b4475820660bfe"
         },
         {
-          "url": "https://yamaguchi-opendata.jp/ckan/dataset/928b40db-0a74-4ad7-b70e-019045860fd4/resource/b257b81d-4acd-4067-ba53-fe8c5235081b/download/r8-01011120.csv",
-          "last_modified": "Fri, 20 Nov 2026 09:58:19 GMT",
-          "sha256": "696eeb3f288cbc79060687650c0f78fed6d68a7b440570e346474c41603904c0"
+          "url": "https://yamaguchi-opendata.jp/ckan/dataset/928b40db-0a74-4ad7-b70e-019045860fd4/resource/b257b81d-4acd-4067-ba53-fe8c5235081b/download/r8-01011124.csv",
+          "last_modified": "Tue, 24 Nov 2026 08:46:19 GMT",
+          "sha256": "e577f4d01b9c626463b0ab590f35445f8afcd9205c95429486cde3864a9d6288"
         }
       ],
       "dropped": {
-        "missing_lat": 267
+        "missing_lat": 266
       },
       "unparsed": {
-        "coords_out_of_range": 267,
+        "coords_out_of_range": 266,
         "date": 1
       },
-      "last_success_at": "2026-11-24T13:49:30+09:00"
+      "last_success_at": "2026-11-25T12:34:06+09:00"
     },
     {
       "id": "sapporo-higuma",
@@ -1180,7 +1180,7 @@
       ],
       "dropped": {},
       "unparsed": {},
-      "last_success_at": "2026-11-24T13:49:30+09:00"
+      "last_success_at": "2026-11-25T12:34:06+09:00"
     },
     {
       "id": "ishikawa-bear-ckan",
@@ -1341,7 +1341,7 @@
       ],
       "dropped": {},
       "unparsed": {},
-      "last_success_at": "2026-11-24T13:49:30+09:00"
+      "last_success_at": "2026-11-25T12:34:06+09:00"
     },
     {
       "id": "fukuoka-choju",
@@ -1349,33 +1349,33 @@
       "adapter": "arcgis",
       "license": "unknown",
       "redistribute": false,
-      "records": 1598,
-      "with_coords": 1597,
-      "with_date": 1598,
+      "records": 1600,
+      "with_coords": 1599,
+      "with_date": 1600,
       "date_min": "2020-06-24",
-      "date_max": "2026-11-21",
+      "date_max": "2026-11-24",
       "species": [
         "inoshishi",
         "saru",
         "shika",
         "unknown"
       ],
-      "fetched_rows": 1598,
+      "fetched_rows": 1600,
       "fetched_urls": [
         {
           "url": "https://services1.arcgis.com/UzywP0SobSWMx2Pl/arcgis/rest/services/MokugekiHigai_apps_view/FeatureServer/0",
-          "last_modified": "Mon, 23 Nov 2026 15:47:57 GMT"
+          "last_modified": "Wed, 25 Nov 2026 00:33:34 GMT"
         },
         {
           "url": "https://services1.arcgis.com/UzywP0SobSWMx2Pl/arcgis/rest/services/MokugekiHigai_apps_view/FeatureServer/0/query",
-          "last_modified": "Mon, 23 Nov 2026 15:47:57 GMT"
+          "last_modified": "Wed, 25 Nov 2026 00:33:34 GMT"
         }
       ],
       "dropped": {},
       "unparsed": {
         "coords_out_of_range": 1
       },
-      "last_success_at": "2026-11-24T13:49:30+09:00"
+      "last_success_at": "2026-11-25T12:34:06+09:00"
     },
     {
       "id": "aizuwakamatsu-choju",
@@ -1408,7 +1408,7 @@
       ],
       "dropped": {},
       "unparsed": {},
-      "last_success_at": "2026-11-24T13:49:30+09:00"
+      "last_success_at": "2026-11-25T12:34:06+09:00"
     },
     {
       "id": "tsuru-bear",
@@ -1437,7 +1437,7 @@
       ],
       "dropped": {},
       "unparsed": {},
-      "last_success_at": "2026-11-24T13:49:30+09:00"
+      "last_success_at": "2026-11-25T12:34:06+09:00"
     },
     {
       "id": "tokyo-bear",
@@ -1466,7 +1466,7 @@
       ],
       "dropped": {},
       "unparsed": {},
-      "last_success_at": "2026-11-24T13:49:30+09:00"
+      "last_success_at": "2026-11-25T12:34:06+09:00"
     },
     {
       "id": "sendai-bear",
@@ -1474,7 +1474,7 @@
       "adapter": "csv",
       "license": "CC-BY",
       "redistribute": true,
-      "error": "ConnectTimeout: HTTPSConnectionPool(host='www2.wagmap.jp', port=443): Max retries exceeded with url: /sendaicity/sendaicity/opendatafile/map_331/CSV/opendata_20123.csv (Caused by ConnectTimeoutError(<HTTPSConnection(host='www2.wagmap.jp', port=443) at 0x7a84fb4505d0>, 'Connection to www2.wagmap.jp timed out. (connect timeout=60)'))",
+      "error": "ConnectTimeout: HTTPSConnectionPool(host='www2.wagmap.jp', port=443): Max retries exceeded with url: /sendaicity/sendaicity/opendatafile/map_331/CSV/opendata_20123.csv (Caused by ConnectTimeoutError(<HTTPSConnection(host='www2.wagmap.jp', port=443) at 0x782b2221c290>, 'Connection to www2.wagmap.jp timed out. (connect timeout=60)'))",
       "fetched_urls": [],
       "dropped": {},
       "unparsed": {},
@@ -1495,31 +1495,31 @@
       "adapter": "xlsx",
       "license": "other",
       "redistribute": true,
-      "records": 1438,
+      "records": 1443,
       "with_coords": 0,
-      "with_date": 1438,
+      "with_date": 1443,
       "date_min": "2026-04-01",
-      "date_max": "2026-11-17",
+      "date_max": "2026-11-23",
       "species": [
         "tsukinowaguma"
       ],
-      "fetched_rows": 1440,
+      "fetched_rows": 1445,
       "fetched_urls": [
         {
           "url": "https://www.pref.miyagi.jp/soshiki/sizenhogo/r8kumamokugeki.html",
-          "last_modified": "Fri, 20 Nov 2026 07:47:16 GMT"
+          "last_modified": "Tue, 24 Nov 2026 06:30:24 GMT"
         },
         {
-          "url": "https://www.pref.miyagi.jp/documents/64667/koukaiyou_20261120.xlsx",
-          "last_modified": "Fri, 20 Nov 2026 06:00:07 GMT",
-          "sha256": "45a3a9d9b6d36c51c452749cfb43a795c8196ed6bda15b7eacff8870d6f4600a"
+          "url": "https://www.pref.miyagi.jp/documents/64667/koukaiyou_20261124.xlsx",
+          "last_modified": "Tue, 24 Nov 2026 06:30:24 GMT",
+          "sha256": "4e7a54ef168806395abac1ac699af11d88af857b7409f5c2cea8fe956f9f6f90"
         }
       ],
       "dropped": {
         "missing_occurred_at": 2
       },
       "unparsed": {},
-      "last_success_at": "2026-11-24T13:49:30+09:00"
+      "last_success_at": "2026-11-25T12:34:06+09:00"
     },
     {
       "id": "nagaoka-bear",
@@ -1550,7 +1550,7 @@
       ],
       "dropped": {},
       "unparsed": {},
-      "last_success_at": "2026-11-24T13:49:30+09:00"
+      "last_success_at": "2026-11-25T12:34:06+09:00"
     },
     {
       "id": "mori-higuma",
@@ -1576,7 +1576,7 @@
       ],
       "dropped": {},
       "unparsed": {},
-      "last_success_at": "2026-11-24T13:49:30+09:00"
+      "last_success_at": "2026-11-25T12:34:06+09:00"
     },
     {
       "id": "gifu-bear",
@@ -1662,7 +1662,7 @@
       "unparsed": {
         "date": 2
       },
-      "last_success_at": "2026-11-24T13:49:30+09:00"
+      "last_success_at": "2026-11-25T12:34:06+09:00"
     },
     {
       "id": "susono-bear",
@@ -1691,7 +1691,7 @@
         "hidden_by_config": 2
       },
       "unparsed": {},
-      "last_success_at": "2026-11-24T13:49:30+09:00"
+      "last_success_at": "2026-11-25T12:34:06+09:00"
     },
     {
       "id": "shiroishi-monkey",
@@ -1717,7 +1717,7 @@
       ],
       "dropped": {},
       "unparsed": {},
-      "last_success_at": "2026-11-24T13:49:30+09:00"
+      "last_success_at": "2026-11-25T12:34:06+09:00"
     }
   ]
 }
