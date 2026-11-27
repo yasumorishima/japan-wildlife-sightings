@@ -65359,6 +65359,7 @@ sendai-bear:opendata_20129:310,04,宮城県,2026-10-25T21:00:00+09:00,tsukinowag
 miyagi-bear-r8:1407,04,宮城県,2026-10-25T21:30:00+09:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,仙台市青葉区,作並字湯ノ原３２－７付近（国道４８号線上）,,,住居集合地域等以外,miyagi-bear-r8,https://www.pref.miyagi.jp/soshiki/sizenhogo/r8kumamokugeki.html,other,宮城県「令和8年度クマ目撃等情報」
 miyagi-bear-r8:1405,04,宮城県,2026-10-26T02:10:00+09:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,気仙沼市,松崎浦田,,,住居集合地域等,miyagi-bear-r8,https://www.pref.miyagi.jp/soshiki/sizenhogo/r8kumamokugeki.html,other,宮城県「令和8年度クマ目撃等情報」
 akita-kumadas:28198,05,秋田県,2026-10-26T06:40:00+09:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,小坂町,〒017-0204 秋田県鹿角郡小坂町荒谷手紙沢５４－５,40.3050762,140.7571543,ソバを採食。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
+yamanashi-bear-ckan:kuma1:291,19,山梨県,2026-10-26T07:00:00+09:00,tsukinowaguma,ツキノワグマ,sighting,,1,甲府市,下向山町,35.582416,138.570997,作業員が敷地内の山中にいるのを目撃した。,yamanashi-bear-ckan,https://catalog.dataplatform-yamanashi.jp/dataset/kuma1,CC-BY-4.0,山梨県（やまなしデータプラットフォーム）
 akita-kumadas:28197,05,秋田県,2026-10-26T12:20:00+09:00,tsukinowaguma,ツキノワグマ,sighting,目撃,1,大仙市,〒019-1701 秋田県大仙市神宮寺明徳５２付近,39.50213119,140.4459715,四ツ屋神岡線を走行中北から南方向へ向かうクマ1頭を目撃。体長1m。,akita-kumadas,https://opendata.pref.akita.lg.jp/,CC-BY-4.0,秋田県
 yamaguchi-bear:yp-2026:270,35,山口県,2026-10-26T14:30:00+09:00,tsukinowaguma,ツキノワグマ,trace,目撃者が市道上において、熊の糞を発見したもの,,,"柳井市余田
 　　市道上",33.99997,132.07588,目撃者が市道上において、熊の糞を発見したもの,yamaguchi-bear,https://yamaguchi-opendata.jp/ckan/dataset/yp-2026,CC-BY-4.0,山口県オープンデータカタログサイト（山口県警察本部地域企画課）
