@@ -197,6 +197,26 @@ python3 validate.py                   # 生成物の検算
 
 依存は `requests` と `openpyxl` だけです。
 
+### 変更前と変更後を同じ入力で比べる（shadow.py）
+
+取得・正規化のコードを変える PR では、ワークフロー `shadow` が変更前（PR の base）と変更後のコードに
+同じ取得結果を読ませて比べます。テストが通っても、実データで振る舞いが同じとは限らないためです
+（Anthropic が Messages API を Rust に移したときの確かめ方を借りました）。
+
+- 公開元へは 1 回だけ取りに行きます。HTTP の応答を控え、2 回目の実行はその控えを返すので、
+  日によって中身が変わる揺れが入らず、公開元にも余計な負担を掛けません。
+- 取得行数 → 除外（理由別）→ 読めず（理由別）→ 件数 → id → 列の値、の順に比べ、最初にずれた段を示します。
+- 出すのは「どの出典の・どの段が・何件」だけです。列の値は短いハッシュにしてから比べ、地名などの中身は
+  ログにも Summary にも出しません。控えた応答は成果物として上げません。
+- 違いがあっても失敗にはしません（意図した変更も違いとして出るため）。意図どおりかを PR で確かめます。
+
+```bash
+python3 shadow.py run --code . --cache /tmp/c --out new.json --only nagano-bear-pdf
+git worktree add /tmp/base origin/main
+python3 shadow.py run --code /tmp/base --cache /tmp/c --out old.json --only nagano-bear-pdf
+python3 shadow.py compare old.json new.json
+```
+
 ## Kaggle への公開（保留中）
 
 **オーナーの判断で保留しています。** 仕組みだけ用意してあり、下の変数を設定しない限り動きません。

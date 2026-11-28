@@ -21,6 +21,7 @@
 - `collectors/pdf_table.py` / `pdf_bbox.py` — PDF の表読み（`pdftotext` が要る）
 - `collect.py` — 全出典を取得して `data/sightings.csv` / `summary.json` を作る（GeoJSON は履歴が膨らむので置かない）
 - `validate.py` — 生成物の検算（CI でも実行）
+- `shadow.py` — 変更前と変更後のコードに同じ取得結果を読ませ、段ごとの違いを件数だけで出す（PR で `shadow` ワークフローが回す）
 - `build_map.py` — `docs/data/sightings.min.geojson` を作る（1 地点 1 行。日次の差分を小さく保つため）
 - `build_kaggle.py` — Kaggle に上げる一式を `_kaggle/`（git 管理外）に作る。列の説明 `COLUMNS` と CSV の見出しが違うと失敗する
 - `kaggle_published.py` / `kaggle/` — Kaggle の版との突き合わせと、データセットのメタデータ・説明文（`description.md`）
@@ -32,6 +33,7 @@
 python3 collect.py --only <source_id> --no-write  # 1 出典だけ取得して品質を見る（書き込まない）
 python3 collect.py --no-write                     # 全出典を取得・確認だけ
 python3 validate.py                               # 生成物の検算。変更後は必ず通す
+python3 shadow.py compare old.json new.json       # 新旧の比較（作り方は README「変更前と変更後を同じ入力で比べる」）
 python3 build_map.py                              # 地図用データを作り直す
 python3 build_kaggle.py                           # Kaggle 用の一式を _kaggle/ に作る（上げはしない）
 python3 -m http.server -d docs                    # 地図を手元で見る
