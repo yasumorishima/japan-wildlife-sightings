@@ -1,0 +1,40 @@
+name: shadow
+
+# 取得・正規化のコードを変える PR で、変更前（PR の base）と変更後に同じ取得結果を読ませ、
+# 出典ごと・段ごとの違いを件数だけで実行の Summary に出す。違いがあっても失敗にはしない
+# （意図した変更も違いとして出るため）。data/ には書かない。
+# 公開元へは 1 回だけ取りに行き、応答は runner の一時領域に控えるだけで成果物として上げない
+# （公開元の生データには個人情報が含まれうるため）。
+on:
+  pull_request:
+    paths: ["collect.py", "collectors/**", "sources.json", "shadow.py", ".github/workflows/shadow.yml"]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: shadow-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  shadow:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+      - name: pdftotext を入れる
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq poppler-utils
+      - run: python3 -m pip install -r requirements.txt
+      - name: 変更前のコードを別の作業ツリーに出す
+        run: git worktree add "$RUNNER_TEMP/base" "${{ github.event.pull_request.base.sha }}"
+      - name: 変更後のコードで取得する（応答を控える）
+        run: python3 shadow.py run --code . --cache "$RUNNER_TEMP/cache" --out "$RUNNER_TEMP/new.json"
+      - name: 変更前のコードに同じ応答を読ませる
+        run: python3 shadow.py run --code "$RUNNER_TEMP/base" --cache "$RUNNER_TEMP/cache" --out "$RUNNER_TEMP/old.json"
+      - name: 段ごとに比べる
+        run: python3 shadow.py compare "$RUNNER_TEMP/old.json" "$RUNNER_TEMP/new.json" | tee -a "$GITHUB_STEP_SUMMARY"
